@@ -1,0 +1,10 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kriki" version="1">
+	<MenuBar>
+		<Menu name="game">
+			<Action name="newGame" />
+			<Action name="showHS" />
+			<Action name="quit" />
+		</Menu>
+	</MenuBar>
+</kpartgui>
