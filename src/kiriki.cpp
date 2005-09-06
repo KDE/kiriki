@@ -11,6 +11,7 @@
 
 #include <QHBoxLayout>
 #include <QHeaderView>
+#include <QTimer>
 #include <QTreeView>
 
 #include <kapplication.h>
@@ -21,13 +22,12 @@
 #include "kiriki.h"
 #include "lateralwidget.h"
 #include "scores.h"
-#include <kdebug.h>
+
 kiriki::kiriki() : KMainWindow()
 {
 	QWidget *w = new QWidget(this);
 	QHBoxLayout *lay = new QHBoxLayout(w);
 	
-	kdDebug() << "123" << endl;
 	m_lateral = new lateralWidget(w);
 	lay -> addWidget(m_lateral);
 	
@@ -39,25 +39,15 @@ kiriki::kiriki() : KMainWindow()
 	
 	m_scores = 0;
 	
-	kdDebug() << "1234" << endl;
+	KStdGameAction::gameNew(this, SLOT(newGame()), actionCollection(), "newGame");
+	KStdGameAction::highscores(this, SLOT(showHighScores()), actionCollection(), "showHS");
+	KStdGameAction::quit(kapp, SLOT(quit()), actionCollection(), "quit");
+	
 	setCentralWidget(w);
-	kdDebug() << "12345" << endl;
+	setupGUI(Keys | Save | Create);
+	show();
 	
 	newGame();
-	kdDebug() << "123455" << endl;
-
-	KStdGameAction::gameNew(this, SLOT(newGame()), actionCollection(), "newGame");
-	kdDebug() << "1234555" << endl;
-	KStdGameAction::highscores(this, SLOT(showHighScores()), actionCollection(), "showHS");
-	kdDebug() << "12345555" << endl;
-	KStdGameAction::quit(kapp, SLOT(quit()), actionCollection(), "quit");
-	kdDebug() << "12345555" << endl;
-
-	setupGUI(Keys | Save | Create);
-	
-	kdDebug() << "123456" << endl;
-	show();
-	kdDebug() << "1234567" << endl;
 }
 
 void kiriki::pressed(const QModelIndex &index)
@@ -97,25 +87,18 @@ void kiriki::newGame()
 	m_lateral -> nextTurn();
 
 	int hWidth = 0;
-	int hWidth2 = 0;
-	int hWidth3 = 0;
+	m_scoresWidget -> header() -> setStretchLastSection(false);
 	for (int i = 0; i < m_scores -> columnCount(QModelIndex()); i++)
 	{
 		m_scoresWidget -> resizeColumnToContents(i);
 		hWidth += m_scoresWidget -> header() -> sectionSize(i);
-		hWidth3 += m_scoresWidget -> header() -> sectionSizeHint(i);
-		hWidth2 += m_scoresWidget -> columnWidth(i);
-		kdDebug() << hWidth << " " << hWidth2 << " " << hWidth3 << endl;
 	}
 	m_scoresWidget -> header() -> setMovable(false);
 	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Custom);
-	//kdDebug() << "Whole widget sizehint " << w -> sizeHint() << endl;
-	kdDebug() << "scores widget sizehint " << m_scoresWidget -> sizeHint() << endl;
-	kdDebug() << "scores widget header sizehint " << m_scoresWidget -> header() -> sizeHint() << endl;
-	kdDebug() << "sum of headers width " << hWidth << endl;
-	kdDebug() << "sum of headers2 width " << hWidth2 << endl;
-	kdDebug() << "sum of headers3 width " << hWidth3 << endl;
-//	setFixedSize(sizeHint());
+	m_scoresWidget -> setMinimumSize(hWidth, 0);
+	m_scoresWidget -> header() -> setStretchLastSection(true);
+//	m_scoresWidget -> setMaximumSize(hWidth + 5, 0);
+//	setFixedSize(hWidth + 5 + sizeHint().width() - m_scoresWidget -> sizeHint().width(), sizeHint().height());
 }
 
 void kiriki::endGame()

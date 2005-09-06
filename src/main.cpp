@@ -12,15 +12,13 @@
 #include <kcmdlineargs.h>
 
 #include "kiriki.h"
-#include <kdebug.h>
+
 int main(int argc, char *argv[])
 {
 	KAboutData about("kiriki", I18N_NOOP("Kiriki"), "0.1", I18N_NOOP("A dice game"), KAboutData::License_GPL, "© 2005 Albert Astals Cid");
 	about.addAuthor("Albert Astals Cid", "", "aacid@kde.org");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;
-	kdDebug() << "1" << endl;
 	app.setTopWidget(new kiriki());
-	kdDebug() << "12" << endl;
 	return app.exec();
 }
