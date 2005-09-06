@@ -2,7 +2,7 @@ INCLUDES = $(all_includes)
 
 bin_PROGRAMS = kiriki
 kiriki_SOURCES = main.cpp kiriki.cpp player.cpp scores.cpp diceswidget.cpp lateralwidget.cpp computer.cpp
-kiriki_LDADD = $(LIB_KDEUI) $(LIB_KDEGAMES)
+kiriki_LDADD = $(LIB_KDEUI) -lkdegames
 kiriki_LDFLAGS = $(all_libraries)
 
 # let automoc handle all of the meta source files (moc)
