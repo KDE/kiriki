@@ -15,7 +15,7 @@
 #include <QTreeView>
 
 #include <kapplication.h>
-#include <kexthighscore_item.h>
+#include <kscoredialog.h>
 #include <kstdgameaction.h>
 
 #include "computer.h"
@@ -105,22 +105,20 @@ void kiriki::endGame()
 {
 	const player &p = m_scores -> winner();
 	m_lateral->setEnabled(false);
-	KExtHighscore::Score s;
 	if (p.isHuman())
 	{
-		s.setScore(p.grandTotal());
+		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
+		if (sc.addScore(p.grandTotal(), KScoreDialog::FieldInfo()))
+		{
+			sc.exec();
+		}
 	}
-	else
-	{
-		s.setType(KExtHighscore::Lost);
-		// TODO get the score of the human player
-	}
-	KExtHighscore::submitScore(s, this);
 }
 
 void kiriki::showHighScores()
 {
-	KExtHighscore::show(this);
+	KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
+	sc.exec();
 }
 
 void kiriki::nextTurn()

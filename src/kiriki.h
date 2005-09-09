@@ -11,7 +11,6 @@
 #define KIRIKI_H
  
 #include <kmainwindow.h>
-#include <kexthighscore.h>
 
 class QTreeView;
 
@@ -37,8 +36,6 @@ Q_OBJECT
 		QTreeView *m_scoresWidget;
 		scores *m_scores;
 		lateralWidget *m_lateral;
-
-		KExtHighscore::Manager highscoresManager;
 };
 
 #endif
