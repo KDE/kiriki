@@ -1,7 +1,7 @@
 INCLUDES = $(all_includes)
 
 bin_PROGRAMS = kiriki
-kiriki_SOURCES = main.cpp kiriki.cpp player.cpp scores.cpp diceswidget.cpp lateralwidget.cpp computer.cpp
+kiriki_SOURCES = main.cpp kiriki.cpp player.cpp scores.cpp diceswidget.cpp lateralwidget.cpp computer.cpp settings.kcfgc configPage.ui configwidget.cpp
 kiriki_LDADD = $(LIB_KDEUI) -lkdegames
 kiriki_LDFLAGS = $(all_libraries)
 

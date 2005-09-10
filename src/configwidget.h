@@ -7,36 +7,18 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef KIRIKI_H
-#define KIRIKI_H
- 
-#include <kmainwindow.h>
+#ifndef CONFIGWIDGET_H
+#define CONFIGWIDGET_H
 
-class QTreeView;
+#include <QWidget>
 
-class lateralWidget;
-class scores;
+#include "configPage.h"
 
-class kiriki : public KMainWindow
+class configWidget : public QWidget, private Ui::configPage
 {
-Q_OBJECT
 	public:
-		kiriki();
-	
-	private slots:
-		void newGame();
-		void pressed(const QModelIndex &index);
-		void showHighScores();
-		void showPreferences();
-	
-	private:
-		void endGame();
-		void play(const QModelIndex &index);
-		void nextTurn();
-
-		QTreeView *m_scoresWidget;
-		scores *m_scores;
-		lateralWidget *m_lateral;
+		configWidget(QWidget *parent);
 };
 
 #endif
+

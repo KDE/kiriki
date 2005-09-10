@@ -15,13 +15,17 @@
 #include <QTreeView>
 
 #include <kapplication.h>
+#include <kconfigdialog.h>
 #include <kscoredialog.h>
+#include <kstdaction.h>
 #include <kstdgameaction.h>
 
 #include "computer.h"
+#include "configwidget.h"
 #include "kiriki.h"
 #include "lateralwidget.h"
 #include "scores.h"
+#include "settings.h"
 
 kiriki::kiriki() : KMainWindow()
 {
@@ -42,6 +46,7 @@ kiriki::kiriki() : KMainWindow()
 	KStdGameAction::gameNew(this, SLOT(newGame()), actionCollection(), "newGame");
 	KStdGameAction::highscores(this, SLOT(showHighScores()), actionCollection(), "showHS");
 	KStdGameAction::quit(kapp, SLOT(quit()), actionCollection(), "quit");
+	KStdAction::preferences(this, SLOT(showPreferences()), actionCollection());
 	
 	setCentralWidget(w);
 	setupGUI(Keys | Save | Create);
@@ -119,6 +124,17 @@ void kiriki::showHighScores()
 {
 	KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
 	sc.exec();
+}
+
+void kiriki::showPreferences()
+{
+	if(KConfigDialog::showDialog("settings"))
+		return;
+
+	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self(), KConfigDialog::Plain);
+	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
+	configDialog -> exec();
+	delete configDialog;
 }
 
 void kiriki::nextTurn()
