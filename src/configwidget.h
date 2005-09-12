@@ -16,8 +16,12 @@
 
 class configWidget : public QWidget, private Ui::configPage
 {
+Q_OBJECT
 	public:
 		configWidget(QWidget *parent);
+	
+	private slots:
+		void numberOfPlayersChanged(int numberOfPlayers);
 };
 
 #endif

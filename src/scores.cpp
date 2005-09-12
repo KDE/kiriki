@@ -12,16 +12,45 @@
 #include <klocale.h>
 
 #include "scores.h"
+#include "settings.h"
 
 scores::scores()
 {
 	player p;
-	p.setHuman(true);
-	for (int i = 1; i <= 6; i++)
+	for (int i = 1; i <= kirikiSettings::numberOfPlayers(); i++)
 	{
-		p.setName(i18n("Player %1").arg(i));
+		if (i == 1)
+		{
+			p.setName(kirikiSettings::player1Name());
+			p.setHuman(true);
+		}
+		else if (i == 2)
+		{
+			p.setName(kirikiSettings::player2Name());
+			p.setHuman(kirikiSettings::player2IsHuman());
+		}
+		else if (i == 3)
+		{
+			p.setName(kirikiSettings::player3Name());
+			p.setHuman(kirikiSettings::player3IsHuman());
+		}
+		else if (i == 4)
+		{
+			p.setName(kirikiSettings::player4Name());
+			p.setHuman(kirikiSettings::player4IsHuman());
+		}
+		else if (i == 5)
+		{
+			p.setName(kirikiSettings::player5Name());
+			p.setHuman(kirikiSettings::player5IsHuman());
+		}
+		else if (i == 6)
+		{
+			p.setName(kirikiSettings::player6Name());
+			p.setHuman(kirikiSettings::player6IsHuman());
+		}
+		
 		m_players.append(p);
-		p.setHuman(false);
 	}
 	
 	m_currentPlayer = 0;

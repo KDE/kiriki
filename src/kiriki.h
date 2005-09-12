@@ -12,6 +12,7 @@
  
 #include <kmainwindow.h>
 
+class QModelIndex;
 class QTreeView;
 
 class lateralWidget;

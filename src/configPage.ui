@@ -8,8 +8,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>284</width>
-    <height>329</height>
+    <width>295</width>
+    <height>362</height>
    </rect>
   </property>
   <property name="windowTitle" >
@@ -51,19 +51,52 @@
            <number>6</number>
           </property>
           <item>
+           <widget class="QLabel" name="label_5" >
+            <property name="text" >
+             <string>&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;/head>&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-style:normal; text-decoration:none;&quot;>&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Number of players:&lt;/p>&lt;/body>&lt;/html></string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="kcfg_numberOfPlayers" />
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
            <widget class="QLabel" name="label" >
+            <property name="enabled" >
+             <bool>true</bool>
+            </property>
             <property name="text" >
              <string>&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;/head>&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-style:normal; text-decoration:none;&quot;>&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1.&lt;/p>&lt;/body>&lt;/html></string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit" />
+           <widget class="QLineEdit" name="kcfg_player1Name" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox" >
+           <widget class="QCheckBox" name="player1IsHuman" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
             <property name="text" >
              <string>human?</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -85,10 +118,14 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2" />
+           <widget class="QLineEdit" name="kcfg_player2Name" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_2" >
+           <widget class="QCheckBox" name="kcfg_player2IsHuman" >
             <property name="text" >
              <string>human?</string>
             </property>
@@ -112,10 +149,14 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2_2" />
+           <widget class="QLineEdit" name="kcfg_player3Name" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_2_2" >
+           <widget class="QCheckBox" name="kcfg_player3IsHuman" >
             <property name="text" >
              <string>human?</string>
             </property>
@@ -139,10 +180,14 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2_2_2" />
+           <widget class="QLineEdit" name="kcfg_player4Name" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_2_2_2" >
+           <widget class="QCheckBox" name="kcfg_player4IsHuman" >
             <property name="text" >
              <string>human?</string>
             </property>
@@ -166,10 +211,14 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2_3" />
+           <widget class="QLineEdit" name="kcfg_player5Name" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_2_3" >
+           <widget class="QCheckBox" name="kcfg_player5IsHuman" >
             <property name="text" >
              <string>human?</string>
             </property>
@@ -193,10 +242,14 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2_3_2" />
+           <widget class="QLineEdit" name="kcfg_player6Name" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_2_3_2" >
+           <widget class="QCheckBox" name="kcfg_player6IsHuman" >
             <property name="text" >
              <string>human?</string>
             </property>
@@ -220,12 +273,12 @@
      <item>
       <widget class="QLabel" name="label_3" >
        <property name="text" >
-        <string>&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;/head>&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-style:normal; text-decoration:none;&quot;>&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Delay between computers move (sec):&lt;/p>&lt;/body>&lt;/html></string>
+        <string>&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;/head>&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-style:normal; text-decoration:none;&quot;>&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Delay between computers move (msec):&lt;/p>&lt;/body>&lt;/html></string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="spinBox" />
+      <widget class="QSpinBox" name="kcfg_waitTime" />
      </item>
     </layout>
    </item>
