@@ -147,28 +147,27 @@ void kiriki::nextTurn()
 		while (m_scores -> currentPlayer().allScores()) m_scores -> nextPlayer();
 		
 		m_lateral -> nextTurn();
-		if (!m_scores -> currentPlayer().isHuman())
-		{
-			m_lateral -> setEnabled(false);
-
-			for (int i = 0; i < 5; i++) setComputerDiceValue(i, m_lateral -> getDice(i));
-			ComputerRolling(m_scores -> currentPlayer(), m_lateral -> getRolls());
-
-			while ( computerDiceSelected() && m_lateral -> getRolls() < 3)
-			{
-				for (int i = 0; i < 5; i++) m_lateral -> selectDice(i, getComputerDiceSelected(i));
-
-				m_lateral -> roll();
-				for (int i = 0; i < 5; i++) setComputerDiceValue(i, m_lateral -> getDice(i));
-				ComputerRolling(m_scores -> currentPlayer(), m_lateral -> getRolls());
-			}
-			int row;
-			row = ComputerScoring(m_scores -> currentPlayer());
-			if (row > 5) row += 3;
-			play(m_scores -> index(row, 0));
-		}
+		if (!m_scores -> currentPlayer().isHuman()) QTimer::singleShot(kirikiSettings::waitTime(), this, SLOT(playComputer()));
 		else m_lateral -> setEnabled(true);
 	 }
+}
+
+void kiriki::playComputer()
+{
+	m_lateral -> setEnabled(false);
+	for (int i = 0; i < 5; i++) setComputerDiceValue(i, m_lateral -> getDice(i));
+	ComputerRolling(m_scores -> currentPlayer(), m_lateral -> getRolls());
+	while (computerDiceSelected() && m_lateral -> getRolls() < 3)
+	{
+		for (int i = 0; i < 5; i++) m_lateral -> selectDice(i, getComputerDiceSelected(i));
+		m_lateral -> roll();
+		for (int i = 0; i < 5; i++) setComputerDiceValue(i, m_lateral -> getDice(i));
+		ComputerRolling(m_scores -> currentPlayer(), m_lateral -> getRolls());
+	}
+	int row;
+	row = ComputerScoring(m_scores -> currentPlayer());
+	if (row > 5) row += 3;
+	play(m_scores -> index(row, 0));
 }
 
 #include "kiriki.moc"

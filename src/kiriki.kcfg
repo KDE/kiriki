@@ -8,6 +8,7 @@
 		<entry key="waitTime" type="Int" >
 			<default>0</default>
 			<min>0</min>
+			<max>2000</max>
 		</entry>
 		<entry key="numberOfPlayers" type="Int" >
 			<default>6</default>
