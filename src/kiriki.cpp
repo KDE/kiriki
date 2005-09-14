@@ -16,6 +16,7 @@
 
 #include <kapplication.h>
 #include <kconfigdialog.h>
+#include <kmessagebox.h>
 #include <kscoredialog.h>
 #include <kstdaction.h>
 #include <kstdgameaction.h>
@@ -131,10 +132,40 @@ void kiriki::showPreferences()
 	if(KConfigDialog::showDialog("settings"))
 		return;
 
+	int nPlayers = kirikiSettings::numberOfPlayers();
+	QString player1Name = kirikiSettings::player1Name();
+	QString player2Name = kirikiSettings::player2Name();
+	QString player3Name = kirikiSettings::player3Name();
+	QString player4Name = kirikiSettings::player4Name();
+	QString player5Name = kirikiSettings::player5Name();
+	QString player6Name = kirikiSettings::player6Name();
+	bool player2IsHuman = kirikiSettings::player2IsHuman();
+	bool player3IsHuman = kirikiSettings::player3IsHuman();
+	bool player4IsHuman = kirikiSettings::player4IsHuman();
+	bool player5IsHuman = kirikiSettings::player5IsHuman();
+	bool player6IsHuman = kirikiSettings::player6IsHuman();
+	
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self(), KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
 	configDialog -> exec();
 	delete configDialog;
+
+	bool changed = nPlayers != kirikiSettings::numberOfPlayers() ||
+	               player1Name != kirikiSettings::player1Name() || 
+	               player2Name != kirikiSettings::player2Name() || 
+	               player3Name != kirikiSettings::player3Name() || 
+	               player4Name != kirikiSettings::player4Name() || 
+	               player5Name != kirikiSettings::player5Name() || 
+	               player6Name != kirikiSettings::player6Name() || 
+		       player2IsHuman != kirikiSettings::player2IsHuman() ||
+		       player3IsHuman != kirikiSettings::player3IsHuman() ||
+		       player4IsHuman != kirikiSettings::player4IsHuman() ||
+		       player5IsHuman != kirikiSettings::player5IsHuman() ||
+		       player6IsHuman != kirikiSettings::player6IsHuman();
+	if (changed)
+	{
+		KMessageBox::information(this, i18n("Changes will be applied on next game."));
+	}
 }
 
 void kiriki::nextTurn()
