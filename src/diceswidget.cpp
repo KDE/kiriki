@@ -12,9 +12,9 @@
 #include <QPainter>
 #include <QMouseEvent>
 
-#include <kapplication.h>
 #include <kpixmap.h>
 #include <kpixmapeffect.h>
+#include <krandom.h>
 #include <kstandarddirs.h>
 
 #include "diceswidget.h"
@@ -197,7 +197,7 @@ bool dicesWidget::generateDices()
 	{
 		if (m_rollDice[i])
 		{
-			m_dice[i] = 1 + (int)(6.0 * kapp->random() / (RAND_MAX + 1.0));
+			m_dice[i] = 1 + (int)(6.0 * KRandom::random() / (RAND_MAX + 1.0));
 			m_rollDice[i] = false;
 			any = true;
 		}
