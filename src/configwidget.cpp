@@ -7,7 +7,7 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <kaccelmanager.h>
+#include <kacceleratormanager.h>
 
 #include "configwidget.h"
 
