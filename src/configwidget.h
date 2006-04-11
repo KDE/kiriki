@@ -12,7 +12,7 @@
 
 #include <QWidget>
 
-#include "configPage.h"
+#include "ui_configPage.h"
 
 class configWidget : public QWidget, private Ui::configPage
 {
