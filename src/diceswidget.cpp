@@ -208,7 +208,7 @@ bool dicesWidget::generateDices()
 int dicesWidget::getSimilar(int number) const
 {
 	int n = 0;
-	for (int i = 0; i < 6; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		if (m_dice[i] == number) n++;
 	}
