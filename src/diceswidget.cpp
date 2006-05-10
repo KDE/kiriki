@@ -10,9 +10,9 @@
 #include <stdlib.h>
 
 #include <QPainter>
+#include <QPixmap>
 #include <QMouseEvent>
 
-#include <kpixmap.h>
 #include <kpixmapeffect.h>
 #include <krandom.h>
 #include <kstandarddirs.h>
@@ -166,7 +166,7 @@ void dicesWidget::paintEvent(QPaintEvent *)
 	QPainter p(this);
 	for (int i = 0; i < 5; i++)
 	{
-		KPixmap pixmap(m_rollDice[i] ? m_images[0] : m_images[m_dice[i]]);
+		QPixmap pixmap(m_rollDice[i] ? m_images[0] : m_images[m_dice[i]]);
 		// TODO need suggestions
 //		if (!m_enabled) pixmap = KPixmapEffect::toGray(pixmap, false);
 		
