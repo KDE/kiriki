@@ -1,5 +1,3 @@
-kde4_header()
-
 install_files(/share/apps/kiriki/images FILES
    dice-1.png
    dice-2.png
@@ -9,8 +7,6 @@ install_files(/share/apps/kiriki/images FILES
    dice-6.png
    dice-none.png
 )
-
-kde4_footer()
 
 #original Makefile.am contents follow:
 

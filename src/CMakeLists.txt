@@ -1,8 +1,3 @@
-kde4_header()
-
-include_directories(${KDE4_INCLUDE_DIR} ${QT_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR})
-
-########### next target ###############
 
 set(kiriki_SRCS 
    main.cpp 
@@ -30,8 +25,6 @@ install_targets(/bin kiriki)
 ########### install files ###############
 
 install_files(/share/apps/kiriki FILES kirikiui.rc)
-
-kde4_footer()
 
 #original Makefile.am contents follow:
 
