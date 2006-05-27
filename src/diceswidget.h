@@ -24,7 +24,7 @@ class dicesWidget : public QWidget
 		void rollAll();
 
 		int getDice(int dice) const;
-		void dicesWidget::selectDice(int dice, bool select);
+		void selectDice(int dice, bool select);
 		
 		int getOnes() const;
 		int getTwos() const;
