@@ -138,7 +138,7 @@ void lateralWidget::roll()
 
 void lateralWidget::updateRollLabel()
 {
-	m_rolls -> setText(i18n("Roll %1 of 3").arg(m_roll));
+	m_rolls -> setText(i18n("Roll %1 of 3",m_roll));
 	setEnabled(m_roll != 3);
 }
 
