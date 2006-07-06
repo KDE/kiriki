@@ -23,13 +23,13 @@ dicesWidget::dicesWidget(QWidget *parent) : QWidget(parent)
 {
 	setMinimumSize(90, 450);
 	
-	m_images[0] = QPixmap(locate("appdata", "images/dice-none.png"));
-	m_images[1] = QPixmap(locate("appdata", "images/dice-1.png"));
-	m_images[2] = QPixmap(locate("appdata", "images/dice-2.png"));
-	m_images[3] = QPixmap(locate("appdata", "images/dice-3.png"));
-	m_images[4] = QPixmap(locate("appdata", "images/dice-4.png"));
-	m_images[5] = QPixmap(locate("appdata", "images/dice-5.png"));
-	m_images[6] = QPixmap(locate("appdata", "images/dice-6.png"));
+	m_images[0] = QPixmap(KStandardDirs::locate("appdata", "images/dice-none.png"));
+	m_images[1] = QPixmap(KStandardDirs::locate("appdata", "images/dice-1.png"));
+	m_images[2] = QPixmap(KStandardDirs::locate("appdata", "images/dice-2.png"));
+	m_images[3] = QPixmap(KStandardDirs::locate("appdata", "images/dice-3.png"));
+	m_images[4] = QPixmap(KStandardDirs::locate("appdata", "images/dice-4.png"));
+	m_images[5] = QPixmap(KStandardDirs::locate("appdata", "images/dice-5.png"));
+	m_images[6] = QPixmap(KStandardDirs::locate("appdata", "images/dice-6.png"));
 	
 	rollAll();
 }
