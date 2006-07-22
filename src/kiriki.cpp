@@ -39,6 +39,7 @@ kiriki::kiriki() : KMainWindow()
 	m_scoresWidget = new QTreeView(w);
 	m_scoresWidget -> setAlternatingRowColors(true);
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
+	m_scoresWidget -> setRootIsDecorated(false);
 	connect(m_scoresWidget, SIGNAL(pressed(const QModelIndex &)), this, SLOT(pressed(const QModelIndex &)));
 	lay -> addWidget(m_scoresWidget, 1);
 	
