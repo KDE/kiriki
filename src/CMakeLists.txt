@@ -22,10 +22,10 @@ kde4_add_executable(kiriki ${kiriki_SRCS})
 
 target_link_libraries(kiriki ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} kdegames)
 
-install_targets(/bin kiriki)
+install(TARGETS kiriki DESTINATION ${BIN_INSTALL_DIR})
 
 
 ########### install files ###############
 
-install_files(/share/apps/kiriki FILES kirikiui.rc)
+install(FILES kirikiui.rc DESTINATION ${DATA_INSTALL_DIR}/apps/kiriki )
 
