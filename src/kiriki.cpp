@@ -40,6 +40,8 @@ kiriki::kiriki() : KMainWindow()
 	m_scoresWidget -> setAlternatingRowColors(true);
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
 	m_scoresWidget -> setRootIsDecorated(false);
+	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);
+	m_scoresWidget -> header() -> setMovable(false);
 	connect(m_scoresWidget, SIGNAL(pressed(const QModelIndex &)), this, SLOT(pressed(const QModelIndex &)));
 	lay -> addWidget(m_scoresWidget, 1);
 	
@@ -93,19 +95,8 @@ void kiriki::newGame()
 	m_scoresWidget -> setModel(m_scores);
 	m_lateral -> nextTurn();
 
-	int hWidth = 0;
-	m_scoresWidget -> header() -> setStretchLastSection(false);
-	for (int i = 0; i < m_scores -> columnCount(QModelIndex()); i++)
-	{
-		m_scoresWidget -> resizeColumnToContents(i);
-		hWidth += m_scoresWidget -> header() -> sectionSize(i);
-	}
-	m_scoresWidget -> header() -> setMovable(false);
-	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Custom);
-	m_scoresWidget -> setMinimumSize(hWidth, 0);
-	m_scoresWidget -> header() -> setStretchLastSection(true);
-//	m_scoresWidget -> setMaximumSize(hWidth + 5, 0);
-//	setFixedSize(hWidth + 5 + sizeHint().width() - m_scoresWidget -> sizeHint().width(), sizeHint().height());
+	m_scoresWidget -> header() -> setResizeMode(0, QHeaderView::Custom);
+	m_scoresWidget -> resizeColumnToContents(0);
 }
 
 void kiriki::endGame()
