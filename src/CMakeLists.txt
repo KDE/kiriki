@@ -27,5 +27,5 @@ install(TARGETS kiriki DESTINATION ${BIN_INSTALL_DIR})
 
 ########### install files ###############
 
-install(FILES kirikiui.rc DESTINATION ${DATA_INSTALL_DIR}/apps/kiriki )
+install(FILES kirikiui.rc DESTINATION ${DATA_INSTALL_DIR}/kiriki )
 

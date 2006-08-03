@@ -5,6 +5,6 @@ install(FILES
    dice-4.png
    dice-5.png
    dice-6.png
-   dice-none.png DESTINATION ${DATA_INSTALL_DIR}/apps/kiriki/images
+   dice-none.png DESTINATION ${DATA_INSTALL_DIR}/kiriki/images
 )
 
