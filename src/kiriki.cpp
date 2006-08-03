@@ -37,7 +37,6 @@ kiriki::kiriki() : KMainWindow()
 	lay -> addWidget(m_lateral);
 	
 	m_scoresWidget = new QTreeView(w);
-	m_scoresWidget -> setAlternatingRowColors(true);
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
 	m_scoresWidget -> setRootIsDecorated(false);
 	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);

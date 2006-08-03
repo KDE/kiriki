@@ -8,6 +8,7 @@
  ***************************************************************************/
 
 #include <QFont>
+#include <QPalette>
 
 #include <klocale.h>
 
@@ -87,7 +88,7 @@ const player &scores::winner() const
 
 int scores::rowCount(const QModelIndex &/*index*/) const
 {
-	return 18;
+	return 19;
 }
 
 int scores::columnCount(const QModelIndex &/*index*/) const
@@ -103,13 +104,39 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	column = index.column();
 	row = index.row();
 	
-	if (row == 8) return QVariant();
 	if (role == Qt::FontRole)
 	{
 		QFont f;
-		if (row == 6 || row == 7 || row == 16 || row == 17) f.setBold(true);
+		if (row == 6 || row == 7 || row == 16 || row == 18) f.setBold(true);
+		if (row == 18) f.setPointSize(f.pointSize() + 5);
 		return f;
 	}
+	else if (role == Qt::BackgroundColorRole)
+	{
+		QPalette p;
+		QColor c;
+		if (column % 2 == 0)
+		{
+			c = p.alternateBase().color();
+			if (row % 2) c = c.dark(105);
+		}
+		else
+		{
+			if (row % 2 == 0) c = p.base().color();
+			else c = p.alternateBase().color();
+		}
+		
+		if (row == 18) c = p.highlight().color().light();
+		return c;
+	}
+	else if (role == Qt::TextAlignmentRole)
+	{
+		if (column != 0) return Qt::AlignCenter;
+	}
+	
+	if (row == 8) return QVariant();
+	if (row == 17) return QVariant();
+	
 	if (role != Qt::DisplayRole) return QVariant();
 	
 	if (column == 0)
@@ -180,7 +207,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 				return i18n("Lower Total");
 			break;
 			
-			case 17:
+			case 18:
 				return i18n("Grand Total");
 			break;
 			
@@ -197,7 +224,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	if (row == 7) score = p.upperTotal(true);
 	if (row > 7 && row < 16) score = p.score(row - 3);
 	if (row == 16) score = p.lowerTotal();
-	if (row == 17) score = p.grandTotal();
+	if (row == 18) score = p.grandTotal();
 	
 	if (score < 0) return QVariant();
 	else return QString::number(score);
@@ -216,7 +243,7 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 	if (role != Qt::EditRole) return false;
 	
 	int row = mi.row();
-	if (row == 6 || row == 7 || row == 8 || row == 16 || row == 17) return false; 
+	if (row == 6 || row == 7 || row == 8 || row == 16 || row == 18) return false; 
 	
 	if (row < 6)
 	{
@@ -224,7 +251,7 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 		m_players[m_currentPlayer].setScore(row, value.toInt());
 		emit dataChanged(mi, mi);
 		emit dataChanged(index(m_currentPlayer + 1, 6), index(m_currentPlayer + 1, 7));
-		emit dataChanged(index(m_currentPlayer + 1, 17), index(m_currentPlayer + 1, 17));
+		emit dataChanged(index(m_currentPlayer + 1, 18), index(m_currentPlayer + 1, 18));
 	}
 	else
 	{
@@ -248,7 +275,7 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 		}
 		
 		emit dataChanged(mi, mi);
-		emit dataChanged(index(m_currentPlayer + 1, 16), index(m_currentPlayer + 1, 17));
+		emit dataChanged(index(m_currentPlayer + 1, 16), index(m_currentPlayer + 1, 18));
 	}
 	
 	return true;
