@@ -8,6 +8,7 @@
  ***************************************************************************/
 
 #include <QFont>
+#include <QPainter>
 #include <QPalette>
 
 #include <klocale.h>
@@ -279,4 +280,67 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 	}
 	
 	return true;
+}
+
+void scores::print(QPainter &painter, double width, double height) const
+{
+	QFont f;
+	QFontMetrics fm(f);
+	double margin = width * 0.1;
+	double widthToUse = width - 2.0 * margin;
+	double fontHeight;
+	double heightToUse;
+	bool continueFindingFont = true;
+	while (continueFindingFont)
+	{
+		fontHeight = fm.height();
+		heightToUse = 40.0 * fontHeight;
+		if ( heightToUse < height - 2.0 * margin )
+		{
+			continueFindingFont = false;
+		}
+		else
+		{
+			f.setPointSize(f.pointSize() - 1);
+			fm = QFontMetrics(f);
+		}
+	}
+	
+	double cellWidth = widthToUse / (double)(m_players.count() + 1);
+	double cellHeight = fontHeight * 2.0;
+	
+	painter.drawRect( QRectF( margin, margin, widthToUse, heightToUse ) );
+	for (int i = 1; i <= 20; ++i)
+	{
+		painter.drawLine( QPointF(margin, margin + i * cellHeight), QPointF(margin + widthToUse, margin + i * cellHeight) );
+	}
+		
+	for (int i = 1; i <= m_players.count() + 1; ++i)
+	{
+		painter.drawLine( QPointF(margin + i * cellWidth, margin), QPointF(margin + i * cellWidth, margin + heightToUse) );
+	}
+	
+	// write the names
+	for (int i = 1; i <= m_players.count(); ++i)
+	{
+		QRectF cell(margin + i * cellWidth, margin, cellWidth, cellHeight);
+		painter.drawText( cell, Qt::AlignCenter, m_players[i-1].name() );
+	}
+	
+	// write the plays
+	for (int i = 1; i <= 20; ++i)
+	{
+		QRectF cell(margin, margin + i * cellHeight, cellWidth, cellHeight);
+		painter.drawText( cell, Qt::AlignCenter, data( index(i-1, 0), Qt::DisplayRole ).toString() );
+	}
+	
+	// write the scores
+	for (int i = 1; i <= m_players.count(); ++i)
+	{
+		for (int j = 1; j <= 20; ++j)
+		{
+			QRectF cell(margin + i * cellWidth, margin + j * cellHeight, cellWidth, cellHeight);
+			painter.drawText( cell, Qt::AlignCenter, data( index(j-1, i), Qt::DisplayRole ).toString() );
+		}
+	}
 }

@@ -11,12 +11,14 @@
 
 #include <QHBoxLayout>
 #include <QHeaderView>
+#include <QPainter>
 #include <QTimer>
 #include <QTreeView>
 
 #include <kapplication.h>
 #include <kconfigdialog.h>
 #include <kmessagebox.h>
+#include <kprinter.h>
 #include <kscoredialog.h>
 #include <kstdaction.h>
 #include <kstdgameaction.h>
@@ -48,6 +50,7 @@ kiriki::kiriki() : KMainWindow()
 	
 	KStdGameAction::gameNew(this, SLOT(newGame()), actionCollection(), "newGame");
 	KStdGameAction::highscores(this, SLOT(showHighScores()), actionCollection(), "showHS");
+	KStdGameAction::print(this, SLOT(print()), actionCollection(), "print");
 	KStdGameAction::quit(kapp, SLOT(quit()), actionCollection(), "quit");
 	KStdAction::preferences(this, SLOT(showPreferences()), actionCollection());
 	
@@ -156,6 +159,17 @@ void kiriki::showPreferences()
 	if (changed)
 	{
 		KMessageBox::information(this, i18n("Changes will be applied on next game."));
+	}
+}
+
+void kiriki::print()
+{
+	KPrinter printer;
+	printer.setFullPage( true );
+	if ( printer.setup( this ) )
+	{
+		QPainter painter(&printer);
+		m_scores->print(painter, printer.width(), printer.height());
 	}
 }
 

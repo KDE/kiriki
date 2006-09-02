@@ -20,7 +20,7 @@ kde4_add_kcfg_files(kiriki_SRCS settings.kcfgc)
 
 kde4_add_executable(kiriki ${kiriki_SRCS})
 
-target_link_libraries(kiriki ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} kdegames)
+target_link_libraries(kiriki ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_KDEPRINT_LIBS} kdegames)
 
 install(TARGETS kiriki DESTINATION ${BIN_INSTALL_DIR})
 

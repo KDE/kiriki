@@ -29,6 +29,7 @@ Q_OBJECT
 		void pressed(const QModelIndex &index);
 		void showHighScores();
 		void showPreferences();
+		void print();
 		void playComputer();
 	
 	private:
