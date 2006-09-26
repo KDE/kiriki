@@ -21,7 +21,7 @@ class lateralWidget : public QWidget
 {
 Q_OBJECT
 	public:
-		lateralWidget(QWidget *parent);
+		explicit lateralWidget(QWidget *parent);
 
 		void nextTurn();		
 

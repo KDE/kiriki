@@ -318,7 +318,7 @@ BuildTable(const player &p, int NumberOfRolls)
 **	if less than 3, we make it less attractive.
 **	if our overflow (any that are more than 3, summed up) covers up
 **		our lack (if we only have 2, and there were 4 6's), we
-**		dont penalize ourselves as much (since we're still in the
+**		do not penalize ourselves as much (since we're still in the
 **		running for a bonus)
 */
 

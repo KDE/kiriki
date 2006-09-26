@@ -16,7 +16,7 @@
 class dicesWidget : public QWidget
 {
 	public:
-		dicesWidget(QWidget *parent);
+		explicit dicesWidget(QWidget *parent);
 		
 		void setEnabled(bool enabled);
 		
