@@ -77,6 +77,11 @@ const player &scores::currentPlayer() const
 	return m_players.at(m_currentPlayer);
 }
 
+int scores::currentPlayerNumber() const
+{
+	return m_currentPlayer;
+}
+
 const player &scores::winner() const
 {
 	int best = 0;

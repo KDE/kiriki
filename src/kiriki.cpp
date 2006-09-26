@@ -65,7 +65,7 @@ void kiriki::pressed(const QModelIndex &index)
 {
 	if (!m_scores -> currentPlayer().isHuman()) return;
 
-	play(index);
+	if (index.column() == 0 || index.column() == m_scores -> currentPlayerNumber() + 1) play(index);
 }
 
 void kiriki::play(const QModelIndex &index)

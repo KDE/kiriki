@@ -23,6 +23,7 @@ class scores : public QAbstractTableModel
 
 		void nextPlayer();
 		const player &currentPlayer() const;
+		int currentPlayerNumber() const;
 		const player &winner() const;
 		
 		int rowCount(const QModelIndex &index) const;
