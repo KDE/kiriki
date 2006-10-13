@@ -16,7 +16,7 @@ kde4_automoc(kiriki ${kiriki_SRCS})
 
 kde4_add_ui_files(kiriki_SRCS configPage.ui)
 
-kde4_add_kcfg_files(kiriki_SRCS settings.kcfgc)
+kde4_add_kcfg_files(kiriki kiriki_SRCS settings.kcfgc)
 
 kde4_add_executable(kiriki ${kiriki_SRCS})
 
