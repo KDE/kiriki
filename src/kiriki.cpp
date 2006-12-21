@@ -20,7 +20,7 @@
 #include <kmessagebox.h>
 #include <kprinter.h>
 #include <kscoredialog.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 #include <kstdgameaction.h>
 
 #include "computer.h"
@@ -52,7 +52,7 @@ kiriki::kiriki() : KMainWindow()
 	KStdGameAction::highscores(this, SLOT(showHighScores()), actionCollection(), "showHS");
 	KStdGameAction::print(this, SLOT(print()), actionCollection(), "print");
 	KStdGameAction::quit(kapp, SLOT(quit()), actionCollection(), "quit");
-	KStdAction::preferences(this, SLOT(showPreferences()), actionCollection());
+	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
 	
 	setCentralWidget(w);
 	setupGUI(Keys | Save | Create);
