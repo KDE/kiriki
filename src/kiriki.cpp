@@ -22,6 +22,7 @@
 #include <kscoredialog.h>
 #include <kstandardaction.h>
 #include <kstandardgameaction.h>
+#include <kactioncollection.h>
 
 #include "computer.h"
 #include "configwidget.h"
@@ -48,10 +49,14 @@ kiriki::kiriki() : KMainWindow()
 	
 	m_scores = 0;
 	
-	KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection(), "newGame");
-	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection(), "showHS");
-	KStandardGameAction::print(this, SLOT(print()), actionCollection(), "print");
-	KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection(), "quit");
+	QAction * a = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
+	actionCollection()->addAction("newGame", a);
+	a = KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
+	actionCollection()->addAction("showHS",a);
+	a = KStandardGameAction::print(this, SLOT(print()), actionCollection());
+        actionCollection()->addAction("print",a);
+	a = KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
+	actionCollection()->addAction("quit", a);
 	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
 	
 	setCentralWidget(w);
