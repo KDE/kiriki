@@ -1,7 +1,4 @@
 
-remove_definitions(-DQT3_SUPPORT_WARNINGS)
-remove_definitions(-DQT3_SUPPORT)
-
 set(kiriki_SRCS 
    main.cpp 
    kiriki.cpp 
