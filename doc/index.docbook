@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kiriki "<application>Kiriki</application>">
+  <!ENTITY kappname "&kiriki;">
+  <!ENTITY package "kdegames">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE" > <!-- change language only here -->
+]>
+
+<book lang="&language;">
+	<bookinfo>
+		<title>The &kiriki; Handbook</title>
+
+		<authorgroup>
+			<author>
+				<firstname>Albert</firstname>
+				<surname>Astals Cid</surname>
+			</author>
+
+			<!-- TRANS:ROLES_OF_TRANSLATORS -->
+		</authorgroup>
+
+		<copyright>
+			<year>2007</year>
+			<holder>&Albert.Astals.Cid;</holder>
+		</copyright>
+
+		<date>2007-03-04</date>
+		<releaseinfo>0.1</releaseinfo>
+
+		<abstract>
+			<para>&kiriki; is a dice game for &kde;</para>
+		</abstract>
+
+		<keywordset>
+			<keyword>KDE</keyword>
+			<keyword>game</keyword>
+			<keyword>dice</keyword>
+		</keywordset>
+	</bookinfo>
+
+	<chapter id="introduction">
+		<title>Introduction</title>
+
+		<para>
+			Kiriki is a dice game for &kde;. It is a clone of Yahtzee.
+		</para>
+
+		<para>
+			It features from two to six players (human or artificial intelligence driven).
+		</para>
+	</chapter>
+
+	<chapter id="rules">
+		<title>Rules</title>
+
+		<para>
+			The game is played in turns. Each turn the player gets 3 rolls of dices, that is
+			the initial roll plus two additional rolls. Before each additional roll the player can select which dices to roll again by clicking on them. Clicking the Roll button with roll the selected dices.
+		</para>
+
+		<para>
+			Once the three rolls have been exhausted or when the player decides his dices are good enough, the player has to assign his dices to one of the fields. This is done by clicking on the row and column of the desired field.
+		</para>
+
+		<para>
+			There are fourteen different fields, the score for each is calculated as follows:
+			<itemizedlist>
+				<listitem><para>1s: The number of dices with 1.</para></listitem>
+				<listitem><para>2s: 2 * The number of dices with 2.</para></listitem>
+				<listitem><para>3s: 3 * The number of dices with 3.</para></listitem>
+				<listitem><para>4s: 4 * The number of dices with 4.</para></listitem>
+				<listitem><para>5s: 5 * The number of dices with 5.</para></listitem>
+				<listitem><para>6s: 6 * The number of dices with 6.</para></listitem>
+				<listitem><para>Bonus if > 62: 35 points if the previous fields sum more than 62.</para></listitem>
+				<listitem><para>3 of a Kind: Sum of the dices if there are three dices with the same value.</para></listitem>
+				<listitem><para>4 of a Kind: Sum of the dices if there are four dices with the same value.</para></listitem>
+				<listitem><para>Full House: 25 points if there are three dices with the same value and two with the same value (different from the other).</para></listitem>
+				<listitem><para>Small Straight: 30 points if there are four dices with consecutive values.</para></listitem>
+				<listitem><para>Large Straight: 40 points if there are five dices with consecutive values.</para></listitem>
+				<listitem><para>Kiriki: 50 points and a additional turn if there are five dices with the same value.</para></listitem>
+				<listitem><para>Change: The sum of the dices' values.</para></listitem>
+			</itemizedlist>
+		</para>
+
+		<para>
+			When all players have exhausted their turns, the game ends. The player with the biggest score wins.
+		</para>
+	</chapter>
+
+	<chapter id="credits">
+		<title>Credits and License</title>
+
+		<para>
+			&kiriki; Copyright 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail;
+		</para>
+
+		<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+
+		&underGPL;
+	</chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+
