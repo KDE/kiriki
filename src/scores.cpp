@@ -264,7 +264,7 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 		if (row == 14)
 		{
 			// Kiriki can be acumulated
-			if (m_players[m_currentPlayer].score(11) > 0)
+			if (m_players[m_currentPlayer].score(11) > 0 && value.toInt() > 0)
 			{
 				m_players[m_currentPlayer].setScore(11, m_players[m_currentPlayer].score(11) + value.toInt());
 			}
