@@ -44,6 +44,7 @@ kiriki::kiriki() : KMainWindow()
 	m_scoresWidget -> setRootIsDecorated(false);
 	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);
 	m_scoresWidget -> header() -> setMovable(false);
+	m_scoresWidget -> header() -> setStretchLastSection(false);
 	connect(m_scoresWidget, SIGNAL(pressed(const QModelIndex &)), this, SLOT(pressed(const QModelIndex &)));
 	lay -> addWidget(m_scoresWidget, 1);
 	
