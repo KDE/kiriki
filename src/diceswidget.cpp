@@ -7,6 +7,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "diceswidget.h"
+
 #include <stdlib.h>
 
 #include <QPainter>
@@ -16,8 +18,6 @@
 #include <kpixmapeffect.h>
 #include <krandom.h>
 #include <kstandarddirs.h>
-
-#include "diceswidget.h"
 
 dicesWidget::dicesWidget(QWidget *parent) : QWidget(parent)
 {

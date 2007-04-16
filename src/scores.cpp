@@ -7,13 +7,14 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "scores.h"
+
 #include <QFont>
 #include <QPainter>
 #include <QPalette>
 
 #include <klocale.h>
 
-#include "scores.h"
 #include "settings.h"
 
 scores::scores()

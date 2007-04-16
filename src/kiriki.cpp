@@ -7,6 +7,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "kiriki.h"
+
 #include <stdlib.h>
 
 #include <QHBoxLayout>
@@ -26,7 +28,6 @@
 
 #include "computer.h"
 #include "configwidget.h"
-#include "kiriki.h"
 #include "lateralwidget.h"
 #include "scores.h"
 #include "settings.h"

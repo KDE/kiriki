@@ -7,9 +7,9 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <kacceleratormanager.h>
-
 #include "configwidget.h"
+
+#include <kacceleratormanager.h>
 
 configWidget::configWidget(QWidget *parent) : QWidget(parent)
 {

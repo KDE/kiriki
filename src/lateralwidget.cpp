@@ -7,6 +7,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "lateralwidget.h"
+
 #include <QLabel>
 #include <QPushButton>
 #include <QVBoxLayout>
@@ -14,7 +16,6 @@
 #include <klocale.h>
 
 #include "diceswidget.h"
-#include "lateralwidget.h"
 
 lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
 {
