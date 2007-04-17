@@ -116,7 +116,7 @@ void kiriki::endGame()
 	if (p.isHuman())
 	{
 		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
-		if (sc.addScore(p.grandTotal(), KScoreDialog::FieldInfo()))
+		if (sc.addScore(p.grandTotal()))
 		{
 			sc.exec();
 		}
