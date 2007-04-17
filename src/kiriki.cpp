@@ -32,7 +32,7 @@
 #include "scores.h"
 #include "settings.h"
 
-kiriki::kiriki() : KMainWindow()
+kiriki::kiriki() : KXmlGuiWindow()
 {
 	QWidget *w = new QWidget(this);
 	QHBoxLayout *lay = new QHBoxLayout(w);

@@ -10,7 +10,7 @@
 #ifndef KIRIKI_H
 #define KIRIKI_H
  
-#include <kmainwindow.h>
+#include <kxmlguiwindow.h>
 
 class QModelIndex;
 class QTreeView;
@@ -18,7 +18,7 @@ class QTreeView;
 class lateralWidget;
 class scores;
 
-class kiriki : public KMainWindow
+class kiriki : public KXmlGuiWindow
 {
 Q_OBJECT
 	public:

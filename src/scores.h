@@ -13,7 +13,7 @@
 #include <QAbstractTableModel>
 
 #include "player.h"
-
+class QPainter;
 class scores : public QAbstractTableModel
 {
 	public:
