@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Kiriki
+Icon=kiriki
+Type=Application
+Exec=kiriki -caption "%c"
+DocPath=kiriki/index.html
+GenericName=Yahtzee-like Dice Game
+X-KDE-StartupNotify=true
+X-DBUS-StartupType=Multi
+Categories=Qt;KDE;Game;BoardGame;

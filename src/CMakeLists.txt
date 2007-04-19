@@ -27,4 +27,4 @@ install(TARGETS kiriki DESTINATION ${BIN_INSTALL_DIR})
 ########### install files ###############
 
 install(FILES kirikiui.rc DESTINATION ${DATA_INSTALL_DIR}/kiriki )
-
+install(FILES kiriki.desktop  DESTINATION  ${XDG_APPS_DIR} )
