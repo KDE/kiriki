@@ -25,6 +25,7 @@
 #include <kstandardaction.h>
 #include <kstandardgameaction.h>
 #include <kactioncollection.h>
+#include <kaction.h>
 
 #include "computer.h"
 #include "configwidget.h"
