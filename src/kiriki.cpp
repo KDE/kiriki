@@ -148,7 +148,8 @@ void kiriki::showPreferences()
 	bool player5IsHuman = kirikiSettings::player5IsHuman();
 	bool player6IsHuman = kirikiSettings::player6IsHuman();
 	
-	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self(), KConfigDialog::Plain);
+	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
+	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
 	configDialog -> exec();
 	delete configDialog;
