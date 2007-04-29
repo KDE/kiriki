@@ -1,11 +1,13 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Kiriki
+Name[x-test]=xxKirikixx
 Icon=kiriki
 Type=Application
 Exec=kiriki -caption "%c"
 DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
+GenericName[x-test]=xxYahtzee-like Dice Gamexx
 X-KDE-StartupNotify=true
 X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Game;BoardGame;
