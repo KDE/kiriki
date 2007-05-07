@@ -231,6 +231,22 @@
   </layout>
  </widget>
  <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>kcfg_numberOfPlayers</tabstop>
+  <tabstop>kcfg_player1Name</tabstop>
+  <tabstop>player1IsHuman</tabstop>
+  <tabstop>kcfg_player2Name</tabstop>
+  <tabstop>kcfg_player2IsHuman</tabstop>
+  <tabstop>kcfg_player3Name</tabstop>
+  <tabstop>kcfg_player3IsHuman</tabstop>
+  <tabstop>kcfg_player4Name</tabstop>
+  <tabstop>kcfg_player4IsHuman</tabstop>
+  <tabstop>kcfg_player5Name</tabstop>
+  <tabstop>kcfg_player5IsHuman</tabstop>
+  <tabstop>kcfg_player6Name</tabstop>
+  <tabstop>kcfg_player6IsHuman</tabstop>
+  <tabstop>kcfg_waitTime</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
