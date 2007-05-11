@@ -54,13 +54,13 @@ kiriki::kiriki() : KXmlGuiWindow()
 	m_scores = 0;
 	
 	QAction * a = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
-	actionCollection()->addAction("newGame", a);
+	actionCollection()->addAction(a->objectName(), a);
 	a = KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
-	actionCollection()->addAction("showHS",a);
+	actionCollection()->addAction(a->objectName(),a);
 	a = KStandardGameAction::print(this, SLOT(print()), actionCollection());
-        actionCollection()->addAction("print",a);
+        actionCollection()->addAction(a->objectName(),a);
 	a = KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
-	actionCollection()->addAction("quit", a);
+	actionCollection()->addAction(a->objectName(), a);
 	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
 	
 	setCentralWidget(w);
