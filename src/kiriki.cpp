@@ -54,13 +54,13 @@ kiriki::kiriki() : KXmlGuiWindow()
 	m_scores = 0;
 	
 	// Game
-  KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
+	KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
 	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
 	KStandardGameAction::print(this, SLOT(print()), actionCollection());
 	KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
 	
-  // Preferences
-  KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
+	// Preferences
+	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
 	
 	setCentralWidget(w);
 	setupGUI(Keys | Save | Create);
