@@ -1,5 +1,0 @@
-Kiriki - a gtali clone for KDE4
-
-Kiriki is a clone of the GNOME Tali game for the KDE4 desktop environment.
-
-The rationale behind this cloning is not having to load gtk/gnome/wathever libraries to play a gtali-like game.
