@@ -48,6 +48,14 @@ kiriki::kiriki() : KXmlGuiWindow()
 	m_scoresWidget -> header() -> setMovable(false);
 	m_scoresWidget -> header() -> setStretchLastSection(false);
 	m_scoresWidget -> setItemsExpandable(false);
+
+	// set minimum section size so that you don't get ... when making the widget small
+	QFont f = m_scoresWidget -> font();
+	f.setBold(true);
+	f.setPointSize(f.pointSize() + 5);
+	QFontMetrics fm(f);
+	m_scoresWidget -> header() -> setMinimumSectionSize(fm.width("9999"));
+
 	connect(m_scoresWidget, SIGNAL(pressed(const QModelIndex &)), this, SLOT(pressed(const QModelIndex &)));
 	lay -> addWidget(m_scoresWidget, 1);
 	
