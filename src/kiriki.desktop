@@ -8,6 +8,7 @@ Exec=kiriki -caption "%c"
 DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
 GenericName[el]=Παιχνίδι με ζάρια παρόμοιο με το Yahtzee
+GenericName[es]=Juego de dados similar al Yahtzee
 GenericName[ja]=ヤッツィーのようなダイスゲーム
 GenericName[x-test]=xxYahtzee-like Dice Gamexx
 X-KDE-StartupNotify=true
