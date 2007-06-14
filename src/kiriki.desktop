@@ -11,6 +11,7 @@ GenericName[el]=Παιχνίδι με ζάρια παρόμοιο με το Yaht
 GenericName[es]=Juego de dados similar al Yahtzee
 GenericName[ja]=ヤッツィーのようなダイスゲーム
 GenericName[x-test]=xxYahtzee-like Dice Gamexx
+GenericName[zh_TW]=類似 Yahtzee 的骰子遊戲
 X-KDE-StartupNotify=true
 X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Game;BoardGame;
