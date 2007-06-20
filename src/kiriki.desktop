@@ -12,6 +12,7 @@ GenericName[es]=Juego de dados similar al Yahtzee
 GenericName[ja]=ヤッツィーのようなダイスゲーム
 GenericName[pt]=Jogo de Dados tipo Yahtzee
 GenericName[pt_BR]=Jogo de Dados tipo Yahtzee
+GenericName[sv]=Yatzy-liknande tärningsspel
 GenericName[x-test]=xxYahtzee-like Dice Gamexx
 GenericName[zh_TW]=類似 Yahtzee 的骰子遊戲
 X-KDE-StartupNotify=true
