@@ -16,8 +16,8 @@
 
 int main(int argc, char *argv[])
 {
-	KAboutData about("kiriki", I18N_NOOP("Kiriki"), "0.1", I18N_NOOP("A Yahtzee dice game for KDE"), KAboutData::License_GPL, "© 2005-2007 Albert Astals Cid");
-	about.addAuthor("Albert Astals Cid", "", "aacid@kde.org");
+	KAboutData about("kiriki", 0, ki18n("Kiriki"), "0.1", ki18n("A Yahtzee dice game for KDE"), KAboutData::License_GPL, ki18n("© 2005-2007 Albert Astals Cid"));
+	about.addAuthor(ki18n("Albert Astals Cid"), KLocalizedString(), "aacid@kde.org");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;
 	app.setTopWidget(new kiriki());
