@@ -1,5 +1,5 @@
 
-include_directories( ${CMAKE_SOURCE_DIR}/libkdegames ${CMAKE_SOURCE_DIR}/libkdegames/highscore )
+include_directories( ${CMAKE_SOURCE_DIR}/libkdegames/highscore )
 
 set(kiriki_SRCS 
    main.cpp 
