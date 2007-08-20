@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Kiriki
+Name[ne]=किरिकि
 Name[x-test]=xxKirikixx
 Icon=kiriki
 Type=Application
@@ -12,6 +13,7 @@ GenericName[es]=Juego de dados similar al Yahtzee
 GenericName[fa]=بازی طاس شبیه Yahtzee
 GenericName[ga]=Cluiche Dísle cosúil le Yahtzee
 GenericName[ja]=ヤッツィーのようなダイスゲーム
+GenericName[ne]=याहेट्जी जस्तै पासा खेल
 GenericName[pt]=Jogo de Dados tipo Yahtzee
 GenericName[pt_BR]=Jogo de Dados tipo Yahtzee
 GenericName[sv]=Yatzy-liknande tärningsspel
