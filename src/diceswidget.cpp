@@ -15,7 +15,6 @@
 #include <QPixmap>
 #include <QMouseEvent>
 
-#include <kpixmapeffect.h>
 #include <krandom.h>
 #include <kstandarddirs.h>
 
@@ -168,7 +167,7 @@ void dicesWidget::paintEvent(QPaintEvent *)
 	{
 		QPixmap pixmap(m_rollDice[i] ? m_images[0] : m_images[m_dice[i]]);
 		// TODO need suggestions
-//		if (!m_enabled) pixmap = KPixmapEffect::toGray(pixmap, false);
+//		if (!m_enabled) pixmap = KPixmapEffect::toGray(pixmap, false); // should use QImageBlitz::grayscale() instead
 		
 		p.drawPixmap(5, 10 + (10 + 80) * i, pixmap);
 	}
