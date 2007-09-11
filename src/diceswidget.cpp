@@ -167,6 +167,7 @@ void dicesWidget::paintEvent(QPaintEvent *)
 	{
 		QPixmap pixmap(m_rollDice[i] ? m_images[0] : m_images[m_dice[i]]);
 		// TODO need suggestions
+		// if (!m_enabled) pixmap = KPixmapEffect::toGray(pixmap, false);
 		p.drawPixmap(5, 10 + (10 + 80) * i, pixmap);
 	}
 }
