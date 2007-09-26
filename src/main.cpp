@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 	about.addAuthor(ki18n("Albert Astals Cid"), KLocalizedString(), "aacid@kde.org");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;
+	KGlobal::locale()->insertCatalog("libkdegames");
 	app.setTopWidget(new kiriki());
 	return app.exec();
 }
