@@ -36,18 +36,13 @@
 kiriki::kiriki() : KXmlGuiWindow()
 {
 	// default names for players
-	KConfigGroup cg(KGlobal::config(), "General");
-	if (cg.readEntry<bool>("initializeNames", true)) {
-		kirikiSettings::setPlayer1Name(i18nc("default name of first player", "Albert"));
-		kirikiSettings::setPlayer2Name(i18nc("default name of second player", "Janet"));
-		kirikiSettings::setPlayer3Name(i18nc("default name of third player", "James"));
-		kirikiSettings::setPlayer4Name(i18nc("default name of fourth player", "Sandra"));
-		kirikiSettings::setPlayer5Name(i18nc("default name of fifth player", "Thomas"));
-		kirikiSettings::setPlayer6Name(i18nc("default name of sixth player", "Margaret"));
-		cg.writeEntry("initializeNames", false);
-	}
-
-
+	(void)I18N_NOOP2("default name of first player", "Albert");
+	(void)I18N_NOOP2("default name of second player", "Janet");
+	(void)I18N_NOOP2("default name of third player", "James");
+	(void)I18N_NOOP2("default name of fourth player", "Sandra");
+	(void)I18N_NOOP2("default name of fifth player", "Thomas");
+	(void)I18N_NOOP2("default name of sixth player", "Margaret");
+	
 	QWidget *w = new QWidget(this);
 	QHBoxLayout *lay = new QHBoxLayout(w);
 	
