@@ -4,6 +4,7 @@
       xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
 	<kcfgfile name="kirikirc" />
+	<include>klocale.h</include>
 	<group name="general">
 		<entry key="waitTime" type="Int" >
 			<default>0</default>
@@ -16,16 +17,40 @@
 			<max>6</max>
 		</entry>
 		<entry key="player1Name" type="String" >
+		<code>
+			QString playerName1 = i18nc("default name of first player", "Albert");
+		</code>
+		<default code="true">playerName1</default>
 		</entry>
 		<entry key="player2Name" type="String" >
+		<code>
+			QString playerName2 = i18nc("default name of second player", "Janet");
+		</code>
+		<default code="true">playerName2</default>
 		</entry>
 		<entry key="player3Name" type="String" >
+		<code>
+			QString playerName3 = i18nc("default name of third player", "James");
+		</code>
+		<default code="true">playerName3</default>
 		</entry>
 		<entry key="player4Name" type="String" >
+		<code>
+			QString playerName4 = i18nc("default name of fourth player", "Sandra");
+		</code>
+		<default code="true">playerName4</default>
 		</entry>
 		<entry key="player5Name" type="String" >
+		<code>
+			QString playerName5 = i18nc("default name of fifth player", "Thomas");
+		</code>
+		<default code="true">playerName5</default>
 		</entry>
 		<entry key="player6Name" type="String" >
+		<code>
+			QString playerName6 = i18nc("default name of sixth player", "Margaret");
+		</code>
+		<default code="true">playerName6</default>
 		</entry>
 		<entry key="player2IsHuman" type="Bool" >
 			<default>false</default>
