@@ -1,4 +1,4 @@
 ClassName=kirikiSettings
 File=kiriki.kcfg
-Mutators=false
+Mutators=true
 Singleton=true

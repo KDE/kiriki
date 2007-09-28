@@ -16,22 +16,16 @@
 			<max>6</max>
 		</entry>
 		<entry key="player1Name" type="String" >
-			<default>Albert</default>
 		</entry>
 		<entry key="player2Name" type="String" >
-			<default>Janet</default>
 		</entry>
 		<entry key="player3Name" type="String" >
-			<default>James</default>
 		</entry>
 		<entry key="player4Name" type="String" >
-			<default>Sandra</default>
 		</entry>
 		<entry key="player5Name" type="String" >
-			<default>Thomas</default>
 		</entry>
 		<entry key="player6Name" type="String" >
-			<default>Margaret</default>
 		</entry>
 		<entry key="player2IsHuman" type="Bool" >
 			<default>false</default>

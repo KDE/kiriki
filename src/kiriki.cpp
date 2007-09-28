@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005-2007 by Albert Astals Cid <aacid@kde.org>          *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -35,6 +35,19 @@
 
 kiriki::kiriki() : KXmlGuiWindow()
 {
+	// default names for players
+	KConfigGroup cg(KGlobal::config(), "General");
+	if (cg.readEntry<bool>("initializeNames", true)) {
+		kirikiSettings::setPlayer1Name(i18nc("default name of first player", "Albert"));
+		kirikiSettings::setPlayer2Name(i18nc("default name of second player", "Janet"));
+		kirikiSettings::setPlayer3Name(i18nc("default name of third player", "James"));
+		kirikiSettings::setPlayer4Name(i18nc("default name of fourth player", "Sandra"));
+		kirikiSettings::setPlayer5Name(i18nc("default name of fifth player", "Thomas"));
+		kirikiSettings::setPlayer6Name(i18nc("default name of sixth player", "Margaret"));
+		cg.writeEntry("initializeNames", false);
+	}
+
+
 	QWidget *w = new QWidget(this);
 	QHBoxLayout *lay = new QHBoxLayout(w);
 	
