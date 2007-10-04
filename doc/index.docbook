@@ -55,8 +55,8 @@
 		<title>Rules</title>
 
 		<para>
-			The game is played in turns. Each turn the player gets 3 rolls of dices, that is
-			the initial roll plus two additional rolls. Before each additional roll the player can select which dices to roll again by clicking on them. Clicking the Roll button with roll the selected dices.
+			The game is played in turns. Each turn the player gets 3 rolls of dices, that is,
+			the initial roll plus two additional rolls. Before each additional roll the player can select which dices to roll again by clicking on them. Clicking the Roll button will roll the selected dices.
 		</para>
 
 		<para>
@@ -79,7 +79,7 @@
 				<listitem><para>Small Straight: 30 points if there are four dices with consecutive values.</para></listitem>
 				<listitem><para>Large Straight: 40 points if there are five dices with consecutive values.</para></listitem>
 				<listitem><para>Kiriki: 50 points and a additional turn if there are five dices with the same value.</para></listitem>
-				<listitem><para>Change: The sum of the dices' values.</para></listitem>
+				<listitem><para>Chance: The sum of the dices' values.</para></listitem>
 			</itemizedlist>
 		</para>
 
