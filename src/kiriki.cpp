@@ -14,13 +14,14 @@
 #include <QHBoxLayout>
 #include <QHeaderView>
 #include <QPainter>
+#include <QPrintDialog>
+#include <QPrinter>
 #include <QTimer>
 #include <QTreeView>
 
 #include <kapplication.h>
 #include <kconfigdialog.h>
 #include <kmessagebox.h>
-#include <kprinter.h>
 #include <kscoredialog.h>
 #include <kstandardaction.h>
 #include <kstandardgameaction.h>
@@ -189,9 +190,10 @@ void kiriki::showPreferences()
 
 void kiriki::print()
 {
-	KPrinter printer;
+	QPrinter printer;
 	printer.setFullPage( true );
-	if ( printer.setup( this ) )
+	QPrintDialog printDialog(&printer, this);
+	if (printDialog.exec())
 	{
 		QPainter painter(&printer);
 		m_scores->print(painter, printer.width(), printer.height());
