@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005-2007 by Albert Astals Cid <aacid@kde.org>          *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -13,6 +13,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
+#include <kicon.h>
 #include <klocale.h>
 
 #include "diceswidget.h"
@@ -22,7 +23,7 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	m_rolls = new QLabel(this);
 	m_dices = new dicesWidget(this);
-	m_rollButton = new QPushButton(i18n("&Roll"), this);
+	m_rollButton = new QPushButton(KIcon("roll"), i18n("&Roll"), this);
 
 	lay -> addWidget(m_rolls, 0, Qt::AlignHCenter);
 	lay -> addWidget(m_dices);
