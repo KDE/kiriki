@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+﻿<?xml version="1.0" ?>
 <!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&kiriki;">
@@ -62,7 +62,7 @@
 	</para>
 </chapter>
  
-<chapter id="howto"><title>How to play</title> <!-- do not change this! -->
+<chapter id="howto"><title>How to Play</title> <!-- do not change this! -->
 <!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
 	<note><title>Objective:</title><para>Earn more score points then either of the opponents.</para></note><!--Describe the objective of the game.-->
 <!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
@@ -70,13 +70,13 @@
 	Once &kiriki; starts, it right away gives out the first combination for the player one. If you are the player one, then it is now your turn, otherwise you will have to wait until all other players make their moves.</para>
 	<note><title>Note:</title><para>By default, unless the game settings have been changed, and in single player mode, the first player is controlled by human (you), while all other five players are controlled by Artificial Intelligence.</para></note>
 	<para>Once it is your turn, the first thing you should do is examine the current roll. Each of the five dice on the left hand side of the game screen has a specific value. Check the sequence to see if these values form any of the score patterns.</para>
-	<note><title>Note:</title><para>The detailed description of the score patterns can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this docbook.</para></note>
+	<note><title>Note:</title><para>The detailed description of the score patterns can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this handbook.</para></note>
 	<para>Keep in mind that the combination can match more then one score pattern. In this case you will have to determine which score pattern will result in greater points for you.</para>
-	<para>In case the current sequence matches no score pattern, or matches a score pattern you have already used up, you have two more rolls to fix the situation. To use your second (third) roll select the dice you are not satisfied with by clicking on them with your mouse and click ‘Roll’ button located right under the dice. This will cause the dice in question to reroll, thus changing their values.</para>
-	<para>After you have done the third reroll you must choose the score pattern which feats the dice sequence on hand. If none of the score patterns feet the sequence - you can either use ‘Chance’ score pattern, or just select any score pattern on your scoreboard.</para>
+	<para>In case the current sequence matches no score pattern, or matches a score pattern you have already used up, you have two more rolls to fix the situation. To use your second (third) roll select the dice you are not satisfied with by clicking on them with your mouse and click the <guibutton>Roll</guibutton> button located right under the dice. This will cause the dice in question to reroll, thus changing their values.</para>
+	<para>After you have done the third reroll you must choose the score pattern which feats the dice sequence on hand. If none of the score patterns feet the sequence - you can either use <guilabel>Chance</guilabel> score pattern, or just select any score pattern on your scoreboard.</para>
 	<note><title>Note:</title><para>If you select score pattern that does not feet current dice sequence, the score pattern you select will become void and of zero value.</para></note>
 	<para>As soon as you choose the score pattern its value updates to reflect the dice sequence you currently have.</para>
-	<note><title>Note:</title><para>The detailed description of the score pattern values can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this docbook.</para></note>
+	<note><title>Note:</title><para>The detailed description of the score pattern values can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this handbook.</para></note>
 	<para>Right after that your turn ends and the next participant’s turn begins. This sequence repeats some thirteen times and then the game ends, the scores are calculated and the high scores are awarded.</para>
 </chapter>
  
@@ -86,35 +86,35 @@
 		<para>
 			&kiriki; score board is divided into fourteen different lines. Each line holds a single score pattern and the players' score earned for a roll matching the pattern. The score pattern of each line is calculated as follows:
 			<itemizedlist>
-				<listitem><para>1s: Sum of all dice valued ‘1’.<note><title>Example:</title><para>Dice on display: '14112'. The sum is: '3'='1'+'1'+'1'. Dice on display: '51111'. The sum is: '4'='1'+'1'+'1'+'1'.</para></note></para></listitem>
-				<listitem><para>2s: Sum of all dice valued ‘2’.<note><title>Example:</title><para>Dice on display: '22422'. The sum is: '8'='2'+'2'+'2'+'2'. Dice on display: '42322'. The sum is: '6'='2'+'2'+'2'.</para></note></para></listitem>
-				<listitem><para>3s: Sum of all dice valued ‘3’.<note><title>Example:</title><para>Dice on display: '34132'. The sum is: '6'='3'+'3'. Dice on display: '33333'. The sum is: '15'='3'+'3'+'3'+'3'+'3'.</para></note></para></listitem>
-				<listitem><para>4s: Sum of all dice valued ‘4’.<note><title>Example:</title><para>Dice on display: '14142'. The sum is: '8'='4'+'4'. Dice on display: '41414'. The sum is: '12'='4'+'4'+'4'.</para></note></para></listitem>
-				<listitem><para>5s: Sum of all dice valued ‘5’.<note><title>Example:</title><para>Dice on display: '15155'. The sum is: '15'='5'+'5'+'5'. Dice on display: '51555'. The sum is: '20'='5'+'5'+'5'+'5'.</para></note></para></listitem>
-				<listitem><para>6s: Sum of all dice valued ‘6’.<note><title>Example:</title><para>Dice on display: '66616'. The sum is: '24'='6'+'6'+'6'+'6'. Dice on display: '61616'. The sum is: '18'='6'+'6'+'6'.</para></note></para></listitem>
-				<listitem><para>Bonus if > 62: Player is awarded an additional 35 points if the summarized value of all the field above is greater then 62 points.</para></listitem>
-				<listitem><para>Upper Total: It is not a playable field, but only a summary of all the fields above.</para></listitem>
-				<listitem><para>3 of a Kind: Summarized value of dice when three of the dice are bearing the same value.<note><title>Example:</title><para>Dice on display: '14121'. The sum is: '9'='1'+'1'+'1'+'4'+'2'. Dice on display: '55151'. The sum is: '17'='5'+'5'+'5'+'1'+'1'.</para></note></para></listitem>
-				<listitem><para>4 of a Kind: Summarized value of dice when four of the dice are bearing the same value.<note><title>Example:</title><para>Dice on display: '41444'. The sum is: '17'='4'+'4'+'4'+'4'+'1'. Dice on display: '22522'. The sum is: '13'='2'+'2'+'2'+'2'+'5'.</para></note></para></listitem>
-				<listitem><para>Full House: 25 points are awarded to the player if the round results in three dice of a kind and a pair.<note><title>Example:</title><para>Dice on display: '11212'. Dice on display: '53353'.</para></note></para></listitem>
-				<listitem><para>Small Straight: 30 points are awarded to the player if the round results in four dice of sequential value.<note><title>Example:</title><para>Dice on display: '14312'. The sequence is: '1','2','3','4'. Dice on display: '51643'. The sequence is: '3','4','5','6'.</para></note></para></listitem>
-				<listitem><para>Large Straight: 30 points are awarded to the player if the round results in five dice of sequential value.<note><title>Example:</title><para>Dice on display: '34152'. The sequence is: '1','2','3','4','5'. Dice on display: '53264'. The sequence is: '2','3','4','5','6'.</para></note></para></listitem>
-				<listitem><para>&kiriki;: 50 points and a additional turn are awarded to the player if the round results in five dice of the same value.<note><title>Example:</title><para>Dice on display: '11111'. Dice on display: '33333'.</para></note></para></listitem>
-				<listitem><para>Chance: Summarized value of all the dice currently on display.<note><title>Example:</title><para>Dice on display: '51143'. The sum is: '14'='5'+'1'+'1'+'4'+'3'. Dice on display: '21526'. The sum is: '16'='2'+'1'+'5'+'2'+'6'.</para></note></para></listitem>
-				<listitem><para>Lower Total: It is not a playable field, but only a summary of all the fields starting from '3 of a Kind' and lower.</para></listitem>
-				<listitem><para>Grand Total: It is not a playable field, but only a sum of 'Upper Total' and 'Lower Total' fields.</para></listitem>
+				<listitem><para><guilabel>1s</guilabel>: Sum of all dice valued ‘1’.<note><title>Example:</title><para>Dice on display: '14112'. The sum is: '3'='1'+'1'+'1'. Dice on display: '51111'. The sum is: '4'='1'+'1'+'1'+'1'.</para></note></para></listitem>
+				<listitem><para><guilabel>2s</guilabel>: Sum of all dice valued ‘2’.<note><title>Example:</title><para>Dice on display: '22422'. The sum is: '8'='2'+'2'+'2'+'2'. Dice on display: '42322'. The sum is: '6'='2'+'2'+'2'.</para></note></para></listitem>
+				<listitem><para><guilabel>3s</guilabel>: Sum of all dice valued ‘3’.<note><title>Example:</title><para>Dice on display: '34132'. The sum is: '6'='3'+'3'. Dice on display: '33333'. The sum is: '15'='3'+'3'+'3'+'3'+'3'.</para></note></para></listitem>
+				<listitem><para><guilabel>4s</guilabel>: Sum of all dice valued ‘4’.<note><title>Example:</title><para>Dice on display: '14142'. The sum is: '8'='4'+'4'. Dice on display: '41414'. The sum is: '12'='4'+'4'+'4'.</para></note></para></listitem>
+				<listitem><para><guilabel>5s</guilabel>: Sum of all dice valued ‘5’.<note><title>Example:</title><para>Dice on display: '15155'. The sum is: '15'='5'+'5'+'5'. Dice on display: '51555'. The sum is: '20'='5'+'5'+'5'+'5'.</para></note></para></listitem>
+				<listitem><para><guilabel>6s</guilabel>: Sum of all dice valued ‘6’.<note><title>Example:</title><para>Dice on display: '66616'. The sum is: '24'='6'+'6'+'6'+'6'. Dice on display: '61616'. The sum is: '18'='6'+'6'+'6'.</para></note></para></listitem>
+				<listitem><para><guilabel>Bonus if > 62</guilabel>: Player is awarded an additional 35 points if the summarized value of all the field above is greater then 62 points.</para></listitem>
+				<listitem><para><guilabel>Upper Total</guilabel>: It is not a playable field, but only a summary of all the fields above.</para></listitem>
+				<listitem><para><guilabel>3 of a Kind</guilabel>: Summarized value of dice when three of the dice are bearing the same value.<note><title>Example:</title><para>Dice on display: '14121'. The sum is: '9'='1'+'1'+'1'+'4'+'2'. Dice on display: '55151'. The sum is: '17'='5'+'5'+'5'+'1'+'1'.</para></note></para></listitem>
+				<listitem><para><guilabel>4 of a Kind</guilabel>: Summarized value of dice when four of the dice are bearing the same value.<note><title>Example:</title><para>Dice on display: '41444'. The sum is: '17'='4'+'4'+'4'+'4'+'1'. Dice on display: '22522'. The sum is: '13'='2'+'2'+'2'+'2'+'5'.</para></note></para></listitem>
+				<listitem><para><guilabel>Full House</guilabel>: 25 points are awarded to the player if the round results in three dice of a kind and a pair.<note><title>Example:</title><para>Dice on display: '11212'. Dice on display: '53353'.</para></note></para></listitem>
+				<listitem><para><guilabel>Small Straight</guilabel>: 30 points are awarded to the player if the round results in four dice of sequential value.<note><title>Example:</title><para>Dice on display: '14312'. The sequence is: '1','2','3','4'. Dice on display: '51643'. The sequence is: '3','4','5','6'.</para></note></para></listitem>
+				<listitem><para><guilabel>Large Straight</guilabel>: 30 points are awarded to the player if the round results in five dice of sequential value.<note><title>Example:</title><para>Dice on display: '34152'. The sequence is: '1','2','3','4','5'. Dice on display: '53264'. The sequence is: '2','3','4','5','6'.</para></note></para></listitem>
+				<listitem><para><guilabel>&kiriki;</guilabel>: 50 points and a additional turn are awarded to the player if the round results in five dice of the same value.<note><title>Example:</title><para>Dice on display: '11111'. Dice on display: '33333'.</para></note></para></listitem>
+				<listitem><para><guilabel>Chance</guilabel>: Summarized value of all the dice currently on display.<note><title>Example:</title><para>Dice on display: '51143'. The sum is: '14'='5'+'1'+'1'+'4'+'3'. Dice on display: '21526'. The sum is: '16'='2'+'1'+'5'+'2'+'6'.</para></note></para></listitem>
+				<listitem><para><guilabel>Lower Total</guilabel>: It is not a playable field, but only a summary of all the fields starting from '3 of a Kind' and lower.</para></listitem>
+				<listitem><para><guilabel>Grand Total</guilabel>: It is not a playable field, but only a sum of 'Upper Total' and 'Lower Total' fields.</para></listitem>
 			</itemizedlist>
 			Other rules and constrains:
 			<itemizedlist>
 				<listitem><para>The entire game round is split into 13 turns.</para></listitem>
 				<listitem><para>Each player can do one to three rolls of dice per turn.</para></listitem>
-				<listitem><para>After the first roll is done, player can perform additional rolls for up to two times (three rolls at all per turn).</para></listitem>
-				<listitem><para>Player is not obligated to perform additional rolls if the first roll brings satisfactory results.</para></listitem>
+				<listitem><para>After the first roll is done, a player can perform additional rolls for up to two times (three rolls at all per turn).</para></listitem>
+				<listitem><para>The Player is not obligated to perform additional rolls if the first roll brings satisfactory results.</para></listitem>
 				<listitem><para>Each additional roll may either involve all the dice, or only the selected ones.</para></listitem>
-				<listitem><para>Player can select the dice to be recast by clicking on them with the mouse.</para></listitem>
+				<listitem><para>A Player can select the dice to be recast by clicking on them with the mouse.</para></listitem>
 				<listitem><para>Once the dice have been recast their previous value is lost and only the new value is valid.</para></listitem>
 				<listitem><para>The result of the roll is considered satisfactory if the values of the dice on display can be put into one of the score patterns discussed above.</para></listitem>
-				<listitem><para>Each individual score pattern can only be used once per game per player. Therefore, once the score pattern has been used by the player ‘X’ it can no longer be used by that same player. However, another player ‘Y’ can still use it, unless that same player ‘Y’ has used this same pattern up already.</para></listitem>
+				<listitem><para>Each individual score pattern can only be used once per game per player. Therefore, once the score pattern has been used by one player it can no longer be used by that same player. However, another player can still use it, unless he has used this same pattern up already.</para></listitem>
 			</itemizedlist>
 		</para>
 	</sect1>
@@ -161,7 +161,7 @@
 		</variablelist>
 </sect1>
 <sect1 id="settings-menu">
-	<title><guimenu>Settings</guimenu> Menu</title>
+	<title>The <guimenu>Settings</guimenu> Menu</title>
 		<variablelist>
 			<varlistentry id="settings-menu-shortcuts">
 				<term><menuchoice>
@@ -185,26 +185,26 @@
 </sect1>
 </chapter>
 
-
 <chapter id="faq"><title>Frequently asked questions</title> <!-- do not change this! -->
 <!--This chapter is for frequently asked questions. Please use <qandaset> <qandaentry> only!-->
 <qandaset>
 <!--Following is a standard list of FAQ questions.-->
 <qandaentry>
 <question><para>Who made this game?</para></question>
- <answer><para>The kdegames team. You can find their website here.</para></answer>
+ <answer><para>The kdegames team. You can find their website <ulink url="http://games.kde.org">here</ulink>.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>Where can I get cheatcodes? </para></question>
- <answer><para>You can't get cheatcodes for KDE games.</para></answer>
+ <answer><para>You cannot get cheatcodes for &kde; games.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>How do I start a new game? </para></question>
- <answer><para>To start a new game of &kiriki; use <link linkend="game-menu-new">Game->New</link> option on the menubar.</para></answer>
+ <answer><para>To start a new game of &kiriki; use the <link linkend="game-menu-new"><menuchoice><guimenu>Game</guimenu>
+<guimenuitem>New</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>How do I pause the game? </para></question>
- <answer><para>&kiriki; does not time the gameplay and therefore needs no 'Pause' feature.</para></answer>
+ <answer><para>&kiriki; does not time the gameplay and therefore needs no <quote>Pause</quote> feature.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>I want to change the way this game looks. Can I? </para></question>
@@ -212,39 +212,40 @@
 </qandaentry>
 <qandaentry>
  <question><para>I have made a mistake. Can I undo? </para></question>
- <answer><para>No. &kiriki; has no 'Undo' option.</para></answer>
+ <answer><para>No. &kiriki; has no <quote>Undo</quote> option.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>Can I use keyboard?</para></question>
- <answer><para>No. The game of &kiriki; can not be played using keyboard.</para></answer>
+ <answer><para>No. The game of &kiriki; cannot be played using keyboard.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>I can't figure out what to do here! Are there hints? </para></question>
- <answer><para>To learn about the game play rules and tactics please read <link linkend="rules_and_tips">Game Rules, Strategies and Tips</link> section of this docbook.</para></answer>
+ <question><para>I cannot figure out what to do here! Are there hints? </para></question>
+ <answer><para>To learn about the game play rules and tactics please read the <link linkend="rules_and_tips">Game Rules, Strategies and Tips</link> section of this handbook.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>I have to quit the game now, but I'm not finished yet. Can I save my progress?</para></question>
- <answer><para>No. There is no 'Save' feature in &kiriki;.</para></answer>
+ <question><para>I have to quit the game now, but I am not finished yet. Can I save my progress?</para></question>
+ <answer><para>No. There is no <quote>Save</quote> feature in &kiriki;.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>Where are the highscores?</para></question>
- <answer><para>To access the highscores dialog use <link linkend="game-menu-highscores">Game->Show High Scores...</link> option on the menubar.</para></answer>
+ <question><para>Where are the high scores?</para></question>
+ <answer><para>To access the highs cores dialog use the <link linkend="game-menu-highscores"><menuchoice><guimenu>Game</guimenu>
+<guimenuitem>Show High Scores...</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>I want to change the game configuration. Where do I go? </para></question>
- <answer><para>To change the game configuration please use the game configuration dialog discussed in <link linkend="configuration">Game Configuration</link> section of this docbook.</para></answer>
+ <answer><para>To change the game configuration please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>I want to change the players' names. Where do I go? </para></question>
- <answer><para>To change the players' names please use the game configuration dialog discussed in <link linkend="configuration">Game Configuration</link> section of this docbook.</para></answer>
+ <answer><para>To change the players' names please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>I want to play &kiriki; with my friends. Where do I set who controls the player?</para></question>
- <answer><para>To change the players' identities please use the game configuration dialog discussed in <link linkend="configuration">Game Configuration</link> section of this docbook.</para></answer>
+ <answer><para>To change the players' identities please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>The AI is too dam fast! I can't see what he's doing!</para></question>
- <answer><para>To change Artificial Intelligence's speed of action please use the game configuration dialog discussed in <link linkend="configuration">Game Configuration</link> section of this docbook.</para></answer>
+ <question><para>The AI is too dam fast! I cannot see what he's doing!</para></question>
+ <answer><para>To change Artificial Intelligence's speed of action please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 
 </qandaset>
@@ -253,11 +254,11 @@
 <chapter id="configuration"><title>Game Configuration</title> <!-- do not change this! -->
 <para>&kiriki; configuration dialog lets to you configure the number of participants, to manage their identities, and their response times.</para>
 <note><title>Note:</title><para>You can change the response times for Artificial Intelligence driven players only.</para></note>
-<para>Number of players: this field defines the number of players for &kiriki;. The values allowed here range between two and six.</para>
-<note><title>Note:</title><para>The number of players can not be less then two.</para></note>
-<para>1.-6. Numbered fields are the identities of the participating players. You can change their names as well as specify whether they will be human controlled, or driven by the Artificial Intelligence. To define who controls the player use a checkbox located on the right hand side, right next to the name entry box.</para>
+<para><guilabel>Number of players:</guilabel> this field defines the number of players for &kiriki;. The values allowed here range between two and six.</para>
+<note><title>Note:</title><para>The number of players cannot be less then two.</para></note>
+<para><guilabel>1.</guilabel>-<guilabel>6.</guilabel> Numbered fields are the identities of the participating players. You can change their names as well as specify whether they will be human controlled, or driven by the Artificial Intelligence. To define who controls the player use a check box located on the right hand side, right next to the name entry box.</para>
 <note><title>Note:</title><para>The first player must always be human controlled.</para></note>
-<para>Delay between computers move (msec): lets you specify the delay between Artificial Intelligence's turns. The value of this field is zero by default, meaning that the Artificial Intelligence reacts instantaneously.</para>
+<para><guilabel>Delay between computers move (msec):</guilabel> lets you specify the delay between Artificial Intelligence's turns. The value of this field is zero by default, meaning that the Artificial Intelligence reacts instantaneously.</para>
 <note><title>Note:</title><para>The maximum value for this field is 999 milliseconds.</para></note>
 </chapter>
  
@@ -271,13 +272,10 @@
 Program copyright 2005-2007 &Albert.Astals.Cid; <email>&Albert.Astals.Cid.mail;</email>
 </para>
 <!-- TRANS:CREDIT_FOR_TRANSLATORS --> 
- 
-<!-- !!!do not change ANYTHING after this line!!!! -->
 &underFDL;
 &underGPL;
  
 </chapter>
- 
  
 <appendix id="installation">
 <title>Installation</title>
