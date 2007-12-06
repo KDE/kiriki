@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" ?>
 <!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&kiriki;">
@@ -269,7 +269,7 @@
 
 <!--List all the copyright holders here-->
 <para>
-Program copyright 2005-2007 &Albert.Astals.Cid; <email>&Albert.Astals.Cid.mail;</email>
+Program copyright 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail;
 </para>
 <!-- TRANS:CREDIT_FOR_TRANSLATORS --> 
 &underFDL;
