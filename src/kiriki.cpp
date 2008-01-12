@@ -167,6 +167,7 @@ void kiriki::showPreferences()
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
+        configDialog->setHelp(QString(),"kiriki");
 	configDialog -> exec();
 	delete configDialog;
 
