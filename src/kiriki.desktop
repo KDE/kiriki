@@ -8,6 +8,7 @@ Exec=kiriki -caption "%c"
 X-DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
 GenericName[ca]=Joc de daus com el Yahtzee
+GenericName[cs]=Hra s kostkami podobná Yahtzee
 GenericName[de]=Kniffel-ähnliches Würfelspiel
 GenericName[el]=Παιχνίδι με ζάρια παρόμοιο με το Yahtzee
 GenericName[eo]=Ĵetkuba ludo simila al Yahtzee
