@@ -228,7 +228,7 @@
 </qandaentry>
 <qandaentry>
  <question><para>Where are the high scores?</para></question>
- <answer><para>To access the highs cores dialog use the <link linkend="game-menu-highscores"><menuchoice><guimenu>Game</guimenu>
+ <answer><para>To access the high scores dialog use the <link linkend="game-menu-highscores"><menuchoice><guimenu>Game</guimenu>
 <guimenuitem>Show High Scores...</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
 </qandaentry>
 <qandaentry>
