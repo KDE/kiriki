@@ -13,6 +13,7 @@
 
 #include <QHBoxLayout>
 #include <QHeaderView>
+#include <QItemDelegate>
 #include <QPainter>
 #include <QPrintDialog>
 #include <QPrinter>
@@ -51,6 +52,7 @@ kiriki::kiriki() : KXmlGuiWindow()
 	lay -> addWidget(m_lateral);
 	
 	m_scoresWidget = new QTreeView(w);
+	m_scoresWidget -> setItemDelegate(new QItemDelegate(m_scoresWidget));
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
 	m_scoresWidget -> setRootIsDecorated(false);
 	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);
