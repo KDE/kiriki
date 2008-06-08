@@ -28,6 +28,7 @@
 #include <kstandardgameaction.h>
 #include <kactioncollection.h>
 #include <kaction.h>
+#include <kdeprintdialog.h>
 
 #include "computer.h"
 #include "configwidget.h"
@@ -195,12 +196,13 @@ void kiriki::print()
 {
 	QPrinter printer;
 	printer.setFullPage( true );
-	QPrintDialog printDialog(&printer, this);
-	if (printDialog.exec())
+	QPrintDialog *printDialog = KdePrint::createPrintDialog(&printer, this);
+	if (printDialog->exec())
 	{
 		QPainter painter(&printer);
 		m_scores->print(painter, printer.width(), printer.height());
 	}
+	delete printDialog;
 }
 
 void kiriki::nextTurn()
