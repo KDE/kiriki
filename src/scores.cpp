@@ -115,7 +115,7 @@ const player &scores::winner() const
 
 int scores::rowCount(const QModelIndex &/*index*/) const
 {
-	return 19;
+	return m_rows.count();
 }
 
 int scores::columnCount(const QModelIndex &/*index*/) const
