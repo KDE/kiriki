@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005, 2008 by Albert Astals Cid <tsdgeos@terra.es>      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -13,7 +13,10 @@
 #include <QAbstractTableModel>
 
 #include "player.h"
+#include "row.h"
+
 class QPainter;
+
 class scores : public QAbstractTableModel
 {
 	public:
@@ -36,6 +39,7 @@ class scores : public QAbstractTableModel
 	
 	private:
 		QList<player> m_players;
+		QList<Row> m_rows;
 		int m_currentPlayer;
 };
 

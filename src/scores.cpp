@@ -57,6 +57,26 @@ scores::scores()
 	}
 	
 	m_currentPlayer = 0;
+	
+	m_rows.append(Row(Row::ScoreRow, i18n("1s"), 0));
+	m_rows.append(Row(Row::ScoreRow, i18n("2s"), 1));
+	m_rows.append(Row(Row::ScoreRow, i18n("3s"), 2));
+	m_rows.append(Row(Row::ScoreRow, i18n("4s"), 3));
+	m_rows.append(Row(Row::ScoreRow, i18n("5s"), 4));
+	m_rows.append(Row(Row::ScoreRow, i18n("6s"), 5));
+	m_rows.append(Row(Row::BonusRow, i18n("Bonus if > 62"), -1, Row::BoldFontFlag));
+	m_rows.append(Row(Row::UpperTotalRow, i18n("Upper total"), -1, Row::BoldFontFlag));
+	m_rows.append(Row(Row::EmptyRow));
+	m_rows.append(Row(Row::ScoreRow, i18n("3 of a Kind"), 6));
+	m_rows.append(Row(Row::ScoreRow, i18n("4 of a Kind"), 7));
+	m_rows.append(Row(Row::ScoreRow, i18n("Full House"), 8));
+	m_rows.append(Row(Row::ScoreRow, i18n("Small Straight"), 9));
+	m_rows.append(Row(Row::ScoreRow, i18n("Large Straight"), 10));
+	m_rows.append(Row(Row::ScoreRow, i18n("Kiriki"), 11));
+	m_rows.append(Row(Row::ScoreRow, i18n("Chance"), 12));
+	m_rows.append(Row(Row::LowerTotalRow, i18n("Lower Total"), -1, Row::BoldFontFlag));
+	m_rows.append(Row(Row::EmptyRow));
+	m_rows.append(Row(Row::GrandTotalRow, i18n("Grand Total"), -1, Row::BoldFontFlag | Row::BiggerFontFlag));
 }
 
 bool scores::allScores() const
@@ -107,15 +127,15 @@ QVariant scores::data(const QModelIndex &index, int role) const
 {
 	if (!index.isValid()) return QVariant();
 	
-	int column, row;
+	int column;
 	column = index.column();
-	row = index.row();
+	const Row row = m_rows.at(index.row());
 	
 	if (role == Qt::FontRole)
 	{
 		QFont f;
-		if (row == 6 || row == 7 || row == 16 || row == 18) f.setBold(true);
-		if (row == 18) f.setPointSize(f.pointSize() + 5);
+		if (row.flags() & Row::BoldFontFlag) f.setBold(true);
+		if (row.flags() & Row::BiggerFontFlag) f.setPointSize(f.pointSize() + 5);
 		return f;
 	}
 	else if (role == Qt::BackgroundColorRole)
@@ -125,15 +145,15 @@ QVariant scores::data(const QModelIndex &index, int role) const
 		if (column % 2 == 0)
 		{
 			c = p.alternateBase().color();
-			if (row % 2) c = c.dark(105);
+			if (index.row() % 2) c = c.dark(105);
 		}
 		else
 		{
-			if (row % 2 == 0) c = p.base().color();
+			if (index.row() % 2 == 0) c = p.base().color();
 			else c = p.alternateBase().color();
 		}
 		
-		if (row == 18) c = p.highlight().color().light();
+		if (row.type() == Row::GrandTotalRow) c = p.highlight().color().light();
 		return c;
 	}
 	else if (role == Qt::TextAlignmentRole)
@@ -141,97 +161,20 @@ QVariant scores::data(const QModelIndex &index, int role) const
 		if (column != 0) return Qt::AlignCenter;
 	}
 	
-	if (row == 8) return QVariant();
-	if (row == 17) return QVariant();
-	
+	if (row.type() == Row::EmptyRow) return QVariant();
+
 	if (role != Qt::DisplayRole) return QVariant();
 	
-	if (column == 0)
-	{
-		switch (row)
-		{
-			case 0:
-				return i18n("1s");
-			break;
-			
-			case 1:
-				return i18n("2s");
-			break;
-			
-			case 2:
-				return i18n("3s");
-			break;
-			
-			case 3:
-				return i18n("4s");
-			break;
-			
-			case 4:
-				return i18n("5s");
-			break;
-			
-			case 5:
-				return i18n("6s");
-			break;
-			
-			case 6:
-				return i18n("Bonus if > 62");
-			break;
-			
-			case 7:
-				return i18n("Upper total");
-			break;
-			
-			case 9:
-				return i18n("3 of a Kind");
-			break;
-			
-			case 10:
-				return i18n("4 of a Kind");
-			break;
-			
-			case 11:
-				return i18n("Full House");
-			break;
-			
-			case 12:
-				return i18n("Small Straight");
-			break;
-			
-			case 13:
-				return i18n("Large Straight");
-			break;
-			
-			case 14:
-				return i18n("Kiriki");
-			break;
-			
-			case 15:
-				return i18n("Chance");
-			break;
-			
-			case 16:
-				return i18n("Lower Total");
-			break;
-			
-			case 18:
-				return i18n("Grand Total");
-			break;
-			
-			default:
-				return QVariant();
-			break;
-		}
-	}
+	if (column == 0) return row.text();
 
 	const player &p = m_players.at(column - 1);
 	int score = -1;
-	if (row < 6) score = p.score(row);
-	if (row == 6) score = p.bonus();
-	if (row == 7) score = p.upperTotalWithBonus();
-	if (row > 7 && row < 16) score = p.score(row - 3);
-	if (row == 16) score = p.lowerTotal();
-	if (row == 18) score = p.grandTotal();
+	
+	if (row.type() == Row::ScoreRow) score = p.score(row.scoreRow());
+	else if (row.type() == Row::BonusRow) score = p.bonus();
+	else if (row.type() == Row::UpperTotalRow) score = p.upperTotalWithBonus();
+	else if (row.type() == Row::LowerTotalRow) score = p.lowerTotal();
+	else if (row.type() == Row::GrandTotalRow) score = p.grandTotal();
 	
 	if (score < 0) return QVariant();
 	else return QString::number(score);

@@ -9,7 +9,9 @@ set(kiriki_SRCS
    diceswidget.cpp 
    lateralwidget.cpp 
    computer.cpp 
-   configwidget.cpp )
+   configwidget.cpp 
+   row.cpp
+   )
 
 kde4_add_ui_files(kiriki_SRCS configPage.ui)
 
