@@ -206,6 +206,9 @@ QVariant scores::data(const QModelIndex &index, int role) const
 		}
 		
 		if (row.type() == Row::GrandTotalRow) c = p.highlight().color().light();
+		
+		if (column - 1 == m_currentPlayer) c = c.dark(110);
+		
 		return c;
 	}
 	else if (role == Qt::TextAlignmentRole)

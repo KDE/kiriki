@@ -7,7 +7,7 @@
 	<include>klocale.h</include>
 	<group name="general">
 		<entry key="waitTime" type="Int" >
-			<default>0</default>
+			<default>150</default>
 			<min>0</min>
 			<max>2000</max>
 		</entry>
