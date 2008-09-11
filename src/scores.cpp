@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005, 2008 by Albert Astals Cid <tsdgeos@terra.es>      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -228,7 +228,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	int score = -1;
 	if (row < 6) score = p.score(row);
 	if (row == 6) score = p.bonus();
-	if (row == 7) score = p.upperTotal(true);
+	if (row == 7) score = p.upperTotalWithBonus();
 	if (row > 7 && row < 16) score = p.score(row - 3);
 	if (row == 16) score = p.lowerTotal();
 	if (row == 18) score = p.grandTotal();

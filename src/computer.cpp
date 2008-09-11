@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005, 2008 by Albert Astals Cid <tsdgeos@terra.es>      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -322,13 +322,13 @@ BuildTable(const player &p, int NumberOfRolls)
 **		running for a bonus)
 */
 
-		if (p.upperTotal(false) >= 63)
+		if (p.upperTotal() >= 63)
 		{
 			if (NumberOfRolls > 2)
 				bc_table[i].value += 10;
 		}
 
-		else if (p.upperTotal(false) + count(i+1) * (i+1) >= 63)
+		else if (p.upperTotal() + count(i+1) * (i+1) >= 63)
 		{
 			bc_table[i].value += 35;
 		}

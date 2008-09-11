@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005, 2008 by Albert Astals Cid <tsdgeos@terra.es>      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -55,13 +55,15 @@ int player::bonus() const
 	return -1;
 }
 
-int player::upperTotal(bool withBonus) const
+int player::upperTotal() const
 {
-	int score;
-	if (withBonus) score = bonus();
-	else score = -1;
-	if (score < 0) score = scoreRange(0, 5);
-	else score += scoreRange(0, 5); 
+	return scoreRange(0, 5);
+}
+
+int player::upperTotalWithBonus() const
+{
+	int score = qMax(bonus(), 0);
+	score += upperTotal();
 	return score;
 }
 
@@ -73,7 +75,7 @@ int player::lowerTotal() const
 int player::grandTotal() const
 {
 	int up, down;
-	up = upperTotal(true);
+	up = upperTotalWithBonus();
 	down = lowerTotal();
 	
 	if (up >= 0)

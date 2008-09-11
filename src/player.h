@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2005, 2008 by Albert Astals Cid <tsdgeos@terra.es>      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -31,7 +31,8 @@ class player
 		void setScore(int index, int value);
 		
 		int bonus() const;
-		int upperTotal(bool withBonus) const;
+		int upperTotal() const;
+		int upperTotalWithBonus() const;
 		int lowerTotal() const;
 		int grandTotal() const;
 
