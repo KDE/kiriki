@@ -192,40 +192,35 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 {
 	if (role != Qt::EditRole) return false;
 	
-	int row = mi.row();
-	if (row == 6 || row == 7 || row == 8 || row == 16 || row == 18) return false; 
+	const Row row = m_rows.at(mi.row());
+	if (row.type() != Row::ScoreRow) return false;
 	
-	if (row < 6)
+	if (row.scoreRow() == 11)
 	{
-		if (m_players[m_currentPlayer].score(row) >= 0) return false;
-		m_players[m_currentPlayer].setScore(row, value.toInt());
-		emit dataChanged(mi, mi);
-		emit dataChanged(index(m_currentPlayer + 1, 6), index(m_currentPlayer + 1, 7));
-		emit dataChanged(index(m_currentPlayer + 1, 18), index(m_currentPlayer + 1, 18));
+		// Kiriki can be acumulated
+		if (m_players[m_currentPlayer].score(11) > 0 && value.toInt() > 0)
+		{
+			m_players[m_currentPlayer].setScore(11, m_players[m_currentPlayer].score(11) + value.toInt());
+		}
+		else if (m_players[m_currentPlayer].score(11) < 0)
+		{
+			m_players[m_currentPlayer].setScore(11, value.toInt());
+		}
+		else return false;
 	}
 	else
 	{
-		if (row == 14)
-		{
-			// Kiriki can be acumulated
-			if (m_players[m_currentPlayer].score(11) > 0 && value.toInt() > 0)
-			{
-				m_players[m_currentPlayer].setScore(11, m_players[m_currentPlayer].score(11) + value.toInt());
-			}
-			else if (m_players[m_currentPlayer].score(11) < 0)
-			{
-				m_players[m_currentPlayer].setScore(11, value.toInt());
-			}
-			else return false;
-		}
-		else
-		{
-			if (m_players[m_currentPlayer].score(row - 3) >= 0) return false;
-			m_players[m_currentPlayer].setScore(row - 3, value.toInt());
-		}
-		
-		emit dataChanged(mi, mi);
-		emit dataChanged(index(m_currentPlayer + 1, 16), index(m_currentPlayer + 1, 18));
+		if (m_players[m_currentPlayer].score(row.scoreRow()) >= 0) return false;
+		m_players[m_currentPlayer].setScore(row.scoreRow(), value.toInt());
+	}
+	
+	emit dataChanged(mi, mi);
+	
+	for (int i = 0; i < m_rows.count(); ++i)
+	{
+		const Row::Type t = m_rows.at(i).type();
+		if (t == Row::BonusRow || t == Row::UpperTotalRow || t == Row::LowerTotalRow || t == Row::GrandTotalRow)
+			emit dataChanged(index(m_currentPlayer + 1, i), index(m_currentPlayer + 1, i));
 	}
 	
 	return true;
