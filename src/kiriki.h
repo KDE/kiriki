@@ -35,6 +35,7 @@ Q_OBJECT
 	private:
 		void endGame();
 		void play(const QModelIndex &index);
+		void play(int scoreRow);
 		void nextTurn();
 
 		QTreeView *m_scoresWidget;

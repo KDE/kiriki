@@ -15,6 +15,7 @@ class Row
 	public:
 		enum Type
 		{
+			NamesRow,
 			EmptyRow,
 			ScoreRow,
 			BonusRow,

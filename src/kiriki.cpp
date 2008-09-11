@@ -59,6 +59,7 @@ kiriki::kiriki() : KXmlGuiWindow()
 	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);
 	m_scoresWidget -> header() -> setMovable(false);
 	m_scoresWidget -> header() -> setStretchLastSection(false);
+	m_scoresWidget -> header() -> hide();
 	m_scoresWidget -> setItemsExpandable(false);
 
 	// set minimum section size so that you don't get ... when making the widget small
@@ -98,24 +99,31 @@ void kiriki::pressed(const QModelIndex &index)
 
 void kiriki::play(const QModelIndex &index)
 {
+	play(m_scores->row(index.row()).scoreRow());
+}
+
+void kiriki::play(int scoreRow)
+{
 	int score = -1;
-	if (index.row() == 0) score = m_lateral -> getOnes();
-	else if (index.row() == 1) score = m_lateral -> getTwos();
-	else if (index.row() == 2) score = m_lateral -> getThrees();
-	else if (index.row() == 3) score = m_lateral -> getFours();
-	else if (index.row() == 4) score = m_lateral -> getFives();
-	else if (index.row() == 5) score = m_lateral -> getSixs();
-	else if (index.row() == 9) score = m_lateral -> getThreeOfAKind();
-	else if (index.row() == 10) score = m_lateral -> getFourOfAKind();
-	else if (index.row() == 11) score = m_lateral -> getFullHouse();
-	else if (index.row() == 12) score = m_lateral -> getSStraight();
-	else if (index.row() == 13) score = m_lateral -> getLStraight();
-	else if (index.row() == 14) score = m_lateral -> getKiriki();
-	else if (index.row() == 15) score = m_lateral -> totalSum();
+	
+	if (scoreRow == 0) score = m_lateral -> getOnes();
+	else if (scoreRow == 1) score = m_lateral -> getTwos();
+	else if (scoreRow == 2) score = m_lateral -> getThrees();
+	else if (scoreRow == 3) score = m_lateral -> getFours();
+	else if (scoreRow == 4) score = m_lateral -> getFives();
+	else if (scoreRow == 5) score = m_lateral -> getSixs();
+	else if (scoreRow == 6) score = m_lateral -> getThreeOfAKind();
+	else if (scoreRow == 7) score = m_lateral -> getFourOfAKind();
+	else if (scoreRow == 8) score = m_lateral -> getFullHouse();
+	else if (scoreRow == 9) score = m_lateral -> getSStraight();
+	else if (scoreRow == 10) score = m_lateral -> getLStraight();
+	else if (scoreRow == 11) score = m_lateral -> getKiriki();
+	else if (scoreRow == 12) score = m_lateral -> totalSum();
 	else return;
 	
 	Q_ASSERT(score != -1);
-	if (m_scores -> setData(index, score, Qt::EditRole)) nextTurn();
+	int row = m_scores -> rowForScoreRow(scoreRow);
+	if (m_scores -> setData(m_scores -> index(row, 0), score, Qt::EditRole)) nextTurn();
 }
 
 void kiriki::newGame()
@@ -234,8 +242,7 @@ void kiriki::playComputer()
 	}
 	int row;
 	row = ComputerScoring(m_scores -> currentPlayer());
-	if (row > 5) row += 3;
-	play(m_scores -> index(row, 0));
+	play(row);
 }
 
 #include "kiriki.moc"

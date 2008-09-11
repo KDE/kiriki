@@ -13,6 +13,7 @@
 #include <QPainter>
 #include <QPalette>
 
+#include <kiconloader.h>
 #include <klocale.h>
 
 #include "settings.h"
@@ -58,6 +59,7 @@ scores::scores()
 	
 	m_currentPlayer = 0;
 	
+	m_rows.append(Row(Row::NamesRow));
 	m_rows.append(Row(Row::ScoreRow, i18n("1s"), 0));
 	m_rows.append(Row(Row::ScoreRow, i18n("2s"), 1));
 	m_rows.append(Row(Row::ScoreRow, i18n("3s"), 2));
@@ -113,6 +115,20 @@ const player &scores::winner() const
 	return m_players.at(best);
 }
 
+Row scores::row(int row) const
+{
+	return m_rows.at(row);
+}
+
+int scores::rowForScoreRow(int scoreRow) const
+{
+	for (int i = 0; i < m_rows.count(); ++i)
+	{
+		if (m_rows.at(i).scoreRow() == scoreRow) return i;
+	}
+	return -1;
+}
+
 int scores::rowCount(const QModelIndex &/*index*/) const
 {
 	return m_rows.count();
@@ -127,9 +143,45 @@ QVariant scores::data(const QModelIndex &index, int role) const
 {
 	if (!index.isValid()) return QVariant();
 	
-	int column;
-	column = index.column();
+	int column = index.column();
 	const Row row = m_rows.at(index.row());
+	
+	if (row.type() == Row::NamesRow)
+	{
+		if (column > 0)
+		{
+			const player &p = m_players.at(column - 1);
+			if (role == Qt::DecorationRole)
+			{
+				QString icon;
+				if (p.isHuman()) icon = "user-identity";
+				else icon = "cpu";
+				return KIconLoader::global()->loadIcon(icon, KIconLoader::NoGroup, KIconLoader::SizeMedium);
+			}
+			else if (role == Qt::DisplayRole)
+			{
+				return p.name();
+			}
+			else if (role == Qt::BackgroundColorRole)
+			{
+				if (column - 1 == m_currentPlayer)
+				{
+					QPalette pal;
+					return pal.alternateBase().color().dark(110);
+				}
+			}
+			else if (role == Qt::FontRole)
+			{
+				if (column - 1 == m_currentPlayer)
+				{
+					QFont f;
+					f.setBold(true);
+					return f;
+				}
+			}
+		}
+		return QVariant();
+	}
 	
 	if (role == Qt::FontRole)
 	{
@@ -178,14 +230,6 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	
 	if (score < 0) return QVariant();
 	else return QString::number(score);
-}
-
-QVariant scores::headerData(int section, Qt::Orientation /*orientation*/, int role) const
-{
-	if (role != Qt::DisplayRole) return QVariant();
-	
-	if (section == 0) return QVariant();
-	return m_players.at(section - 1).name();
 }
 
 bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)

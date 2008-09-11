@@ -28,11 +28,12 @@ class scores : public QAbstractTableModel
 		const player &currentPlayer() const;
 		int currentPlayerNumber() const;
 		const player &winner() const;
+		Row row(int row) const;
+		int rowForScoreRow(int scoreRow) const;
 		
 		int rowCount(const QModelIndex &index) const;
 		int columnCount(const QModelIndex &index) const;
 		QVariant data(const QModelIndex &index, int role) const;
-		QVariant headerData(int section, Qt::Orientation orientation, int role) const;
 		bool setData(const QModelIndex &mi, const QVariant &value, int role);
 		
 		void print(QPainter &painter, double width, double height) const;

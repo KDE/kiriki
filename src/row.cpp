@@ -29,7 +29,8 @@ QString Row::text() const
 
 int Row::scoreRow() const
 {
-	return m_scoreRow;
+	if (m_type == ScoreRow) return m_scoreRow;
+	else return -1;
 }
 
 Row::Flags Row::flags() const
