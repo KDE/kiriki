@@ -38,14 +38,6 @@
 
 kiriki::kiriki() : KXmlGuiWindow()
 {
-	// default names for players
-	(void)I18N_NOOP2("default name of first player", "Albert");
-	(void)I18N_NOOP2("default name of second player", "Janet");
-	(void)I18N_NOOP2("default name of third player", "James");
-	(void)I18N_NOOP2("default name of fourth player", "Sandra");
-	(void)I18N_NOOP2("default name of fifth player", "Thomas");
-	(void)I18N_NOOP2("default name of sixth player", "Margaret");
-	
 	QWidget *w = new QWidget(this);
 	QHBoxLayout *lay = new QHBoxLayout(w);
 	
