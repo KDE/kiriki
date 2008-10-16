@@ -92,7 +92,7 @@
 				<listitem><para><guilabel>4s</guilabel>: Sum of all dice valued ‘4’.<note><title>Example:</title><para>Dice on display: '14142'. The sum is: '8'='4'+'4'. Dice on display: '41414'. The sum is: '12'='4'+'4'+'4'.</para></note></para></listitem>
 				<listitem><para><guilabel>5s</guilabel>: Sum of all dice valued ‘5’.<note><title>Example:</title><para>Dice on display: '15155'. The sum is: '15'='5'+'5'+'5'. Dice on display: '51555'. The sum is: '20'='5'+'5'+'5'+'5'.</para></note></para></listitem>
 				<listitem><para><guilabel>6s</guilabel>: Sum of all dice valued ‘6’.<note><title>Example:</title><para>Dice on display: '66616'. The sum is: '24'='6'+'6'+'6'+'6'. Dice on display: '61616'. The sum is: '18'='6'+'6'+'6'.</para></note></para></listitem>
-				<listitem><para><guilabel>Bonus if > 62</guilabel>: Player is awarded an additional 35 points if the summarized value of all the field above is greater then 62 points.</para></listitem>
+				<listitem><para><guilabel>Bonus if > 62</guilabel>: Player is awarded an additional 35 points if the summarized value of all the field above is greater than 62 points.</para></listitem>
 				<listitem><para><guilabel>Upper Total</guilabel>: It is not a playable field, but only a summary of all the fields above.</para></listitem>
 				<listitem><para><guilabel>3 of a Kind</guilabel>: Summarized value of dice when three of the dice are bearing the same value.<note><title>Example:</title><para>Dice on display: '14121'. The sum is: '9'='1'+'1'+'1'+'4'+'2'. Dice on display: '55151'. The sum is: '17'='5'+'5'+'5'+'1'+'1'.</para></note></para></listitem>
 				<listitem><para><guilabel>4 of a Kind</guilabel>: Summarized value of dice when four of the dice are bearing the same value.<note><title>Example:</title><para>Dice on display: '41444'. The sum is: '17'='4'+'4'+'4'+'4'+'1'. Dice on display: '22522'. The sum is: '13'='2'+'2'+'2'+'2'+'5'.</para></note></para></listitem>
@@ -255,7 +255,7 @@
 <para>&kiriki; configuration dialog lets to you configure the number of participants, to manage their identities, and their response times.</para>
 <note><title>Note:</title><para>You can change the response times for Artificial Intelligence driven players only.</para></note>
 <para><guilabel>Number of players:</guilabel> this field defines the number of players for &kiriki;. The values allowed here range between two and six.</para>
-<note><title>Note:</title><para>The number of players cannot be less then two.</para></note>
+<note><title>Note:</title><para>The number of players cannot be less than two.</para></note>
 <para><guilabel>1.</guilabel>-<guilabel>6.</guilabel> Numbered fields are the identities of the participating players. You can change their names as well as specify whether they will be human controlled, or driven by the Artificial Intelligence. To define who controls the player use a check box located on the right hand side, right next to the name entry box.</para>
 <note><title>Note:</title><para>The first player must always be human controlled.</para></note>
 <para><guilabel>Delay between computers move (msec):</guilabel> lets you specify the delay between Artificial Intelligence's turns. The value of this field is zero by default, meaning that the Artificial Intelligence reacts instantaneously.</para>
