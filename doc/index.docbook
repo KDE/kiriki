@@ -136,7 +136,7 @@
 				<term><menuchoice>
 					<shortcut><keycombo action="simul">&Ctrl;<keycap>H</keycap></keycombo></shortcut>
 					<guimenu>Game</guimenu>
-					<guimenuitem>Show High Scores...</guimenuitem>
+					<guimenuitem>Show High Scores</guimenuitem>
 				</menuchoice></term>
 				<listitem><para><action>Shows the high score list.</action>
 				When your current game score exceeds one the top ten scores listed, you are prompted to add your name.
@@ -229,7 +229,7 @@
 <qandaentry>
  <question><para>Where are the high scores?</para></question>
  <answer><para>To access the high scores dialog use the <link linkend="game-menu-highscores"><menuchoice><guimenu>Game</guimenu>
-<guimenuitem>Show High Scores...</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
+<guimenuitem>Show High Scores</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
 </qandaentry>
 <qandaentry>
  <question><para>I want to change the game configuration. Where do I go? </para></question>
