@@ -73,8 +73,8 @@
 	<note><title>Note:</title><para>The detailed description of the score patterns can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this handbook.</para></note>
 	<para>Keep in mind that the combination can match more than one score pattern. In this case you will have to determine which score pattern will result in greater points for you.</para>
 	<para>In case the current sequence matches no score pattern, or matches a score pattern you have already used up, you have two more rolls to fix the situation. To use your second (third) roll select the dice you are not satisfied with by clicking on them with your mouse and click the <guibutton>Roll</guibutton> button located right under the dice. This will cause the dice in question to reroll, thus changing their values.</para>
-	<para>After you have done the third reroll you must choose the score pattern which feats the dice sequence on hand. If none of the score patterns feet the sequence - you can either use <guilabel>Chance</guilabel> score pattern, or just select any score pattern on your scoreboard.</para>
-	<note><title>Note:</title><para>If you select score pattern that does not feet current dice sequence, the score pattern you select will become void and of zero value.</para></note>
+	<para>After you have done the third reroll you must choose the score pattern which fits the dice sequence on hand. If none of the score patterns fit the sequence - you can either use <guilabel>Chance</guilabel> score pattern, or just select any score pattern on your scoreboard.</para>
+   <note><title>Note:</title><para>If you select a score pattern that does not fit current dice sequence, the score pattern you select will become void and of zero value.</para></note>
 	<para>As soon as you choose the score pattern its value updates to reflect the dice sequence you currently have.</para>
 	<note><title>Note:</title><para>The detailed description of the score pattern values can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this handbook.</para></note>
 	<para>Right after that your turn ends and the next participant’s turn begins. This sequence repeats some thirteen times and then the game ends, the scores are calculated and the high scores are awarded.</para>
@@ -244,7 +244,7 @@
  <answer><para>To change the players' identities please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>The AI is too dam fast! I cannot see what he's doing!</para></question>
+ <question><para>The AI is too damn fast! I cannot see what it is doing!</para></question>
  <answer><para>To change Artificial Intelligence's speed of action please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 
@@ -252,7 +252,7 @@
 </chapter>
 
 <chapter id="configuration"><title>Game Configuration</title> <!-- do not change this! -->
-<para>&kiriki; configuration dialog lets to you configure the number of participants, to manage their identities, and their response times.</para>
+<para>The &kiriki; configuration dialog lets you configure the number of participants, manage their identities, and their response times.</para>
 <note><title>Note:</title><para>You can change the response times for Artificial Intelligence driven players only.</para></note>
 <para><guilabel>Number of players:</guilabel> this field defines the number of players for &kiriki;. The values allowed here range between two and six.</para>
 <note><title>Note:</title><para>The number of players cannot be less than two.</para></note>
