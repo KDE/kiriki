@@ -16,7 +16,7 @@
 
 int main(int argc, char *argv[])
 {
-	KAboutData about("kiriki", 0, ki18n("Kiriki"), "0.1", ki18n("A Yahtzee dice game for KDE"), KAboutData::License_GPL, ki18n("© 2005-2007 Albert Astals Cid"), KLocalizedString(), "http://games.kde.org/kiriki" );
+	KAboutData about("kiriki", 0, ki18n("Kiriki"), "0.2", ki18n("A Yahtzee dice game for KDE"), KAboutData::License_GPL, ki18n("© 2005-2007 Albert Astals Cid"), KLocalizedString(), "http://games.kde.org/kiriki" );
 	about.addAuthor(ki18n("Albert Astals Cid"), KLocalizedString(), "aacid@kde.org");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;
