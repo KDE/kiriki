@@ -6,7 +6,8 @@
  *   the Free Software Foundation; either version 2 of the License, or     *
  *   (at your option) any later version.                                   *
  ***************************************************************************/
-
+#ifndef _ROW_H
+#define _ROW_H
 #include <QFlags>
 #include <QString>
 
@@ -48,3 +49,4 @@ class Row
 
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(Row::Flags)
+#endif
