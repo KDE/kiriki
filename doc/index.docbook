@@ -190,23 +190,6 @@
 <qandaset>
 <!--Following is a standard list of FAQ questions.-->
 <qandaentry>
-<question><para>Who made this game?</para></question>
- <answer><para>The kdegames team. You can find their website <ulink url="http://games.kde.org">here</ulink>.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>Where can I get cheatcodes? </para></question>
- <answer><para>You cannot get cheatcodes for &kde; games.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>How do I start a new game? </para></question>
- <answer><para>To start a new game of &kiriki; use the <link linkend="game-menu-new"><menuchoice><guimenu>Game</guimenu>
-<guimenuitem>New</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>How do I pause the game? </para></question>
- <answer><para>&kiriki; does not time the gameplay and therefore needs no <quote>Pause</quote> feature.</para></answer>
-</qandaentry>
-<qandaentry>
  <question><para>I want to change the way this game looks. Can I? </para></question>
  <answer><para>No. &kiriki; does not currently feature any themes.</para></answer>
 </qandaentry>
@@ -215,7 +198,7 @@
  <answer><para>No. &kiriki; has no <quote>Undo</quote> option.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>Can I use keyboard?</para></question>
+ <question><para>Can I use the keyboard to play the game?</para></question>
  <answer><para>No. The game of &kiriki; cannot be played using keyboard.</para></answer>
 </qandaentry>
 <qandaentry>
@@ -227,24 +210,7 @@
  <answer><para>No. There is no <quote>Save</quote> feature in &kiriki;.</para></answer>
 </qandaentry>
 <qandaentry>
- <question><para>Where are the high scores?</para></question>
- <answer><para>To access the high scores dialog use the <link linkend="game-menu-highscores"><menuchoice><guimenu>Game</guimenu>
-<guimenuitem>Show High Scores</guimenuitem></menuchoice></link> option on the menubar.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>I want to change the game configuration. Where do I go? </para></question>
- <answer><para>To change the game configuration please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>I want to change the players' names. Where do I go? </para></question>
- <answer><para>To change the players' names please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>I want to play &kiriki; with my friends. Where do I set who controls the player?</para></question>
- <answer><para>To change the players' identities please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
-</qandaentry>
-<qandaentry>
- <question><para>The AI is too damn fast! I cannot see what it is doing!</para></question>
+ <question><para>The AI is too fast! I cannot see what it is doing!</para></question>
  <answer><para>To change Artificial Intelligence's speed of action please use the game configuration dialog discussed in the <link linkend="configuration">Game Configuration</link> section of this handbook.</para></answer>
 </qandaentry>
 
