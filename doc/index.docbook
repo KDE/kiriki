@@ -30,7 +30,7 @@
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
  
-<date>&docupdate;</date><!-- Date of (re)writing, ro update. Use the variable definitions within header to change this value.-->
+<date>&docupdate;</date><!-- Date of (re)writing, or update. Use the variable definitions within header to change this value.-->
 <releaseinfo>&docversion;</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
  
 <!--Short description of this document. Do not change unless necessary!-->
@@ -44,7 +44,7 @@
 	<keyword>kdegames</keyword> <!-- do not change this! -->
 	<keyword>game</keyword> <!-- do not change this! -->
 	<keyword>kiriki</keyword><!--Application name goes here-->
-<!-- Game genre. use as many as necessary.Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
 	<keyword>dice</keyword>
 	<keyword>arcade</keyword>
 	<keyword>dice game</keyword>
@@ -55,7 +55,7 @@
 </bookinfo>
 <!--Content begins here: -->
 <chapter id="introduction"><title>Introduction</title> <!-- do not change this! -->
-	<note><title>Gametype:</title><para>Dice, Arcade</para></note><!-- Game genre. use as many as necessary.Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note><title>Gametype:</title><para>Dice, Arcade</para></note><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
 	<note><title>Number of possible players:</title><para>Six</para></note><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
 	<para>
 	&kiriki; is an addictive and fun dice game for &kde;, designed to be played by as many as six players. Participants have to collect points by rolling five dice for up to three times per single turn. Each roll generates a specific combination of numbers which the player is free to either accept or decline. However, each specific combination of numbers can be accepted only once. After thirteen turns the game ends and the scores are compared. The player with the largest amount of points wins the game.
