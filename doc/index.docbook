@@ -2,9 +2,7 @@
 <!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&kiriki;">
-  <!ENTITY kappversion "0.1"><!--Applicaion version. Use this variable everywhere it's needed.-->
-  <!ENTITY docversion "1.0"><!--Document version. Use this variable everywhere it's needed.-->
-  <!ENTITY docupdate "2007-03-04"><!--Document version. Use this variable everywhere it's needed.-->
+  <!ENTITY kappversion "0.1"><!--Applicaion version. Use this variable everywhere it's needed.-->  
   <!ENTITY package "kdegames">  <!-- do not change this! -->
   <!ENTITY % English "INCLUDE" > <!-- change language only here -->
   <!ENTITY % addindex "IGNORE"> <!-- do not change this! -->
@@ -30,8 +28,8 @@
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
  
-<date>&docupdate;</date><!-- Date of (re)writing, or update. Use the variable definitions within header to change this value.-->
-<releaseinfo>&docversion;</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
+<date>2007-03-04</date><!-- Date of (re)writing, or update.-->
+<releaseinfo>&kappversion;</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
  
 <!--Short description of this document. Do not change unless necessary!-->
 <abstract>
