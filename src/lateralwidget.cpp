@@ -11,9 +11,12 @@
 
 #include <QLabel>
 #include <QPushButton>
+#include <QStackedWidget>
 #include <QVBoxLayout>
 
+#include <kaction.h>
 #include <kicon.h>
+#include <kstandardgameaction.h>
 #include <klocale.h>
 
 #include "diceswidget.h"
@@ -23,14 +26,24 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	m_rolls = new QLabel(this);
 	m_dices = new dicesWidget(this);
+	m_buttons = new QStackedWidget(this);
 	m_rollButton = new QPushButton(KIcon("roll"), i18n("&Roll"), this);
+	
+	KAction *dummyAction = KStandardGameAction::gameNew(0, 0, 0);
+	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);
+	delete dummyAction;
+
+	m_newGameButton -> setEnabled(false);
 
 	lay -> addWidget(m_rolls, 0, Qt::AlignHCenter);
 	lay -> addWidget(m_dices);
-	lay -> addWidget(m_rollButton);
+	lay -> addWidget(m_buttons);
+	m_buttons -> addWidget(m_rollButton);
+	m_buttons -> addWidget(m_newGameButton);
 	lay -> addStretch(1);
 
 	connect(m_rollButton, SIGNAL(clicked(bool)), this, SLOT(roll()));
+	connect(m_newGameButton, SIGNAL(clicked(bool)), this, SLOT(newGame()));
 	
 	nextTurn();
 }
@@ -40,12 +53,21 @@ void lateralWidget::nextTurn()
 	m_roll = 1;
 	updateRollLabel();
 	m_dices -> rollAll();
+	m_buttons -> setCurrentWidget(m_rollButton);
 }
 
 void lateralWidget::setEnabled(bool enabled)
 {
 	m_rollButton -> setEnabled(enabled);
+	//newGameButton enabledness is controlled internally
+	//m_newGameButton -> setEnabled(enabled);
 	m_dices -> setEnabled(enabled);
+}
+
+void lateralWidget::endGame()
+{
+	m_newGameButton -> setEnabled(true);
+	m_buttons -> setCurrentWidget(m_newGameButton);
 }
 
 int lateralWidget::getDice(int dice) const
@@ -136,6 +158,12 @@ void lateralWidget::roll()
 		m_roll++;
 		updateRollLabel();
 	}
+}
+
+void lateralWidget::newGame()
+{
+	m_newGameButton -> setEnabled(false);
+	emit newGameClicked();
 }
 
 void lateralWidget::updateRollLabel()

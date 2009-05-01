@@ -14,6 +14,7 @@
 
 class QLabel;
 class QPushButton;
+class QStackedWidget;
 
 class dicesWidget;
 
@@ -26,6 +27,7 @@ Q_OBJECT
 		void nextTurn();		
 
 		void setEnabled(bool enabled);
+		void endGame();
 
 		int getDice(int dice) const;
 		void selectDice(int dice, bool select);
@@ -45,16 +47,22 @@ Q_OBJECT
 		int getKiriki() const;
 		int totalSum() const;
 		
+	signals:
+		void newGameClicked();
+
 	public slots:
 		void roll();
+		void newGame();
 	
 	private:
 		void updateRollLabel();
 		
 		QLabel *m_rolls;
 		dicesWidget *m_dices;
+		QStackedWidget *m_buttons;
 		QPushButton *m_rollButton;
-		
+		QPushButton *m_newGameButton;
+
 		int m_roll;
 };
 

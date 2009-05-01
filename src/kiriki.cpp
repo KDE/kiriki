@@ -42,6 +42,7 @@ kiriki::kiriki() : KXmlGuiWindow()
 	QHBoxLayout *lay = new QHBoxLayout(w);
 	
 	m_lateral = new lateralWidget(w);
+	connect(m_lateral, SIGNAL(newGameClicked()), this, SLOT(newGame()));
 	lay -> addWidget(m_lateral);
 	
 	m_scoresWidget = new QTreeView(w);
@@ -132,7 +133,8 @@ void kiriki::newGame()
 void kiriki::endGame()
 {
 	const player &p = m_scores -> winner();
-	m_lateral->setEnabled(false);
+	m_lateral -> setEnabled(false);
+	m_lateral -> endGame();
 	if (p.isHuman())
 	{
 		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
