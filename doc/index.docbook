@@ -2,7 +2,7 @@
 <!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&kiriki;">
-  <!ENTITY kappversion "0.1"><!--Applicaion version. Use this variable everywhere it's needed.-->  
+  <!ENTITY kappversion "0.2"><!--Applicaion version. Use this variable everywhere it's needed.-->  
   <!ENTITY package "kdegames">  <!-- do not change this! -->
   <!ENTITY % English "INCLUDE" > <!-- change language only here -->
   <!ENTITY % addindex "IGNORE"> <!-- do not change this! -->
@@ -28,7 +28,7 @@
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
  
-<date>2007-03-04</date><!-- Date of (re)writing, or update.-->
+<date>2010-02-01</date><!-- Date of (re)writing, or update.-->
 <releaseinfo>&kappversion;</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
  
 <!--Short description of this document. Do not change unless necessary!-->
@@ -120,7 +120,7 @@
  
 <chapter id="interface"><title>Interface Overview</title> <!-- do not change this! -->
 <sect1 id="game-menu">
-	<title>The <guimenu>Game</guimenu> Menu</title>
+	<title>The Game Menu</title>
 		<variablelist>
 			<varlistentry id="game-menu-new">
 				<term><menuchoice>
@@ -159,7 +159,7 @@
 		</variablelist>
 </sect1>
 <sect1 id="settings-menu">
-	<title>The <guimenu>Settings</guimenu> Menu</title>
+	<title>The Settings Menu</title>
 		<variablelist>
 			<varlistentry id="settings-menu-shortcuts">
 				<term><menuchoice>
@@ -178,7 +178,7 @@
 		</variablelist>
 </sect1>
 <sect1 id="help"><!--This is a standard Help menubar entry. Only change if needed.-->
-<title>The <guimenu>Help</guimenu> Menu</title>
+<title>The Help Menu</title>
 &help.menu.documentation;
 </sect1>
 </chapter>
