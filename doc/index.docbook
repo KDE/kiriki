@@ -62,7 +62,7 @@
  
 <chapter id="howto"><title>How to Play</title> <!-- do not change this! -->
 <!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
-	<note><title>Objective:</title><para>Earn more score points then either of the opponents.</para></note><!--Describe the objective of the game.-->
+	<note><title>Objective:</title><para>Earn more score points than either of the opponents.</para></note><!--Describe the objective of the game.-->
 <!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
 	<para>
 	Once &kiriki; starts, it right away gives out the first combination for the player one. If you are the player one, then it is now your turn, otherwise you will have to wait until all other players make their moves.</para>
