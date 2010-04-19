@@ -27,6 +27,7 @@ Q_OBJECT
 		void nextTurn();		
 
 		void setEnabled(bool enabled);
+		void setDemoMode(bool demoMode);
 		void endGame();
 
 		int getDice(int dice) const;
@@ -53,6 +54,7 @@ Q_OBJECT
 	public slots:
 		void roll();
 		void newGame();
+		void enableDemoMode();
 	
 	private:
 		void updateRollLabel();
@@ -62,6 +64,7 @@ Q_OBJECT
 		QStackedWidget *m_buttons;
 		QPushButton *m_rollButton;
 		QPushButton *m_newGameButton;
+		bool m_demoMode;
 
 		int m_roll;
 };

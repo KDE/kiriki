@@ -28,6 +28,9 @@
 #include <kstandardgameaction.h>
 #include <kactioncollection.h>
 #include <kaction.h>
+#include <KStatusBar>
+#include <KToggleAction>
+#include <KToolBar>
 #include <kdeprintdialog.h>
 
 #include "computer.h"
@@ -42,7 +45,6 @@ kiriki::kiriki() : KXmlGuiWindow()
 	QHBoxLayout *lay = new QHBoxLayout(w);
 	
 	m_lateral = new lateralWidget(w);
-	connect(m_lateral, SIGNAL(newGameClicked()), this, SLOT(newGame()));
 	lay -> addWidget(m_lateral);
 	
 	m_scoresWidget = new QTreeView(w);
@@ -68,10 +70,16 @@ kiriki::kiriki() : KXmlGuiWindow()
 	m_scores = 0;
 	
 	// Game
-	KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
+	KAction *gameNewAction = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
 	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
 	KStandardGameAction::print(this, SLOT(print()), actionCollection());
 	KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
+	m_demoAction = KStandardGameAction::demo(this, SLOT(demo()), actionCollection());
+	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setChecked(bool)));
+	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setDisabled(bool)));
+	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setDisabled(bool)));
+	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setChecked(bool)));
+	connect(m_lateral, SIGNAL(newGameClicked()), gameNewAction, SLOT(trigger()));
 	
 	// Preferences
 	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
@@ -80,7 +88,8 @@ kiriki::kiriki() : KXmlGuiWindow()
 	setupGUI(Keys | Save | Create);
 	show();
 	
-	newGame();
+	if (kirikiSettings::startupDemoEnabled()) m_demoAction -> trigger();
+	else newGame();
 }
 
 void kiriki::pressed(const QModelIndex &index)
@@ -128,6 +137,53 @@ void kiriki::newGame()
 
 	m_scoresWidget -> header() -> setResizeMode(0, QHeaderView::Custom);
 	m_scoresWidget -> resizeColumnToContents(0);
+	statusBar()->hide();
+	if (m_demoAction -> isChecked()) playComputer();
+}
+
+void kiriki::demo()
+{
+	if(
+		m_scores &&
+		!m_scores -> allScores() &&
+		!m_scores -> currentPlayer().noScores() &&
+		KMessageBox::warningContinueCancel(
+			this,
+			i18n("Starting the demo will end the current game. Any progress will be lost. Do you want to continue?")
+		) == KMessageBox::Cancel
+	)
+	{
+		m_demoAction -> setChecked(false);
+		return;
+	}
+
+	bool preDemoHumans[6];
+	preDemoHumans[0] = kirikiSettings::player1IsHuman();
+	preDemoHumans[1] = kirikiSettings::player2IsHuman();
+	preDemoHumans[2] = kirikiSettings::player3IsHuman();
+	preDemoHumans[3] = kirikiSettings::player4IsHuman();
+	preDemoHumans[4] = kirikiSettings::player5IsHuman();
+	preDemoHumans[5] = kirikiSettings::player6IsHuman();
+	int preDemoNumPlayers = kirikiSettings::numberOfPlayers();
+	kirikiSettings::setPlayer1IsHuman(false);
+	kirikiSettings::setPlayer2IsHuman(false);
+	kirikiSettings::setPlayer3IsHuman(false);
+	kirikiSettings::setPlayer4IsHuman(false);
+	kirikiSettings::setPlayer5IsHuman(false);
+	kirikiSettings::setPlayer6IsHuman(false);
+	kirikiSettings::setNumberOfPlayers(6);
+	newGame();
+	emit demoStarted();
+	kirikiSettings::setPlayer1IsHuman(preDemoHumans[0]);
+	kirikiSettings::setPlayer2IsHuman(preDemoHumans[1]);
+	kirikiSettings::setPlayer3IsHuman(preDemoHumans[2]);
+	kirikiSettings::setPlayer4IsHuman(preDemoHumans[3]);
+	kirikiSettings::setPlayer5IsHuman(preDemoHumans[4]);
+	kirikiSettings::setPlayer6IsHuman(preDemoHumans[5]);
+	kirikiSettings::setNumberOfPlayers(preDemoNumPlayers);
+	statusBar()->showMessage(i18n("Demonstration. Press \"New\" to start a new game."));
+	statusBar()->show();
+	m_lateral->enableDemoMode();
 }
 
 void kiriki::endGame()
@@ -143,6 +199,7 @@ void kiriki::endGame()
 			sc.exec();
 		}
 	}
+	if (m_demoAction -> isChecked()) QTimer::singleShot(3000, this, SLOT(demo()));
 }
 
 void kiriki::showHighScores()
@@ -224,6 +281,8 @@ void kiriki::nextTurn()
 
 void kiriki::playComputer()
 {
+	if (!m_scores -> currentPlayer().isHuman())
+	{
 	m_lateral -> setEnabled(false);
 	for (int i = 0; i < 5; i++) setComputerDiceValue(i, m_lateral -> getDice(i));
 	ComputerRolling(m_scores -> currentPlayer(), m_lateral -> getRolls());
@@ -237,6 +296,8 @@ void kiriki::playComputer()
 	int row;
 	row = ComputerScoring(m_scores -> currentPlayer());
 	play(row);
+	}
+	else m_lateral -> setEnabled(true);
 }
 
 #include "kiriki.moc"

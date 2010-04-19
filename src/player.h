@@ -37,6 +37,7 @@ class player
 		int grandTotal() const;
 
 		bool allScores() const;
+		bool noScores() const;
 	
 	private:
 		int scoreRange(int begin, int end) const;

@@ -102,6 +102,14 @@ bool player::allScores() const
 	return all;
 }
 
+
+bool player::noScores() const
+{
+	bool none = true;
+	for(int i = 0; none && i < 13; ++i) none = m_scores[i] == -1;
+	return none;
+}
+
 int player::scoreRange(int begin, int end) const
 {
 	int score = 0;

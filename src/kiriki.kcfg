@@ -16,6 +16,9 @@
 			<min>2</min>
 			<max>6</max>
 		</entry>
+		<entry key="startupDemoEnabled" type="Bool">
+			<default>true</default>
+		</entry>
 		<entry key="player1Name" type="String" >
 		<code>
 			QString playerName1 = i18nc("default name of first player", "Albert");
@@ -51,6 +54,9 @@
 			QString playerName6 = i18nc("default name of sixth player", "Margaret");
 		</code>
 		<default code="true">playerName6</default>
+		</entry>
+		<entry key="player1IsHuman" type="Bool" >
+			<default>true</default>
 		</entry>
 		<entry key="player2IsHuman" type="Bool" >
 			<default>false</default>

@@ -26,7 +26,7 @@ scores::scores()
 		if (i == 1)
 		{
 			p.setName(kirikiSettings::player1Name());
-			p.setHuman(true);
+			p.setHuman(kirikiSettings::player1IsHuman());
 		}
 		else if (i == 2)
 		{

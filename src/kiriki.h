@@ -15,6 +15,8 @@
 class QModelIndex;
 class QTreeView;
 
+class KToggleAction;
+
 class lateralWidget;
 class scores;
 
@@ -23,9 +25,13 @@ class kiriki : public KXmlGuiWindow
 Q_OBJECT
 	public:
 		kiriki();
+
+	signals:
+		void demoStarted(bool t = true);
 	
 	private slots:
 		void newGame();
+		void demo();
 		void pressed(const QModelIndex &index);
 		void showHighScores();
 		void showPreferences();
@@ -41,6 +47,7 @@ Q_OBJECT
 		QTreeView *m_scoresWidget;
 		scores *m_scores;
 		lateralWidget *m_lateral;
+		KToggleAction *m_demoAction;
 };
 
 #endif

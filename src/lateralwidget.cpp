@@ -33,7 +33,12 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
 	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);
 	delete dummyAction;
 
-	m_newGameButton -> setEnabled(false);
+	if (!m_demoMode) m_newGameButton -> setEnabled(false);
+	else
+	{
+		m_newGameButton->setEnabled(true);
+		m_dices->setEnabled(false);
+	}
 
 	lay -> addWidget(m_rolls, 0, Qt::AlignHCenter);
 	lay -> addWidget(m_dices);
@@ -53,7 +58,7 @@ void lateralWidget::nextTurn()
 	m_roll = 1;
 	updateRollLabel();
 	m_dices -> rollAll();
-	m_buttons -> setCurrentWidget(m_rollButton);
+	if (!m_demoMode) m_buttons -> setCurrentWidget(m_rollButton);
 }
 
 void lateralWidget::setEnabled(bool enabled)
@@ -62,6 +67,18 @@ void lateralWidget::setEnabled(bool enabled)
 	//newGameButton enabledness is controlled internally
 	//m_newGameButton -> setEnabled(enabled);
 	m_dices -> setEnabled(enabled);
+}
+
+void lateralWidget::setDemoMode(bool demoMode)
+{
+	m_demoMode = demoMode;
+}
+
+void lateralWidget::enableDemoMode()
+{
+	m_buttons -> setCurrentWidget(m_newGameButton);
+	m_newGameButton->setEnabled(true);
+	m_demoMode = true;
 }
 
 void lateralWidget::endGame()
@@ -162,14 +179,19 @@ void lateralWidget::roll()
 
 void lateralWidget::newGame()
 {
-	m_newGameButton -> setEnabled(false);
+	if (!m_demoMode) m_newGameButton -> setEnabled(false);
+	else
+	{
+		m_buttons->setCurrentWidget(m_rollButton);
+		m_dices->setEnabled(false);
+	}
 	emit newGameClicked();
 }
 
 void lateralWidget::updateRollLabel()
 {
 	m_rolls -> setText(i18n("Roll %1 of 3",m_roll));
-	setEnabled(m_roll != 3);
+	if (!m_demoMode) setEnabled(m_roll != 3);
 }
 
 #include "lateralwidget.moc"
