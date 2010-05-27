@@ -77,6 +77,7 @@ kiriki::kiriki() : KXmlGuiWindow()
 	m_demoAction = KStandardGameAction::demo(this, SLOT(demo()), actionCollection());
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setChecked(bool)));
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setDisabled(bool)));
+	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(setDemoMode(bool)));
 	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setDisabled(bool)));
 	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setChecked(bool)));
 	connect(m_lateral, SIGNAL(newGameClicked()), gameNewAction, SLOT(trigger()));

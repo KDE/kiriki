@@ -27,7 +27,6 @@ Q_OBJECT
 		void nextTurn();		
 
 		void setEnabled(bool enabled);
-		void setDemoMode(bool demoMode);
 		void endGame();
 
 		int getDice(int dice) const;
@@ -55,6 +54,7 @@ Q_OBJECT
 		void roll();
 		void newGame();
 		void enableDemoMode();
+		void setDemoMode(bool demoMode);
 	
 	private:
 		void updateRollLabel();
