@@ -33,7 +33,7 @@ class Row
 		};
 		Q_DECLARE_FLAGS(Flags, Flag)
 		
-		Row(Type type, const QString &text = QString(), int scoreRow = -1, Flags flags = NoFlags);
+		explicit Row(Type type, const QString &text = QString(), int scoreRow = -1, Flags flags = NoFlags);
 		
 		Type type() const;
 		QString text() const;
