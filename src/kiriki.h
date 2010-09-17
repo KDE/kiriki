@@ -13,8 +13,10 @@
 #include <kxmlguiwindow.h>
 
 class QModelIndex;
+class QStyledItemDelegate;
 class QTreeView;
 
+class KAction;
 class KToggleAction;
 
 class lateralWidget;
@@ -37,6 +39,7 @@ Q_OBJECT
 		void showPreferences();
 		void print();
 		void playComputer();
+		void showHint();
 	
 	private:
 		void endGame();
@@ -48,6 +51,10 @@ Q_OBJECT
 		scores *m_scores;
 		lateralWidget *m_lateral;
 		KToggleAction *m_demoAction;
+		QStyledItemDelegate *m_delegateHighlighted;
+		int m_highlightedRowIndex;
+		bool m_hintGiven;
+		KAction* m_hintAction;
 };
 
 #endif

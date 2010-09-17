@@ -48,6 +48,7 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
 	lay -> addStretch(1);
 
 	connect(m_rollButton, SIGNAL(clicked(bool)), this, SLOT(roll()));
+	connect(m_rollButton, SIGNAL(clicked(bool)), this, SLOT(unhighlightAllDice()));
 	connect(m_newGameButton, SIGNAL(clicked(bool)), this, SLOT(newGame()));
 	
 	nextTurn();
@@ -95,6 +96,16 @@ int lateralWidget::getDice(int dice) const
 void lateralWidget::selectDice(int dice, bool selected) 
 {
 	m_dices -> selectDice(dice, selected);
+}
+
+void lateralWidget::highlightDice(int dice, bool selected)
+{
+	m_dices -> highlightDice(dice, selected);
+}
+
+void lateralWidget::unhighlightAllDice()
+{
+	for (int i = 0; i < 5; ++i) m_dices -> highlightDice(i, false);
 }
 
 int lateralWidget::getRolls() const
@@ -174,6 +185,7 @@ void lateralWidget::roll()
 	{
 		m_roll++;
 		updateRollLabel();
+		emit rolled();
 	}
 }
 

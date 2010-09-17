@@ -14,12 +14,18 @@
 #include <QPainter>
 #include <QPixmap>
 #include <QMouseEvent>
+#include <QStyleOptionViewItemV4>
 
 #include <krandom.h>
 #include <kstandarddirs.h>
 
 dicesWidget::dicesWidget(QWidget *parent) : QWidget(parent)
 {
+	m_highlightDice[0] =
+	m_highlightDice[1] =
+	m_highlightDice[2] =
+	m_highlightDice[3] =
+	m_highlightDice[4] = 0;
 	setMinimumSize(90, 450);
 	
 	m_images[0] = QPixmap(KStandardDirs::locate("appdata", "images/dice-none.png"));
@@ -61,6 +67,11 @@ int dicesWidget::getDice(int dice) const
 void dicesWidget::selectDice(int dice, bool select)
 {
 	m_rollDice[dice] = select;
+}
+
+void dicesWidget::highlightDice(int dice, bool highlight)
+{
+	m_highlightDice[dice] = highlight;
 }
 
 int dicesWidget::getOnes() const
@@ -168,6 +179,15 @@ void dicesWidget::paintEvent(QPaintEvent *)
 		QPixmap pixmap(m_rollDice[i] ? m_images[0] : m_images[m_dice[i]]);
 		// TODO need suggestions
 		// if (!m_enabled) pixmap = KPixmapEffect::toGray(pixmap, false);
+		if (m_highlightDice[i])
+		{
+			QStyleOptionViewItemV4 option;
+			option.initFrom(this);
+			option.rect = QRect(5, 9 + 90 * i, 80, 80);
+			option.state |= QStyle::State_Selected;
+			option.showDecorationSelected = true;
+			style()->drawControl(QStyle::CE_ItemViewItem, &option, &p);
+		}
 		p.drawPixmap(5, 10 + (10 + 80) * i, pixmap);
 	}
 }

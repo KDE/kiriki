@@ -31,6 +31,7 @@ Q_OBJECT
 
 		int getDice(int dice) const;
 		void selectDice(int dice, bool select);
+		void highlightDice(int dice, bool highlight);
 		int getRolls() const;
 		
 		int getOnes() const;
@@ -49,12 +50,14 @@ Q_OBJECT
 		
 	signals:
 		void newGameClicked();
+		void rolled();
 
 	public slots:
 		void roll();
 		void newGame();
 		void enableDemoMode();
 		void setDemoMode(bool demoMode);
+		void unhighlightAllDice();
 	
 	private:
 		void updateRollLabel();

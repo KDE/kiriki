@@ -25,6 +25,7 @@ class dicesWidget : public QWidget
 
 		int getDice(int dice) const;
 		void selectDice(int dice, bool select);
+		void highlightDice(int dice, bool highlight);
 		
 		int getOnes() const;
 		int getTwos() const;
@@ -51,6 +52,7 @@ class dicesWidget : public QWidget
 		
 		bool m_enabled;
 		bool m_rollDice[5];
+		bool m_highlightDice[5];
 		int m_dice[5];
 		QPixmap m_images[7];
 };

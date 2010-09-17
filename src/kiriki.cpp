@@ -14,14 +14,17 @@
 #include <QHBoxLayout>
 #include <QHeaderView>
 #include <QItemDelegate>
+#include <QItemSelectionModel>
 #include <QPainter>
 #include <QPrintDialog>
 #include <QPrinter>
+#include <QStyledItemDelegate>
 #include <QTimer>
 #include <QTreeView>
 
 #include <kapplication.h>
 #include <kconfigdialog.h>
+#include <klocalizedstring.h>
 #include <kmessagebox.h>
 #include <kscoredialog.h>
 #include <kstandardaction.h>
@@ -39,7 +42,7 @@
 #include "scores.h"
 #include "settings.h"
 
-kiriki::kiriki() : KXmlGuiWindow()
+kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 {
 	QWidget *w = new QWidget(this);
 	QHBoxLayout *lay = new QHBoxLayout(w);
@@ -48,6 +51,9 @@ kiriki::kiriki() : KXmlGuiWindow()
 	lay -> addWidget(m_lateral);
 	
 	m_scoresWidget = new QTreeView(w);
+
+	m_delegateHighlighted = new QStyledItemDelegate(m_scoresWidget);
+
 	m_scoresWidget -> setItemDelegate(new QItemDelegate(m_scoresWidget));
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
 	m_scoresWidget -> setRootIsDecorated(false);
@@ -74,12 +80,17 @@ kiriki::kiriki() : KXmlGuiWindow()
 	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
 	KStandardGameAction::print(this, SLOT(print()), actionCollection());
 	KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
+	m_hintAction = KStandardGameAction::hint(this, SLOT(showHint()), actionCollection());
 	m_demoAction = KStandardGameAction::demo(this, SLOT(demo()), actionCollection());
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setChecked(bool)));
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setDisabled(bool)));
+	connect(gameNewAction, SIGNAL(triggered(bool)), m_hintAction, SLOT(setDisabled(bool)));
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(setDemoMode(bool)));
+	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(unhighlightAllDice()));
 	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setDisabled(bool)));
 	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setChecked(bool)));
+	connect(this, SIGNAL(demoStarted(bool)), m_hintAction, SLOT(setDisabled(bool)));
+	connect(this, SIGNAL(demoStarted(bool)), m_lateral, SLOT(unhighlightAllDice()));
 	connect(m_lateral, SIGNAL(newGameClicked()), gameNewAction, SLOT(trigger()));
 	
 	// Preferences
@@ -98,6 +109,8 @@ void kiriki::pressed(const QModelIndex &index)
 	if (!m_scores -> currentPlayer().isHuman()) return;
 
 	if (index.column() == 0 || index.column() == m_scores -> currentPlayerNumber() + 1) play(index);
+
+	m_scoresWidget -> setItemDelegateForRow(m_highlightedRowIndex, 0);
 }
 
 void kiriki::play(const QModelIndex &index)
@@ -140,6 +153,7 @@ void kiriki::newGame()
 	m_scoresWidget -> resizeColumnToContents(0);
 	statusBar()->hide();
 	if (m_demoAction -> isChecked()) playComputer();
+	connect(m_lateral, SIGNAL(rolled()), statusBar(), SLOT(hide()));
 }
 
 void kiriki::demo()
@@ -175,6 +189,7 @@ void kiriki::demo()
 	kirikiSettings::setNumberOfPlayers(6);
 	newGame();
 	emit demoStarted();
+	disconnect(m_lateral, SIGNAL(rolled()), statusBar(), SLOT(hide()));
 	kirikiSettings::setPlayer1IsHuman(preDemoHumans[0]);
 	kirikiSettings::setPlayer2IsHuman(preDemoHumans[1]);
 	kirikiSettings::setPlayer3IsHuman(preDemoHumans[2]);
@@ -187,17 +202,64 @@ void kiriki::demo()
 	m_lateral->enableDemoMode();
 }
 
+void kiriki::showHint()
+{
+	if (!m_hintGiven && KMessageBox::Cancel == KMessageBox::warningContinueCancel(
+			this,
+			i18n("Asking for a hint will disqualify the current game from entering the high score list."),
+			i18n("Confirm Hint Request"),
+			KGuiItem(i18n("Give Hint Anyway"), "arrow-right")
+			)
+		) return;
+	m_hintGiven = true;
+
+	for (int i = 0; i < 5; ++i) setComputerDiceValue(i, m_lateral -> getDice(i));
+	ComputerRolling(m_scores -> currentPlayer(), m_lateral -> getRolls());
+	if (computerDiceSelected() && m_lateral -> getRolls() < 3)
+	{
+		int rollAmount = 0;
+		for (int i = 0; i < 5; ++i)
+		{
+			if (getComputerDiceSelected(i))
+			{
+				++rollAmount;
+				m_lateral -> highlightDice(i, true);
+			}
+		}
+		m_scoresWidget->selectionModel()->clearSelection();
+		statusBar()->showMessage(i18np("Roll highlighted die.", "Roll highlighted dice.", rollAmount));
+		statusBar()->show();
+	}
+	else
+	{
+		static const int scoreRows[13] = { 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16 };
+		QModelIndex mi;
+		mi = m_scores -> index(scoreRows[ComputerScoring(m_scores -> currentPlayer())], 0);
+		m_highlightedRowIndex  = mi.row();
+		m_scoresWidget -> setItemDelegateForRow(m_highlightedRowIndex, m_delegateHighlighted);
+		QItemSelectionModel::SelectionFlags fl = QItemSelectionModel::Clear |
+		                                         QItemSelectionModel::Rows  |
+		                                         QItemSelectionModel::Select;
+		m_scoresWidget -> selectionModel() -> select(mi, fl);
+	}
+}
+
 void kiriki::endGame()
 {
 	const player &p = m_scores -> winner();
 	m_lateral -> setEnabled(false);
 	m_lateral -> endGame();
+	m_hintAction -> setEnabled(false);
 	if (p.isHuman())
 	{
 		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
-		if (sc.addScore(p.grandTotal()))
+		if (m_hintGiven) m_hintGiven = false;
+		else
 		{
-			sc.exec();
+			if (sc.addScore(p.grandTotal()))
+			{
+				sc.exec();
+			}
 		}
 	}
 	if (m_demoAction -> isChecked()) QTimer::singleShot(3000, this, SLOT(demo()));
@@ -275,8 +337,16 @@ void kiriki::nextTurn()
 		while (m_scores -> currentPlayer().allScores()) m_scores -> nextPlayer();
 		
 		m_lateral -> nextTurn();
-		if (!m_scores -> currentPlayer().isHuman()) QTimer::singleShot(kirikiSettings::waitTime(), this, SLOT(playComputer()));
-		else m_lateral -> setEnabled(true);
+		if (!m_scores -> currentPlayer().isHuman())
+		{
+			m_hintAction -> setEnabled(false);
+			QTimer::singleShot(kirikiSettings::waitTime(), this, SLOT(playComputer()));
+		}
+		else
+		{
+			m_hintAction -> setEnabled(true);
+			m_lateral -> setEnabled(true);
+		}
 	 }
 }
 
