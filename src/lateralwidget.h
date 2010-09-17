@@ -56,7 +56,7 @@ Q_OBJECT
 		void roll();
 		void newGame();
 		void enableDemoMode();
-		void setDemoMode(bool demoMode);
+		void disableDemoMode();
 		void unhighlightAllDice();
 	
 	private:

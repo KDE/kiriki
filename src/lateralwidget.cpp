@@ -70,16 +70,18 @@ void lateralWidget::setEnabled(bool enabled)
 	m_dices -> setEnabled(enabled);
 }
 
-void lateralWidget::setDemoMode(bool demoMode)
-{
-	m_demoMode = demoMode;
-}
-
 void lateralWidget::enableDemoMode()
 {
 	m_buttons -> setCurrentWidget(m_newGameButton);
 	m_newGameButton->setEnabled(true);
 	m_demoMode = true;
+}
+
+void lateralWidget::disableDemoMode()
+{
+	m_buttons -> setCurrentWidget(m_rollButton);
+	m_newGameButton -> setEnabled(false);
+	m_demoMode = false;
 }
 
 void lateralWidget::endGame()
@@ -191,12 +193,7 @@ void lateralWidget::roll()
 
 void lateralWidget::newGame()
 {
-	if (!m_demoMode) m_newGameButton -> setEnabled(false);
-	else
-	{
-		m_buttons->setCurrentWidget(m_rollButton);
-		m_dices->setEnabled(false);
-	}
+	disableDemoMode();
 	emit newGameClicked();
 }
 

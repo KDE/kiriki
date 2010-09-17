@@ -85,7 +85,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setChecked(bool)));
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setDisabled(bool)));
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_hintAction, SLOT(setDisabled(bool)));
-	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(setDemoMode(bool)));
+	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(disableDemoMode()));
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(unhighlightAllDice()));
 	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setDisabled(bool)));
 	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setChecked(bool)));
