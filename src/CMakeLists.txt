@@ -28,4 +28,4 @@ install(TARGETS kiriki ${INSTALL_TARGETS_DEFAULT_ARGS})
 ########### install files ###############
 
 install(FILES kirikiui.rc DESTINATION ${DATA_INSTALL_DIR}/kiriki )
-install(FILES kiriki.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install(PROGRAMS kiriki.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
