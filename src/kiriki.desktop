@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Kiriki
+Name[ast]=Kiriki
 Name[ca]=Kiriki
 Name[ca@valencia]=Kiriki
 Name[cs]=Kiriki
@@ -53,6 +54,7 @@ Type=Application
 Exec=kiriki -caption "%c"
 X-DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
+GenericName[ast]=Xuegu de daos asemeyáu al Yahtzee
 GenericName[ca]=Joc de daus com el Yahtzee
 GenericName[ca@valencia]=Joc de daus com el Yahtzee
 GenericName[cs]=Hra s kostkami podobná Yahtzee
