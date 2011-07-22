@@ -27,7 +27,7 @@
 			<year>2007</year>
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
- 
+<legalnotice>&FDLNotice;</legalnotice> 
 <date>2010-02-01</date><!-- Date of (re)writing, or update.-->
 <releaseinfo>&kappversion;</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
  
