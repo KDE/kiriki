@@ -70,7 +70,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	QFontMetrics fm(f);
 	m_scoresWidget -> header() -> setMinimumSectionSize(fm.width("9999"));
 
-	connect(m_scoresWidget, SIGNAL(pressed(const QModelIndex &)), this, SLOT(pressed(const QModelIndex &)));
+	connect(m_scoresWidget, SIGNAL(pressed(QModelIndex)), this, SLOT(pressed(QModelIndex)));
 	lay -> addWidget(m_scoresWidget, 1);
 	
 	m_scores = 0;
