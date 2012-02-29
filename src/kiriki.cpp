@@ -21,6 +21,7 @@
 #include <QStyledItemDelegate>
 #include <QTimer>
 #include <QTreeView>
+#include <QDateTime>
 
 #include <kapplication.h>
 #include <kconfigdialog.h>
@@ -252,11 +253,17 @@ void kiriki::endGame()
 	m_hintAction -> setEnabled(false);
 	if (p.isHuman())
 	{
-		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
+		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score | KScoreDialog::Date, this);
 		if (m_hintGiven) m_hintGiven = false;
 		else
 		{
-			if (sc.addScore(p.grandTotal()))
+			KScoreDialog::FieldInfo scoreInfo;
+			scoreInfo[KScoreDialog::Score].setNum(p.grandTotal());
+			const QDate date = QDate::currentDate();
+			const QString datestring = date.toString(Qt::DefaultLocaleShortDate);
+			scoreInfo[KScoreDialog::Date] = datestring;
+			
+			if (sc.addScore(scoreInfo))
 			{
 				sc.exec();
 			}
@@ -267,7 +274,7 @@ void kiriki::endGame()
 
 void kiriki::showHighScores()
 {
-	KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score, this);
+	KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score | KScoreDialog::Date, this);
 	sc.exec();
 }
 
