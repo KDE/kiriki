@@ -236,7 +236,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	else return QString::number(score);
 }
 
-void scores::redraw()
+void scores::askForRedraw()
 {
 	emit dataChanged(index(0, 0), index(m_rows.count() - 1, m_players.count() - 1));
 }

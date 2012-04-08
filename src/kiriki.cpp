@@ -323,7 +323,7 @@ void kiriki::showPreferences()
 	if (fontSize != kirikiSettings::fontSize())
 	{
 		m_scoresWidget -> resizeColumnToContents(0);
-		m_scores->redraw();
+		m_scores->askForRedraw();
 	}
 }
 
