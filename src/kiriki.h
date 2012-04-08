@@ -40,6 +40,7 @@ Q_OBJECT
 		void print();
 		void playComputer();
 		void showHint();
+		void settingsChanged();
 	
 	private:
 		void endGame();
@@ -55,6 +56,7 @@ Q_OBJECT
 		int m_highlightedRowIndex;
 		bool m_hintGiven;
 		KAction* m_hintAction;
+		int m_fontSize;
 };
 
 #endif

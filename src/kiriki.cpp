@@ -245,6 +245,16 @@ void kiriki::showHint()
 	}
 }
 
+void kiriki::settingsChanged()
+{
+	if (m_fontSize != kirikiSettings::fontSize())
+	{
+		m_scoresWidget -> resizeColumnToContents(0);
+		m_scores->askForRedraw();
+		m_fontSize = kirikiSettings::fontSize();
+	}
+}
+
 void kiriki::endGame()
 {
 	const player &p = m_scores -> winner();
@@ -295,12 +305,13 @@ void kiriki::showPreferences()
 	bool player4IsHuman = kirikiSettings::player4IsHuman();
 	bool player5IsHuman = kirikiSettings::player5IsHuman();
 	bool player6IsHuman = kirikiSettings::player6IsHuman();
-	int fontSize = kirikiSettings::fontSize();
+	m_fontSize = kirikiSettings::fontSize();
 	
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
         configDialog->setHelp(QString(),"kiriki");
+	connect( configDialog, SIGNAL(settingsChanged(QString)), this, SLOT(settingsChanged()) );
 	configDialog -> exec();
 	delete configDialog;
 
@@ -319,11 +330,6 @@ void kiriki::showPreferences()
 	if (changed)
 	{
 		KMessageBox::information(this, i18n("Changes will be applied on next game."));
-	}
-	if (fontSize != kirikiSettings::fontSize())
-	{
-		m_scoresWidget -> resizeColumnToContents(0);
-		m_scores->askForRedraw();
 	}
 }
 
