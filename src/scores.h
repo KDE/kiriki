@@ -36,6 +36,7 @@ class scores : public QAbstractTableModel
 		QVariant data(const QModelIndex &index, int role) const;
 		bool setData(const QModelIndex &mi, const QVariant &value, int role);
 		
+		void redraw();
 		void print(QPainter &painter, double width, double height) const;
 	
 	private:

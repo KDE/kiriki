@@ -295,6 +295,7 @@ void kiriki::showPreferences()
 	bool player4IsHuman = kirikiSettings::player4IsHuman();
 	bool player5IsHuman = kirikiSettings::player5IsHuman();
 	bool player6IsHuman = kirikiSettings::player6IsHuman();
+	int fontSize = kirikiSettings::fontSize();
 	
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
@@ -318,6 +319,11 @@ void kiriki::showPreferences()
 	if (changed)
 	{
 		KMessageBox::information(this, i18n("Changes will be applied on next game."));
+	}
+	if (fontSize != kirikiSettings::fontSize())
+	{
+		m_scoresWidget -> resizeColumnToContents(0);
+		m_scores->redraw();
 	}
 }
 

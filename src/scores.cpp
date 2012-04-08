@@ -186,6 +186,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	if (role == Qt::FontRole)
 	{
 		QFont f;
+		f.setPointSize(kirikiSettings::fontSize());
 		if (row.flags() & Row::BoldFontFlag) f.setBold(true);
 		if (row.flags() & Row::BiggerFontFlag) f.setPointSize(f.pointSize() + 5);
 		return f;
@@ -233,6 +234,11 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	
 	if (score < 0) return QVariant();
 	else return QString::number(score);
+}
+
+void scores::redraw()
+{
+	emit dataChanged(index(0, 0), index(m_rows.count() - 1, m_players.count() - 1));
 }
 
 bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)

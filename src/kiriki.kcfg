@@ -5,6 +5,7 @@
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
 	<kcfgfile name="kirikirc" />
 	<include>klocale.h</include>
+	<include>QFont</include>
 	<group name="general">
 		<entry key="waitTime" type="Int" >
 			<default>150</default>
@@ -19,6 +20,15 @@
 		<entry key="startupDemoEnabled" type="Bool">
 			<default>true</default>
 		</entry>
+		<entry key="fontSize" type="Int">			
+			<min>5</min>
+			<max>20</max>
+			<code>
+			  QFont f;
+			  int defaultSize = f.pointSize();
+			</code>
+			<default code="true">defaultSize</default>
+		</entry>	
 		<entry key="player1Name" type="String" >
 		<code>
 			QString playerName1 = i18nc("default name of first player", "Albert");
