@@ -172,12 +172,13 @@ QVariant scores::data(const QModelIndex &index, int role) const
 			}
 			else if (role == Qt::FontRole)
 			{
+				QFont f;
+				f.setPointSize(kirikiSettings::fontSize());
 				if (column - 1 == m_currentPlayer)
 				{
-					QFont f;
 					f.setBold(true);
-					return f;
 				}
+				return f;
 			}
 		}
 		return QVariant();
