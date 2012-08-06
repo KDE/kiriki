@@ -28,8 +28,8 @@
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
 <legalnotice>&FDLNotice;</legalnotice> 
-<date>2010-02-01</date><!-- Date of (re)writing, or update.-->
-<releaseinfo>&kappversion;</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
+<date>2012-08.06</date><!-- Date of (re)writing, or update.-->
+<releaseinfo>&kappversion; (&kde; 4.9)</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
  
 <!--Short description of this document. Do not change unless necessary!-->
 <abstract>
@@ -82,7 +82,7 @@
 	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
 	<sect1><title>Game Rules</title>
 		<para>
-			&kiriki; score board is divided into fourteen different lines. Each line holds a single score pattern and the players' score earned for a roll matching the pattern. The score pattern of each line is calculated as follows:
+			&kiriki; score board is divided into fourteen different lines. Each line holds a single score pattern and the players' score earned for a roll matching the pattern. The score pattern of each line is calculated as follows:</para>
 			<itemizedlist>
 				<listitem><para><guilabel>1s</guilabel>: Sum of all dice valued ‘1’.<note><title>Example:</title><para>Dice on display: '14112'. The sum is: '3'='1'+'1'+'1'. Dice on display: '51111'. The sum is: '4'='1'+'1'+'1'+'1'.</para></note></para></listitem>
 				<listitem><para><guilabel>2s</guilabel>: Sum of all dice valued ‘2’.<note><title>Example:</title><para>Dice on display: '22422'. The sum is: '8'='2'+'2'+'2'+'2'. Dice on display: '42322'. The sum is: '6'='2'+'2'+'2'.</para></note></para></listitem>
@@ -102,7 +102,7 @@
 				<listitem><para><guilabel>Lower Total</guilabel>: It is not a playable field, but only a summary of all the fields starting from '3 of a Kind' and lower.</para></listitem>
 				<listitem><para><guilabel>Grand Total</guilabel>: It is not a playable field, but only a sum of 'Upper Total' and 'Lower Total' fields.</para></listitem>
 			</itemizedlist>
-			Other rules and constrains:
+			<para>Other rules and constrains:</para>
 			<itemizedlist>
 				<listitem><para>The entire game round is split into 13 turns.</para></listitem>
 				<listitem><para>Each player can do one to three rolls of dice per turn.</para></listitem>
@@ -114,7 +114,6 @@
 				<listitem><para>The result of the roll is considered satisfactory if the values of the dice on display can be put into one of the score patterns discussed above.</para></listitem>
 				<listitem><para>Each individual score pattern can only be used once per game per player. Therefore, once the score pattern has been used by one player it can no longer be used by that same player. However, another player can still use it, unless he has used this same pattern up already.</para></listitem>
 			</itemizedlist>
-		</para>
 	</sect1>
 </chapter> 
  
