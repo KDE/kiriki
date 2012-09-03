@@ -21,7 +21,7 @@
 
 #include "diceswidget.h"
 
-lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
+lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent), m_demoMode(false)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	m_rolls = new QLabel(this);
@@ -33,12 +33,7 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent)
 	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);
 	delete dummyAction;
 
-	if (!m_demoMode) m_newGameButton -> setEnabled(false);
-	else
-	{
-		m_newGameButton->setEnabled(true);
-		m_dices->setEnabled(false);
-	}
+	disableDemoMode();
 
 	lay -> addWidget(m_rolls, 0, Qt::AlignHCenter);
 	lay -> addWidget(m_dices);
