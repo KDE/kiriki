@@ -1,10 +1,14 @@
 [Desktop Entry]
 Name=Kiriki
+Name[uk]=Kiriki
+Name[x-test]=xxKirikixx
 Icon=kiriki
 Type=Application
 Exec=kiriki -caption "%c"
 X-DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
+GenericName[uk]=Гра схожа на покер з кістками
+GenericName[x-test]=xxYahtzee-like Dice Gamexx
 X-KDE-StartupNotify=true
 X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Game;BoardGame;
