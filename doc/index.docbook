@@ -8,8 +8,8 @@
   <!ENTITY % addindex "IGNORE"> <!-- do not change this! -->
 ]>
  
-<book lang="&language;"> <!-- do not change this! -->
-<bookinfo>
+<book id="kiriki" lang="&language;"> <!-- do not change this! -->
+<book id="kiriki"info>
 	<title>The &kiriki; Handbook</title>
 <authorgroup>
 			<author>
