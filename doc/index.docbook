@@ -9,7 +9,7 @@
 ]>
  
 <book id="kiriki" lang="&language;"> <!-- do not change this! -->
-<book id="kiriki"info>
+<bookinfo>
 	<title>The &kiriki; Handbook</title>
 <authorgroup>
 			<author>
