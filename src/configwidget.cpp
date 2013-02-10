@@ -16,6 +16,7 @@ configWidget::configWidget(QWidget *parent) : QWidget(parent)
 	setupUi(this);
 	KAcceleratorManager::setNoAccel(this);
 	connect(kcfg_numberOfPlayers, SIGNAL(valueChanged(int)), this, SLOT(numberOfPlayersChanged(int)));
+	connect(kcfg_fontSize, SIGNAL(valueChanged(int)), this, SLOT(minimumRowHeightChanged(int)));
 }
 
 void configWidget::numberOfPlayersChanged(int numberOfPlayers)
@@ -48,6 +49,11 @@ void configWidget::numberOfPlayersChanged(int numberOfPlayers)
 		kcfg_player6Name -> setEnabled(false);
 		kcfg_player6IsHuman -> setEnabled(false);
 	}
+}
+
+void configWidget::minimumRowHeightChanged(int height)
+{
+	kcfg_rowHeight -> setMinimum(height);
 }
 
 #include "configwidget.moc"

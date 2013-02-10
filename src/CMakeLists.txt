@@ -11,6 +11,7 @@ set(kiriki_SRCS
    computer.cpp 
    configwidget.cpp 
    row.cpp
+   itemdelegate.cpp
    )
 
 kde4_add_ui_files(kiriki_SRCS configPage.ui)

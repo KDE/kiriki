@@ -42,6 +42,7 @@
 #include "lateralwidget.h"
 #include "scores.h"
 #include "settings.h"
+#include "itemdelegate.h"
 
 kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 {
@@ -55,7 +56,14 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 
 	m_delegateHighlighted = new QStyledItemDelegate(m_scoresWidget);
 
-	m_scoresWidget -> setItemDelegate(new QItemDelegate(m_scoresWidget));
+	if (kirikiSettings::fontSize() > kirikiSettings::rowHeight())
+	{
+		kirikiSettings::setRowHeight(kirikiSettings::fontSize());
+	}
+
+	m_itemDelegate = new itemDelegate(kirikiSettings::rowHeight(), m_scoresWidget);
+
+	m_scoresWidget -> setItemDelegate(m_itemDelegate);
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
 	m_scoresWidget -> setRootIsDecorated(false);
 	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);
@@ -253,6 +261,13 @@ void kiriki::settingsChanged()
 		m_scores->askForRedraw();
 		m_fontSize = kirikiSettings::fontSize();
 	}
+
+	if (m_rowHeight != kirikiSettings::rowHeight())
+	{
+		m_rowHeight = kirikiSettings::rowHeight();
+		m_itemDelegate -> setHeight(m_rowHeight);
+		m_scores -> askForRedraw();
+	}
 }
 
 void kiriki::endGame()
@@ -306,6 +321,7 @@ void kiriki::showPreferences()
 	bool player5IsHuman = kirikiSettings::player5IsHuman();
 	bool player6IsHuman = kirikiSettings::player6IsHuman();
 	m_fontSize = kirikiSettings::fontSize();
+	m_rowHeight = kirikiSettings::rowHeight();
 	
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);

@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Albert Astals Cid <tsdgeos@terra.es>            *
+ *   Copyright (C) 2013 by Ian Simpson <ian.kdedev@yahoo.com>              *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -7,23 +7,25 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef CONFIGWIDGET_H
-#define CONFIGWIDGET_H
+#ifndef ITEMDELEGATE_H
+#define ITEMDELEGATE_H
 
-#include <QWidget>
+#include <QItemDelegate>
 
-#include "ui_configPage.h"
-
-class configWidget : public QWidget, private Ui::configPage
+class itemDelegate : public QItemDelegate
 {
 Q_OBJECT
 	public:
-		explicit configWidget(QWidget *parent);
-	
-	private slots:
-		void numberOfPlayersChanged(int numberOfPlayers);
-		void minimumRowHeightChanged(int height);
+		itemDelegate(int height, QObject *parent = 0);
+		QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const;
+
+		void setHeight(int height);
+
+	private:
+		QVector<int> m_emptyRows;
+
+		int m_height;
+		const int m_grandTotalRow;
 };
 
-#endif
-
+#endif // ITEMDELEGATE_H

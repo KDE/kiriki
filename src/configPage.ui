@@ -229,6 +229,27 @@
     </layout>
    </item>
    <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Row Height:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="KIntSpinBox" name="kcfg_rowHeight">
+       <property name="minimumSize">
+        <size>
+         <width>324</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
     <widget class="QCheckBox" name="kcfg_startupDemoEnabled">
      <property name="text">
       <string>Show demonstration game at startup</string>

@@ -21,6 +21,7 @@ class KToggleAction;
 
 class lateralWidget;
 class scores;
+class itemDelegate;
 
 class kiriki : public KXmlGuiWindow
 {
@@ -57,6 +58,8 @@ Q_OBJECT
 		bool m_hintGiven;
 		KAction* m_hintAction;
 		int m_fontSize;
+		itemDelegate *m_itemDelegate;
+		int m_rowHeight;
 };
 
 #endif
