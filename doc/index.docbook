@@ -28,8 +28,8 @@
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
 <legalnotice>&FDLNotice;</legalnotice> 
-<date>2012-08.06</date><!-- Date of (re)writing, or update.-->
-<releaseinfo>&kappversion; (&kde; 4.9)</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
+<date>2013-05-06</date><!-- Date of (re)writing, or update.-->
+<releaseinfo>&kappversion; (&kde; 4.11)</releaseinfo><!-- Application version number. Use the variable definitions within header to change this value.-->
  
 <!--Short description of this document. Do not change unless necessary!-->
 <abstract>
@@ -118,8 +118,9 @@
 </chapter> 
  
 <chapter id="interface"><title>Interface Overview</title> <!-- do not change this! -->
-<sect1 id="game-menu">
-	<title>The Game Menu</title>
+<sect1 id="menu">
+<title>Menu Items</title>
+
 		<variablelist>
 			<varlistentry id="game-menu-new">
 				<term><menuchoice>
@@ -155,30 +156,31 @@
 				</menuchoice></term>
 				<listitem><para><action>Quits</action> &kiriki;.</para></listitem>
 			</varlistentry>
-		</variablelist>
-</sect1>
-<sect1 id="settings-menu">
-	<title>The Settings Menu</title>
-		<variablelist>
-			<varlistentry id="settings-menu-shortcuts">
+			<varlistentry>
 				<term><menuchoice>
-					<guimenu>Settings</guimenu>
-					<guimenuitem>Configure Shortcuts...</guimenuitem>
+				  <shortcut><keycap>H</keycap></shortcut>
+					<guimenu>Move</guimenu>
+					<guimenuitem>Hint</guimenuitem>
 				</menuchoice></term>
-				<listitem><para><action>Displays a standard &kde; shortcut configuration dialog</action> to change the keyboard shortcuts for &kiriki;.</para></listitem>
+				<listitem><para>Give a hint by highlighting one or more dices to roll or a row on the score board. Using this feature the score will not be considered as a high score.</para></listitem>
 			</varlistentry>
-			<varlistentry id="settings-menu-settings">
+			<varlistentry>
 				<term><menuchoice>
-					<guimenu>Settings</guimenu>
-					<guimenuitem>Configure &kiriki;...</guimenuitem>
+				  <shortcut><keycap>D</keycap></shortcut>
+					<guimenu>Move</guimenu>
+					<guimenuitem>Demo</guimenuitem>
 				</menuchoice></term>
-				<listitem><para><action>Opens a dialog to configure &kiriki;.</action>See  <link linkend="configuration">Game Configuration</link> section for details.</para></listitem>
+				<listitem><para>Play a demo game. To stop the demo mode start a new game.</para></listitem>
 			</varlistentry>
+
 		</variablelist>
-</sect1>
-<sect1 id="help"><!--This is a standard Help menubar entry. Only change if needed.-->
-<title>The Help Menu</title>
-&help.menu.documentation;
+<para>
+Additionally &kappname; has the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</guimenu>
+menu items, for more information read the sections about the <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Settings Menu</ulink> and <ulink url="help:/fundamentals/ui.html#menus-help">Help Menu</ulink>
+of the &kde; Fundamentals.
+</para>
+
 </sect1>
 </chapter>
 
@@ -221,8 +223,11 @@
 <note><title>Note:</title><para>The number of players cannot be less than two.</para></note>
 <para><guilabel>1.</guilabel>-<guilabel>6.</guilabel> Numbered fields are the identities of the participating players. You can change their names as well as specify whether they will be human controlled, or driven by the Artificial Intelligence. To define who controls the player use a check box located on the right hand side, right next to the name entry box.</para>
 <note><title>Note:</title><para>The first player must always be human controlled.</para></note>
+<para>Changes to number of participants and their identities will be applied on the next game.</para>
 <para><guilabel>Delay between computers move (msec):</guilabel> lets you specify the delay between Artificial Intelligence's turns. The value of this field is zero by default, meaning that the Artificial Intelligence reacts instantaneously.</para>
 <note><title>Note:</title><para>The maximum value for this field is 999 milliseconds.</para></note>
+<para>Use <guilabel>Font Size</guilabel> and <guilabel>Row Height</guilabel> to adjust the score board to your liking.</para>
+<para>If you want to play immediately at &kiriki; startup disable the default option <guilabel>Show demonstration game at startup</guilabel>.</para>
 </chapter>
  
 <chapter id="credits"><title>Credits and License</title> <!-- do not change this! -->
@@ -233,6 +238,12 @@
 <!--List all the copyright holders here-->
 <para>
 Program copyright 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail;
+</para>
+<para>
+Documentation copyright 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail;
+</para>
+<para>
+Documentation copyright 2007 Eugene Trounev <email>eugene.trounev@gmail.com</email>
 </para>
 <!-- TRANS:CREDIT_FOR_TRANSLATORS --> 
 &underFDL;
