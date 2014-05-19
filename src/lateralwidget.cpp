@@ -33,13 +33,14 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent), m_demoMode(fals
 	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);
 	delete dummyAction;
 
+	m_buttons -> addWidget(m_rollButton);
+	m_buttons -> addWidget(m_newGameButton);
+
 	disableDemoMode();
 
 	lay -> addWidget(m_rolls, 0, Qt::AlignHCenter);
 	lay -> addWidget(m_dices);
 	lay -> addWidget(m_buttons);
-	m_buttons -> addWidget(m_rollButton);
-	m_buttons -> addWidget(m_newGameButton);
 	lay -> addStretch(1);
 
 	connect(m_rollButton, SIGNAL(clicked(bool)), this, SLOT(roll()));
