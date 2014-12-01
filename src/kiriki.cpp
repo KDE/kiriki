@@ -27,11 +27,11 @@
 #include <kconfigdialog.h>
 #include <klocalizedstring.h>
 #include <kmessagebox.h>
-#include <kscoredialog.h>
+#include <highscore/kscoredialog.h>
 #include <kstandardaction.h>
 #include <kstandardgameaction.h>
 #include <kactioncollection.h>
-#include <kaction.h>
+#include <QAction>
 #include <KStatusBar>
 #include <KToggleAction>
 #include <KToolBar>
@@ -85,7 +85,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	m_scores = 0;
 	
 	// Game
-	KAction *gameNewAction = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
+	QAction *gameNewAction = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
 	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
 	KStandardGameAction::print(this, SLOT(print()), actionCollection());
 	KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
@@ -326,7 +326,7 @@ void kiriki::showPreferences()
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
-        configDialog->setHelp(QString(),"kiriki");
+        //QT5 port configDialog->setHelp(QString(),"kiriki");
 	connect( configDialog, SIGNAL(settingsChanged(QString)), this, SLOT(settingsChanged()) );
 	configDialog -> exec();
 	delete configDialog;
@@ -406,4 +406,4 @@ void kiriki::playComputer()
 	else m_lateral -> setEnabled(true);
 }
 
-#include "kiriki.moc"
+

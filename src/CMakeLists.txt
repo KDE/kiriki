@@ -1,5 +1,4 @@
 
-include_directories( ${CMAKE_SOURCE_DIR}/libkdegames/highscore )
 
 set(kiriki_SRCS 
    main.cpp 
@@ -14,19 +13,20 @@ set(kiriki_SRCS
    itemdelegate.cpp
    )
 
-kde4_add_ui_files(kiriki_SRCS configPage.ui)
+ki18n_wrap_ui(kiriki_SRCS configPage.ui)
 
-kde4_add_kcfg_files(kiriki_SRCS settings.kcfgc)
+kconfig_add_kcfg_files(kiriki_SRCS settings.kcfgc)
 
-kde4_add_app_icon(kiriki_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-app-kiriki.png")
-kde4_add_executable(kiriki ${kiriki_SRCS})
+kde4_add_app_icon(kiriki_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-apps-kiriki.png")
+add_executable(kiriki ${kiriki_SRCS})
 
-target_link_libraries(kiriki ${KDE4_KDEUI_LIBS} kdegames)
+target_link_libraries(kiriki KF5KDEGames KF5::KDELibs4Support )
 
 install(TARGETS kiriki ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 
 ########### install files ###############
 
-install(FILES kirikiui.rc DESTINATION ${DATA_INSTALL_DIR}/kiriki )
-install(PROGRAMS kiriki.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install(FILES kirikiui.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/kiriki )
+install(PROGRAMS org.kde.kiriki.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+

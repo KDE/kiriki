@@ -16,7 +16,7 @@ class QModelIndex;
 class QStyledItemDelegate;
 class QTreeView;
 
-class KAction;
+class QAction;
 class KToggleAction;
 
 class lateralWidget;
@@ -56,7 +56,7 @@ Q_OBJECT
 		QStyledItemDelegate *m_delegateHighlighted;
 		int m_highlightedRowIndex;
 		bool m_hintGiven;
-		KAction* m_hintAction;
+		QAction * m_hintAction;
 		int m_fontSize;
 		itemDelegate *m_itemDelegate;
 		int m_rowHeight;

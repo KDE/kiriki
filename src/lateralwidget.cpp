@@ -14,7 +14,7 @@
 #include <QStackedWidget>
 #include <QVBoxLayout>
 
-#include <kaction.h>
+#include <QAction>
 #include <kicon.h>
 #include <kstandardgameaction.h>
 #include <klocale.h>
@@ -29,7 +29,7 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent), m_demoMode(fals
 	m_buttons = new QStackedWidget(this);
 	m_rollButton = new QPushButton(KIcon( QLatin1String( "roll") ), i18n("&Roll" ), this);
 	
-	KAction *dummyAction = KStandardGameAction::gameNew(0, 0, 0);
+	QAction *dummyAction = KStandardGameAction::gameNew(0, 0, 0);
 	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);
 	delete dummyAction;
 
@@ -199,4 +199,4 @@ void lateralWidget::updateRollLabel()
 	if (!m_demoMode) setEnabled(m_roll != 3);
 }
 
-#include "lateralwidget.moc"
+

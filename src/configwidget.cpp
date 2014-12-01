@@ -56,5 +56,5 @@ void configWidget::minimumRowHeightChanged(int height)
 	kcfg_rowHeight -> setMinimum(height);
 }
 
-#include "configwidget.moc"
+
 

@@ -113,3 +113,4 @@ GenericName[zh_TW]=類似 Yahtzee 的骰子遊戲
 X-KDE-StartupNotify=true
 X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Game;BoardGame;
+X-DBUS-ServiceName=org.kde.kiriki
