@@ -32,7 +32,7 @@
 #include <kstandardgameaction.h>
 #include <kactioncollection.h>
 #include <QAction>
-#include <KStatusBar>
+#include <QStatusBar>
 #include <KToggleAction>
 #include <KToolBar>
 #include <kdeprintdialog.h>

@@ -7,19 +7,28 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <K4AboutData>
-#include <kapplication.h>
-#include <kcmdlineargs.h>
-#include <klocale.h>
+#include <KAboutData>
+
+
+#include <KLocalizedString>
+#include <QApplication>
+#include <QCommandLineParser>
 
 #include "kiriki.h"
 
 int main(int argc, char *argv[])
 {
-	K4AboutData about("kiriki", 0, ki18n("Kiriki"), "0.2.1", ki18n("A Yahtzee dice game for KDE"), K4AboutData::License_GPL, ki18n("© 2005-2007 Albert Astals Cid"), KLocalizedString(), "http://games.kde.org/kiriki" );
-	about.addAuthor(ki18n("Albert Astals Cid"), KLocalizedString(), "aacid@kde.org");
-	KCmdLineArgs::init(argc, argv, &about);
-	KApplication app;
-	app.setTopWidget(new kiriki());
+	KAboutData about("kiriki", i18n("Kiriki"), "0.2.1", i18n("A Yahtzee dice game for KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"), "http://games.kde.org/kiriki" );
+	about.addAuthor(i18n("Albert Astals Cid"), QString(), "aacid@kde.org");
+    QApplication app(argc, argv);
+    QCommandLineParser parser;
+    KAboutData::setApplicationData(about);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    about.setupCommandLine(&parser);
+    parser.process(app);
+    about.processCommandLine(&parser);
+	kiriki *w = new kiriki();
+        w->show();
 	return app.exec();
 }

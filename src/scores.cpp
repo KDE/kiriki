@@ -14,7 +14,7 @@
 #include <QPalette>
 
 #include <kiconloader.h>
-#include <klocale.h>
+#include <KLocalizedString>
 
 #include "settings.h"
 
