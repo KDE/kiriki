@@ -53,7 +53,7 @@
          </widget>
         </item>
         <item>
-         <widget class="KIntSpinBox" name="kcfg_numberOfPlayers"/>
+         <widget class="QSpinBox" name="kcfg_numberOfPlayers"/>
         </item>
        </layout>
       </item>
@@ -203,7 +203,7 @@
       </widget>
      </item>
      <item>
-      <widget class="KIntSpinBox" name="kcfg_waitTime"/>
+      <widget class="QSpinBox" name="kcfg_waitTime"/>
      </item>
     </layout>
    </item>
@@ -217,7 +217,7 @@
       </widget>
      </item>
      <item>
-      <widget class="KIntSpinBox" name="kcfg_fontSize">
+      <widget class="QSpinBox" name="kcfg_fontSize">
        <property name="minimumSize">
         <size>
          <width>324</width>
@@ -238,7 +238,7 @@
       </widget>
      </item>
      <item>
-      <widget class="KIntSpinBox" name="kcfg_rowHeight">
+      <widget class="QSpinBox" name="kcfg_rowHeight">
        <property name="minimumSize">
         <size>
          <width>324</width>
@@ -274,13 +274,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KIntSpinBox</class>
-   <extends>QSpinBox</extends>
-   <header>knuminput.h</header>
-  </customwidget>
- </customwidgets>
  <tabstops>
   <tabstop>kcfg_numberOfPlayers</tabstop>
   <tabstop>kcfg_player1Name</tabstop>

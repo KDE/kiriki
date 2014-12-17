@@ -16,14 +16,14 @@
 #include <QItemDelegate>
 #include <QItemSelectionModel>
 #include <QPainter>
-#include <QPrintDialog>
-#include <QPrinter>
+//#include <QPrintDialog>
+//#include <QPrinter>
 #include <QStyledItemDelegate>
 #include <QTimer>
 #include <QTreeView>
 #include <QDateTime>
 
-#include <kapplication.h>
+#include <qapplication.h>
 #include <kconfigdialog.h>
 #include <klocalizedstring.h>
 #include <kmessagebox.h>
@@ -35,7 +35,6 @@
 #include <QStatusBar>
 #include <KToggleAction>
 #include <KToolBar>
-#include <kdeprintdialog.h>
 
 #include "computer.h"
 #include "configwidget.h"
@@ -88,7 +87,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	QAction *gameNewAction = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
 	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
 	KStandardGameAction::print(this, SLOT(print()), actionCollection());
-	KStandardGameAction::quit(kapp, SLOT(quit()), actionCollection());
+	KStandardGameAction::quit(qApp, SLOT(quit()), actionCollection());
 	m_hintAction = KStandardGameAction::hint(this, SLOT(showHint()), actionCollection());
 	m_demoAction = KStandardGameAction::demo(this, SLOT(demo()), actionCollection());
 	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setChecked(bool)));
@@ -351,6 +350,7 @@ void kiriki::showPreferences()
 
 void kiriki::print()
 {
+#if 0 //Port to QT5
 	QPrinter printer;
 	printer.setFullPage( true );
 	QPrintDialog *printDialog = KdePrint::createPrintDialog(&printer, this);
@@ -360,6 +360,7 @@ void kiriki::print()
 		m_scores->print(painter, printer.width(), printer.height());
 	}
 	delete printDialog;
+#endif
 }
 
 void kiriki::nextTurn()

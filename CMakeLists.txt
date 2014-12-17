@@ -10,25 +10,16 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Widgets Qml Qui
 find_package(KF5 REQUIRED COMPONENTS 
     CoreAddons 
     Config 
-    ItemModels 
-    WidgetsAddons 
-    WindowSystem 
-    Codecs 
-    Archive
     Config 
     DBusAddons 
-    DNSSD 
     I18n 
     GuiAddons 
-    Service 
     ConfigWidgets 
     ItemViews 
     IconThemes 
-    Completion 
     XmlGui
     KIO
-    NotifyConfig
-    KDELibs4Support)
+    NotifyConfig)
     
 find_package(KF5KDEGames 4.9.0 REQUIRED)
 
@@ -38,7 +29,6 @@ include(KDEInstallDirs)
 include(KDECompilerSettings)
 include(KDECMakeSettings)
 
-add_definitions(${QT_DEFINITIONS})
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 add_definitions(-DTRANSLATION_DOMAIN="kiriki")
 
