@@ -10,12 +10,10 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Widgets Qml Qui
 find_package(KF5 REQUIRED COMPONENTS 
     CoreAddons 
     Config 
-    Config 
     DBusAddons 
     I18n 
     GuiAddons 
     ConfigWidgets 
-    ItemViews 
     IconThemes 
     XmlGui
     KIO
