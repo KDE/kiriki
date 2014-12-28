@@ -78,7 +78,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	QFontMetrics fm(f);
 	m_scoresWidget -> header() -> setMinimumSectionSize(fm.width("9999"));
 
-	connect(m_scoresWidget, SIGNAL(pressed(QModelIndex)), this, SLOT(pressed(QModelIndex)));
+	connect(m_scoresWidget, &QTreeView::pressed, this, &kiriki::pressed);
 	lay -> addWidget(m_scoresWidget, 1);
 	
 	m_scores = 0;
@@ -90,16 +90,16 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	KStandardGameAction::quit(qApp, SLOT(quit()), actionCollection());
 	m_hintAction = KStandardGameAction::hint(this, SLOT(showHint()), actionCollection());
 	m_demoAction = KStandardGameAction::demo(this, SLOT(demo()), actionCollection());
-	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setChecked(bool)));
-	connect(gameNewAction, SIGNAL(triggered(bool)), m_demoAction, SLOT(setDisabled(bool)));
-	connect(gameNewAction, SIGNAL(triggered(bool)), m_hintAction, SLOT(setDisabled(bool)));
-	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(disableDemoMode()));
-	connect(gameNewAction, SIGNAL(triggered(bool)), m_lateral, SLOT(unhighlightAllDice()));
-	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setDisabled(bool)));
-	connect(this, SIGNAL(demoStarted(bool)), m_demoAction, SLOT(setChecked(bool)));
-	connect(this, SIGNAL(demoStarted(bool)), m_hintAction, SLOT(setDisabled(bool)));
-	connect(this, SIGNAL(demoStarted(bool)), m_lateral, SLOT(unhighlightAllDice()));
-	connect(m_lateral, SIGNAL(newGameClicked()), gameNewAction, SLOT(trigger()));
+	connect(gameNewAction, &QAction::triggered, m_demoAction, &KToggleAction::setChecked);
+	connect(gameNewAction, &QAction::triggered, m_demoAction, &KToggleAction::setDisabled);
+	connect(gameNewAction, &QAction::triggered, m_hintAction, &QAction::setDisabled);
+	connect(gameNewAction, &QAction::triggered, m_lateral, &lateralWidget::disableDemoMode);
+	connect(gameNewAction, &QAction::triggered, m_lateral, &lateralWidget::unhighlightAllDice);
+	connect(this, &kiriki::demoStarted, m_demoAction, &KToggleAction::setDisabled);
+	connect(this, &kiriki::demoStarted, m_demoAction, &KToggleAction::setChecked);
+	connect(this, &kiriki::demoStarted, m_hintAction, &QAction::setDisabled);
+	connect(this, &kiriki::demoStarted, m_lateral, &lateralWidget::unhighlightAllDice);
+	connect(m_lateral, &lateralWidget::newGameClicked, gameNewAction, &QAction::trigger);
 	
 	// Preferences
 	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
@@ -326,7 +326,7 @@ void kiriki::showPreferences()
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
         //QT5 port configDialog->setHelp(QString(),"kiriki");
-	connect( configDialog, SIGNAL(settingsChanged(QString)), this, SLOT(settingsChanged()) );
+	connect(configDialog, &KConfigDialog::settingsChanged, this, &kiriki::settingsChanged);
 	configDialog -> exec();
 	delete configDialog;
 

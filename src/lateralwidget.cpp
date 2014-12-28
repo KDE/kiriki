@@ -43,9 +43,9 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent), m_demoMode(fals
 	lay -> addWidget(m_buttons);
 	lay -> addStretch(1);
 
-	connect(m_rollButton, SIGNAL(clicked(bool)), this, SLOT(roll()));
-	connect(m_rollButton, SIGNAL(clicked(bool)), this, SLOT(unhighlightAllDice()));
-	connect(m_newGameButton, SIGNAL(clicked(bool)), this, SLOT(newGame()));
+	connect(m_rollButton, &QPushButton::clicked, this, &lateralWidget::roll);
+	connect(m_rollButton, &QPushButton::clicked, this, &lateralWidget::unhighlightAllDice);
+	connect(m_newGameButton, &QPushButton::clicked, this, &lateralWidget::newGame);
 	
 	nextTurn();
 }

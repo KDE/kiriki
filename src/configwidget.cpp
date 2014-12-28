@@ -15,8 +15,8 @@ configWidget::configWidget(QWidget *parent) : QWidget(parent)
 {
 	setupUi(this);
 	KAcceleratorManager::setNoAccel(this);
-	connect(kcfg_numberOfPlayers, SIGNAL(valueChanged(int)), this, SLOT(numberOfPlayersChanged(int)));
-	connect(kcfg_fontSize, SIGNAL(valueChanged(int)), this, SLOT(minimumRowHeightChanged(int)));
+	connect(kcfg_numberOfPlayers, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &configWidget::numberOfPlayersChanged);
+	connect(kcfg_fontSize, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &configWidget::minimumRowHeightChanged);
 }
 
 void configWidget::numberOfPlayersChanged(int numberOfPlayers)
