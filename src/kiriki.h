@@ -42,6 +42,7 @@ Q_OBJECT
 		void playComputer();
 		void showHint();
 		void settingsChanged();
+                void slotHelp();
 	
 	private:
 		void endGame();
