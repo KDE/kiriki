@@ -13,14 +13,15 @@
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
-
+#include <KDBusService>
 #include "kiriki.h"
 
 int main(int argc, char *argv[])
 {
+    QApplication app(argc, argv);
+
 	KAboutData about("kiriki", i18n("Kiriki"), "0.2.1", i18n("A Yahtzee dice game for KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"), "http://games.kde.org/kiriki" );
 	about.addAuthor(i18n("Albert Astals Cid"), QString(), "aacid@kde.org");
-    QApplication app(argc, argv);
     QCommandLineParser parser;
     KAboutData::setApplicationData(about);
     parser.addVersionOption();
@@ -28,6 +29,7 @@ int main(int argc, char *argv[])
     about.setupCommandLine(&parser);
     parser.process(app);
     about.processCommandLine(&parser);
+    KDBusService service;
 	kiriki *w = new kiriki();
         w->show();
 	return app.exec();
