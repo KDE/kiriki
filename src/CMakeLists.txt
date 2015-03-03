@@ -17,17 +17,17 @@ ki18n_wrap_ui(kiriki_SRCS configPage.ui)
 
 kconfig_add_kcfg_files(kiriki_SRCS settings.kcfgc)
 
-#Port it
-#kde4_add_app_icon(kiriki_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-apps-kiriki.png")
+file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-apps-kiriki.png")
+ecm_add_app_icon(kiriki_SRCS ICONS ${ICONS_SRCS})
 add_executable(kiriki ${kiriki_SRCS})
 
 target_link_libraries(kiriki KF5KDEGames KF5::XmlGui KF5::I18n KF5::IconThemes KF5::DBusAddons)
 
-install(TARGETS kiriki ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kiriki ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 
 ########### install files ###############
 
-install(FILES kirikiui.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/kiriki )
-install(PROGRAMS org.kde.kiriki.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install(FILES kirikiui.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kiriki )
+install(PROGRAMS org.kde.kiriki.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
 
