@@ -1,2 +1,2 @@
-ecm_install_icons( ICONS hi128-apps-kiriki.png  hi16-apps-kiriki.png  hi22-apps-kiriki.png  hi32-apps-kiriki.png  hi48-apps-kiriki.png  hi64-apps-kiriki.png DESTINATION ${KDE_INSTALL_ICONDIR}   )
+ecm_install_icons( ICONS 128-apps-kiriki.png  16-apps-kiriki.png  22-apps-kiriki.png  32-apps-kiriki.png  48-apps-kiriki.png  64-apps-kiriki.png DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor   )
 
