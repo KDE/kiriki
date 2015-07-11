@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	QApplication app(argc, argv);
 
 	KLocalizedString::setApplicationDomain("kiriki");
-	KAboutData about("kiriki", i18n("Kiriki"), "0.2.1", i18n("A Yahtzee dice game for KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"), "http://games.kde.org/kiriki" );
+	KAboutData about("kiriki", i18n("Kiriki"), "0.3.0", i18n("A Yahtzee dice game for KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"), "http://games.kde.org/kiriki" );
 	about.addAuthor(i18n("Albert Astals Cid"), QString(), "aacid@kde.org");
 	QCommandLineParser parser;
 	KAboutData::setApplicationData(about);
