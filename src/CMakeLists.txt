@@ -21,7 +21,7 @@ file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*-apps-kiriki.png")
 ecm_add_app_icon(kiriki_SRCS ICONS ${ICONS_SRCS})
 add_executable(kiriki ${kiriki_SRCS})
 
-target_link_libraries(kiriki KF5KDEGames KF5::XmlGui KF5::I18n KF5::IconThemes KF5::DBusAddons)
+target_link_libraries(kiriki KF5KDEGames KF5::XmlGui KF5::I18n KF5::IconThemes KF5::DBusAddons Qt5::PrintSupport)
 
 install(TARGETS kiriki ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

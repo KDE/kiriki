@@ -16,8 +16,8 @@
 #include <QItemDelegate>
 #include <QItemSelectionModel>
 #include <QPainter>
-//#include <QPrintDialog>
-//#include <QPrinter>
+#include <QPrintDialog>
+#include <QPrinter>
 #include <QStyledItemDelegate>
 #include <QTimer>
 #include <QTreeView>
@@ -348,17 +348,15 @@ void kiriki::showPreferences()
 
 void kiriki::print()
 {
-#if 0 //Port to QT5
 	QPrinter printer;
 	printer.setFullPage( true );
-	QPrintDialog *printDialog = KdePrint::createPrintDialog(&printer, this);
+	QPrintDialog *printDialog = new QPrintDialog(&printer, this);
 	if (printDialog->exec())
 	{
 		QPainter painter(&printer);
 		m_scores->print(painter, printer.width(), printer.height());
 	}
 	delete printDialog;
-#endif
 }
 
 void kiriki::nextTurn()
