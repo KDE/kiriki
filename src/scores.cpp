@@ -329,7 +329,7 @@ void scores::print(QPainter &painter, double width, double height) const
 	for (int i = 1; i <= 20; ++i)
 	{
 		QRectF cell(margin, margin + i * cellHeight, cellWidth, cellHeight);
-		painter.drawText( cell, Qt::AlignCenter, data( index(i-1, 0), Qt::DisplayRole ).toString() );
+		painter.drawText( cell, Qt::AlignCenter, data( index(i, 0), Qt::DisplayRole ).toString() );
 	}
 	
 	// write the scores
@@ -338,7 +338,7 @@ void scores::print(QPainter &painter, double width, double height) const
 		for (int j = 1; j <= 20; ++j)
 		{
 			QRectF cell(margin + i * cellWidth, margin + j * cellHeight, cellWidth, cellHeight);
-			painter.drawText( cell, Qt::AlignCenter, data( index(j-1, i), Qt::DisplayRole ).toString() );
+			painter.drawText( cell, Qt::AlignCenter, data( index(j, i), Qt::DisplayRole ).toString() );
 		}
 	}
 }
