@@ -35,8 +35,6 @@
 #include <QStatusBar>
 #include <KToggleAction>
 #include <KToolBar>
-#include <KHelpClient>
-#include <QPushButton>
 #include "computer.h"
 #include "configwidget.h"
 #include "lateralwidget.h"
@@ -326,8 +324,6 @@ void kiriki::showPreferences()
 	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
-        configDialog->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::Help);
-        connect(configDialog->button(QDialogButtonBox::Help), &QPushButton::clicked, this, &kiriki::slotHelp);
 	connect(configDialog, &KConfigDialog::settingsChanged, this, &kiriki::settingsChanged);
 	configDialog -> exec();
 	delete configDialog;
@@ -348,11 +344,6 @@ void kiriki::showPreferences()
 	{
 		KMessageBox::information(this, i18n("Changes will be applied on next game."));
 	}
-}
-
-void kiriki::slotHelp()
-{
-       KHelpClient::invokeHelp(QString(), QStringLiteral("kiriki"));
 }
 
 void kiriki::print()
