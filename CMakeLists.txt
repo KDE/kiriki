@@ -16,7 +16,9 @@ find_package(KF5 REQUIRED COMPONENTS
     ConfigWidgets 
     IconThemes 
     XmlGui
-    KIO)
+    KIO
+    DocTools
+)
     
 find_package(KF5KDEGames 4.9.0 REQUIRED)
 
