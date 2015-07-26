@@ -64,8 +64,8 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	m_scoresWidget -> setItemDelegate(m_itemDelegate);
 	m_scoresWidget -> setSelectionBehavior(QAbstractItemView::SelectRows);
 	m_scoresWidget -> setRootIsDecorated(false);
-	m_scoresWidget -> header() -> setResizeMode(QHeaderView::Stretch);
-	m_scoresWidget -> header() -> setMovable(false);
+	m_scoresWidget -> header() -> setSectionResizeMode(QHeaderView::Stretch);
+	m_scoresWidget -> header() -> setSectionsMovable(false);
 	m_scoresWidget -> header() -> setStretchLastSection(false);
 	m_scoresWidget -> header() -> hide();
 	m_scoresWidget -> setItemsExpandable(false);
@@ -156,7 +156,7 @@ void kiriki::newGame()
 	m_scoresWidget -> setModel(m_scores);
 	m_lateral -> nextTurn();
 
-	m_scoresWidget -> header() -> setResizeMode(0, QHeaderView::Custom);
+	m_scoresWidget -> header() -> setSectionResizeMode(0, QHeaderView::Custom);
 	m_scoresWidget -> resizeColumnToContents(0);
 	statusBar()->hide();
 	if (m_demoAction -> isChecked()) playComputer();
