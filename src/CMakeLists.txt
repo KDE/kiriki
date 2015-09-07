@@ -1,5 +1,4 @@
 
-
 set(kiriki_SRCS 
    main.cpp 
    kiriki.cpp 
@@ -30,4 +29,4 @@ install(TARGETS kiriki ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES kirikiui.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kiriki )
 install(PROGRAMS org.kde.kiriki.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
-
+install(PROGRAMS org.kde.kiriki.appdata.xml  DESTINATION  ${KDE_INSTALL_METAINFODIR} )
