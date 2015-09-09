@@ -1,15 +1,26 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <component type="desktop">
   <id>org.kde.kiriki.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>Kiriki</name>
+  <name xml:lang="es">Kiriki</name>
+  <name xml:lang="pt">Kiriki</name>
+  <name xml:lang="uk">Kiriki</name>
+  <name xml:lang="x-test">xxKirikixx</name>
   <summary>Yahtzee-like Dice Game</summary>
+  <summary xml:lang="es">Juego de dados similar al Yahtzee</summary>
+  <summary xml:lang="pt">Jogo de Dados à Yahtzee</summary>
+  <summary xml:lang="uk">Гра схожа на покер з кістками</summary>
+  <summary xml:lang="x-test">xxYahtzee-like Dice Gamexx</summary>
   <description>
     <p>
       Kiriki is an addictive and fun dice game, designed to be played by as many as six players.
       Participants have to collect points by rolling five dice for up to three times per single turn.
     </p>
+    <p xml:lang="es">Kiriki es un juego de dados divertido y adictivo, en el que pueden participar hasta seis jugadores. Los participantes deben reunir puntos tirando cinco dados hasta tres veces en cada turno.</p>
+    <p xml:lang="pt">O Kiriki é um jogo de dados divertido e viciante, desenhado para ser jogado com até seis pessoas. Os participantes têm de recolher pontos, lançando cinco dados, até três vezes por cada lançamento individual.</p>
+    <p xml:lang="x-test">xxKiriki is an addictive and fun dice game, designed to be played by as many as six players. Participants have to collect points by rolling five dice for up to three times per single turn.xx</p>
   </description>
   <url type="homepage">http://games.kde.org/game.php?game=kiriki</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kiriki</url>
