@@ -12,6 +12,11 @@
   <name xml:lang="pl">Kiriki</name>
   <name xml:lang="pt">Kiriki</name>
   <name xml:lang="pt-BR">Kiriki</name>
+  <name xml:lang="sk">Kiriki</name>
+  <name xml:lang="sr">Кирики</name>
+  <name xml:lang="sr-Latn">Kiriki</name>
+  <name xml:lang="sr-ijekavian">Кирики</name>
+  <name xml:lang="sr-ijekavianlatin">Kiriki</name>
   <name xml:lang="uk">Kiriki</name>
   <name xml:lang="x-test">xxKirikixx</name>
   <summary>Yahtzee-like Dice Game</summary>
@@ -23,6 +28,11 @@
   <summary xml:lang="pl">Gra kostką typu Yahtzee</summary>
   <summary xml:lang="pt">Jogo de Dados à Yahtzee</summary>
   <summary xml:lang="pt-BR">Jogo de dados parecido com Yahtzee ou Yam</summary>
+  <summary xml:lang="sk">Hra s kockami podobná Yahtzee</summary>
+  <summary xml:lang="sr">Јамболика игра са коцкицама</summary>
+  <summary xml:lang="sr-Latn">Jambolika igra sa kockicama</summary>
+  <summary xml:lang="sr-ijekavian">Јамболика игра са коцкицама</summary>
+  <summary xml:lang="sr-ijekavianlatin">Jambolika igra sa kockicama</summary>
   <summary xml:lang="uk">Гра схожа на покер з кістками</summary>
   <summary xml:lang="x-test">xxYahtzee-like Dice Gamexx</summary>
   <description>
@@ -37,6 +47,11 @@
     <p xml:lang="pl">Kirki jest uzależniającą i ciekawą grą kostką, stworzoną do gry nawet w sześć osób. Gracze zbierają punkty rzucając pięcioma kostkami do trzech razy na turę. </p>
     <p xml:lang="pt">O Kiriki é um jogo de dados divertido e viciante, desenhado para ser jogado com até seis pessoas. Os participantes têm de recolher pontos, lançando cinco dados, até três vezes por cada lançamento individual.</p>
     <p xml:lang="pt-BR">Kiriki é um jogo de dados viciante e divertido, projetado para ser jogado por até seis pessoas. Os participantes devem coletar pontos, lançando cinco dados por até três vezes em cada jogada.</p>
+    <p xml:lang="sk">Kiriki je návyková a zábavná kocková hra určená pre maximálne 6 hráčov. Hráči musia zbierať body hádzaním piatich kociek maximálne 3x za jeden ťah.</p>
+    <p xml:lang="sr">Кирики је заразна и забавна игра са коцкицама, дизајнирана за играње до у шест играча. Учесници скупљају поене бацањем пет коцкица до три пута у једном потезу.</p>
+    <p xml:lang="sr-Latn">Kiriki je zarazna i zabavna igra sa kockicama, dizajnirana za igranje do u šest igrača. Učesnici skupljaju poene bacanjem pet kockica do tri puta u jednom potezu.</p>
+    <p xml:lang="sr-ijekavian">Кирики је заразна и забавна игра са коцкицама, дизајнирана за играње до у шест играча. Учесници скупљају поене бацањем пет коцкица до три пута у једном потезу.</p>
+    <p xml:lang="sr-ijekavianlatin">Kiriki je zarazna i zabavna igra sa kockicama, dizajnirana za igranje do u šest igrača. Učesnici skupljaju poene bacanjem pet kockica do tri puta u jednom potezu.</p>
     <p xml:lang="x-test">xxKiriki is an addictive and fun dice game, designed to be played by as many as six players. Participants have to collect points by rolling five dice for up to three times per single turn.xx</p>
   </description>
   <url type="homepage">http://games.kde.org/game.php?game=kiriki</url>
