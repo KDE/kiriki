@@ -11,6 +11,7 @@ find_package(KF5 REQUIRED COMPONENTS
     CoreAddons 
     Config 
     DBusAddons 
+    DocTools
     I18n 
     GuiAddons 
     ConfigWidgets 
