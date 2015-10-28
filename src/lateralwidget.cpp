@@ -27,7 +27,7 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent), m_demoMode(fals
 	m_rolls = new QLabel(this);
 	m_dices = new dicesWidget(this);
 	m_buttons = new QStackedWidget(this);
-	m_rollButton = new QPushButton(QIcon::fromTheme( QLatin1String( "roll") ), i18n("&Roll" ), this);
+	m_rollButton = new QPushButton(QIcon::fromTheme( QStringLiteral( "roll") ), i18n("&Roll" ), this);
 	
 	QAction *dummyAction = KStandardGameAction::gameNew(0, 0, 0);
 	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);

@@ -75,7 +75,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	f.setBold(true);
 	f.setPointSize(f.pointSize() + 5);
 	QFontMetrics fm(f);
-	m_scoresWidget -> header() -> setMinimumSectionSize(fm.width("9999"));
+	m_scoresWidget -> header() -> setMinimumSectionSize(fm.width(QStringLiteral("9999")));
 
 	connect(m_scoresWidget, &QTreeView::pressed, this, &kiriki::pressed);
 	lay -> addWidget(m_scoresWidget, 1);
@@ -160,7 +160,7 @@ void kiriki::newGame()
 	m_scoresWidget -> resizeColumnToContents(0);
 	statusBar()->hide();
 	if (m_demoAction -> isChecked()) playComputer();
-	connect(m_lateral, SIGNAL(rolled()), statusBar(), SLOT(hide()));
+	connect(m_lateral, &lateralWidget::rolled, statusBar(), &QWidget::hide);
 }
 
 void kiriki::demo()
@@ -196,7 +196,7 @@ void kiriki::demo()
 	kirikiSettings::setNumberOfPlayers(6);
 	newGame();
 	emit demoStarted();
-	disconnect(m_lateral, SIGNAL(rolled()), statusBar(), SLOT(hide()));
+	disconnect(m_lateral, &lateralWidget::rolled, statusBar(), &QWidget::hide);
 	kirikiSettings::setPlayer1IsHuman(preDemoHumans[0]);
 	kirikiSettings::setPlayer2IsHuman(preDemoHumans[1]);
 	kirikiSettings::setPlayer3IsHuman(preDemoHumans[2]);
@@ -215,7 +215,7 @@ void kiriki::showHint()
 			this,
 			i18n("Asking for a hint will disqualify the current game from entering the high score list."),
 			i18n("Confirm Hint Request"),
-			KGuiItem(i18n("Give Hint Anyway"), "arrow-right")
+			KGuiItem(i18n("Give Hint Anyway"), QStringLiteral("arrow-right"))
 			)
 		) return;
 	m_hintGiven = true;
@@ -292,7 +292,7 @@ void kiriki::endGame()
 			}
 		}
 	}
-	if (m_demoAction -> isChecked()) QTimer::singleShot(3000, this, SLOT(demo()));
+	if (m_demoAction -> isChecked()) QTimer::singleShot(3000, this, &kiriki::demo);
 }
 
 void kiriki::showHighScores()
@@ -303,7 +303,7 @@ void kiriki::showHighScores()
 
 void kiriki::showPreferences()
 {
-	if(KConfigDialog::showDialog("settings"))
+	if(KConfigDialog::showDialog(QStringLiteral("settings")))
 		return;
 
 	int nPlayers = kirikiSettings::numberOfPlayers();
@@ -321,7 +321,7 @@ void kiriki::showPreferences()
 	m_fontSize = kirikiSettings::fontSize();
 	m_rowHeight = kirikiSettings::rowHeight();
 	
-	KConfigDialog *configDialog = new KConfigDialog(this, "settings", kirikiSettings::self());
+	KConfigDialog *configDialog = new KConfigDialog(this, QStringLiteral("settings"), kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
 	connect(configDialog, &KConfigDialog::settingsChanged, this, &kiriki::settingsChanged);
@@ -372,7 +372,7 @@ void kiriki::nextTurn()
 		if (!m_scores -> currentPlayer().isHuman())
 		{
 			m_hintAction -> setEnabled(false);
-			QTimer::singleShot(kirikiSettings::waitTime(), this, SLOT(playComputer()));
+			QTimer::singleShot(kirikiSettings::waitTime(), this, &kiriki::playComputer);
 		}
 		else
 		{

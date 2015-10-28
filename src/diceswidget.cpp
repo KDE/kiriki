@@ -29,13 +29,13 @@ dicesWidget::dicesWidget(QWidget *parent) : QWidget(parent)
 	m_highlightDice[4] = 0;
 	setMinimumSize(90, 450);
 	
-	m_images[0] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-none.png"));
-	m_images[1] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-1.png"));
-	m_images[2] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-2.png"));
-	m_images[3] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-3.png"));
-	m_images[4] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-4.png"));
-	m_images[5] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-5.png"));
-	m_images[6] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, "images/dice-6.png"));
+	m_images[0] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-none.png")));
+	m_images[1] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-1.png")));
+	m_images[2] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-2.png")));
+	m_images[3] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-3.png")));
+	m_images[4] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-4.png")));
+	m_images[5] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-5.png")));
+	m_images[6] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-6.png")));
 	
 	rollAll();
 }
