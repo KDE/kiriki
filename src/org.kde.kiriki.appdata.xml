@@ -11,6 +11,7 @@
   <name xml:lang="de">Kiriki</name>
   <name xml:lang="en-GB">Kiriki</name>
   <name xml:lang="es">Kiriki</name>
+  <name xml:lang="fi">Kiriki</name>
   <name xml:lang="gl">Kiriki</name>
   <name xml:lang="nl">Kiriki</name>
   <name xml:lang="pl">Kiriki</name>
@@ -34,6 +35,7 @@
   <summary xml:lang="de">„Kniffel“-Würfelspiel</summary>
   <summary xml:lang="en-GB">Yahtzee-like Dice Game</summary>
   <summary xml:lang="es">Juego de dados similar al Yahtzee</summary>
+  <summary xml:lang="fi">Yatzy-mainen noppapeli</summary>
   <summary xml:lang="gl">Xogo de dados ao estilo do «Yahtzee»</summary>
   <summary xml:lang="nl">Yahtzee-achtig dobbelsteenspel</summary>
   <summary xml:lang="pl">Gra kostką typu Yahtzee</summary>
@@ -58,6 +60,7 @@
     <p xml:lang="ca-valencia">El Kiriki és un joc de daus addictiu i divertit, dissenyat per jugar-se fins a sis jugadors. Els participants tenen que recollir punts tirant cinc daus fins a tres vegades per cada torn.</p>
     <p xml:lang="en-GB">Kiriki is an addictive and fun dice game, designed to be played by as many as six players. Participants have to collect points by rolling five dice for up to three times per single turn.</p>
     <p xml:lang="es">Kiriki es un juego de dados divertido y adictivo, en el que pueden participar hasta seis jugadores. Los participantes deben reunir puntos tirando cinco dados hasta tres veces en cada turno.</p>
+    <p xml:lang="fi">Kiriki on hauska ja koukuttava noppapeli, joka on suunniteltu jopa kuudelle pelaajalle. Pelaajat keräävät pisteitä heittämällä viittä noppaa enintään kolmesti kullakin vuorolla.</p>
     <p xml:lang="gl">Kiriki é un xogo de dados adictivo e divertido, deseñado para ata 6 xogadores. Os xogadores teñen que reunir puntos tirando 5 dados ata 3 veces por quenda.</p>
     <p xml:lang="nl">Kiriki is een verslavend en plezierig spel met dobbelstenen, ontworpen om gespeeld te worden door zoveel als zes spelers. Deelnemers moeten punten verzamelen door vijf dobbelstenen tot drie keer per enkele beurt te gooien.</p>
     <p xml:lang="pl">Kirki jest uzależniającą i ciekawą grą kostką, stworzoną do gry nawet w sześć osób. Gracze zbierają punkty rzucając pięcioma kostkami do trzech razy na turę. </p>
