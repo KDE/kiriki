@@ -697,7 +697,7 @@ ComputerRolling(const player &p, int NumberOfRolls)
                         bestv = bc_table[i].value;
                 }
 
-        for (i=0; i<5; i++)
+        for (i=0; i<5; ++i)
                 DiceValues[i].sel = bc_table[best].rerolls[i];
 }
 
