@@ -7,12 +7,12 @@
 	<include>QFont</include>
 	<kcfgfile name="kirikirc"/>
 	<group name="general">
-		<entry key="waitTime" type="Int" >
+		<entry key="waitTime" type="Int">
 			<default>150</default>
 			<min>0</min>
 			<max>2000</max>
 		</entry>
-		<entry key="numberOfPlayers" type="Int" >
+		<entry key="numberOfPlayers" type="Int">
 			<default>6</default>
 			<min>2</min>
 			<max>6</max>
@@ -20,7 +20,7 @@
 		<entry key="startupDemoEnabled" type="Bool">
 			<default>true</default>
 		</entry>
-		<entry key="fontSize" type="Int">			
+		<entry key="fontSize" type="Int">
 			<min>5</min>
 			<max>20</max>
 			<code>
@@ -28,63 +28,63 @@
 			  int defaultSize = f.pointSize();
 			</code>
 			<default code="true">defaultSize</default>
-		</entry>	
+		</entry>
 		<entry key="rowHeight" type="Int">
 			<max>20</max>
 			<default code="true">defaultSize</default>
 		</entry>
-		<entry key="player1Name" type="String" >
+		<entry key="player1Name" type="String">
 		<code>
 			QString playerName1 = i18nc("default name of first player", "Albert");
 		</code>
 		<default code="true">playerName1</default>
 		</entry>
-		<entry key="player2Name" type="String" >
+		<entry key="player2Name" type="String">
 		<code>
 			QString playerName2 = i18nc("default name of second player", "Janet");
 		</code>
 		<default code="true">playerName2</default>
 		</entry>
-		<entry key="player3Name" type="String" >
+		<entry key="player3Name" type="String">
 		<code>
 			QString playerName3 = i18nc("default name of third player", "James");
 		</code>
 		<default code="true">playerName3</default>
 		</entry>
-		<entry key="player4Name" type="String" >
+		<entry key="player4Name" type="String">
 		<code>
 			QString playerName4 = i18nc("default name of fourth player", "Sandra");
 		</code>
 		<default code="true">playerName4</default>
 		</entry>
-		<entry key="player5Name" type="String" >
+		<entry key="player5Name" type="String">
 		<code>
 			QString playerName5 = i18nc("default name of fifth player", "Thomas");
 		</code>
 		<default code="true">playerName5</default>
 		</entry>
-		<entry key="player6Name" type="String" >
+		<entry key="player6Name" type="String">
 		<code>
 			QString playerName6 = i18nc("default name of sixth player", "Margaret");
 		</code>
 		<default code="true">playerName6</default>
 		</entry>
-		<entry key="player1IsHuman" type="Bool" >
+		<entry key="player1IsHuman" type="Bool">
 			<default>true</default>
 		</entry>
-		<entry key="player2IsHuman" type="Bool" >
+		<entry key="player2IsHuman" type="Bool">
 			<default>false</default>
 		</entry>
-		<entry key="player3IsHuman" type="Bool" >
+		<entry key="player3IsHuman" type="Bool">
 			<default>false</default>
 		</entry>
-		<entry key="player4IsHuman" type="Bool" >
+		<entry key="player4IsHuman" type="Bool">
 			<default>false</default>
 		</entry>
-		<entry key="player5IsHuman" type="Bool" >
+		<entry key="player5IsHuman" type="Bool">
 			<default>false</default>
 		</entry>
-		<entry key="player6IsHuman" type="Bool" >
+		<entry key="player6IsHuman" type="Bool">
 			<default>false</default>
 		</entry>
 	</group>
