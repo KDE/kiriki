@@ -292,7 +292,7 @@ void kiriki::endGame()
 				sc->exec();
 			}
 		}
-        delete sc;
+		delete sc;
 	}
 	if (m_demoAction -> isChecked()) QTimer::singleShot(3000, this, &kiriki::demo);
 }
