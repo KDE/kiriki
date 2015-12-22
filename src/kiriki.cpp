@@ -16,6 +16,7 @@
 #include <QItemDelegate>
 #include <QItemSelectionModel>
 #include <QPainter>
+#include <QPointer>
 #include <QPrintDialog>
 #include <QPrinter>
 #include <QStyledItemDelegate>
@@ -276,7 +277,7 @@ void kiriki::endGame()
 	m_hintAction -> setEnabled(false);
 	if (p.isHuman())
 	{
-		KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score | KScoreDialog::Date, this);
+		QPointer<KScoreDialog> sc = new KScoreDialog(KScoreDialog::Name | KScoreDialog::Score | KScoreDialog::Date, this);
 		if (m_hintGiven) m_hintGiven = false;
 		else
 		{
@@ -286,11 +287,12 @@ void kiriki::endGame()
 			const QString datestring = date.toString(Qt::DefaultLocaleShortDate);
 			scoreInfo[KScoreDialog::Date] = datestring;
 			
-			if (sc.addScore(scoreInfo))
+			if (sc->addScore(scoreInfo))
 			{
-				sc.exec();
+				sc->exec();
 			}
 		}
+        delete sc;
 	}
 	if (m_demoAction -> isChecked()) QTimer::singleShot(3000, this, &kiriki::demo);
 }
@@ -321,11 +323,11 @@ void kiriki::showPreferences()
 	m_fontSize = kirikiSettings::fontSize();
 	m_rowHeight = kirikiSettings::rowHeight();
 	
-	KConfigDialog *configDialog = new KConfigDialog(this, QStringLiteral("settings"), kirikiSettings::self());
+	QPointer<KConfigDialog> configDialog = new KConfigDialog(this, QStringLiteral("settings"), kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
-	configDialog -> addPage(new configWidget(configDialog), QString(), QString());
+	configDialog->addPage(new configWidget(configDialog), QString(), QString());
 	connect(configDialog, &KConfigDialog::settingsChanged, this, &kiriki::settingsChanged);
-	configDialog -> exec();
+	configDialog->exec();
 	delete configDialog;
 
 	bool changed = nPlayers != kirikiSettings::numberOfPlayers() ||
@@ -350,7 +352,7 @@ void kiriki::print()
 {
 	QPrinter printer;
 	printer.setFullPage( true );
-	QPrintDialog *printDialog = new QPrintDialog(&printer, this);
+	QPointer<QPrintDialog> printDialog = new QPrintDialog(&printer, this);
 	if (printDialog->exec())
 	{
 		QPainter painter(&printer);
