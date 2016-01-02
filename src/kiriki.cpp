@@ -326,7 +326,7 @@ void kiriki::showPreferences()
 	QPointer<KConfigDialog> configDialog = new KConfigDialog(this, QStringLiteral("settings"), kirikiSettings::self());
 	configDialog->setFaceType(KConfigDialog::Plain);
 	configDialog->addPage(new configWidget(configDialog), QString(), QString());
-	connect(configDialog, &KConfigDialog::settingsChanged, this, &kiriki::settingsChanged);
+	connect(configDialog.data(), &KConfigDialog::settingsChanged, this, &kiriki::settingsChanged);
 	configDialog->exec();
 	delete configDialog;
 
