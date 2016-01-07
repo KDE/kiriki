@@ -34,5 +34,6 @@ int main(int argc, char *argv[])
 	KDBusService service;
 	kiriki *w = new kiriki();
 	w->show();
+	app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kiriki")));
 	return app.exec();
 }
