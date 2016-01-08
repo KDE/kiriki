@@ -16,6 +16,7 @@
   <name xml:lang="pl">Kiriki</name>
   <name xml:lang="pt">Kiriki</name>
   <name xml:lang="pt-BR">Kiriki</name>
+  <name xml:lang="ru">Kiriki</name>
   <name xml:lang="sk">Kiriki</name>
   <name xml:lang="sl">Kiriki</name>
   <name xml:lang="sr">Кирики</name>
@@ -40,6 +41,7 @@
   <summary xml:lang="pl">Gra kostką typu Yahtzee</summary>
   <summary xml:lang="pt">Jogo de Dados à Yahtzee</summary>
   <summary xml:lang="pt-BR">Jogo de dados parecido com Yahtzee ou Yam</summary>
+  <summary xml:lang="ru">Игра «Покер на костях»</summary>
   <summary xml:lang="sk">Hra s kockami podobná Yahtzee</summary>
   <summary xml:lang="sl">Igra s kockami, podobna Jamb-u (Yahtzee)</summary>
   <summary xml:lang="sr">Јамболика игра са коцкицама</summary>
@@ -66,6 +68,7 @@
     <p xml:lang="pl">Kirki jest uzależniającą i ciekawą grą kostką, stworzoną do gry nawet w sześć osób. Gracze zbierają punkty rzucając pięcioma kostkami do trzech razy na turę. </p>
     <p xml:lang="pt">O Kiriki é um jogo de dados divertido e viciante, desenhado para ser jogado com até seis pessoas. Os participantes têm de recolher pontos, lançando cinco dados, até três vezes por cada lançamento individual.</p>
     <p xml:lang="pt-BR">Kiriki é um jogo de dados viciante e divertido, projetado para ser jogado por até seis pessoas. Os participantes devem coletar pontos, lançando cinco dados por até três vezes em cada jogada.</p>
+    <p xml:lang="ru">Kiriki — азартная игра в кости, в которую могут играть до шести человек. Игроки набирают очки, бросая пять костей до трёх раз за ход.</p>
     <p xml:lang="sk">Kiriki je návyková a zábavná kocková hra určená pre maximálne 6 hráčov. Hráči musia zbierať body hádzaním piatich kociek maximálne 3x za jeden ťah.</p>
     <p xml:lang="sl">Kiriki je zasvojljiva in zabavna igra s kockami, ki je bila zasnovana za do šest igralcev. Udeleženci morajo zbirati točke z metanjem petih kock, do trikrat na potezo.</p>
     <p xml:lang="sr">Кирики је заразна и забавна игра са коцкицама, дизајнирана за играње до у шест играча. Учесници скупљају поене бацањем пет коцкица до три пута у једном потезу.</p>
