@@ -8,7 +8,7 @@
  ***************************************************************************/
 
 #include <KAboutData>
-
+#include <KCrash>
 
 #include <KLocalizedString>
 #include <QApplication>
@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
 	about.setHomepage(QStringLiteral("http://games.kde.org/kiriki"));
 	QCommandLineParser parser;
 	KAboutData::setApplicationData(about);
+	KCrash::initialize();
 	parser.addVersionOption();
 	parser.addHelpOption();
 	about.setupCommandLine(&parser);
