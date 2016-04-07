@@ -28,15 +28,15 @@ dicesWidget::dicesWidget(QWidget *parent) : QWidget(parent)
 	m_highlightDice[3] =
 	m_highlightDice[4] = 0;
 	setMinimumSize(90, 450);
-	
-	m_images[0] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-none.png")));
-	m_images[1] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-1.png")));
-	m_images[2] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-2.png")));
-	m_images[3] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-3.png")));
-	m_images[4] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-4.png")));
-	m_images[5] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-5.png")));
-	m_images[6] = QPixmap(QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("images/dice-6.png")));
-	
+
+	m_images[0] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-none.png")));
+	m_images[1] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-1.png")));
+	m_images[2] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-2.png")));
+	m_images[3] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-3.png")));
+	m_images[4] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-4.png")));
+	m_images[5] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-5.png")));
+	m_images[6] = QPixmap(QStandardPaths::locate(QStandardPaths::AppDataLocation, QStringLiteral("images/dice-6.png")));
+
 	rollAll();
 }
 
@@ -169,7 +169,7 @@ int dicesWidget::getKiriki() const
 
 int dicesWidget::totalSum() const
 {
-	return m_dice[0] + m_dice[1] + m_dice[2] + m_dice[3] + m_dice[4]; 
+	return m_dice[0] + m_dice[1] + m_dice[2] + m_dice[3] + m_dice[4];
 }
 
 void dicesWidget::paintEvent(QPaintEvent *)
@@ -199,7 +199,7 @@ void dicesWidget::mousePressEvent(QMouseEvent *e)
 
 	int x = e -> x();
 	int y = e -> y();
-	
+
 	if (x > 5 && x < 85 && y > 10)
 	{
 		y -= 10;
@@ -243,6 +243,6 @@ int dicesWidget::getNOfKind(int number) const
 		if (getSimilar(i) >= number) have = true;
 		i++;
 	}
-	if (have) return totalSum(); 
+	if (have) return totalSum();
 	else return 0;
 }
