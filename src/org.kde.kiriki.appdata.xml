@@ -29,6 +29,7 @@
   <name xml:lang="uk">Kiriki</name>
   <name xml:lang="x-test">xxKirikixx</name>
   <name xml:lang="zh-CN">Kiriki</name>
+  <name xml:lang="zh-TW">Kiriki</name>
   <summary>Yahtzee-like Dice Game</summary>
   <summary xml:lang="ast">Xuegu de daos paecíu a Yahtzee</summary>
   <summary xml:lang="ca">Joc de daus com el Yahtzee</summary>
@@ -55,6 +56,7 @@
   <summary xml:lang="uk">Гра схожа на покер з кістками</summary>
   <summary xml:lang="x-test">xxYahtzee-like Dice Gamexx</summary>
   <summary xml:lang="zh-CN">类似 Yahtzee 的骰子游戏</summary>
+  <summary xml:lang="zh-TW">類似 Yahtzee 的骰子遊戲</summary>
   <description>
     <p>
       Kiriki is an addictive and fun dice game, designed to be played by as many as six players.
@@ -83,6 +85,7 @@
     <p xml:lang="uk">Kiriki — захоплива гра у кістки. Її створено для гри, у якій братимуть участь не більше шести гравців. Учасники гри збирають очки, виконуючи до трьох кидків п’яти кісток кожного ходу.</p>
     <p xml:lang="x-test">xxKiriki is an addictive and fun dice game, designed to be played by as many as six players. Participants have to collect points by rolling five dice for up to three times per single turn.xx</p>
     <p xml:lang="zh-CN">Kiriki 是一个吸引人的有趣的骰子游戏，设计最多六人游玩。参与者通过每轮最多重投三次骰子来收集点数。</p>
+    <p xml:lang="zh-TW">Kiriki 是個有趣的骰子遊戲，最多可以六個人玩。玩的人一輪擲五顆骰子，最多三次，並計算總點數。</p>
   </description>
   <url type="homepage">http://games.kde.org/game.php?game=kiriki</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kiriki</url>
