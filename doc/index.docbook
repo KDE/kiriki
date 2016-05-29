@@ -4,7 +4,7 @@
   <!ENTITY % English "INCLUDE" > <!-- change language only here -->
   <!ENTITY % addindex "IGNORE"> <!-- do not change this! -->
 ]>
- 
+
 <book id="kiriki" lang="&language;"> <!-- do not change this! -->
 <bookinfo>
 	<title>The &kiriki; Handbook</title>
@@ -24,15 +24,15 @@
 			<year>2007</year>
 			<holder>&Albert.Astals.Cid;</holder>
 		</copyright>
-<legalnotice>&FDLNotice;</legalnotice> 
+<legalnotice>&FDLNotice;</legalnotice>
 <date>2016-05-09</date>
 <releaseinfo>0.3.0 (Applications 16.04)</releaseinfo>
- 
+
 <!--Short description of this document. Do not change unless necessary!-->
 <abstract>
 	<para>This documentation describes the game of &kiriki; version 0.3.0</para>
 </abstract>
- 
+
 <!--List of relevan keywords-->
 <keywordset>
 	<keyword>KDE</keyword> <!-- do not change this! -->
@@ -68,7 +68,7 @@
 	&kiriki; is an addictive and fun dice game for &kde;, designed to be played by as many as six players. Participants have to collect points by rolling five dice for up to three times per single turn. Each roll generates a specific combination of numbers which the player is free to either accept or decline. However, each specific combination of numbers can be accepted only once. After thirteen turns the game ends and the scores are compared. The player with the largest amount of points wins the game.
 	</para>
 </chapter>
- 
+
 <chapter id="howto"><title>How to Play</title> <!-- do not change this! -->
 <!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
 	<note><title>Objective:</title><para>Earn more score points than either of the opponents.</para></note><!--Describe the objective of the game.-->
@@ -86,7 +86,7 @@
 	<note><title>Note:</title><para>The detailed description of the score pattern values can be found in the <link linkend="rules_and_tips">‘Game Rules, Strategies and Tips’</link> section of this handbook.</para></note>
 	<para>Right after that your turn ends and the next participant’s turn begins. This sequence repeats some thirteen times and then the game ends, the scores are calculated and the high scores are awarded.</para>
 </chapter>
- 
+
 <chapter id="rules_and_tips"><title>Game Rules, Strategies and Tips</title> <!-- do not change this! -->
 	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
 	<sect1><title>Game Rules</title>
@@ -124,8 +124,8 @@
 				<listitem><para>Each individual score pattern can only be used once per game per player. Therefore, once the score pattern has been used by one player it can no longer be used by that same player. However, another player can still use it, unless he has used this same pattern up already.</para></listitem>
 			</itemizedlist>
 	</sect1>
-</chapter> 
- 
+</chapter>
+
 <chapter id="interface"><title>Interface Overview</title> <!-- do not change this! -->
 <sect1 id="menu">
 <title>Menu Items</title>
@@ -184,7 +184,7 @@
 
 		</variablelist>
 <para>
-Additionally &kappname; has the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</guimenu>
+Additionally &kiriki; has the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</guimenu>
 menu items, for more information read the sections about the <ulink url="help:/fundamentals/ui.html#menus-settings"
 >Settings Menu</ulink> and <ulink url="help:/fundamentals/ui.html#menus-help">Help Menu</ulink>
 of the &kde; Fundamentals.
@@ -254,10 +254,10 @@ of the &kde; Fundamentals.
 <para>Use <guilabel>Font Size</guilabel> and <guilabel>Row Height</guilabel> to adjust the score board to your liking.</para>
 <para>If you want to play immediately at &kiriki; startup disable the default option <guilabel>Show demonstration game at startup</guilabel>.</para>
 </chapter>
- 
+
 <chapter id="credits"><title>Credits and License</title> <!-- do not change this! -->
 <!--This chapter is for credits and licenses.-->
- 
+
 <para>&kiriki;</para>
 
 <!--List all the copyright holders here-->
@@ -270,13 +270,13 @@ Documentation copyright 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail;
 <para>
 Documentation copyright 2007 Eugene Trounev <email>eugene.trounev@gmail.com</email>
 </para>
-<!-- TRANS:CREDIT_FOR_TRANSLATORS --> 
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
 &underFDL;
 &underGPL;
- 
+
 </chapter>
- 
-&documentation.index; 
+
+&documentation.index;
 </book>
 <!--
 Local Variables:
