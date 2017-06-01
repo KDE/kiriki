@@ -31,10 +31,10 @@ class scores : public QAbstractTableModel
 		Row row(int row) const;
 		int rowForScoreRow(int scoreRow) const;
 		
-		int rowCount(const QModelIndex &index) const;
-		int columnCount(const QModelIndex &index) const;
-		QVariant data(const QModelIndex &index, int role) const;
-		bool setData(const QModelIndex &mi, const QVariant &value, int role);
+		int rowCount(const QModelIndex &index) const Q_DECL_OVERRIDE;
+		int columnCount(const QModelIndex &index) const Q_DECL_OVERRIDE;
+		QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
+		bool setData(const QModelIndex &mi, const QVariant &value, int role) Q_DECL_OVERRIDE;
 		
 		void askForRedraw();
 		void print(QPainter &painter, double width, double height) const;
