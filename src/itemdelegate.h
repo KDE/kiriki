@@ -17,7 +17,7 @@ class itemDelegate : public QItemDelegate
 Q_OBJECT
 	public:
 		explicit itemDelegate(int height, QObject *parent = 0);
-		QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
+		QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override;
 
 		void setHeight(int height);
 

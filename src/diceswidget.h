@@ -42,8 +42,8 @@ class dicesWidget : public QWidget
 		int totalSum() const;
 	
 	protected:
-		void paintEvent(QPaintEvent *p) Q_DECL_OVERRIDE;
-		void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
+		void paintEvent(QPaintEvent *p) override;
+		void mousePressEvent(QMouseEvent *e) override;
 	
 	private:
 		bool generateDices();
