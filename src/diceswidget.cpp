@@ -14,7 +14,7 @@
 #include <QPainter>
 #include <QPixmap>
 #include <QMouseEvent>
-#include <QStyleOptionViewItemV4>
+#include <QStyleOptionViewItem>
 
 #include <krandom.h>
 #include <QStandardPaths>
@@ -182,7 +182,7 @@ void dicesWidget::paintEvent(QPaintEvent *)
 		// if (!m_enabled) pixmap = KPixmapEffect::toGray(pixmap, false);
 		if (m_highlightDice[i])
 		{
-			QStyleOptionViewItemV4 option;
+			QStyleOptionViewItem option;
 			option.initFrom(this);
 			option.rect = QRect(5, 9 + 90 * i, 80, 80);
 			option.state |= QStyle::State_Selected;
