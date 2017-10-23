@@ -154,8 +154,8 @@ QVariant scores::data(const QModelIndex &index, int role) const
 			if (role == Qt::DecorationRole)
 			{
 				QString icon;
-				if (p.isHuman()) icon = QLatin1String("user-identity");
-				else icon = QLatin1String("cpu");
+				if (p.isHuman()) icon = QStringLiteral("user-identity");
+				else icon = QStringLiteral("cpu");
 				return KIconLoader::global()->loadIcon(icon, KIconLoader::NoGroup, KIconLoader::SizeMedium);
 			}
 			else if (role == Qt::DisplayRole)
