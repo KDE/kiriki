@@ -154,6 +154,7 @@ void kiriki::newGame()
 {
 	delete m_scores;
 	m_scores = new scores();
+	m_scores -> setParent(this);
 	m_scoresWidget -> setModel(m_scores);
 	m_lateral -> nextTurn();
 
