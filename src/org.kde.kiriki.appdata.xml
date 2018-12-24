@@ -15,6 +15,7 @@
   <name xml:lang="fi">Kiriki</name>
   <name xml:lang="fr">Kiriki</name>
   <name xml:lang="gl">Kiriki</name>
+  <name xml:lang="id">Kiriki</name>
   <name xml:lang="it">Kiriki</name>
   <name xml:lang="nl">Kiriki</name>
   <name xml:lang="nn">Kiriki</name>
@@ -46,6 +47,7 @@
   <summary xml:lang="fi">Yatzy-mainen noppapeli</summary>
   <summary xml:lang="fr">Jeu de dés dans le style du Yam's</summary>
   <summary xml:lang="gl">Xogo de dados ao estilo do «Yahtzee»</summary>
+  <summary xml:lang="id">Permainan Dadu Seperti Yahtzee</summary>
   <summary xml:lang="it">Gioco di dadi in stile Yahtzee</summary>
   <summary xml:lang="nl">Yahtzee-achtig dobbelsteenspel</summary>
   <summary xml:lang="nn">Yatzy-liknande terningspel</summary>
@@ -80,6 +82,7 @@
     <p xml:lang="fi">Kiriki on hauska ja koukuttava noppapeli, joka on suunniteltu jopa kuudelle pelaajalle. Pelaajat keräävät pisteitä heittämällä viittä noppaa enintään kolmesti kullakin vuorolla.</p>
     <p xml:lang="fr">Kiriki est un jeu de dés amusant et addictif conçu pour réunir jusqu'à six joueurs. Les participants doivent collecter des points en lançant cinq dés jusqu'à trois fois par tour.</p>
     <p xml:lang="gl">Kiriki é un xogo de dados adictivo e divertido, deseñado para ata 6 xogadores. Os xogadores teñen que reunir puntos tirando 5 dados ata 3 veces por quenda.</p>
+    <p xml:lang="id">Kiriki adalah permainan dadu yang adiktif dan menyenangkan, dirancang untuk dimainkan oleh sebanyak enam pemain. Peserta harus mengumpulkan poin dengan menggulirkan lima dadu hingga tiga kali tiap babak tunggal.</p>
     <p xml:lang="it">Kiriki è un gioco di dadi divertente e coinvolgente, studiato per essere giocato fino a un massimo di sei giocatori. I partecipanti devono accumulare punti lanciando cinque dadi fino a tre volte per singolo turno.</p>
     <p xml:lang="nl">Kiriki is een verslavend en plezierig spel met dobbelstenen, ontworpen om gespeeld te worden door zoveel als zes spelers. Deelnemers moeten punten verzamelen door vijf dobbelstenen tot drie keer per enkele beurt te gooien.</p>
     <p xml:lang="nn">Kiriki er eit vanedannande og morosamt terningspel, som kan spelast av opptil seks spelarar. Deltakarane får poeng ved å trilla fem terningar opptil tre gongar per omgang.</p>
