@@ -16,12 +16,14 @@
 #include <KDBusService>
 #include "kiriki.h"
 
+#include "kiriki_version.h"
+
 int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
 
 	KLocalizedString::setApplicationDomain("kiriki");
-	KAboutData about(QStringLiteral("kiriki"), i18n("Kiriki"), QStringLiteral("0.3.0"), i18n("A Yahtzee dice game by KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"));
+	KAboutData about(QStringLiteral("kiriki"), i18n("Kiriki"), KIRIKI_VERSION_STRING, i18n("A Yahtzee dice game by KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"));
 	about.addAuthor(i18n("Albert Astals Cid"), QString(), QStringLiteral("aacid@kde.org"));
 	about.setHomepage(QStringLiteral("http://games.kde.org/kiriki"));
 	QCommandLineParser parser;
