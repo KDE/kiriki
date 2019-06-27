@@ -13,7 +13,6 @@
 
 #include <QHBoxLayout>
 #include <QHeaderView>
-#include <QItemDelegate>
 #include <QItemSelectionModel>
 #include <QPainter>
 #include <QPointer>
@@ -35,7 +34,6 @@
 #include <QAction>
 #include <QStatusBar>
 #include <KToggleAction>
-#include <KToolBar>
 #include "computer.h"
 #include "configwidget.h"
 #include "lateralwidget.h"

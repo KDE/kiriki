@@ -8,7 +8,6 @@
  ***************************************************************************/
 #ifndef KIRIKI_ROW_H
 #define KIRIKI_ROW_H
-#include <QFlags>
 #include <QString>
 
 class Row
