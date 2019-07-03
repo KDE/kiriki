@@ -167,7 +167,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 				if (column - 1 == m_currentPlayer)
 				{
 					QPalette pal;
-					return pal.alternateBase().color().dark(110);
+					return pal.alternateBase().color().darker(110);
 				}
 			}
 			else if (role == Qt::FontRole)
@@ -199,7 +199,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 		if (column % 2 == 0)
 		{
 			c = p.alternateBase().color();
-			if (index.row() % 2) c = c.dark(105);
+			if (index.row() % 2) c = c.darker(105);
 		}
 		else
 		{
@@ -207,9 +207,9 @@ QVariant scores::data(const QModelIndex &index, int role) const
 			else c = p.alternateBase().color();
 		}
 		
-		if (row.type() == Row::GrandTotalRow) c = p.highlight().color().light();
+		if (row.type() == Row::GrandTotalRow) c = p.highlight().color().lighter();
 		
-		if (column - 1 == m_currentPlayer) c = c.dark(110);
+		if (column - 1 == m_currentPlayer) c = c.darker(110);
 		
 		return c;
 	}
