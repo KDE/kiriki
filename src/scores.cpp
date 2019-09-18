@@ -162,7 +162,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 			{
 				return p.name();
 			}
-			else if (role == Qt::BackgroundColorRole)
+			else if (role == Qt::BackgroundRole)
 			{
 				if (column - 1 == m_currentPlayer)
 				{
@@ -192,7 +192,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 		if (row.flags() & Row::BiggerFontFlag) f.setPointSize(f.pointSize() + 5);
 		return f;
 	}
-	else if (role == Qt::BackgroundColorRole)
+	else if (role == Qt::BackgroundRole)
 	{
 		QPalette p;
 		QColor c;

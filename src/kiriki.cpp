@@ -74,7 +74,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	f.setBold(true);
 	f.setPointSize(f.pointSize() + 5);
 	QFontMetrics fm(f);
-	m_scoresWidget -> header() -> setMinimumSectionSize(fm.width(QStringLiteral("9999")));
+        m_scoresWidget -> header() -> setMinimumSectionSize(fm.boundingRect(QStringLiteral("9999")).width());
 
 	connect(m_scoresWidget, &QTreeView::pressed, this, &kiriki::pressed);
 	lay -> addWidget(m_scoresWidget, 1);
