@@ -1,5 +1,5 @@
 
-ecm_setup_version(${KDE_APPLICATIONS_VERSION} VARIABLE_PREFIX KIRIKI VERSION_HEADER kiriki_version.h)
+ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KIRIKI VERSION_HEADER kiriki_version.h)
 
 set(kiriki_SRCS 
    main.cpp 
