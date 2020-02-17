@@ -283,7 +283,8 @@ void kiriki::endGame()
 			KScoreDialog::FieldInfo scoreInfo;
 			scoreInfo[KScoreDialog::Score].setNum(p.grandTotal());
 			const QDate date = QDate::currentDate();
-			const QString datestring = date.toString(Qt::DefaultLocaleShortDate);
+                        QLocale l;
+                        const QString datestring = l.toString(date, QLocale::ShortFormat);
 			scoreInfo[KScoreDialog::Date] = datestring;
 			
 			if (sc->addScore(scoreInfo))
