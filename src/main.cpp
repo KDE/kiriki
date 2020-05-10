@@ -20,7 +20,9 @@
 
 int main(int argc, char *argv[])
 {
-	QApplication app(argc, argv);
+	// Fixes blurry icons with fractional scaling
+    QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+    QApplication app(argc, argv);
 
 	KLocalizedString::setApplicationDomain("kiriki");
 	KAboutData about(QStringLiteral("kiriki"), i18n("Kiriki"), KIRIKI_VERSION_STRING, i18n("A Yahtzee dice game by KDE"), KAboutLicense::GPL, i18n("© 2005-2007 Albert Astals Cid"));
