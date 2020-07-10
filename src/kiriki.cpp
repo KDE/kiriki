@@ -23,14 +23,14 @@
 #include <QTreeView>
 #include <QDateTime>
 
-#include <qapplication.h>
-#include <kconfigdialog.h>
-#include <klocalizedstring.h>
-#include <kmessagebox.h>
+#include <QApplication>
+#include <KConfigDialog>
+#include <KLocalizedString>
+#include <KMessageBox>
 #include <highscore/kscoredialog.h>
-#include <kstandardaction.h>
-#include <kstandardgameaction.h>
-#include <kactioncollection.h>
+#include <KStandardAction>
+#include <KStandardGameAction>
+#include <KActionCollection>
 #include <QAction>
 #include <QStatusBar>
 #include <KToggleAction>

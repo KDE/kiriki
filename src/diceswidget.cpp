@@ -16,7 +16,7 @@
 #include <QMouseEvent>
 #include <QStyleOptionViewItem>
 
-#include <krandom.h>
+#include <KRandom>
 #include <QStandardPaths>
 
 

@@ -16,7 +16,7 @@
 
 #include <QAction>
 #include <QIcon>
-#include <kstandardgameaction.h>
+#include <KStandardGameAction>
 #include <KLocalizedString>
 
 #include "diceswidget.h"

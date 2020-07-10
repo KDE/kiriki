@@ -9,7 +9,7 @@
 
 #include "configwidget.h"
 
-#include <kacceleratormanager.h>
+#include <KAcceleratorManager>
 
 configWidget::configWidget(QWidget *parent) : QWidget(parent)
 {

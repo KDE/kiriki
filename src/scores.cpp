@@ -13,7 +13,7 @@
 #include <QPainter>
 #include <QPalette>
 
-#include <kiconloader.h>
+#include <KIconLoader>
 #include <KLocalizedString>
 
 #include "settings.h"
