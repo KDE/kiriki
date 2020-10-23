@@ -12,7 +12,6 @@
 #include <stdlib.h>
 
 #include <QPainter>
-#include <QPixmap>
 #include <QMouseEvent>
 #include <QStyleOptionViewItem>
 
