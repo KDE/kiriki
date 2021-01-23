@@ -18,6 +18,10 @@ ki18n_wrap_ui(kiriki_SRCS configPage.ui)
 
 kconfig_add_kcfg_files(kiriki_SRCS settings.kcfgc)
 
+qt5_add_resources(kiriki_SRCS
+    kiriki.qrc
+)
+
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*-apps-kiriki.png")
 ecm_add_app_icon(kiriki_SRCS ICONS ${ICONS_SRCS})
 add_executable(kiriki ${kiriki_SRCS})
@@ -34,9 +38,5 @@ target_link_libraries(kiriki
 
 install(TARGETS kiriki ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
-
-########### install files ###############
-
-install(FILES kirikiui.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kiriki )
 install(PROGRAMS org.kde.kiriki.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
 install(FILES org.kde.kiriki.appdata.xml  DESTINATION  ${KDE_INSTALL_METAINFODIR} )
