@@ -10,7 +10,7 @@
 #ifndef KIRIKI_H
 #define KIRIKI_H
  
-#include <kxmlguiwindow.h>
+#include <KXmlGuiWindow>
 
 class QModelIndex;
 class QStyledItemDelegate;
