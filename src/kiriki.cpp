@@ -79,7 +79,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	connect(m_scoresWidget, &QTreeView::pressed, this, &kiriki::pressed);
 	lay -> addWidget(m_scoresWidget, 1);
 	
-	m_scores = 0;
+	m_scores = nullptr;
 	
 	// Game
 	QAction *gameNewAction = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
@@ -116,7 +116,7 @@ void kiriki::pressed(const QModelIndex &index)
 
 	if (index.column() == 0 || index.column() == m_scores -> currentPlayerNumber() + 1) play(index);
 
-	m_scoresWidget -> setItemDelegateForRow(m_highlightedRowIndex, 0);
+	m_scoresWidget -> setItemDelegateForRow(m_highlightedRowIndex, nullptr);
 }
 
 void kiriki::play(const QModelIndex &index)
