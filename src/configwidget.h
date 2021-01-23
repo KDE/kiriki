@@ -20,7 +20,7 @@ Q_OBJECT
 	public:
 		explicit configWidget(QWidget *parent);
 	
-	private slots:
+	private Q_SLOTS:
 		void numberOfPlayersChanged(int numberOfPlayers);
 		void minimumRowHeightChanged(int height);
 };

@@ -29,10 +29,10 @@ Q_OBJECT
 	public:
 		kiriki();
 
-	signals:
+	Q_SIGNALS:
 		void demoStarted(bool t = true);
 	
-	private slots:
+	private Q_SLOTS:
 		void newGame();
 		void demo();
 		void pressed(const QModelIndex &index);

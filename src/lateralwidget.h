@@ -48,11 +48,11 @@ Q_OBJECT
 		int getKiriki() const;
 		int totalSum() const;
 		
-	signals:
+	Q_SIGNALS:
 		void newGameClicked();
 		void rolled();
 
-	public slots:
+	public Q_SLOTS:
 		void roll();
 		void newGame();
 		void enableDemoMode();
