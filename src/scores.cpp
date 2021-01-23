@@ -239,7 +239,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 
 void scores::askForRedraw()
 {
-	emit dataChanged(index(0, 0), index(m_rows.count() - 1, m_players.count() - 1));
+	Q_EMIT dataChanged(index(0, 0), index(m_rows.count() - 1, m_players.count() - 1));
 }
 
 bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
@@ -268,13 +268,13 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 		m_players[m_currentPlayer].setScore(row.scoreRow(), value.toInt());
 	}
 	
-	emit dataChanged(mi, mi);
+	Q_EMIT dataChanged(mi, mi);
 	
 	for (int i = 0; i < m_rows.count(); ++i)
 	{
 		const Row::Type t = m_rows.at(i).type();
 		if (t == Row::BonusRow || t == Row::UpperTotalRow || t == Row::LowerTotalRow || t == Row::GrandTotalRow)
-			emit dataChanged(index(m_currentPlayer + 1, i), index(m_currentPlayer + 1, i));
+			Q_EMIT dataChanged(index(m_currentPlayer + 1, i), index(m_currentPlayer + 1, i));
 	}
 	
 	return true;

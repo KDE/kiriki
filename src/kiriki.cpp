@@ -195,7 +195,7 @@ void kiriki::demo()
 	kirikiSettings::setPlayer6IsHuman(false);
 	kirikiSettings::setNumberOfPlayers(6);
 	newGame();
-	emit demoStarted();
+	Q_EMIT demoStarted();
 	disconnect(m_lateral, &lateralWidget::rolled, statusBar(), &QWidget::hide);
 	kirikiSettings::setPlayer1IsHuman(preDemoHumans[0]);
 	kirikiSettings::setPlayer2IsHuman(preDemoHumans[1]);

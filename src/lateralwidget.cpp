@@ -183,14 +183,14 @@ void lateralWidget::roll()
 	{
 		m_roll++;
 		updateRollLabel();
-		emit rolled();
+		Q_EMIT rolled();
 	}
 }
 
 void lateralWidget::newGame()
 {
 	disableDemoMode();
-	emit newGameClicked();
+	Q_EMIT newGameClicked();
 }
 
 void lateralWidget::updateRollLabel()
