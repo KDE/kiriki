@@ -9,7 +9,7 @@
 
 #include "diceswidget.h"
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include <QPainter>
 #include <QMouseEvent>
