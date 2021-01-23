@@ -82,12 +82,12 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	m_scores = nullptr;
 	
 	// Game
-	QAction *gameNewAction = KStandardGameAction::gameNew(this, SLOT(newGame()), actionCollection());
-	KStandardGameAction::highscores(this, SLOT(showHighScores()), actionCollection());
-	KStandardGameAction::print(this, SLOT(print()), actionCollection());
-	KStandardGameAction::quit(qApp, SLOT(quit()), actionCollection());
-	m_hintAction = KStandardGameAction::hint(this, SLOT(showHint()), actionCollection());
-	m_demoAction = KStandardGameAction::demo(this, SLOT(demo()), actionCollection());
+	QAction *gameNewAction = KStandardGameAction::gameNew(this, &kiriki::newGame, actionCollection());
+	KStandardGameAction::highscores(this, &kiriki::showHighScores, actionCollection());
+	KStandardGameAction::print(this, &kiriki::print, actionCollection());
+	KStandardGameAction::quit(qApp, &QApplication::quit, actionCollection());
+	m_hintAction = KStandardGameAction::hint(this, &kiriki::showHint, actionCollection());
+	m_demoAction = KStandardGameAction::demo(this, &kiriki::demo, actionCollection());
 	connect(gameNewAction, &QAction::triggered, m_demoAction, &KToggleAction::setChecked);
 	connect(gameNewAction, &QAction::triggered, m_demoAction, &KToggleAction::setDisabled);
 	connect(gameNewAction, &QAction::triggered, m_hintAction, &QAction::setDisabled);
@@ -100,7 +100,7 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	connect(m_lateral, &lateralWidget::newGameClicked, gameNewAction, &QAction::trigger);
 	
 	// Preferences
-	KStandardAction::preferences(this, SLOT(showPreferences()), actionCollection());
+	KStandardAction::preferences(this, &kiriki::showPreferences, actionCollection());
 	
 	setCentralWidget(w);
 	setupGUI(Keys | Save | Create);

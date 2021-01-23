@@ -27,7 +27,7 @@ find_package(KF5 ${KF5_REQUIRED_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
     
-find_package(KF5KDEGames 4.9.0 REQUIRED)
+find_package(KF5KDEGames 7.3.0 REQUIRED)
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
