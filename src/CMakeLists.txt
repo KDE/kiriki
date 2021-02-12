@@ -12,15 +12,13 @@ set(kiriki_SRCS
    configwidget.cpp 
    row.cpp
    itemdelegate.cpp
+   kiriki.qrc
    )
 
 ki18n_wrap_ui(kiriki_SRCS configPage.ui)
 
 kconfig_add_kcfg_files(kiriki_SRCS settings.kcfgc)
 
-qt5_add_resources(kiriki_SRCS
-    kiriki.qrc
-)
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*-apps-kiriki.png")
 ecm_add_app_icon(kiriki_SRCS ICONS ${ICONS_SRCS})
