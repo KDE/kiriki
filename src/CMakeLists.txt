@@ -34,7 +34,7 @@ target_link_libraries(kiriki
     KF5::IconThemes
     KF5::DBusAddons
     KF5::Crash
-    Qt::PrintSupport
+    Qt${QT_MAJOR_VERSION}::PrintSupport
 )
 
 install(TARGETS kiriki ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
