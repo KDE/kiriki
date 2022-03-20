@@ -29,6 +29,7 @@ ecm_add_app_icon(kiriki ICONS ${ICONS_SRCS})
 
 target_link_libraries(kiriki
     KF5KDEGames
+    KF5::CoreAddons
     KF5::XmlGui
     KF5::I18n
     KF5::IconThemes
