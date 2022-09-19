@@ -31,9 +31,11 @@ int main(int argc, char *argv[])
             QStringLiteral(KIRIKI_VERSION_STRING),
             i18n("A Yahtzee dice game by KDE"),
             KAboutLicense::GPL,
-            i18n("© 2005-2007 Albert Astals Cid"));
+            i18n("© 2005-2007 Albert Astals Cid"),
+            QString(),
+            QStringLiteral("https://apps.kde.org/kiriki"));
 	about.addAuthor(i18n("Albert Astals Cid"), QString(), QStringLiteral("aacid@kde.org"));
-	about.setHomepage(QStringLiteral("https://kde.org/applications/games/org.kde.kiriki"));
+
 	QCommandLineParser parser;
 	KAboutData::setApplicationData(about);
 	KCrash::initialize();
