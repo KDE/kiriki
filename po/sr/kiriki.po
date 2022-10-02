@@ -1,0 +1,312 @@
+# Translation of kiriki.po into Serbian.
+# Slobodan Simic <slsimic@gmail.com>, 2007, 2009, 2010.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2009, 2010, 2012, 2013, 2017.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kiriki\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-11 03:21+0200\n"
+"PO-Revision-Date: 2017-09-28 17:59+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+"X-Generator: Lokalize 1.0\n"
+"X-Associated-UI-Catalogs: libkdegames5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Слободан Симић"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "slsimic@gmail.com"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: configPage.ui:17
+#, kde-format
+msgid "Players"
+msgstr "Играчи"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player6IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player3IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player2IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player1IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player4IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player5IsHuman)
+#: configPage.ui:36 configPage.ui:73 configPage.ui:94 configPage.ui:121
+#: configPage.ui:148 configPage.ui:169
+#, kde-format
+msgid "human?"
+msgstr "човек?"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: configPage.ui:51
+#, kde-format
+msgid "Number of players:"
+msgstr "Број играча:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2)
+#: configPage.ui:63
+#, kde-format
+msgid "3."
+msgstr "3."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: configPage.ui:80
+#, kde-format
+msgid "2."
+msgstr "2."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: configPage.ui:104
+#, kde-format
+msgid "1."
+msgstr "1."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: configPage.ui:134
+#, kde-format
+msgid "4."
+msgstr "4."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: configPage.ui:155
+#, kde-format
+msgid "5."
+msgstr "5."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
+#: configPage.ui:176
+#, kde-format
+msgid "6."
+msgstr "6."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: configPage.ui:201
+#, kde-format
+msgid "Delay between computers move (msec):"
+msgstr "Застој између потеза рачунара (милисекунди):"
+
+#. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
+#: configPage.ui:215
+#, kde-format
+msgid "Font Size:"
+msgstr "Величина фонта:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: configPage.ui:236
+#, kde-format
+msgid "Row Height:"
+msgstr "Висина врсте:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
+#: configPage.ui:255
+#, kde-format
+msgid "Show demonstration game at startup"
+msgstr "Прикажи демонстрацију игре на почетку"
+
+#: kiriki.cpp:174
+#, kde-format
+msgid ""
+"Starting the demo will end the current game. Any progress will be lost. Do "
+"you want to continue?"
+msgstr ""
+"Покретање демонстрације прекинуће текућу партију. Напредак ће бити изгубљен. "
+"Желите ли да наставите?"
+
+#: kiriki.cpp:207
+#, kde-format
+msgid "Demonstration. Press \"New\" to start a new game."
+msgstr "Демонстрација. Притисните „Нова“ за покретање нове партије."
+
+#: kiriki.cpp:216
+#, kde-format
+msgid ""
+"Asking for a hint will disqualify the current game from entering the high "
+"score list."
+msgstr ""
+"Ако затражите савет, ова партија ће бити дисквалификована за улазак на листу "
+"најрезултата."
+
+# >> @title:window
+#: kiriki.cpp:217
+#, kde-format
+msgid "Confirm Hint Request"
+msgstr "Потврда захтева за савет"
+
+#: kiriki.cpp:218
+#, kde-format
+msgid "Give Hint Anyway"
+msgstr "Дај савет свеједно"
+
+#: kiriki.cpp:237
+#, kde-format
+msgid "Roll highlighted die."
+msgid_plural "Roll highlighted dice."
+msgstr[0] "Баци истакнуте коцкице."
+msgstr[1] "Баци истакнуте коцкице."
+msgstr[2] "Баци истакнуте коцкице."
+msgstr[3] "Баци истакнуту коцкицу."
+
+#: kiriki.cpp:347
+#, kde-format
+msgid "Changes will be applied on next game."
+msgstr "Измене ће бити примењене у следећој партији."
+
+#: kiriki.kcfg:40
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Алекса"
+
+#: kiriki.kcfg:46
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Јана"
+
+#: kiriki.kcfg:52
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Јова"
+
+#: kiriki.kcfg:58
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Сандра"
+
+#: kiriki.kcfg:64
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Тома"
+
+#: kiriki.kcfg:70
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Маша"
+
+#: lateralwidget.cpp:30
+#, kde-format
+msgid "&Roll"
+msgstr "&Баци"
+
+#: lateralwidget.cpp:198
+#, kde-format
+msgid "Roll %1 of 3"
+msgstr "Бацање %1 од 3"
+
+#: main.cpp:28 scores.cpp:77
+#, kde-format
+msgid "Kiriki"
+msgstr "Кирики"
+
+# well-spelled: Јамболика
+#: main.cpp:28
+#, kde-format
+msgid "A Yahtzee dice game by KDE"
+msgstr "Јамболика игра из КДЕ‑а"
+
+#: main.cpp:28
+#, kde-format
+msgid "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005—2007, Алберт Асталс Сид"
+
+#: main.cpp:29
+#, kde-format
+msgid "Albert Astals Cid"
+msgstr "Алберт Асталс Сид"
+
+#: scores.cpp:63
+#, kde-format
+msgid "1s"
+msgstr "1s"
+
+#: scores.cpp:64
+#, kde-format
+msgid "2s"
+msgstr "2s"
+
+#: scores.cpp:65
+#, kde-format
+msgid "3s"
+msgstr "3s"
+
+#: scores.cpp:66
+#, kde-format
+msgid "4s"
+msgstr "4s"
+
+#: scores.cpp:67
+#, kde-format
+msgid "5s"
+msgstr "5s"
+
+#: scores.cpp:68
+#, kde-format
+msgid "6s"
+msgstr "6s"
+
+#: scores.cpp:69
+#, kde-format
+msgid "Bonus if > 62"
+msgstr "бонус ако > 62"
+
+#: scores.cpp:70
+#, kde-format
+msgid "Upper total"
+msgstr "горњи збир"
+
+#: scores.cpp:72
+#, kde-format
+msgid "3 of a Kind"
+msgstr "3 исте"
+
+#: scores.cpp:73
+#, kde-format
+msgid "4 of a Kind"
+msgstr "4 исте"
+
+#: scores.cpp:74
+#, kde-format
+msgid "Full House"
+msgstr "фул"
+
+#: scores.cpp:75
+#, kde-format
+msgid "Small Straight"
+msgstr "мала кента"
+
+#: scores.cpp:76
+#, kde-format
+msgid "Large Straight"
+msgstr "велика кента"
+
+#: scores.cpp:78
+#, kde-format
+msgid "Chance"
+msgstr "шанса"
+
+#: scores.cpp:79
+#, kde-format
+msgid "Lower Total"
+msgstr "доњи збир"
+
+#: scores.cpp:81
+#, kde-format
+msgid "Grand Total"
+msgstr "укупан збир"

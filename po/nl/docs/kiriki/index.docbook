@@ -1,0 +1,756 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Dutch "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Het handboek van &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			&Freek.de.Kruijf;&Ronald.Stroethoff; 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>2021-07-06</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Deze documentatie beschrijft het spel of &kiriki; versie 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>spel</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>dobbelsteen</keyword>
+	<keyword
+>arcade</keyword>
+	<keyword
+>dobbelspel</keyword>
+	<keyword
+>dobbelsteen werpen</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>zes spelers</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Inleiding</title
+> <!-- do not change this! -->
+	<note
+><title
+>Speltype:</title
+><para
+>Dobbelsteen, Arcade</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Aantal mogelijke spelers:</title
+><para
+>Zes</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Het spelbord van &kiriki;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>&kiriki; is een verslavend en leuk dobbelspel door &kde;, ontworpen om door maximaal zes spelers te spelen. Deelnemers moeten punten verzamelen door vijf dobbelstenen drie keer per beurt te gooien. Elke gooi geeft een bepaalde combinatie van getallen die de speler kan accepteren of afwijzen. Maar elke combinatie van getallen kunt u maar een keer accepteren. Na dertien rondes eindigt het spel en kunt u de scores van de spelers met elkaar vergelijken. De speler met het grootste aantal punten heeft gewonnen. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Hoe te spelen</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Doel:</title
+><para
+>Meer punten verdienen dan elk van de andere tegenstanders.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Nadat &kiriki; is gestart, geeft het onmiddellijk de eerste combinatie voor speler een. Als u speler een bent, dan is het nu uw beurt, anders moet u wachten totdat alle andere spelers aan de beurt zijn geweest.</para>
+	<note
+><title
+>Notitie:</title
+><para
+>Standaard (tenzij de spelconfiguratie is aangepast) en in single player mode, staat de eerste speler onder controle van een mens (u), en worden de andere vijf spelers bestuurd door de computer.</para
+></note>
+	<para
+>Als het uw beurt is, dan is het eerste dat u moet doen, de huidige gooi bestuderen. Elk van de vijf stenen aan de linkerkant van het scherm heeft een waarde. Controleer of het resultaat van de gooi een van score patronen vormt.</para>
+	<note
+><title
+>Notitie:</title
+><para
+>De gedetailleerde beschrijving van de score patronen kunt u vinden in de sectie <link linkend="rules_and_tips"
+>Spelregels, strategieën en tips</link
+> van dit handboek.</para
+></note>
+	<para
+>Houd in gedachten dat een combinatie met meerdere score patronen overeen kan komen. In dat geval moet u beslissen welke score patroon de meeste punten oplevert.</para>
+	<para
+>In het geval dat huidige resultaat niet met een score patroon overeenkomt, of overeenkomt met een score patroon die u al heeft gebruikt, dan heeft u gelukkig de beschikking over nog twee extra dobbelstenen waarmee u de situatie kunt verbeteren. Om een tweede (derde) gooi te doen, selecteert u de dobbelsteen waarvan u niet tevreden bent door erop met uw muis te klikken en vervolgens op de knop <guibutton
+>Gooien</guibutton
+> recht onder de dobbelstenen te klikken. Dit zorgt ervoor dat de desbetreffende dobbelsteen opnieuw zal worden gegooid waardoor zijn waarde wijzigt.</para>
+	<para
+>Na voor de derde keer gegooid te hebben moet u een score patroon kiezen die overeenkomt met de betreffende dobbelsteen resultaat. Als geen van de score patronen overeenkomt met het resultaat -dan kan naar keuze de <guilabel
+>Chance</guilabel
+> score patroon, of een willekeurig score patroon van uw scorebord kiezen.</para>
+   <note
+><title
+>Notitie:</title
+><para
+>Als u een score patroon selecteert dat niet overeenkomt met de huidige dobbelsteen resultaat dan zal dit score patroon komen te vervallen en een waarde van nul punten krijgen.</para
+></note>
+	<para
+>Op het moment dat u een score patroon kiest, krijgt het de nieuwe waarde van de laatste gooi.</para>
+	<note
+><title
+>Notitie:</title
+><para
+>De gedetailleerde beschrijving van de score patronen kunt u vinden in de sectie <link linkend="rules_and_tips"
+>Spelregels, strategieën en tips</link
+> van dit handboek.</para
+></note>
+	<para
+>Onmiddellijk hierna is uw beurt over en is de volgende deelnemer aan de beurt. Dit herhaalt zich dertien keer waarna het spel eindigt, de scores berekent en de hoogste scores beloont.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Spelregels, strategieën en tips</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Spelregels</title>
+		<para
+>Het scorebord van &kiriki; heeft veertien lijnen. Elke lijn heeft een score patroon en de speler verdient voor een gooi een score als deze overeenkomt met dit patroon. De score patroon van elke lijn is als volgt berekend:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>1s</guilabel
+>: Som van alle dobbelstenen met de waarde ‘1’.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '14112'. De som is: '3'='1'+'1'+'1'. U heeft met de dobbelstenen gegooid: '51111'. De som is: '4'='1'+'1'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>2s</guilabel
+>: Som van alle dobbelstenen met de waarde ‘2’.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '22422'. De som is: '8'='2'+'2'+'2'+'2'. U heeft met de dobbelstenen gegooid: '42322'. De som is: '6'='2'+'2'+'2'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>3s</guilabel
+>: Som van alle dobbelstenen met de waarde ‘3’.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '34132'. De som is: '6'='3'+'3'. U heeft met de dobbelstenen gegooid: '33333'. De som is: '15'='3'+'3'+'3'+'3'+'3'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>4s</guilabel
+>: Som van alle dobbelstenen met de waarde ‘4’.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '14142'. De som is: '8'='4'+'4'. U heeft met de dobbelstenen gegooid: '41414'. De som is: '12'='4'+'4'+'4'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>5s</guilabel
+>: Som van alle dobbelstenen met de waarde ‘5’.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '15155'. De som is: '15'='5'+'5'+'5'.U heeft met de dobbelstenen gegooid: '51555'. De som is: '20'='5'+'5'+'5'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>6s</guilabel
+>: Som van alle dobbelstenen met de waarde ‘6’.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '66616' De som is: '24'='6'+'6'+'6'+'6'.U heeft met de dobbelstenen gegooid: '61616'. De som is: '18'='6'+'6'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Bonus wanneer meer dan 62</guilabel
+>: Als het totaal aantal punten van alle velden hierboven meer dan 62 is dan krijgt de speler extra 35 punten.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Bovenste totaal</guilabel
+>: dit veld is niet speelbaar, alleen maar een samenvatting van de velden daarboven.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>3 of a kind</guilabel
+>: totale waarde van alle dobbelstenen als 3 daarvan dezelfde waarde hebben.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '14121'. De som is: '9'='1'+'1'+'1'+'4'+'2'.U heeft met de dobbelstenen gegooid: '55151'. De som is: '17'='5'+'5'+'5'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>4 of a Kind</guilabel
+>: totale waarde van alle dobbelstenen als 4 daarvan dezelfde waarde hebben.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '41444'. De som is: '17'='4'+'4'+'4'+'4'+'1'.U heeft met de dobbelstenen gegooid: '22522'. De som is: '13'='2'+'2'+'2'+'2'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Full House</guilabel
+>: Als drie dobbelstenen een gelijke waarde hebben met daarnaast twee dobbelstenen een gelijk waarde dan krijgt de speler extra 25 punten.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '11212'. U heeft met de dobbelstenen gegooid: '53353'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kleine straat</guilabel
+>: Als de speler vier opeenvolgende waarden heeft gegooid dan krijgt krijgt de speler 30 punten.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '14312'. De volgorde is: '1','2','3','4'.U heeft met de dobbelstenen gegooid: '51643'. De volgorde is: '3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Grote straat</guilabel
+>: Als de speler vijf opeenvolgende waarden heeft gegooid dan krijgt krijgt de speler 40 punten.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '34152'. De volgorde is: '1','2','3','4','5'.U heeft met de dobbelstenen gegooid: '53264'. De volgorde is: '2','3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: Als vijf dobbelstenen dezelfde waarde hebben dan krijgt krijgt de speler 50 punten. U kunt onbeperkt &kiriki; krijgen. na de eerste krijgt u voor elke een extra beurt aan het eind van het spel.<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '11111'. U heeft met de dobbelstenen gegooid: '33333'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Chance</guilabel
+>: totale waarde van alle dobbelstenen die nu gegooid zijn<note
+><title
+>Voorbeeld:</title
+><para
+>U heeft met de dobbelstenen gegooid: '51143'. De som is: '14'='5'+'1'+'1'+'4'+'3'.U heeft met de dobbelstenen gegooid: ''21526' De som is: ´16'='2'+'1'+'5'+'2'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Onderste totaal</guilabel
+>: dit veld is niet speelbaar, alleen maar een samenvatting van de velden vanaf <quote
+>3 of a Kind</quote
+> en daaronder.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Eind totaal</guilabel
+>: dit veld is niet speelbaar, alleen maar een som van de velden vanaf <quote
+>Bovenste totaal</quote
+> en <quote
+>Onderste totaal</quote
+>.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Verdere regels en beperkingen</para>
+			<itemizedlist>
+				<listitem
+><para
+>De gehele spelronde is opgedeeld in 13 beurten.</para
+></listitem>
+				<listitem
+><para
+>Elke speler kan per beurt een tot drie keer de dobbelstenen gooien.</para
+></listitem>
+				<listitem
+><para
+>Nadat u de eerste gooi heeft gedaan, kan u nog twee keer gooien (drie keer gooien per beurt).</para
+></listitem>
+				<listitem
+><para
+>De speler is niet verplicht om nog meer keren te gooien als de de resultaten van eerste gooi naar tevredenheid zijn.</para
+></listitem>
+				<listitem
+><para
+>Elke extra gooi kan u met alle dobbelstenen doen of alleen met de geselecteerde.</para
+></listitem>
+				<listitem
+><para
+>Een speler kan een dobbelsteen selecteren door erop te klikken met de muis om deze te opnieuw te gooien.</para
+></listitem>
+				<listitem
+><para
+>Als een dobbelsteen opnieuw is gegooid dan is het zijn vorige waarde kwijt en is alleen de nieuwe waarde nog geldig.</para
+></listitem>
+				<listitem
+><para
+>Het resultaat van de gooi wordt als goed genoeg beschouwd als de waarden van de gegooide dobbelstenen in een van de hierboven beschreven score patronen passen.</para
+></listitem>
+				<listitem
+><para
+>Elk aparte score patroon kan een speler maar eenmaal in een spel gebruiken. Als een score patroon door een speler is gebruikt dan kan dezelfde speler het niet nog een keer gebruiken. Maar een andere speler kan het nog steeds gebruiken, tenzij hij dit patroon ook al heeft gebruikt.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Overzicht van het interface</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Menu-items</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Nieuw</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Start een nieuw spel.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Topscores tonen</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Toont de lijst met de hoogste scores.</action
+> Wanneer uw score van het huidige spel hoger is dan een op de lijst genoemde dan zal de computer om uw naam vragen. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Afdrukken...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Drukt de huidige scorebord af.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Afsluiten</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Sluit</action
+> &kiriki; af.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Zet</guimenu
+> <guimenuitem
+>Tip</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Geeft een tip door een of meer dobbelstenen te laten oplichten of door een rij op het scorebord te laten oplichten. Als u dit gebruikt dan zal de score niet meetellen als hoge score.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Zet</guimenu
+> <guimenuitem
+>Demo</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Speelt een demonstratiespel. Om de demonstratie te stoppen start u een nieuw spel.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Bovendien heeft &kiriki; de gezamenlijke menu-items van &kde; <guimenu
+>Instellingen</guimenu
+> en <guimenu
+>Help</guimenu
+>, voor meer informatie lees de secties over de <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Menu-instellingen</ulink
+> en <ulink url="help:/fundamentals/menus.html#menus-help"
+>Menu Help</ulink
+> van &kde;-fundamentals. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Veel voorkomende vragen</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Ik wil het uiterlijk van dit spel wijzigen. Kan dat? </para
+></question>
+ <answer
+><para
+>Nee, &kiriki; ondersteund op dit moment geen thema´s.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ik heb een fout begaan. Kan ik deze ongedaan maken? </para
+></question>
+ <answer
+><para
+>Nee, &kiriki; heeft geen optie voor <quote
+>Ongedaan maken</quote
+>.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Kan ik het toetsenbord gebruiken om het spel te spelen?</para
+></question>
+ <answer
+><para
+>Nee, U kunt het spel &kiriki; niet met het toetsenbord spelen.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ik kom er niet achter wat hier te doen! Zijn er tips? </para
+></question>
+ <answer
+><para
+>Om meer te leren over de spelregels en tactieken, leest u de sectie <link linkend="rules_and_tips"
+>Spelregels, strategieën en tips</link
+> van dit handboek.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ik moet het spel nu beëindigen, maar ik ben nog niet klaar. Kan ik mijn spel opslaan?</para
+></question>
+ <answer
+><para
+>Nee. Er is geen mogelijkheid voor het <quote
+>Opslaan</quote
+> in &kiriki;.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>De AI is te snel! Ik kan niet zien wat het doet!</para
+></question>
+ <answer
+><para
+>Voor het wijzigen van de Artificial Intelligence's snelheid gaat u naar de spelconfiguratie-dialoog zoals beschreven in de sectie <link linkend="configuration"
+>Spel configuratie</link
+> van dit handboek.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Spelconfiguratie</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Spelconfiguratie</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>In het configuratievenster van &kiriki; kunt u het aantal deelnemers, hun identiteit en hun reactietijden aanpassen.</para>
+<note
+><title
+>Notitie:</title
+><para
+>U kunt alleen de reactietijden van de Artificial Intelligence spelers wijzigen.</para
+></note>
+<para
+><guilabel
+>Aantal spelers:</guilabel
+> dit veld definieert het aantal spelers voor &kiriki;. De toegestane waarden variëren hier tussen twee en zes.</para>
+
+<para
+><guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> De identiteit van de deelnemers wordt voorgesteld door genummerde velden. U kunt hun namen wijzigen en ook of het menselijke spelers dan wel computer-spelers zijn. Voor het instellen wie de controle heeft is er een keuzevakje rechts naast de naam.</para>
+<para
+>De eerste speler moet altijd een mens zijn.</para>
+
+<para
+>Het gewijzigde aantal spelers en hun namen zullen in het volgende spel worden gebruikt.</para>
+
+<para
+><guilabel
+>Vertraging tussen zet van computer (msec):</guilabel
+> hier kunt u de vertraging tussen de zetten van de Artificial Intelligence instellen. De standaardwaarde is nul, dit houdt in dat de Artificial Intelligence onmiddellijk reageert.</para>
+
+<note
+><title
+>Notitie:</title
+><para
+>De maximum waarde voor dit veld is 999 milliseconden.</para
+></note>
+
+<para
+>Gebruik <guilabel
+>Tekenhoogte:</guilabel
+> en <guilabel
+>Rijhoogte:</guilabel
+> om het scorebord naar uw wens aan te passen.</para>
+<para
+>Als u na de start onmiddellijk met &kiriki; wilt kunnen spelen, schakel dan <guilabel
+>Demonstratiespel tonen bij het starten</guilabel
+> uit.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Dankbetuiging en licentie</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Programma copyright 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Documentatie copyright 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Documentatie copyright 2007 Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+&meld.fouten;&vertaling.freek;&vertaling.ronald; &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

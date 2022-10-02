@@ -1,0 +1,750 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kiriki;">
+  <!ENTITY kappversion "0.1"
+><!--Applicaion version. Use this variable everywhere it's needed.-->  
+  <!ENTITY package "kdegames"
+>  <!-- do not change this! -->
+  <!ENTITY % Polish "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+ 
+<book lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Podręcznik programu &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+> <firstname
+>Krzysztof</firstname
+><surname
+>Woźniak</surname
+> <affiliation
+><address
+><email
+>wozniakk@ceti.pl</email
+></address
+> </affiliation
+><contrib
+>Polskie tłumaczenie</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+ 
+<date
+>2007-03-04</date
+><!-- Date of (re)writing, or update.-->
+<releaseinfo
+>&kappversion;</releaseinfo
+><!-- Application version number. Use the variable definitions within header to change this value.-->
+ 
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Ten podręcznik dotyczy gry &kiriki; w wersji &kappversion;</para>
+</abstract>
+ 
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>gra</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>kość do gry</keyword>
+	<keyword
+>zręcznościowa</keyword>
+	<keyword
+>gra w kości</keyword>
+	<keyword
+>granie w kości</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>sześciu graczy</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Wprowadzenie</title
+> <!-- do not change this! -->
+	<note
+><title
+>Rodzaj gry:</title
+><para
+>gra w kości, zręcznościowa</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Liczba graczy:</title
+><para
+>Sześć</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<para
+>&kiriki; jest uzależniająca i zabawną grą w kości dla środowiska &kde;, umożliwia ona grę przez maksymalnie sześciu graczy. Uczestnicy muszą zbierać punkty poprzez rzucanie pięcioma kościami do trzech razy w każdej turze. Każdy rzut generuje określoną kombinację liczb, którą gracz może zaakceptować lub odrzucić. Jednakże każda kombinacja liczb może być zaakceptowana tylko raz. Po trzynastu turach, gra kończy się, a wyniki są porównywane. Gracz z najwyższym wynikiem wygrywa grę. </para>
+</chapter>
+ 
+<chapter id="howto"
+><title
+>Jak grać</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Cel gry:</title
+><para
+>Zdobywaj więcej punktów niż pozostali oponenci.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Po uruchomieniu &kiriki; wyświetlana jest natychmiast pierwsza kombinacja dla pierwszego gracza. Jeżeli jesteś pierwszym graczem, to teraz jest twój ruch, w przeciwnym wypadku, musisz poczekać aż pozostali gracze wykonają swoje ruchy.</para>
+	<note
+><title
+>Uwaga:</title
+><para
+>Domyślnie, do czasu zmiany ustawień gry, i w trybie jednego gracza, pierwszy gracz jest kontrolowany przez człowieka (Ciebie), a pozostałych pięciu graczy kontroluje sztuczna inteligencja (komputer).</para
+></note>
+	<para
+>Kiedy nadejdzie twoja tura, pierwszą rzeczą, którą należy zrobić to ocena wyników aktualnego rzuty. Każda z pięciu kości po lewej stronie ekranu gry ma określoną wartość. Sprawdź tą sekwencję liczb aby sprawdzić czy nie jest ona zgodna z jakimś punktowanym układem.</para>
+	<note
+><title
+>Uwaga:</title
+><para
+>Szczegółowy opis punktowanych układów kości, można znaleźć w sekcji <link linkend="rules_and_tips"
+>Zasady, Strategie i wskazówki</link
+> tego podręcznika.</para
+></note>
+	<para
+>Pamiętaj, że kombinacja może pasować do więcej niż jednego punktowanego układu. W takim wypadku musisz określić, który układ kości da w rezultacie więcej punktów dla ciebie.</para>
+	<para
+>W przypadku gdy aktualna sekwencje nie pasuje do żadnego wzorca, lub pasuje do wzorca, który był już wykorzystane, masz dwa kolejne rzuty aby poprawić sytuację. Aby wykonać drugi (i trzeci) rzut, wybierz kostki, z których nie jesteś zadowolony klikając na nie myszką i kliknij przycisk <guibutton
+>Rzut</guibutton
+> znajdujący się pod kościami. To spowoduje że wykonany zostanie rzuty wybranymi kościami i zmienią się ich wartości.</para>
+	<para
+>Po wykonaniu trzeciego powtórnego rzutu, musisz wybrać wzorzec pasujący do wylosowanej sekwencji kości. Jeżeli żaden z wzorców wynikowych nie pasuje do sekwencji możesz skorzystać z wzorca <guilabel
+>Szansa</guilabel
+>, lub wybrać dowolny inny wzorzec na tablicy wyników.</para>
+   <note
+><title
+>Uwaga:</title
+><para
+>Jeżeli wybierzesz wzorzec wynikowy nie pasujący do bieżącej sekwencji kości, wzorzec przestaje być dostępny, a ty otrzymujesz 0 punktów.</para
+></note>
+	<para
+>Jak tylko wybierzesz wzorzec wyniku jego wartość jest aktualizowane aby odzwierciedlać wartość aktualnej sekwencji kości.</para>
+	<note
+><title
+>Uwaga:</title
+><para
+>Szczegółowy opis układów kości i ich wartości punktowej, można znaleźć w sekcji <link linkend="rules_and_tips"
+>Zasady, Strategie i wskazówki</link
+> tego podręcznika.</para
+></note>
+	<para
+>Zaraz po zakończeniu twojej tury, grę rozpoczynają pozostali gracze. Sekwencja ta powtórzy się trzynaście razy, i wtedy gra kończy się, Punkty są obliczane a najlepszy wynik zapisywany jest w tablicy najlepszych wyników.</para>
+</chapter>
+ 
+<chapter id="rules_and_tips"
+><title
+>Zasady gry, strategia gry i sztuczki</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Zasady gry</title>
+		<para
+>Tablica wyników w &kiriki; jest podzielona na czternaście różnych wierszy. Każdy wiersz zawiera pojedynczy wzorzec wyniku, i wynik gracza uzyskany za rzut pasujący do wzorca. Wzorzec wyniku dla każdego wiersza jest obliczany następująco: <itemizedlist
+> <listitem
+><para
+><guilabel
+>1s</guilabel
+>: Suma wszystkich kości z  ‘1’.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '14112'. Suma to: '3'='1'+'1'+'1'. Wynik rzutu: '51111'. Suma to: '4'='1'+'1'+'1'+'1'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>2s</guilabel
+>: Suma wszystkich kości z ‘2’.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '22422'. Suma to: '8'='2'+'2'+'2'+'2'. Wynik rzutu: '42322'. Suma to: '6'='2'+'2'+'2'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>3s</guilabel
+>: Suma wszystkich kości z ‘3’.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '34132'. Suma to: '6'='3'+'3'. Wynik rzutu: '33333'. Suma to: '15'='3'+'3'+'3'+'3'+'3'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>4s</guilabel
+>: Suma wszystkich kości z ‘4’.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '14142'. Suma to: '8'='4'+'4'. Wynik rzutu: '41414'. Suma to: '12'='4'+'4'+'4'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>5s</guilabel
+>: Suma wszystkich kości z ‘5’.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '15155'. Suma to: '15'='5'+'5'+'5'. Wynik rzutu: '51555'. Suma to: '20'='5'+'5'+'5'+'5'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>6s</guilabel
+>: Suma wszystkich kości z ‘6’.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '66616'. Suma to: '24'='6'+'6'+'6'+'6'. Wynik rzutu: '61616'. Suma to: '18'='6'+'6'+'6'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Bonus jeżeli 
+> 62</guilabel
+>: Gracz otrzymuje dodatkowych 35 punktów jeżeli suma wszystkich powyższy pól jest większa niż 62.</para
+></listitem
+> <listitem
+><para
+><guilabel
+>Wyższa suma ogólna</guilabel
+>: nie jest to pole wykorzystywane w grze, zawiera sumę wszystkich powyższych pól.</para
+></listitem
+> <listitem
+><para
+><guilabel
+>Trójka</guilabel
+>: Suma wartości wszystkich kości, gdy trzy z nich mają tą samą wartość. <note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '14121'. Suma to: '9'='1'+'1'+'1'+'4'+'2'. Wynik rzutu: '55151'. Suma to: '17'='5'+'5'+'5'+'1'+'1'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Kareta</guilabel
+>: Suma wartości wszystkich kości, gdy cztery z nich mają tą samą wartość. <note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '41444'. Suma to: '17'='4'+'4'+'4'+'4'+'1'. Wynikrzutu: '22522'. Suma to: '13'='2'+'2'+'2'+'2'+'5'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Full</guilabel
+>: 25 punktów dla gracza, jeżeli w danej turze wyrzucono trójkę i parę. <note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '11212'. Wynik rzutu: '53353'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Mały strit</guilabel
+>: 30 punktów dla gracza, jeżeli w danej turze wyrzucono cztery kości w sekwencji wartości. <note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '14312'. Sekwencja to: '1','2','3','4'. Wynikrzutu: '51643'. Sekwencja to: '3','4','5','6'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Duży strit</guilabel
+>: 40 punktów dla gracza, jeżeli w danej turze wyrzucono pięć kości w sekwencji wartości.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '34152'. Sekwencja to: '1','2','3','4','5'. Wynikrzutu: '53264'. Sekwencja to: '2','3','4','5','6'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: 50 punktów jest przyznawane jeżeli w rundzie wyrzucono pięć kości o tej samej wartości. Możesz zdobyć punkty dla dowolnej liczby sekwencji &kiriki;, dla każdego przypadku ponad pierwsze wystąpienie, otrzymujesz dodatkową turę przed zakończeniem gry. <note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '11111'. Wynik rzutu: '33333'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Szansa</guilabel
+>: Suma wartości wszystkich wyrzuconych kości.<note
+><title
+>Przykład:</title
+><para
+>Wynik rzutu: '51143'. Suma to: '14'='5'+'1'+'1'+'4'+'3'. Wynik rzutu: '21526'. Suma to: '16'='2'+'1'+'5'+'2'+'6'.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Niższa suma ogólna</guilabel
+>: To pole nie jest wykorzystywane w grze, wyświetla ono podsumowanie wszystkich pól poczynając od 'Trójki' w dół.</para
+></listitem
+> <listitem
+><para
+><guilabel
+>Suma ogólna</guilabel
+>: To pole nie jest wykorzystywane w grze, wyświetla całkowitą uzyskaną liczbę punktów.</para
+></listitem
+> </itemizedlist
+> Inne zasady i ograniczenia: <itemizedlist>
+				<listitem
+><para
+>Cała runda gry podzielona jest na 13 tur.</para
+></listitem>
+				<listitem
+><para
+>Każdy gracz może wykonać od jednego do trzech rzutów kością na turę.</para
+></listitem>
+				<listitem
+><para
+>Po wykonaniu pierwszego rzutu, gracz może wykonać dodatkowe dwa rzuty (trzy rzuty na turę).</para
+></listitem>
+				<listitem
+><para
+>Gracz nie musi wykonywać dodatkowych rzutów, jeżeli pierwszy z nich dał pozytywny wynik.</para
+></listitem>
+				<listitem
+><para
+>Każdy dodatkowy rzut może odbywać się wszystkimi kośćmi, lub tylko wybranymi.</para
+></listitem>
+				<listitem
+><para
+>Gracz może wybrać kości, którymi chce ponownie rzucić, klikając na nie myszką.</para
+></listitem>
+				<listitem
+><para
+>Po ponownym rzucie kością, poprzednie wartości są tracone, i aktualna staje się nowa wartość.</para
+></listitem>
+				<listitem
+><para
+>Wynik rzutu jest satysfakcjonujący jeżeli wartości wyświetlane na kościach mogą być przypisane do jednego z wzorców punktowania omawianych wcześniej.</para
+></listitem>
+				<listitem
+><para
+>Każdy wzorzec punktowania może być użyty przez danego gracza tylko raz w każdej grze. Czyli, jeżeli jakiś wzorzec punktowania został wykorzystany przez jednego gracza, to nie może być już przez niego użyty ponownie. Jednakże, inni gracze dalej mogą z niego korzystać, dopóki nie wykorzystają tego samego wzorca w swojej rundzie.</para
+></listitem>
+			</itemizedlist>
+		</para>
+	</sect1>
+</chapter
+> 
+ 
+<chapter id="interface"
+><title
+>Przegląd interfejsu</title
+> <!-- do not change this! -->
+<sect1 id="game-menu">
+	<title
+>Menu <guimenu
+>Gra</guimenu
+></title>
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Gra</guimenu
+> <guimenuitem
+>Nowa</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Rozpoczyna nową grę.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Gra</guimenu
+> <guimenuitem
+>Pokaż najlepsze wyniki</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Wyświetla listę najlepszych wyników.</action
+> Jeżeli wynik w bieżącej grze jest wyższy od najwyższego wyniku na liście, zostaniesz poproszony o podanie swojego imienia. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Gra</guimenu
+> <guimenuitem
+>Drukuj...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Drukuje aktualną tablicę wyników.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Gra</guimenu
+> <guimenuitem
+>Zakończ</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Wychodzi</action
+> z &kiriki;.</para
+></listitem>
+			</varlistentry>
+		</variablelist>
+</sect1>
+<sect1 id="settings-menu">
+	<title
+>Menu <guimenu
+>Ustawienia</guimenu
+></title>
+		<variablelist>
+			<varlistentry id="settings-menu-shortcuts">
+				<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja skrótów...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Wyświetla</action
+> standardowe okno dialogowe &kde; pozwalające zmienić skróty klawiszowe używane przez &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry id="settings-menu-settings">
+				<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja &kiriki;...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Otwiera okno dialogowe konfiguracji &kiriki;.</action
+>Więcej szczegółów w sekcji <link linkend="configuration"
+>Konfiguracja gry</link
+>.</para
+></listitem>
+			</varlistentry>
+		</variablelist>
+</sect1>
+<sect1 id="help"
+><!--This is a standard Help menubar entry. Only change if needed.-->
+<title
+>Menu <guimenu
+>Pomoc</guimenu
+></title>
+&help.menu.documentation; </sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Najczęściej zadawane pytania</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Chciałbym zmienić wygląd gry. Czy mogę? </para
+></question>
+ <answer
+><para
+>Nie. &kiriki; nie oferuje funkcji zmiany motywu.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Zrobiłem błąd. Czy mogę cofnąć ruch? </para
+></question>
+ <answer
+><para
+>Nie, w &kiriki; nie ma opcji <quote
+>Cofnij</quote
+>.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Czy można grać za pomocą klawiatury?</para
+></question>
+ <answer
+><para
+>Nie. W grę &kiriki; nie można grać używając wyłącznie klawiatury.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Nie mogę wymyślić co trzeba zrobić! Czy są podpowiedzi? </para
+></question>
+ <answer
+><para
+>Aby poznać zasady gry i taktykę, przeczytaj sekcję <link linkend="rules_and_tips"
+>Zasady, Strategia i Wskazówki</link
+> tego podręcznika.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Muszę zakończyć grę w trakcie rozgrywki. Czy mogę zapisać jej stan?</para
+></question>
+ <answer
+><para
+>Nie. &kiriki; nie oferuje funkcji <quote
+>zapisywania</quote
+> gry.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Komputer jest za szybki! Nie mogę zobaczyć co robi!</para
+></question>
+ <answer
+><para
+>Aby zmienić szybkość gry sztucznej inteligencji - komputera - skorzystaj z okna dialogowego konfiguracji opisywanego w sekcji <link linkend="configuration"
+>Konfiguracja gry</link
+> tego podręcznika.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Konfiguracja gry</title
+> <!-- do not change this! -->
+<para
+>Okno dialogowe konfiguracji &kiriki; pozwala na ustawienie liczby graczy, ich tożsamości oraz czasów odpowiedzi.</para>
+<note
+><title
+>Uwaga:</title
+><para
+>Czas odpowiedzi można ustawiać tylko dla graczy sterowanych sztuczną inteligencją - komputer.</para
+></note>
+<para
+><guilabel
+>Liczba graczy:</guilabel
+> to pole określa ile graczy gra w&kiriki;. Dostępne wartości znajdują się w zakresie od 2 do 6.</para>
+<note
+><title
+>Uwaga:</title
+><para
+>Liczba graczy nie może być mniejsza od dwóch.</para
+></note>
+<para
+><guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> Numerowane pola oznaczają tożsamość uczestników gry. Możesz zmieniać ich nazwy jak również określać czy są kontrolowaniu przez człowieka, lub przez sztuczną inteligencję - komputer. Aby określić, kto kontroluje gracza użyj pola opcji znajdującego się po prawej stronie, zaraz obok pola z nazwą gracza.</para>
+<note
+><title
+>Uwaga:</title
+><para
+>Pierwszym graczem musi zawsze grać człowiek.</para
+></note>
+<para
+><guilabel
+>Odstęp między ruchami komputera (msek):</guilabel
+> pozwala na określenie odstępu pomiędzy ruchami wykonywanymi przez sztuczną inteligencję - komputer, wartością domyślną jest zero, oznaczające iż komputer wykonuje swój ruch natychmiast.</para>
+<note
+><title
+>Uwaga:</title
+><para
+>Maksymalna wartość dla tego pola to 999 milisekund.</para
+></note>
+</chapter>
+ 
+<chapter id="credits"
+><title
+>Zasługi i licencje</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+ 
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Prawa autorskie do programu (c) 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Polskie tłumaczenie dokumentacji: Krzysztof Woźniak<email
+>wozniakk@ceti.pl</email
+></para
+>  &underFDL; &underGPL; </chapter>
+ 
+<appendix id="installation">
+<title
+>Instalacja</title>
+ 
+&install.intro.documentation;
+ 
+ 
+<sect1 id="Compilation">
+<title
+>Kompilacja i instalacja</title>
+&install.compile.documentation; </sect1>
+</appendix>
+ 
+&documentation.index; 
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

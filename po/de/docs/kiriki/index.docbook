@@ -1,0 +1,777 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Das Handbuch zu &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>2021-07-06</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Dieses Handbuch beschreibt das Spiel &kiriki; in der Version 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>KDE-Spiele</keyword
+> <!-- do not change this! -->
+	<keyword
+>Spiel</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>Würfel</keyword>
+	<keyword
+>Arcade</keyword>
+	<keyword
+>Würfelspiel</keyword>
+	<keyword
+>würfeln</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>sechs Spieler</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Einführung</title
+> <!-- do not change this! -->
+	<note
+><title
+>Spieltyp:</title
+><para
+>Würfelspiel, Arcade</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Anzahl der Spieler:</title
+><para
+>Sechs</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&kiriki;-Spielfeld</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>&kiriki; ist ein ansteckendes und lustiges Würfelspiel von &kde; für bis zu sechs Spieler. Teilnehmer sammeln Punkte, indem sie pro Zug bis zu dreimal mit fünf Würfeln würfeln. Jeder Wurf ergibt eine Würfelkombination, die der Spieler akzeptieren oder verwerfen kann. Jede Kombination kann jedoch nur einmal auf die Punkte angewandt werden. Nach dreizehn Runden endet das Spiel und die Punkte werden verglichen. Der Spieler mit den meisten Punkten gewinnt das Spiel. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Spielanleitung</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Ziel des Spiels:</title
+><para
+>Erreichen Sie mehr Punkte als Ihre Gegner.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Beim Start zeigt &kiriki; sofort die erste Kombination für den ersten Spieler an. Wenn Sie der erste Spieler sind, sind Sie nun an der Reihe. Ansonsten warten Sie, bis die anderen Spieler ihre Züge getätigt haben.</para>
+	<note
+><title
+>Hinweis:</title
+><para
+>Sofern die Voreinstellung nicht geändert wurde, ist der erste Spieler ein menschlicher Spieler (Sie), während die anderen fünf Spieler von der KI des Spiels, also vom Computer, gesteuert werden.</para
+></note>
+	<para
+>Sobald Sie an der Reihe sind, müssen Sie den ersten Wurf begutachten. Jeder der Würfel auf der linken Seite hat einen bestimmten Wert. Überprüfen Sie die Reihe, um zu sehen, ob die Werte auf eines der Punktemuster passen.</para>
+	<note
+><title
+>Hinweis:</title
+><para
+>Eine ausführliche Beschreibung der Werte der Punktemuster finden Sie im Abschnitt <link linkend="rules_and_tips"
+>Spielregeln, Spielstrategien und Tipps</link
+> in diesem Handbuch.</para
+></note>
+	<para
+>Beachten Sie, dass die Kombination auf mehr als ein Muster passen kann. In dem Fall müssen Sie bestimmen, welches der Muster Ihnen mehr Punkte einbringt.</para>
+	<para
+>Fall der aktuelle Wurf keinem Muster entspricht, oder das passende Muster bereits von Ihnen verwendet wurde, haben Sie zwei weitere Würfe, um das zu ändern. Für den zweiten bzw. dritten Wurf wählen Sie jeweils die Würfel, mit denen Sie nicht zufrieden sind, indem Sie darauf klicken und dann auf <guilabel
+>Würfeln</guilabel
+> unterhalb der Würfel. Die gewählten Würfel werden erneut gewürfelt und verändern dadurch ihre Werte.</para>
+	<para
+>Nach dem dritten Wurf müssen Sie das Punktemuster wählen, das am ehesten zu Ihrem Wurf passt. Passt keines der Muster, können Sie entweder <guilabel
+>Chance</guilabel
+> wählen, oder auf ein beliebiges anderes Muster klicken.</para>
+   <note
+><title
+>Hinweis:</title
+><para
+>Wenn Sie ein Punktemuster wählen, das nicht zu Ihrem aktuellen Wurf passt, wird es ungültig und ohne Wertigkeit.</para
+></note>
+	<para
+>Sobald Sie ein Punktemuster auswählen, ändern sich dessen Werte entsprechend Ihrer aktuellen Würfelstellung.</para>
+	<note
+><title
+>Hinweis:</title
+><para
+>Eine ausführliche Beschreibung der Werte der Punktemuster finden Sie im Abschnitt <link linkend="rules_and_tips"
+>Spielregeln, Spielstrategien und Tipps</link
+> in diesem Handbuch.</para
+></note>
+	<para
+>Ihr Zug endet direkt danach und der nächste Spieler ist an der Reihe. Das wiederholt sich dreizehn Mal, dann werden die Punkte zusammengezählt und die Höchstpunktzahl ausgezeichnet.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Spielregeln, Spielstrategien und Tipps</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Spielregeln</title>
+		<para
+>Die Punktetafel in &kiriki; ist in vierzehn Zeilen unterteilt. Jede Zeile enthält ein Punktemuster und die Punkte, die der Spieler für das Erreichen dieses Musters erhalten hat. Das Punktemuster jeder Zeile wird wie folgt berechnet:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>1er</guilabel
+>: Summe aller Einser.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '14112'. Ergebnis: '3'='1'+'1'+'1'. Würfel zeigen: '51111'. Ergebnis: '4'='1'+'1'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>2er</guilabel
+>: Summe aller Zweier.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '22422'. Ergebnis: '8'='2'+'2'+'2'+'2'. Würfel zeigen: '42322'. Ergebnis: '6'='2'+'2'+'2'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>3er</guilabel
+>: Summe aller Dreier.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '34132'. Ergebnis: '6'='3'+'3'. Würfel zeigen: '33333'. Ergebnis: '15'='3'+'3'+'3'+'3'+'3'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>4er</guilabel
+>: Summe aller Vierer.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '14142'. Ergebnis: '8'='4'+'4'. Würfel zeigen: '41414'. Ergebnis: '12'='4'+'4'+'4'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>5er</guilabel
+>: Summe aller Fünfer.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '15155'. Ergebnis: '15'='5'+'5'+'5'. Würfel zeigen: '51555'. Ergebnis: '20'='5'+'5'+'5'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>6er</guilabel
+>: Summe aller Sechser.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '66616'. Ergebnis: '24'='6'+'6'+'6'+'6'. Würfel zeigen: '61616'. Ergebnis: '18'='6'+'6'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Bonus wenn 
+> 62</guilabel
+>: Der Spieler bekommt 35 Punkte extra, wenn die oberen Felder zusammengezählt mehr als 62 Punkte ergeben.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Gesamt oben</guilabel
+>: Dies ist kein Spielfeld; hier werden nur die oberen Felder zusammengezählt.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Dreierpasch</guilabel
+>: Summe aller Würfel, wenn drei Würfel den gleichen Wert zeigen.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '14121'. Ergebnis: '9'='1'+'1'+'1'+'4'+'2'. Würfel zeigen: '55151'. Ergebnis: '17'='5'+'5'+'5'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Viererpasch</guilabel
+>: Summe aller Würfel, wenn vier Würfel den gleichen Wert zeigen.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '41444'. Ergebnis: '17'='4'+'4'+'4'+'4'+'1'. Würfel zeigen: '22522'. Ergebnis: '13'='2'+'2'+'2'+'2'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Full House</guilabel
+>: Der Spieler bekommt 25 Punkte, wenn in der Runde drei gleiche Würfel und ein Paar erspielt wurden.<note
+><title
+>Beispiel:</title
+><para
+>
+>Würfel zeigen: '11212'. Würfel zeigen: '53353'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kleine Straße</guilabel
+>: Der Spieler bekommt 30 Punkte, wenn in der Runde vier Würfel in einer Reihe erspielt wurden.<note
+><title
+>Beispiel:</title
+><para
+>
+>Würfel zeigen: '14312'. Die Reihe lautet: '1','2','3','4'. Würfel zeigen: '51643'. Die Reihe lautet: '3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Große Straße</guilabel
+>: Der Spieler bekommt 40 Punkte, wenn in der Runde fünf Würfel in einer Reihe erspielt wurden.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '34152'. Die Reihe lautet: '1','2','3','4','5'. Würfel zeigen: '53264'. Die Reihe lautet: '2','3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: Der Spieler bekommt 50 ""Punkte, wenn er die Runde mit fünf gleichen Würfeln beendet. Es können ""unendlich viele &kiriki; gepunktet werden und für jeden weiteren (nach dem ""ersten) darf zum Ende des Spiels nochmals gewürfelt werden.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '11111'. Würfel zeigen: '33333'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Chance</guilabel
+>: Summe aller Werte, die die Würfel zeigen.<note
+><title
+>Beispiel:</title
+><para
+>Würfel zeigen: '51143'. Ergebnis: '14'='5'+'1'+'1'+'4'+'3'. Würfel zeigen: '21526'. Ergebnis: '16'='2'+'1'+'5'+'2'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Gesamt unten</guilabel
+>: Dies ist kein Spielfeld; hier werden nur die Felder ab <quote
+>Dreierpasch</quote
+> zusammengezählt.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Ergebnis</guilabel
+>: Dies ist kein Spielfeld; hier werden nur <quote
+>Gesamt oben</quote
+> und <quote
+>Gesamt unten</quote
+>  zusammengezählt.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Weitere Regeln und Bedingungen:</para>
+			<itemizedlist>
+				<listitem
+><para
+>Eine volle Spielrunde besteht aus 13 Zügen.</para
+></listitem>
+				<listitem
+><para
+>Jeder Spieler darf in jedem Zug dreimal würfeln.</para
+></listitem>
+				<listitem
+><para
+>Nach dem ersten Würfeln kann ein Spieler noch zweimal würfeln, insgesamt dreimal je Zug.</para
+></listitem>
+				<listitem
+><para
+>Der Spieler ist nicht verpflichtet, noch einmal zu würfeln, wenn nach dem ersten Würfeln bereits ein erwünschtes Ergebnis vorliegt.</para
+></listitem>
+				<listitem
+><para
+>Wird weiter gewürfelt, kann der Spieler dies entweder mit allen oder nur mit einigen ausgewählten Würfeln tun.</para
+></listitem>
+				<listitem
+><para
+>Ein Spieler kann die Würfel, die er verwerfen möchte auswählen, indem er auf sie klickt.</para
+></listitem>
+				<listitem
+><para
+>Wenn Würfel verworfen werden, ist ihr ursprünglicher Wert verloren und es zählt der neue Wert.</para
+></listitem>
+				<listitem
+><para
+>Das Ergebnis des Würfelns ist zufriedenstellend, wenn die Werte der Würfel auf eines der Punktemuster passen, die weiter oben erklärt wurden.</para
+></listitem>
+				<listitem
+><para
+>Jedes Punktemuster kann pro Spiel und Spieler nur einmal verwendet werden. Wurde ein Muster von einem Spieler einmal verwendet, kann er es in dem Spiel nicht noch einmal verwenden. Andere Spieler können das Muster jedoch noch verwenden, solange sie es nicht bereits aufgebraucht haben.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Die Benutzeroberfläche</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Menüeinträge</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Neu</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Startet ein neues Spiel.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Bestenliste anzeigen</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Zeigt die Bestenliste an.</action
+> Wenn Ihre Punktzahl höher als die in der Bestenliste geführten Einträge ist, werden Sie aufgefordert, Ihren Namen einzugeben. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Drucken ...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Druckt die aktuelle Punktetafel.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Beenden</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Beendet</action
+> &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Zug</guimenu
+> <guimenuitem
+>Tipp</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Gibt einen Tipp, indem ein oder mehrere Würfel für den nächsten Zug oder eine Zeile auf der Punktetafel hervorgehoben werden. Benutzen Sie diese Funktion, wird das Spielergebnis nicht in die Bestenliste eingetragen.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+> <keycap
+>D</keycap
+> </shortcut
+> <guimenu
+>Zug</guimenu
+> <guimenuitem
+>Demomodus</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Zeigt ein Demospiel. Um den Demomodus zu beenden, müssen Sie ein neues Spiel starten.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Zusätzlich hat &kiriki; die bekannten &kde;-Einträge im Menü <guimenu
+>Einstellungen</guimenu
+> und <guimenu
+>Hilfe</guimenu
+>, weitere Informationen dazu finden Sie in den Abschnitten über die Menüs <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Einstellungen</ulink
+> und <ulink url="help:/fundamentals/menus.html#menus-help"
+>Hilfe</ulink
+> der &kde;-Grundlagen. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Häufig gestellte Fragen</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Kann ich das Erscheinungsbild des Spiels ändern? </para
+></question>
+ <answer
+><para
+>Nein. Derzeit kann das Erscheinungsbild nicht geändert werden.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ich habe einen Fehler gemacht. Kann ich einen Spielzug zurücknehmen? </para
+></question>
+ <answer
+><para
+>Nein, in &kiriki; können Sie keine Spielzüge zurücknehmen.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Kann ich mit der Tastatur spielen?</para
+></question>
+ <answer
+><para
+>Nein, &kiriki; kann nicht mit der Tastatur gespielt werden.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ich komme im Spiel nicht weiter, gibt es Tipps? </para
+></question>
+ <answer
+><para
+>Um etwas über die Spielregeln und Strategien zu erfahren, lesen Sie bitte den Abschnitt <link linkend="rules_and_tips"
+>Spielregeln, Spielstrategien und Tipps</link
+> in diesem Handbuch.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ich muss das Spiel unterbrechen, kann ich den aktuellen Spielstand speichern?</para
+></question>
+ <answer
+><para
+>Nein, in &kiriki; können Sie den aktuellen Spielstand nicht speichern.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Die KI des Spiels ist viel zu schnell. Ich sehe nicht, was sie tut.</para
+></question>
+ <answer
+><para
+>Um die Geschwindigkeit der KI des Spiels zu ändern, benutzen Sie den Einrichtungsdialog, der im Abschnitt <link linkend="configuration"
+>Einstellungen für das Spiel</link
+> in diesem Handbuch beschrieben wird.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Einstellungen für das Spiel</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Einstellungen für das Spiel</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Mit dem Einrichtungsdialog von &kiriki; können Sie die Anzahl der Spieler, deren Identität und Antwortzeiten einstellen.</para>
+<note
+><title
+>Hinweis:</title
+><para
+>Die Antwortzeit kann nur für Computergegner (KI) eingestellt werden.</para
+></note>
+<para
+><guilabel
+>Spieleranzahl:</guilabel
+> Dieses Feld gibt die Anzahl der Spieler in &kiriki; an. Es sind Werte zwischen zwei und sechs möglich.</para>
+
+<para
+>Die mit <guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> bezeichneten Felder sind die Identitäten der Spieler. Sie können hier die Namen einstellen und auch, ob sie von menschlichen Gegnern oder von der KI des Spiels gesteuert werden. Um einzustellen, wie die Spieler gesteuert werden, benutzen Sie das Ankreuzfeld rechts neben dem Namen.</para>
+<para
+>Der erste Spieler muss immer ein menschlicher Spieler sein.</para>
+
+<para
+>Änderungen der Anzahl und Identität von Spielern werden erst beim nächsten Spiel wirksam.</para>
+
+<para
+><guilabel
+>Verzögerung zwischen Zügen des Rechners (ms):</guilabel
+> gibt an, wie lange die KI des Spiels wartet, bis sie einen Zug ausführt. Voreingestellt ist hier null, was bedeutet, dass die KI ihre Züge sofort ausführt.</para>
+
+<note
+><title
+>Hinweis:</title
+><para
+>Der Wert für diese Verzögerung kann höchstens 999 Millisekunden betragen.</para
+></note>
+
+<para
+>Verwenden Sie <guilabel
+>Schriftgröße</guilabel
+> und <guilabel
+>Zeilenhöhe</guilabel
+>, um die Punktetafel an Ihre Wünsche anzupassen.</para>
+<para
+>Möchten Sie beim Start von &kiriki; sofort mit einem Spiel beginnen, deaktivieren Sie die Standardeinstellung <guilabel
+>Demospiel beim Programmstart anzeigen</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Danksagungen und Lizenz</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Programm Copyright 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Dokumentation Copyright 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Dokumentation Copyright 2007 Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+<para
+>Übersetzung Burkhard Lück <email
+>lueck@hube-lueck.de</email
+></para
+><para
+>Übersetzung Frederik Schwarzer <email
+>schwarzer@kde.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

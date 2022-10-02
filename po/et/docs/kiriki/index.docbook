@@ -1,0 +1,770 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kiriki;">
+  <!ENTITY kappversion "0.2"
+><!--Applicaion version. Use this variable everywhere it's needed.-->  
+  <!ENTITY package "kdegames"
+>  <!-- do not change this! -->
+  <!ENTITY % Estonian  "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+ 
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>&kiriki; käsiraamat</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+><firstname
+>Marek</firstname
+> <surname
+>Laane</surname
+> <affiliation
+><address
+><email
+>bald@smail.ee</email
+></address
+></affiliation
+><contrib
+>Tõlge eesti keelde</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice
+> 
+<date
+>2013-05-06</date
+><!-- Date of (re)writing, or update.-->
+<releaseinfo
+>&kappversion; (&kde; 4.11)</releaseinfo
+><!-- Application version number. Use the variable definitions within header to change this value.-->
+ 
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>See käsiraamat kirjeldab mängu &kiriki; versiooni &kappversion;.</para>
+</abstract>
+ 
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>mäng</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>täring</keyword>
+	<keyword
+>arkaadmäng</keyword>
+	<keyword
+>täringumäng</keyword>
+	<keyword
+>täringumäng</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>kuus mängijat</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Sissejuhatus</title
+> <!-- do not change this! -->
+	<note
+><title
+>Mängu tüüp:</title
+><para
+>täringumäng, arkaadmäng</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Mängijate arv:</title
+><para
+>kuus</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<para
+>&kiriki; on &kde; köitev ja lõbus täringumäng, mida võib mängida kuni kuus mängijat. Mängijad peavad koguma punkte, veeretades selleks ühes voorus viit täringut kuni kolm korda. Iga viskega tekib teatav arvukombinatsioon, millega mängija võib rahule jääda või mitte. Iga kombinatsiooni saab aga ainult ühe korra kasutada. Pärast kolmeteistkümnendat vooru mäng lõpeb ja võrreldakse saadud tulemusi. Mängu võidab suurima punktisumma kogunud mängija. </para>
+</chapter>
+ 
+<chapter id="howto"
+><title
+>Kuidas mängida</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Eesmärk:</title
+><para
+>koguda rohkem punkte kui teised mängijad.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>&kiriki; käivitamisel antakse mängijale kohe kombinatsioon ette. Kui oled esimene mängija, saad sellega otsemaid nõustuda või uuesti veeretada, kui mitte, pead ootama oma viskejärjekorda.</para>
+	<note
+><title
+>Märkus:</title
+><para
+>Kui mänguseadistusi ei ole muudetud ning mängitakse üksikmängija režiimis, juhib esimest mängijat inimene (sina), teisi aga arvuti tehisaju.</para
+></note>
+	<para
+>Kui jõuab kätte sinu kord, tuleks kõigepealt hoolikalt uurida täringuid. Igal mängulaua vasakus servas asuval viiel täringul on oma väärtus. Uuri neid hoolikalt, et näha, kas neist saab kokku panna mõne vajaliku kombinatsiooni.</para>
+	<note
+><title
+>Märkus:</title
+><para
+>Kombinatsioone kirjeldab täpsemalt osa <link linkend="rules_and_tips"
+>Mängureeglid, strateegia ja nõuanded</link
+>.</para
+></note>
+	<para
+>Pane tähele, et mõnikord võivad täringud pakkuda võimalust mitmeks kombinatsiooniks. Sel juhul tuleb otsustada, milline neist annab rohkem punkte.</para>
+	<para
+>Kui täringute väärtused ei moodusta mingit kindlat kombinatsiooni või sobivad konbinatsioonile, mille oled juba ära kasutanud, saad täringuid veel kaks korda veeretada, et olukorda parandada. Teise või kolmanda viske puhul klõpsa täringutel, mille väärtusega sa ei ole rahul, ning klõpsa täringute all asuvale nupule <guibutton
+>Veereta</guibutton
+>. Sel juhul veeretatakse valitud täringuid ning neile ilmuvad uued väärtused.</para>
+	<para
+>Kui oled sooritanud kolmanda viske, pead valima kombinatsiooni, millele täringute väärtused omistada. Kui ükski kombinatsioon ei sobi sinu täringute väärtustega, võid kasutada ka kombinatsiooni <guilabel
+>Vaba valik</guilabel
+> või siis valida mis tahes kombinatsiooni, mis annaks vähemalt mingeidki punkte.</para>
+   <note
+><title
+>Märkus:</title
+><para
+>Kui valid kombinatsiooni, mis üldse täringute väärtustega ei sobi, saad selle kombinatsiooni eest null punkti.</para
+></note>
+	<para
+>Kui oled kombinatsiooni valinud, ilmub selle juures kohe nähtavale teenitud punktisumma.</para>
+	<note
+><title
+>Märkus:</title
+><para
+>Kombinatsioonide väärtusi kirjeldab täpsemalt osa <link linkend="rules_and_tips"
+>Mängureeglid, strateegia ja nõuanded</link
+>.</para
+></note>
+	<para
+>Seejärel asuvad teised mängijad täringuid veeretama. Nii kordub kolmteist korda ning siis mäng lõpeb, tulemused arvutatakse kokku ja pannakse paika mängijate paremusjärjestus.</para>
+</chapter>
+ 
+<chapter id="rules_and_tips"
+><title
+>Mängureeglid, strateegia ja nõuanded</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Mängureeglid</title>
+		<para
+>&kiriki; arvestustahvel on jagatud neljateistkümneks reaks. Iga rida sisaldab konkreetset viskemustrit ja mängija vastava mustri viskamisel saavutatud tulemust. Ridade tulemused arvutatakse järgmiselt:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>Ühed</guilabel
+>: kõigi täringute summa, mille viske tulemus on ‘1’.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '14112'. Summa on: '3'='1'+'1'+'1'. Visatud täringud: '51111'. Summa on: '4'='1'+'1'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kahed</guilabel
+>: kõigi täringute summa, mille viske tulemus on ‘2’.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '22422'. Summa on: '8'='2'+'2'+'2'+'2'. Visatud täringud: '42322'. Summa on: '6'=''+'2'+'2'+'2'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kolmed</guilabel
+>: kõigi täringute summa, mille viske tulemus on ‘3’.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '34132'. Summa on: '6'='3'+'3'. Visatud täringud: '33333'. Summa on: '15'='3'+'3'+'3'+'3'+'3'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Neljad</guilabel
+>: kõigi täringute summa, mille viske tulemus on ‘4’.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '14142'. Summa on: '8'='4'+'4'. Visatud täringud: '41414'. Summa on: '12'='4'+'4'+'4'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Viied</guilabel
+>: kõigi täringute summa, mille viske tulemus on ‘5’.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '15155'. Summa on: '15'='5'+'5'+'5'. Visatud täringud: '51555'. Summa on: '20'='5'+'5'+'5'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kuued</guilabel
+>: kõigi täringute summa, mille viske tulemus on ‘6’.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '66616'. Summa on: '24'='6'+'6'+'6'+'6'. Visatud täringud: '61616'. Summa on: '18='6'+'6'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Boonus 
+>62 korral</guilabel
+>: mängija saab 35 lisapunkti, kui ülalolevate väljade summa on kokku üle 62 punkti.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Ülemine kokku</guilabel
+>: see ei ole mänguväli, vaid lihtsalt kõigi eelolevate väljade summa.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kolmik</guilabel
+>: täringute koguväärtus, kui kolmel täringul on ühesugune väärtus.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '14121'. Summa on: '9'='1'+'1'+'1'+'4'4+'2'. Visatud täringud: '55151'. Summa on: '17'='5'+'5'+'5'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Nelik</guilabel
+>: täringute koguväärtus, kui neljal täringul on ühesugune väärtus.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '41444'. Summa on: '17'='4'+'4'+'4'+'4'+'1'. Visatud täringud: '22522'. Summa on: '13'='2'+'2'+'2'+'2'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Maja</guilabel
+>: mängija saab preemiaks 25 punkti, kui viskab välja kolmiku ja paari.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '11212'. Visatud täringud: '53353'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Väike rivi</guilabel
+>: mängija saab preemiaks 30 punkti, kui viske tulemus on neli järjestikust väärtust.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '14312'. Rida on: '1','2','3','4'. Visatud täringud: '51643'. Rida on: '3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Suur rivi</guilabel
+>: mängija saab preemiaks 40 punkti, kui viske tulemus on viis järjestikust väärtust.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '34152'. Rida on: '1','2','3','4','5'. Visatud täringud: '53264'. Rida on: '2','3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: mängija saab 50 punkti, kui viskab välja ühesuguste väärtustega viisiku. &kiriki;t võib visata palju süda lustib, sest igaühe eest pärast esimest saab mängu lõpus ühe lisaviskevooru.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '11111'. Visatud täringud: '33333'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Vaba valik</guilabel
+>: parajasti visatud täringute väärtuste summa.<note
+><title
+>Näide:</title
+><para
+>Visatud täringud: '51143'. Summa on: '14'='5'+'1'+'1'+'4'+'3'. Visatud täringud: '21526'. Summa on: '16'='2'+'1'+'5'+'2'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Alumine kokku</guilabel
+>: see ei ole mänguväli, vaid lihtsalt eelolevate väljade summa alates väljast 'Kolmik'.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kõik kokku</guilabel
+>: see ei ole mänguväli, vaid lihtsalt väljade 'Ülemine kokku' ja 'Alumine kokku' summa.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Muud reeglid ja piirangud:</para>
+			<itemizedlist>
+				<listitem
+><para
+>Mäng on jagatud 13 vooruks.</para
+></listitem>
+				<listitem
+><para
+>Iga mängija võib voorus täringuid veeretada kuni kolm korda.</para
+></listitem>
+				<listitem
+><para
+>Esimese veeretamise järel võib mängija sooritada veel kuni kaks viset (kokku kolm viset vooru kohta).</para
+></listitem>
+				<listitem
+><para
+>Mängija ei pea lisaviskeid sooritama, kui juba esimese veeretamise tulemus on igati rahuldav.</para
+></listitem>
+				<listitem
+><para
+>Iga lisaviske puhul võib veeretada kas kõiki või ainult valitud täringuid.</para
+></listitem>
+				<listitem
+><para
+>Lisaviskeks saab täringu välja valida sellele hiirega klõpsates.</para
+></listitem>
+				<listitem
+><para
+>Kui täringut on uuesti veeretatud, läheb selle eelnev väärtus kaotsi ja kehtima jääb ainult veeretamisel välja tulnud väärtus.</para
+></listitem>
+				<listitem
+><para
+>Veeretamise tulemust võib pidada rahuldavaks, kui täringute väärtused sobivad kenasti mõne tabeli kombinatsiooniga, mida tutvustati eespool.</para
+></listitem>
+				<listitem
+><para
+>Iga mängija saab iga kombinatsiooni mängu jooksul valida ainult üks kord. Niisiis, kui mängija on omistanud täringute väärtused teatavale kombinatsioonile, ei saa ta sama mängu ajal seda enam uuesti teha. Küll võib mõistetavalt seda teha mõni teine mängija, eeldusel muidugi, et ta ei ole oma täringute puhul juba sama kombinatsiooni valinud.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter
+> 
+ 
+<chapter id="interface"
+><title
+>Liidese tutvustus</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Menüükirjed</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Uus</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Alustab uut mängu.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Näita rekordeid</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Näitab edetabelit.</action
+> Kui sinu mängutulemus ületab mõnda edetabeli esikümne tulemust, palutakse sul anda oma nimi edetabelisse jäädvustamiseks. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Trüki...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Trükib aktiivse mängulaua.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Välju</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Lõpetab</action
+> &kiriki; töö.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Liikumine</guimenu
+> <guimenuitem
+>Vihje</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Vihje andmine üht või enamat veeretatavat täringut või tulemuste rida esile tõstes. Selle võimaluse kasutamisel mängu tulemust rekordite hulka ei arvata.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Liikumine</guimenu
+><guimenuitem
+>Demo</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Demomängu käivitamine. Peatamiseks käivita uus mäng.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Lisaks on &kappname;l tavapärased &kde; <guimenu
+>seadistuste</guimenu
+> ja <guimenu
+>abi</guimenu
+>menüü elemendid, mille kohta leiab rohkem teavet &kde; põhialuste käsiraamatu osadest <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Menüü Seadistused</ulink
+> ja <ulink url="help:/fundamentals/ui.html#menus-help"
+>Menüü Abi</ulink
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Korduma kippuvad küsimused</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Ma soovin muuta mängu välimust. On see võimalik? </para
+></question>
+ <answer
+><para
+>Ei, &kiriki; ei paku praegu sellist võimalust.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Tegin vea. Kas selle saab tagasi võtta? </para
+></question>
+ <answer
+><para
+>Ei, &kiriki; ei paku <quote
+>tagasivõtmise</quote
+> võimalust.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Kas mängida saab ka klaviatuuri abil?</para
+></question>
+ <answer
+><para
+>Ei, &kiriki;t ei saa mängida klaviatuuri abil.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ma ei saa aru, mida ma peaksin tegema! Kas mingeid vihjeid ei ole? </para
+></question>
+ <answer
+><para
+>Mängureeglite ja taktikaliste võtete tundmaõppimiseks uuri käsiraamatu osa <link linkend="rules_and_tips"
+>Mängureeglid, strateegia ja nõuanded</link
+>.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ma pean mängust väljuma, aga mäng ei ole veel läbi. Kas ma saan oma seisu salvestada?</para
+></question>
+ <answer
+><para
+>Ei, &kiriki; ei paku <quote
+>salvestamise</quote
+> võimalust.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Tehisaju on liiga kiire! Ma ei näe, mida ta teeb!</para
+></question>
+ <answer
+><para
+>Tehisaju tegutsemiskiirust saab muuta mängu seadistustedialoogis, mida käsitleb lähemalt osa <link linkend="configuration"
+>Mängu seadistamine</link
+>.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Mängu seadistamine</title
+> <!-- do not change this! -->
+<para
+>&kiriki; seadistustedialoogis saab paika panna mängijate arvu, nende identiteedid ja tegutsemiskiiruse.</para>
+<note
+><title
+>Märkus:</title
+><para
+>Tegutsemiskiirust saab muuta ainult tehisaju juhitavate mängijate puhul.</para
+></note>
+<para
+><guilabel
+>Mängijate arv:</guilabel
+> sellel väljal saab määrata &kiriki; mängijate arvu. Lubatud väärtused on kahe ja kuue vahel.</para>
+<note
+><title
+>Märkus:</title
+><para
+>Mängijaid ei saa olla vähem kui kaks.</para
+></note>
+<para
+>Nummerdatud väljadel <guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> saab paika panna mängijate identiteedid. Siin saab muuta nende nimesid, samuti määrata, kas tegemist on inimesega või juhib mängijat tehisaju. Määramaks, kes mängijat juhib, kasuta nimekastist paremale jäävat märkekasti.</para>
+<note
+><title
+>Märkus:</title
+><para
+>Esimene mängija peab alati olema inimene.</para
+></note>
+<para
+>Mängijate arvu ja nende identiteedi muutmine rakendatakse järgmises mängus.</para>
+<para
+><guilabel
+>Arvuti käikude intervall (msek):</guilabel
+> siin saab määrata tehisaju käikude vahele jääda vaja. Vaikimisi on selle välja väärtus null, mis tähendab, et tehisaju toimib vähimagi viivituseta.</para>
+<note
+><title
+>Märkus:</title
+><para
+>Välja maksimumväärtus saab olla 999 millisekundit.</para
+></note>
+<para
+>Arvestustahvli kohandamiseks just endale meeldivaks kasuta valikuid <guilabel
+>Fondi suurus</guilabel
+> ja <guilabel
+>Rea kõrgus</guilabel
+>.</para>
+<para
+>Kui soovid hakata mängima kohe &kiriki; käivitamise järel, keela vaikimisi lubatud valik <guilabel
+>Demomängu näitamine käivitamisel</guilabel
+>.</para>
+</chapter>
+ 
+<chapter id="credits"
+><title
+>Autorid ja litsents</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+ 
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Rakenduse autoriõigus 2005-2007: &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Dokumentatsiooni autoriõigus 2005: &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Dokumentatsiooni autoriõigus 2007: Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+<para
+>Tõlge eesti keelde: Marek Laane <email
+>bald@smail.ee</email
+></para
+>  &underFDL; &underGPL; </chapter>
+ 
+<appendix id="installation">
+<title
+>Paigaldamine</title>
+ 
+&install.intro.documentation;
+ 
+ 
+<sect1 id="Compilation">
+<title
+>Kompileerimine ja paigaldamine</title>
+&install.compile.documentation; </sect1>
+</appendix>
+ 
+&documentation.index; 
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

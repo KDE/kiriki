@@ -1,0 +1,310 @@
+# translation of kiriki.po to slovenian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Matej Repinc <mrepinc@gmail.com>, 2007.
+# Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013, 2017.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kiriki\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-20 00:42+0000\n"
+"PO-Revision-Date: 2020-05-25 22:17+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"X-Generator: Lokalize 19.12.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Matej Repinc,Andrej Mernik"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mrepinc@gmail.com,andrejm@ubuntu.si"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: configPage.ui:17
+#, kde-format
+msgid "Players"
+msgstr "Igralci"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player6IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player3IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player2IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player1IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player4IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player5IsHuman)
+#: configPage.ui:36 configPage.ui:73 configPage.ui:94 configPage.ui:121
+#: configPage.ui:148 configPage.ui:169
+#, kde-format
+msgid "human?"
+msgstr "človek?"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: configPage.ui:51
+#, kde-format
+msgid "Number of players:"
+msgstr "Število igralcev:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2)
+#: configPage.ui:63
+#, kde-format
+msgid "3."
+msgstr "3."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: configPage.ui:80
+#, kde-format
+msgid "2."
+msgstr "2."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: configPage.ui:104
+#, kde-format
+msgid "1."
+msgstr "1."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: configPage.ui:134
+#, kde-format
+msgid "4."
+msgstr "4."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: configPage.ui:155
+#, kde-format
+msgid "5."
+msgstr "5."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
+#: configPage.ui:176
+#, kde-format
+msgid "6."
+msgstr "6."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: configPage.ui:201
+#, kde-format
+msgid "Delay between computers move (msec):"
+msgstr "Razmik med potezami računalnika (ms):"
+
+#. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
+#: configPage.ui:215
+#, kde-format
+msgid "Font Size:"
+msgstr "Velikost pisave:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: configPage.ui:236
+#, kde-format
+msgid "Row Height:"
+msgstr "Višina vrstice:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
+#: configPage.ui:255
+#, kde-format
+msgid "Show demonstration game at startup"
+msgstr "Pokaži predstavitveno igro ob zagonu"
+
+#: kiriki.cpp:174
+#, kde-format
+msgid ""
+"Starting the demo will end the current game. Any progress will be lost. Do "
+"you want to continue?"
+msgstr ""
+"Če zaženete predstavitveni način, bo to končalo trenutno igro. Izgubili "
+"boste ves napredek. Ali želite nadaljevati?"
+
+#: kiriki.cpp:207
+#, kde-format
+msgid "Demonstration. Press \"New\" to start a new game."
+msgstr "Predstavitveni način. Pritisnite \"Nova\", da začnete novo igro."
+
+#: kiriki.cpp:216
+#, kde-format
+msgid ""
+"Asking for a hint will disqualify the current game from entering the high "
+"score list."
+msgstr ""
+"Če zahtevate namig, se trenutna igra ne bo mogla pojaviti na seznamu "
+"najboljših rezultatov."
+
+#: kiriki.cpp:217
+#, kde-format
+msgid "Confirm Hint Request"
+msgstr "Potrdi zahtevo po namigu"
+
+#: kiriki.cpp:218
+#, kde-format
+msgid "Give Hint Anyway"
+msgstr "Vseeno pokaži namig"
+
+#: kiriki.cpp:237
+#, kde-format
+msgid "Roll highlighted die."
+msgid_plural "Roll highlighted dice."
+msgstr[0] "Vrzi osvetljeno kocko."
+msgstr[1] "Vrzi osvetljeni kocki."
+msgstr[2] "Vrzi osvetljene kocke."
+msgstr[3] "Vrzi osvetljene kocke."
+
+#: kiriki.cpp:347
+#, kde-format
+msgid "Changes will be applied on next game."
+msgstr "Spremembe bodo upoštevane ob naslednji igri."
+
+#: kiriki.kcfg:40
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Janez"
+
+#: kiriki.kcfg:46
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Metka"
+
+#: kiriki.kcfg:52
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Jože"
+
+#: kiriki.kcfg:58
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Andreja"
+
+#: kiriki.kcfg:64
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Tomaž"
+
+#: kiriki.kcfg:70
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Monika"
+
+#: lateralwidget.cpp:30
+#, kde-format
+msgid "&Roll"
+msgstr "V&rzi"
+
+#: lateralwidget.cpp:198
+#, kde-format
+msgid "Roll %1 of 3"
+msgstr "Met %1 od 3"
+
+#: main.cpp:30 scores.cpp:77
+#, kde-format
+msgid "Kiriki"
+msgstr "Kiriki"
+
+#: main.cpp:32
+#, kde-format
+msgid "A Yahtzee dice game by KDE"
+msgstr "Igra s kockami Yahztee s strani KDE"
+
+#: main.cpp:34
+#, kde-format
+msgid "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005-2007 Albert Astals Cid"
+
+#: main.cpp:37
+#, kde-format
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: scores.cpp:63
+#, kde-format
+msgid "1s"
+msgstr "Enke"
+
+#: scores.cpp:64
+#, kde-format
+msgid "2s"
+msgstr "Dvojke"
+
+#: scores.cpp:65
+#, kde-format
+msgid "3s"
+msgstr "Trojke"
+
+#: scores.cpp:66
+#, kde-format
+msgid "4s"
+msgstr "Štirke"
+
+#: scores.cpp:67
+#, kde-format
+msgid "5s"
+msgstr "Petke"
+
+#: scores.cpp:68
+#, kde-format
+msgid "6s"
+msgstr "Šestke"
+
+#: scores.cpp:69
+#, kde-format
+msgid "Bonus if > 62"
+msgstr "Dodatek za > 62"
+
+#: scores.cpp:70
+#, kde-format
+msgid "Upper total"
+msgstr "Zgornji seštevek"
+
+#: scores.cpp:72
+#, kde-format
+msgid "3 of a Kind"
+msgstr "3 enake"
+
+#: scores.cpp:73
+#, kde-format
+msgid "4 of a Kind"
+msgstr "4 enake"
+
+#: scores.cpp:74
+#, kde-format
+msgid "Full House"
+msgstr "Full House"
+
+#: scores.cpp:75
+#, kde-format
+msgid "Small Straight"
+msgstr "Mala lestvica"
+
+#: scores.cpp:76
+#, kde-format
+msgid "Large Straight"
+msgstr "Velika lestvica"
+
+#: scores.cpp:78
+#, kde-format
+msgid "Chance"
+msgstr "Možnost"
+
+#: scores.cpp:79
+#, kde-format
+msgid "Lower Total"
+msgstr "Spodnji seštevek"
+
+#: scores.cpp:81
+#, kde-format
+msgid "Grand Total"
+msgstr "Skupni seštevek"

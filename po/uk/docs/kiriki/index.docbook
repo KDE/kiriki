@@ -1,0 +1,769 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Ukrainian "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Підручник з &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>6 липня 2021 року</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>У цій документації описано гру &kiriki; версії 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>гра</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>кістки</keyword>
+	<keyword
+>аркада</keyword>
+	<keyword
+>гра у кістки</keyword>
+	<keyword
+>гра з кістками</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>шість гравців</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Вступ</title
+> <!-- do not change this! -->
+	<note
+><title
+>Тип гри:</title
+><para
+>Гра у кістки, аркада</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Можлива кількість гравців:</title
+><para
+>Шість</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Ігрова дошка &kiriki;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>&kiriki; — захоплива і весела гра у кістки, розроблена &kde;, яку створено для гри, у якій братимуть участь не більше шести гравців. Учасники гри збирають очки, виконуючи до трьох кидків п’яти кісток кожного ходу. Під час кожного кидка створюється певна комбінація чисел, яку гравець може прийняти або відкинути. Крім того, кожну комбінацію чисел може приймати лише один раз. Після тринадцяти ходів гра завершується, після чого порівнюються рахунки гравців. Гравець з найбільшою кількістю очок виграє гру. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Як грати</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Мета:</title
+><para
+>Наберіть більше залікових очок, ніж всі ваші суперники.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Після запуску &kiriki; програма одразу ж показує першу комбінацію для першого гравця. Якщо ви граєте за першого гравця, це буде ваш хід, у іншому випадку вам слід буде зачекати на свою чергу ходити.</para>
+	<note
+><title
+>Примітка:</title
+><para
+>Типово, якщо ви не змінювали налаштувань гри, гру буде запущено у режимі з одним гравцем, за першого гравця гратиме людина (ви), рештою п’ятьма гравцями керуватиме комп’ютер.</para
+></note>
+	<para
+>Одразу після того, як хід перейде до вас, вам слід поглянути на поточну комбінацію. Кожна з п’яти кісток у лівій частині ігрового вікна показуватиме певне значення. Перевірте, чи не складають ці значення одну з виграшних комбінацій.</para>
+	<note
+><title
+>Примітка:</title
+><para
+>Докладний опис значень виграшних комбінацій можна знайти у розділі <link linkend="rules_and_tips"
+>Правила гри, стратегія і підказки</link
+> цього підручника.</para
+></note>
+	<para
+>Пам’ятайте, що комбінація може відповідати декільком виграшним послідовностям. У такому випадку вам слід визначитися з тим, яка з комбінацій дасть вам більше виграшних очок.</para>
+	<para
+>У випадку, якщо поточна послідовність не відповідає жодній з виграшних комбінацій або відповідає виграшній комбінації, якою ви вже скористалися, у вас буде ще два кидки для виправлення ситуації. Щоб скористатися можливістю другого (третього) кидка, оберіть кістки, значеннями яких ви не задоволені, наведенням на них вказівника миші з наступним клацання лівою кнопкою миші, потім натисніть кнопку <guibutton
+>Кинути</guibutton
+>, розташовану одразу під кістками. Відповідні кістки буде кинуто ще раз, отже, зміняться показані на них значення.</para>
+	<para
+>Після останнього, третього, повторного кидка вам слід обрати виграшну комбінацію, яка відповідає отриманій послідовності кісток. Якщо послідовності не відповідає жодна з виграшних комбінацій, ви можете або скористатися виграшною комбінацією <guilabel
+>Шанс</guilabel
+>, або обрати будь-яку з виграшних комбінацій на вашій дошці комбінацій.</para>
+   <note
+><title
+>Примітка:</title
+><para
+>Якщо ви оберете виграшну комбінацію, яка не відповідає поточній послідовності кісток, обрана вами виграшна комбінація стане порожньою з нульовим значенням.</para
+></note>
+	<para
+>Після вибору виграшної комбінації її значення буде оновлено, воно відображатиме послідовність кісток, які вам вдалося викинути.</para>
+	<note
+><title
+>Примітка:</title
+><para
+>Докладний опис значень виграшних комбінацій можна знайти у розділі <link linkend="rules_and_tips"
+>Правила гри, стратегія і підказки</link
+> цього підручника.</para
+></note>
+	<para
+>Одразу після завершення вашого ходу хід перейде до наступного учасника гри. Після повторення циклу учасників тринадцять разів гру буде завершено, програма підрахує результати і визначить найкращий.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Правила гри, стратегія та поради</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Правила гри</title>
+		<para
+>Дошку результатів &kiriki; поділено на чотирнадцять рядків. У кожному з рядків міститься одна виграшна комбінація і кількість очок, які отримає гравець за таку комбінацію. Виграшна комбінація у кожному з рядків обчислюється таким чином:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>Одиниці</guilabel
+>: сума всіх кісток зі значеннями «1».<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «14112». Результат: «3»=«1»+«1»+«1». Показано кістки: «51111». Результат: «4»=«1»+«1»+«1»+«1».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Двійки</guilabel
+>: сума всіх кісток зі значеннями «2».<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «22422». Результат: «8»=«2»+«2»+«2»+«2». Показано кістки: «42322». Результат: «6»=«2»+«2»+«2».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Трійки</guilabel
+>: сума всіх кісток зі значеннями «3».<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «34132». Результат: «6»=«3»+«3». Показано кістки: «33333». Результат: «15»=«3»+«3»+«3»+«3»+«3».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Четвірки</guilabel
+>: сума всіх кісток зі значеннями «4».<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «14142». Результат: «8»=«4»+«4». Показано кістки: «41414». Результат: «12»=«4»+«4»+«4».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>П’ятірки</guilabel
+>: сума всіх кісток зі значеннями «5».<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «15155». Результат: «15»=«5»+«5»+«5». Показано кістки: «51555». Результат: «20»=«5»+«5»+«5»+«5».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Шістки</guilabel
+>: сума всіх кісток зі значеннями «6».<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «66616». Результат: «24»=«6»+«6»+«6»+«6». Показано кістки: «61616». Результат: «18»=«6»+«6»+«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Додаткові, якщо 
+> 62</guilabel
+>: гравець нагороджується додатковими 35 очками, якщо сумарне значення полів, розташованих вище більше за 62 очок.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Верхні загалом</guilabel
+>: це поле не призначено для певної комбінації, у ньому буде показано суму полів, вищих за це поле.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Трійка</guilabel
+>: сума значень на кістках, якщо три значення є однаковими.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «14121». Результат: «9»=«1»+«1»+«1»+«4»+«2». Показано кістки: «55151». Результат: «17»=«5»+«5»+«5»+«1»+«1».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Каре</guilabel
+>: сума значень на кістках, якщо чотири значення є однаковими.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «41444». Результат: «17»=«4»+«4»+«4»+«4»+«1». Показано кістки: «22522». Результат: «13»=«2»+«2»+«2»+«2»+«5».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Фул Хаус</guilabel
+>: 25 очок буде додано гравцеві, якщо у результаті кидків буде отримано комбінацію з трьох з двома однакових значень.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «11212». Показано кістки: «53353».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Малий Стріт</guilabel
+>: 30 очок буде додано гравцеві, якщо у результаті кидків буде отримано комбінацію з чотирьох кісток з послідовними значеннями.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «14312». Послідовність значень: «1»,«2»,«3»,«4». Показано кістки: «51643». Послідовність значень: «3»,«4»,«5»,«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Великий Стріт</guilabel
+>: 30 очок буде додано гравцеві, якщо у результаті кидків буде отримано комбінацію з п’ятьох кісток з послідовними значеннями.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «34152». Послідовність значень: «1»,«2»,«3»,«4»,«5». Показано кістки: «53264». Послідовність значень: «2»,«3»,«4»,«5»,«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: 50 очок і додатковий хід буде додано гравцеві, якщо у результаті кидків буде викинуто п’ять кісток з однаковими значеннями. Таким чином, ви можете виграти довільну кількість ходів у &kiriki;, кожен вдалий кидок з п’ятьма однаковими кістками після першого кидка даватиме вам ще один хід наприкінці гри.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «11111». Показано кістки: «33333».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Шанс</guilabel
+>: сума значень всіх викинутих кісток.<note
+><title
+>Приклад:</title
+><para
+>Показано кістки: «51143». Результат: «14»=«5»+«1»+«1»+«4»+«3». Показано кістки: «21526». Результат: «16»=«2»+«1»+«5»+«2»+«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Нижні загалом</guilabel
+>: це поле не призначено для певної комбінації, у ньому буде показано суму полів, не вищих за поле «Трійка».</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Загальна сума</guilabel
+>: це поле не призначено для певної комбінації, у ньому буде показано суму полів «Верхні загалом» і «Нижні загалом».</para
+></listitem>
+			</itemizedlist>
+			<para
+>Інші правила і обмеження:</para>
+			<itemizedlist>
+				<listitem
+><para
+>Цілий раунд гри поділено на 13 ходів.</para
+></listitem>
+				<listitem
+><para
+>Кожен з гравців може виконати від одного до трьох кидків за хід.</para
+></listitem>
+				<listitem
+><para
+>Після першого кидка гравець може виконати додаткові кидки два рази (тобто, можна виконати три кидки протягом ходу).</para
+></listitem>
+				<listitem
+><para
+>Гравцеві не потрібно виконувати повторних кидків, якщо перший же кидок приніс задовільні результати.</para
+></listitem>
+				<listitem
+><para
+>Під час кожного з додаткових кидків можна кидати або всі кістки або лише вибрані кістки.</para
+></listitem>
+				<listitem
+><para
+>Гравець може обрати кістки для повторного кидка за допомогою клацань лівою кнопкою миші, коли вказівник миші знаходиться на відповідній кістці.</para
+></listitem>
+				<listitem
+><para
+>Після повторного кидка попереднє значення кістки буде втрачено, чинним залишиться лише нове значення, яке буде показано.</para
+></listitem>
+				<listitem
+><para
+>Результат кидка вважається задовільним, якщо значення на кістках можна поставити у відповідність одній з виграшних комбінацій, які було обговорено раніше.</para
+></listitem>
+				<listitem
+><para
+>Кожен гравець може використати кожну з виграшних комбінацій лише один раз протягом гри. Тому, якщо ви вже одного разу скористалися виграшною комбінацією, ви не зможете скористатися нею ще раз. Але інший гравець може користуватися комбінаціями, які вже було використано вами.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Огляд інтерфейсу</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Пункти меню</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Створити</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Починає нову гру.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Показати найкращі результати</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Показує список найкращих результатів.</action
+> Якщо ваш результат у поточній грі перевищить один з результатів у першій десятці, програма надішле запит на введення вашого імені для записування його до списку. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Друкувати...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Друкує поточний список результатів.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Вийти</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Завершує роботу</action
+> &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Хід</guimenu
+> <guimenuitem
+>Підказка</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Надає підказку позначаючи кістки або рядок. Якщо ви скористаєтеся цією можливістю, ваш результат не буде включено до таблиці найкращих результатів.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Хід</guimenu
+> <guimenuitem
+>Демонстрація</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Демонстрація гри. Щоб зупинити гру у демонстраційному режимі, розпочніть справжню гру.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Крім того, у &kiriki; передбачено типові для &kde; пункти меню <guimenu
+>Параметри</guimenu
+> і <guimenu
+>Довідка</guimenu
+>. Щоб дізнатися більше, ознайомтеся з розділами щодо <ulink url="help:/fundamentals/menus.html#menus-settings"
+>меню «Параметри»</ulink
+> та <ulink url="help:/fundamentals/menus.html#menus-help"
+>меню «Довідка»</ulink
+> підручника з основ роботи у &kde;. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Часті запитання</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Я хочу змінити вигляд цієї гри. Як це зробити? </para
+></question>
+ <answer
+><para
+>Ні. Поточна версія &kiriki; не підтримує тем.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Я помилився (помилилася)? Можна це виправити? </para
+></question>
+ <answer
+><para
+>Ні. У &kiriki; немає можливості <quote
+>Вернути</quote
+> хід.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Чи можна використовувати для гри клавіатуру?</para
+></question>
+ <answer
+><para
+>Ні. Грати у &kiriki; за допомогою лише клавіатури неможливо.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Не можу з’ясувати, що слід робити! Чи є у грі підказки? </para
+></question>
+ <answer
+><para
+>Щоб дізнатися більше про правила гри і тактику, будь ласка, прочитайте розділ <link linkend="rules_and_tips"
+>Правила гри, стратегії та підказки</link
+> цього підручника.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Я змушений (змушена) перервати гру, але гру ще не завершено. Чи можу я зберегти поточний стан?</para
+></question>
+ <answer
+><para
+>Ні. У &kiriki; немає можливості <quote
+>Зберегти</quote
+> гру.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Комп’ютерний гравець зашвидко робить ходи! Я не встигаю помітити, що він робить!</para
+></question>
+ <answer
+><para
+>Щоб змінити швидкість дій комп’ютерного гравця, скористайтеся діалоговим вікном налаштування гри, яке докладно описано у розділі <link linkend="configuration"
+>Налаштування гри</link
+> цього підручника.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Налаштування гри</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Налаштування гри</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>За допомогою діалогового вікна налаштування &kiriki; ви зможете встановити кількість учасників гри, вказати їх ідентифікаційні дані та час відгуку.</para>
+<note
+><title
+>Примітка:</title
+><para
+>Час відповіді можна змінювати лише для гравців, якими керує комп’ютер.</para
+></note>
+<para
+><guilabel
+>Кількість гравців:</guilabel
+> — це поле визначає кількість гравців у &kiriki;. Діапазон дозволених значень лежить між двома і шістьма.</para>
+
+<para
+><guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> Поля з номерами відповідають особам гравців-учасників. Ви можете змінити їх імена та визначити, чи керуватимуть ними гравці-люди, чи комп’ютер. Щоб вказати того, хто буде гравцем, скористайтеся полем позначки, розташованим праворуч, поряд з полем для введення імені.</para>
+<para
+>Першим гравцем має завжди керувати людина.</para>
+
+<para
+>Надає змогу змінити кількість учасників та профілі учасників, які буде використано у наступній грі.</para>
+
+<para
+>Поле <guilabel
+>Затримка між ходами комп’ютера (у мс):</guilabel
+> надає вам змогу вказати значення затримки між ходами комп’ютерного гравця. Типово, значення у цьому полі є нульовим, що означає миттєву реакцію комп’ютерного гравця.</para>
+
+<note
+><title
+>Примітка:</title
+><para
+>Максимальним значення для цього поля є 999 мілісекунд.</para
+></note>
+
+<para
+>Скористайтеся пунктами <guilabel
+>Розмір шрифту</guilabel
+> та <guilabel
+>Висота рядка</guilabel
+> для налаштовування дошки відповідно до ваших уподобань.</para>
+<para
+>Якщо ви хочете одразу переходити до гри після запуску &kiriki;, зніміть позначку з пункту <guilabel
+>Показувати демонстрацію гри після запуску</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Подяки і ліцензія</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Авторські права на програму належать &Albert.Astals.Cid; &Albert.Astals.Cid.mail;, ©2005–2007 </para>
+<para
+>Авторські права на документацію належать &Albert.Astals.Cid; &Albert.Astals.Cid.mail;, 2005 </para>
+<para
+>Авторські права на документацію до програми належать Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+>, 2007 </para>
+<para
+>Переклад українською: Юрій Чорноіван <email
+>yurchor@ukr.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

@@ -1,0 +1,785 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Italian "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Manuale di &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+><firstname
+>Marcello</firstname
+><surname
+>Anni</surname
+><affiliation
+><address
+><email
+>marcello.anni@alice.it</email
+></address
+></affiliation
+><contrib
+>Traduzione dell'interfaccia</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Federico</firstname
+><surname
+>Zenith</surname
+><affiliation
+><address
+><email
+>federico.zenith@member.fsf.org</email
+></address
+></affiliation
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>2021-07-06</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Questo documento descrive il gioco &kiriki; nella versione 21.04.</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>gioco</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>dadi</keyword>
+	<keyword
+>arcade</keyword>
+	<keyword
+>gioco di dadi</keyword>
+	<keyword
+>dadi da gioco</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>sei giocatori</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Introduzione</title
+> <!-- do not change this! -->
+	<note
+><title
+>Tipo di gioco:</title
+><para
+>Dadi, arcade</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Numero di possibili giocatori:</title
+><para
+>Sei</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Tabellone di gioco di &kiriki;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>&kiriki; è un gioco di dadi della comunità &kde; divertente e che crea dipendenza, sviluppato per essere usato da fino a sei giocatori. I partecipanti devono guadagnarsi i punti lanciando cinque dadi fino a tre volte per turno. Ogni lancio genera una certa combinazione di numeri che il giocatore può accettare o meno. Tuttavia, ogni combinazione di numeri può essere accettata solo una volta. Dopo tredici turni il gioco finisce e si confrontano i punteggi. Vince il giocatore con più punti. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Come giocare</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Obiettivo:</title
+><para
+>Guadagnare più punti degli avversari.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>All'avvio di &kiriki;, viene immediatamente data la prima combinazione al primo giocatore. Se sei tu il primo giocatore, questo è il tuo turno, altrimenti devi aspettare le mosse degli altri giocatori.</para>
+	<note
+><title
+>Nota:</title
+><para
+>A meno che le impostazioni di gioco non vengano cambiate, e in modalità giocatore singolo, il primo giocatore è controllato da un umano (te), mentre tutti gli altri cinque giocatori sono controllati dal computer.</para
+></note>
+	<para
+>Quando arriva il tuo turno, la prima cosa da fare è esaminare il lancio attuale. Ognuno dei cinque dadi nella parte sinistra dello schermo di gioco ha un certo valore. Controlla la sequenza per vedere se questi valori formano uno degli schemi vincenti.</para>
+	<note
+><title
+>Nota:</title
+><para
+>La descrizione dettagliata dei valori degli schemi si può trovare nella sezione <link linkend="rules_and_tips"
+>Regole del gioco, strategie e suggerimenti</link
+> di questo manuale.</para
+></note>
+	<para
+>Tieni presente che la combinazione può corrispondere a più di uno schema vincente. In questo caso devi determinare quale combinazione ti farà guadagnare più punti.</para>
+	<para
+>Nel caso che la sequenza attuale non corrisponda a nessuno schema vincente, o corrisponde a uno schema vincente che hai già usato, hai altri due lanci per correggere la situazione. Per usare il secondo (e terzo) lancio, seleziona i dadi che non ti soddisfano facendoci clic con il <hardware
+>mouse</hardware
+> e premendo il pulsante <guibutton
+>Lancia</guibutton
+>, posizionato sotto i dadi. Questo farà rilanciare i dadi selezionati, cambiandone quindi i valori.</para>
+	<para
+>Dopo il terzo lancio devi scegliere uno schema che si adatta alla sequenza di dadi a disposizione. Se nessuno degli schemi vincenti corrisponde alla sequenza puoi usare lo schema <guilabel
+>Sorte</guilabel
+>, o selezionare uno schema qualsiasi.</para>
+   <note
+><title
+>Nota:</title
+><para
+>Se selezioni uno schema che non corrisponde alla sequenza, lo schema selezionato sarà nullo e senza valore.</para
+></note>
+	<para
+>Non appena scegli uno schema il suo valore viene aggiornato secondo la sequenza di dati attuale.</para>
+	<note
+><title
+>Nota:</title
+><para
+>La descrizione dettagliata dei valori degli schemi si può trovare nella sezione <link linkend="rules_and_tips"
+>Regole del gioco, strategie e suggerimenti</link
+> di questo manuale.</para
+></note>
+	<para
+>Dopo la conclusione del tuo turno comincia quello del prossimo giocatore. La sequenza si ripete circa tredici volte e la partita si conclude, si calcolano i punteggi e i vincitori.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Regole del gioco, strategie e suggerimenti</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Regole del gioco</title>
+		<para
+>La tabella dei punteggi di &kiriki; si divide in quattordici diverse righe. Ogni riga è per un solo schema di punteggio e il punteggio dei giocatori per un lancio corrispondente allo schema. Lo schema di punteggio di ogni riga è calcolato come segue:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>⚀</guilabel
+>: somma di tutti i dadi con valore «1».<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «14112». La somma è «3», «1+1+1». Dadi visualizzati: «51111». La somma è «4», «1+1+1+1».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>⚁</guilabel
+>: somma di tutti i dadi con valore «2».<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «22422». La somma è «8», «2+2+2+2». Dadi visualizzati: «42322». La somma è «6», «2+2+2».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>⚂</guilabel
+>: somma di tutti i dadi con valore «3».<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «34132». La somma è «6», «3+3». Dadi visualizzati: «33333». La somma è «15», «3+3+3+3+3».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>⚃</guilabel
+>: somma di tutti i dadi con valore «4».<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «14142». La somma è «8», «4+4». Dadi visualizzati: «41414». La somma è «12», «4+4+4».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>⚄</guilabel
+>: somma di tutti i dadi con valore «5».<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «15155». La somma è «15», «5+5+5». Dadi visualizzati: «51555». La somma è «20», «5+5+5+5».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>⚅</guilabel
+>: somma di tutti i dadi con valore «6».<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «66616». La somma è «24», «6++6+6+6». Dadi visualizzati: «61616». La somma è «18», «6+6+6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Bonus se 
+> 62</guilabel
+>: al giocatore vengono concessi 35 ulteriori punti se il valore sommato di tutti i campi sopra è maggiore di 62 punti.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Totale superiore</guilabel
+>: non è un campo giocabile, ma solo un subtotale dei campi sopra.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Tris</guilabel
+>: valore sommato dei dadi quando tre di essi hanno lo stesso valore.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «14121». La somma è «9», «1+4+1+2+1». Dadi visualizzati: «55151». La somma è «17», «5+5+1+5+1».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Poker</guilabel
+>: valore sommato dei dadi quando quattro di essi hanno lo stesso valore.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «41444». La somma è «17», «4+1+4+4+4». Dadi visualizzati: «22522». La somma è «13», «2+2+5+2+2».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Full</guilabel
+>: al giocatore vengono concessi 25 punti se il lancio risulta in un tris e una coppia.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «11212». Dadi visualizzati: «53353».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Scala corta</guilabel
+>: al giocatore vengono concessi 30 punti se il lancio risulta in quattro dadi di valori in sequenza.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «14312». La sequenza è «1», «2», «3», «4». Dadi visualizzati: «51643». La sequenza è «3», «4», «5», «6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Scala lunga</guilabel
+>: al giocatore vengono concessi 40 punti se il lancio risulta in cinque dadi di valori in sequenza.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «34152». La sequenza è «1», «2», «3», «4», «5». Dadi visualizzati: «53264». La sequenza è «2», «3», «4», «5», «6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: al giocatore sono concessi 50 punti se il lancio risulta in cinque dadi con lo stesso valore. Puoi segnare tanti &kiriki; quanti ne vengono, visto che per ciascuno dopo il primo avrai un turno aggiuntivo alla fine della partita.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «11111». Dadi visualizzati: «33333».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Sorte</guilabel
+>: i valori sommati di tutti i dadi attualmente visualizzati.<note
+><title
+>Esempio:</title
+><para
+>Dadi visualizzati: «51143». La somma è «14», «5+1+1+4+3». Dadi visualizzati: «21526». La somma è «16», «2+1+5+2+6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Totale inferiore</guilabel
+>: non è un campo giocabile, ma solo un subtotale dei campi a partire da <quote
+>Tris</quote
+> in avanti.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Gran totale</guilabel
+>: non è un campo giocabile, ma solo la somma dei campi <quote
+>Totale superiore</quote
+> e <quote
+>Totale inferiore</quote
+>.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Altre regole e vincoli:</para>
+			<itemizedlist>
+				<listitem
+><para
+>La partita si divide in tredici turni.</para
+></listitem>
+				<listitem
+><para
+>Ogni giocatore può lanciare i dadi da una a tre volte per turno.</para
+></listitem>
+				<listitem
+><para
+>Dopo il primo lancio, il giocatore può farne un massimo di altri due (tre lanci al massimo per ogni turno).</para
+></listitem>
+				<listitem
+><para
+>Il giocatore non è obbligato a eseguire altri lanci se è soddisfatto del primo.</para
+></listitem>
+				<listitem
+><para
+>Ogni lancio aggiuntivo può riguardare tutti i dadi o solo quelli selezionati.</para
+></listitem>
+				<listitem
+><para
+>Un giocatore può selezionare i dadi da rilanciare facendoci clic col <hardware
+>mouse</hardware
+>.</para
+></listitem>
+				<listitem
+><para
+>Una volta che i dadi sono rilanciati, il loro valore va perso e solo il nuovo è valido.</para
+></listitem>
+				<listitem
+><para
+>Il risultato del lancio è considerato soddisfacente se i valori dei dadi visibili possono essere inseriti in uno degli schemi vincenti sopra discussi.</para
+></listitem>
+				<listitem
+><para
+>Ogni schema vincente può essere usato solo una volta per partita da ciascun giocatore.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Panoramica dell'interfaccia</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Elementi dei menu</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Nuova</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Comincia una nuova partita.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Mostra la classifica</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Mostra la classifica</action
+>. Quando il tuo punteggio supera uno dei dieci migliori classificati, ti verrà chiesto di aggiungere il tuo nome. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Stampa</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Stampa la tabella dei punteggi attuale.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Esci</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Esce</action
+> da &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Mossa</guimenu
+> <guimenuitem
+>Suggerimento</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Da' un suggerimento evidenziando uno o più dadi da gettare o una riga nella tabella dei punteggi. Con questa funzionalità il punteggio ottenuto non verrà incluso nella classifica.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Mossa</guimenu
+> <guimenuitem
+>Dimostrazione</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Gioca una partita dimostrativa. Per fermarla, comincia una nuova partita.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Inoltre, &kiriki; ha le normali voci del menu di &kde; <guimenu
+>Impostazioni</guimenu
+> e <guimenu
+>Aiuto</guimenu
+>; per maggiori informazioni leggi la sezione sul <ulink url="help:/fundamentals/menus.html#menus-settings"
+>menu Impostazioni</ulink
+> e sul <ulink url="help:/fundamentals/menus.html#menus-help"
+>menu Aiuto</ulink
+> dei Fondamentali di &kde;. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Domande ricorrenti</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Voglio cambiare l'aspetto del gioco. Posso? </para
+></question>
+ <answer
+><para
+>No. Al momento &kiriki; non implementa nessun tema.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Ho fatto un errore. Posso annullarlo? </para
+></question>
+ <answer
+><para
+>No. &kiriki; non ha nessuna opzione di annullamento.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Posso giocare con la tastiera?</para
+></question>
+ <answer
+><para
+>No. Non si può giocare a &kiriki; con la tastiera.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Non capisco come funziona! Ci sono suggerimenti? </para
+></question>
+ <answer
+><para
+>Per saperne di più sulle regole e le tattiche del gioco, leggi <xref linkend="rules_and_tips"/> di questo manuale.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Devo andare adesso, ma non ho finito. Posso salvare la partita?</para
+></question>
+ <answer
+><para
+>No. In &kiriki; non c'è la possibilità di salvare.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>I giocatori del computer sono troppo veloci, non vedo cosa fanno!</para
+></question>
+ <answer
+><para
+>Per cambiare la velocità di gioco del computer usa la finestra di configurazione discussa nel <xref linkend="configuration"/> di questo manuale.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Configurazione del gioco</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Configurazione del gioco</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>La finestra di configurazione di &kiriki; permette di configurare il numero di partecipanti, gestirne l'identità e i loro tempi di risposta.</para>
+<note
+><title
+>Nota:</title
+><para
+>Puoi cambiare i tempi di risposta solo per i giocatori gestiti dal computer.</para
+></note>
+<para
+><guilabel
+>Numero di giocatori</guilabel
+>: questo campo definisce il numero di giocatori di &kiriki;. Son ammessi valori tra due e sei.</para>
+
+<para
+>I campi numerati da <guilabel
+>1.</guilabel
+> a <guilabel
+>6.</guilabel
+> sono le identità dei partecipanti. Puoi cambiarne il nome e specificare se saranno umani o controllati dal computer. Usa la casella sul lato destro di ogni giocatore per definire chi lo controlla.</para>
+<para
+>Il primo giocatore deve sempre essere umano.</para>
+
+<para
+>Le modifiche al numero di partecipanti e alle loro identità verranno applicati dalla prossima partita.</para>
+
+<para
+><guilabel
+>Ritardo delle mosse del computer (millisecondi)</guilabel
+> permette di specificare il ritardo tra i turni dei giocatori gestiti dal computer. Il valore di questo campo è inizialmente zero, il che vuol dire che l'intelligenza artificiale reagisce istantaneamente.</para>
+
+<note
+><title
+>Nota:</title
+><para
+>Il valore massimo di questo campo è 999 millisecondi.</para
+></note>
+
+<para
+>Usa <guilabel
+>Dimensione del carattere</guilabel
+> e <guilabel
+>Altezza delle righe</guilabel
+> per regolare la tabella dei punteggi come preferisci.</para>
+<para
+>Se vuoi giocare subito all'avvio di &kiriki;, disattiva l'opzione predefinita <guilabel
+>Mostra dimostrazione di gioco all'avvio</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Riconoscimenti e licenza</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Copyright del programma 2005-2007 di &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Copyright della documentazione 2005 di &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Copyright della documentazione 2007 di Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+<para
+>Traduzione della documentazione di Marcello Anni e Federico Zenith <email
+>federico.zenith@member.fsf.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

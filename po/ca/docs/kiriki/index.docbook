@@ -1,0 +1,1011 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Catalan  "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>El manual del &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			&traductor.Antoni.Bella; 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>6 de juliol de 2021</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Aquesta documentació descriu el joc &kiriki; versió 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>joc</keyword
+> <!-- do not change this! -->
+	<keyword
+>Kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>dau</keyword>
+	<keyword
+>arcade</keyword>
+	<keyword
+>joc de daus</keyword>
+	<keyword
+>jugant a daus</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>sis jugadors</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Introducció</title
+> <!-- do not change this! -->
+	<note
+><title
+>Tipus de joc:</title
+><para
+>Daus, arcade</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Nombre de possibles jugadors:</title
+><para
+>Sis</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Tauler de joc del &kiriki;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>El &kiriki; és un joc de daus addictiu i divertit creat per la comunitat &kde;, dissenyat perquè el juguin fins a sis jugadors. Els participants acumularan punts tirant cinc daus fins a tres vegades per torn. Cada tirada generarà una combinació específica de números que el jugador podrà acceptar o refusar lliurement. No obstant això, cada combinació específica de números només es podrà acceptar una vegada. Després de tretze torns, el joc acabarà i es compararan les puntuacions. El jugador amb la quantitat més gran de punts guanyarà la partida. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Com jugar</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Objectiu:</title
+><para
+>Guanyar més punts que qualsevol dels oponents.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Una vegada s'iniciï el &kiriki;, immediatament donarà la primera combinació per al jugador u. Si el sou, llavors serà el vostre torn, en cas contrari haureu d'esperar fins que tots els altres jugadors facin els seus moviments.</para>
+	<note
+><title
+>Nota:</title
+><para
+>De manera predeterminada, llevat que s'hagi canviat la configuració del joc, i en el mode d'un únic jugador, el primer jugador estarà controlat per un humà (vós), mentre que els altres cinc jugadors estaran controlats per una intel·ligència artificial.</para
+></note>
+	<para
+>Una vegada sigui el vostre torn, el primer que haureu de fer és examinar la tirada actual. Cadascun dels cinc daus de la part esquerra de la pantalla de joc té un valor específic. Comproveu la seqüència per a veure si aquests valors formen algun dels patrons de puntuació.</para>
+	<note
+><title
+>Nota:</title
+><para
+>La descripció detallada dels valors del patró de puntuació es troba a la secció <link linkend="rules_and_tips"
+>Les regles del joc, estratègies i consells</link
+> en aquest manual.</para
+></note>
+	<para
+>Recordeu que la combinació pot coincidir amb més d'un patró de puntuació. En aquest cas, haureu de determinar quin patró de puntuació us donarà més punts.</para>
+	<para
+>En cas que la seqüència actual no coincideixi amb cap patró de puntuació, o que coincideixi amb un patró de puntuació que ja heu emprat, tindreu dues tirades més per a arreglar la situació. Per a utilitzar la vostra segona (tercera) tirada, seleccioneu els daus amb els quals no esteu satisfet fent clic sobre seu amb el ratolí i feu clic al botó <guibutton
+>Tira</guibutton
+> situat just a sota dels daus. Farà que els daus donats tornin a llançar-se, canviant així els seus valors.</para>
+	<para
+>Una vegada hàgiu realitzat la tercera tirada, haureu de triar el patró de puntuació que s'ajusti a la seqüència de daus que teniu en la mà. Si cap dels patrons de puntuació s'ajusta a la seqüència, podeu utilitzar el patró de puntuació <guilabel
+>Sort</guilabel
+> o senzillament seleccionar qualsevol patró de puntuació en el vostre marcador.</para>
+   <note
+><title
+>Nota:</title
+><para
+>Si seleccioneu un patró de puntuació que no s'ajusti a la seqüència de daus actual, s'anul·larà el patró de puntuació que seleccioneu i tindrà un valor de zero.</para
+></note>
+	<para
+>Tan aviat com trieu el patró de puntuació, el seu valor s'actualitzarà per a reflectir la seqüència de daus que teniu.</para>
+	<note
+><title
+>Nota:</title
+><para
+>La descripció detallada dels valors del patró de puntuació es troba a la secció <link linkend="rules_and_tips"
+>Les regles del joc, estratègies i consells</link
+> en aquest manual.</para
+></note>
+	<para
+>Immediatament després d'això, el vostre torn acabarà i començarà el torn del participant següent. Aquesta seqüència es repetirà unes tretze vegades i després finalitzarà la partida, es calcularan les puntuacions i s'atorgaran les puntuacions més altes.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Les regles del joc, estratègies i consells</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Les regles del joc</title>
+		<para
+>El tauler de puntuació del &kiriki; està dividit en catorze línies diferents. Cada línia conté un únic patró de puntuació i la puntuació dels jugadors obtinguda per una tirada que coincideix amb el patró. El patró de puntuació de cada línia es calcula de la manera següent:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>1s</guilabel
+>: la suma de tots els daus valorats en <quote
+>1</quote
+>.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>14112</quote
+>. La suma és: <quote
+>3</quote
+>=<quote
+>1</quote
+>+<quote
+>1</quote
+>+<quote
+>1</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>2s</guilabel
+>: la suma de tots els daus valorats en <quote
+>2</quote
+>.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>22422</quote
+>. La suma és: <quote
+>8</quote
+>=<quote
+>2</quote
+>+<quote
+>2</quote
+>+<quote
+>2</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>3s</guilabel
+>: la suma de tots els daus valorats en <quote
+>3</quote
+>.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>34132</quote
+>. La suma és: <quote
+>6</quote
+>=<quote
+>3</quote
+>+<quote
+>3</quote
+>. Daus a la pantalla: <quote
+>33333</quote
+>. La suma és: <quote
+>15</quote
+>=<quote
+>3</quote
+>+<quote
+>3</quote
+>+<quote
+>3</quote
+>+<quote
+>3</quote
+>+<quote
+>3</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>4s</guilabel
+>: la suma de tots els daus valorats en <quote
+>4</quote
+>.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>14142</quote
+>. La suma és: <quote
+>8</quote
+>=<quote
+>4</quote
+>+<quote
+>4</quote
+>. Daus a la pantalla: <quote
+>41414</quote
+>. La suma és: <quote
+>12</quote
+>=<quote
+>4</quote
+>+<quote
+>4</quote
+>+<quote
+>4</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>5s</guilabel
+>: la suma de tots els daus valorats en <quote
+>5</quote
+>.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>15155</quote
+>. La suma és: <quote
+>15</quote
+>=<quote
+>5</quote
+>+<quote
+>5</quote
+>+<quote
+>5</quote
+>. Daus a la pantalla: <quote
+>51555</quote
+>. La suma és: <quote
+>20</quote
+>=<quote
+>5</quote
+>+<quote
+>5</quote
+>+<quote
+>5</quote
+>+<quote
+>5</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>6s</guilabel
+>: la suma de tots els daus valorats en <quote
+>6</quote
+>.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>66616</quote
+>. La suma és: <quote
+>24</quote
+>=<quote
+>6</quote
+>+<quote
+>6</quote
+>+<quote
+>6</quote
+>+<quote
+>6</quote
+>. Daus a la pantalla: <quote
+>61616</quote
+>. La suma és: <quote
+>18</quote
+>=<quote
+>6</quote
+>+<quote
+>6</quote
+>+<quote
+>6</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Bonificació si 
+> 62</guilabel
+>: el jugador rep 35 punts addicionals si el valor resumit de tot el camp anterior és més gran que 62 punts.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Total superior</guilabel
+>: no és un camp que es pugui jugar, sinó només un resum de tots els camps anteriors.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Tres iguals</guilabel
+>: el valor resumit dels daus quan tres dels daus tenen el mateix valor.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>14121</quote
+>. La suma és: <quote
+>9</quote
+>=<quote
+>1</quote
+>+<quote
+>1</quote
+>+<quote
+>1</quote
+>+<quote
+>4</quote
+>+<quote
+>2</quote
+>. Daus a la pantalla: <quote
+>55151</quote
+>. La suma és: <quote
+>17</quote
+>=<quote
+>5</quote
+>+<quote
+>5</quote
+>+<quote
+>5</quote
+>+<quote
+>1</quote
+>+<quote
+>1</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Quatre iguals</guilabel
+>: el valor resumit dels daus quan quatre dels daus tenen el mateix valor.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>41444</quote
+>. La suma és: <quote
+>17</quote
+>=<quote
+>4</quote
+>+<quote
+>4</quote
+>+<quote
+>4</quote
+>+<quote
+>4</quote
+>+<quote
+>1</quote
+>. Daus a la pantalla: <quote
+>22522</quote
+>. La suma és: <quote
+>13</quote
+>=<quote
+>2</quote
+>+<quote
+>2</quote
+>+<quote
+>2</quote
+>+<quote
+>2</quote
+>+<quote
+>5</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Full</guilabel
+>: atorga 25 punts al jugador si la tanda dona com a resultat tres daus d'un tipus i una parella.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>11212</quote
+>. Daus a la pantalla: <quote
+>53353</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Escala petita</guilabel
+>: atorga 30 punts al jugador si la tanda dona com a resultat quatre daus de valor seqüencial.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>14312</quote
+>. La seqüència és: <quote
+>1</quote
+>,<quote
+>2</quote
+>,<quote
+>3</quote
+>,<quote
+>4</quote
+>. Daus a la pantalla: <quote
+>51643</quote
+>. La seqüència és: <quote
+>3</quote
+>,<quote
+>4</quote
+>,<quote
+>5</quote
+>,<quote
+>6</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Escala gran</guilabel
+>: atorga 40 punts al jugador si la tanda dona com a resultat cinc daus de valor seqüencial.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>34152</quote
+>. La seqüència és: <quote
+>1</quote
+>,<quote
+>2</quote
+>,<quote
+>3</quote
+>,<quote
+>4</quote
+>,<quote
+>5</quote
+>. Daus a la pantalla: <quote
+>53264</quote
+>. La seqüència és: <quote
+>2</quote
+>,<quote
+>3</quote
+>,<quote
+>4</quote
+>,<quote
+>5</quote
+>,<quote
+>5</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kiriki</guilabel
+>: atorga 50 punts al jugador si la tanda dona com a resultat cinc daus del mateix valor. Podeu anotar tants Kiriki com obtingueu, per cadascun després del primer, obtindreu un torn addicional al final de la partida.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>11111</quote
+>. Daus a la pantalla: <quote
+>33333</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Sort</guilabel
+>: el valor resumit de tots els daus que es mostren.<note
+><title
+>Exemple:</title
+><para
+>Daus a la pantalla: <quote
+>51143</quote
+>. La suma és: <quote
+>14</quote
+>=<quote
+>5</quote
+>+<quote
+>1</quote
+>+<quote
+>1</quote
+>+<quote
+>4</quote
+>+<quote
+>3</quote
+>. Daus a la pantalla: <quote
+>21526</quote
+>. La suma és: <quote
+>16</quote
+>=<quote
+>2</quote
+>+<quote
+>1</quote
+>+<quote
+>5</quote
+>+<quote
+>2</quote
+>+<quote
+>6</quote
+>.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Total inferior</guilabel
+>: no és un camp que es pugui jugar, sinó només un resum de tots els camps a partir de &nbsp;<quote
+>Tres iguals</quote
+> i inferior.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Suma total</guilabel
+>: no és un camp que es pugui jugar, sinó només una suma dels camps <quote
+>Total superior</quote
+> i <quote
+>Total inferior</quote
+>.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Altres regles i restriccions:</para>
+			<itemizedlist>
+				<listitem
+><para
+>Tota la tanda de joc es divideix en 13 torns.</para
+></listitem>
+				<listitem
+><para
+>Cada jugador pot fer d'una a tres tirades de daus per torn.</para
+></listitem>
+				<listitem
+><para
+>Un cop finalitzada la primera tirada, un jugador podrà realitzar tirades addicionals fins a dues vegades (tres tirades en total per torn).</para
+></listitem>
+				<listitem
+><para
+>El jugador no estarà obligat a realitzar tirades addicionals si la primera tirada dona un resultat satisfactori.</para
+></listitem>
+				<listitem
+><para
+>Cada tirada addicional pot incloure tots els daus o només els seleccionats.</para
+></listitem>
+				<listitem
+><para
+>Un jugador pot seleccionar els daus que desitja tornar a llançar fent clic sobre seu amb el ratolí.</para
+></listitem>
+				<listitem
+><para
+>Una vegada s'han tornat a llançar els daus, el seu valor anterior es perdrà i només serà vàlid el valor nou.</para
+></listitem>
+				<listitem
+><para
+>El resultat de la tirada es considerarà satisfactori si els valors mostrats dels daus es poden posar en un dels patrons de puntuació debatuts anteriorment.</para
+></listitem>
+				<listitem
+><para
+>Cada patró de puntuació individual només es podrà utilitzar una vegada per partida/per jugador. Per tant, una vegada que un jugador ha utilitzat el patró de puntuació, aquest mateix jugador ja no podrà tornar-lo a utilitzar. No obstant això, un altre jugador encara podrà utilitzar-lo, llevat que ja l'hagi utilitzat.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Resum de la interfície</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Elements de menú</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Nova</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Comença una partida nova.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Mostra les puntuacions</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Mostra la llista de les puntuacions més altes.</action
+> Quan la vostra puntuació actual de la partida excedeixi una de les deu puntuacions principals llistades, se us demanarà que hi afegiu el vostre nom. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+><guimenu
+>Joc</guimenu
+> <guimenuitem
+>Imprimeix...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Imprimeix el marcador actual.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Surt</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Surt</action
+> del &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Mou</guimenu
+> <guimenuitem
+>Consell</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Dona una pista ressaltant un o més daus de la tirada o una fila en el tauler de puntuació. En utilitzar aquesta característica, la puntuació no es considerarà una puntuació alta.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Mou</guimenu
+> <guimenuitem
+>Demo</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Juga una partida de demostració. Per a aturar el mode de demostració, comenceu una partida nova.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>De manera addicional, el &kiriki; té la configuració comuna al &kde; i els elements dels menús <guimenu
+>Arranjament</guimenu
+> i <guimenu
+>Ajuda</guimenu
+>. Per a obtenir més informació, llegiu les seccions sobre <ulink url="help:/fundamentals/menus.html#menus-settings"
+>El menú Arranjament</ulink
+> i <ulink url="help:/fundamentals/menus.html#menus-help"
+>El menú Ajuda</ulink
+> en els Fonaments del &kde;. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Preguntes més freqüents</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Vull canviar l'aparença d'aquest joc. Puc fer-ho? </para
+></question>
+ <answer
+><para
+>No. El &kiriki; actualment no té cap característica de temes.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>He comès un error. Puc desfer-lo? </para
+></question>
+ <answer
+><para
+>No. El &kiriki; no té l'opció <quote
+>Desfés</quote
+>.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Puc utilitzar el teclat per a jugar a aquest joc?</para
+></question>
+ <answer
+><para
+>No. Aquest joc no es pot jugar amb el teclat.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>No sé què fer aquí! Hi ha cap consell? </para
+></question>
+ <answer
+><para
+>Per a conèixer les regles i tàctiques del joc, llegiu la secció &nbsp;<link linkend="rules_and_tips"
+>Les regles del joc, estratègies i consells</link
+> en aquest manual.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>He de sortir del joc ara, però encara no he acabat. Puc desar el meu progrés?</para
+></question>
+ <answer
+><para
+>No. En el &kiriki; no hi ha una característica de <quote
+>Desa</quote
+>.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>La IA és massa ràpida! No puc veure el que està fent!</para
+></question>
+ <answer
+><para
+>Per a canviar la velocitat d'acció de la intel·ligència artificial, utilitzeu el diàleg de configuració del joc com es descriu a la secció <link linkend="configuration"
+>Configuració del joc</link
+> en aquest manual.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Configurar el joc</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Configuració del joc</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>El diàleg de configuració del &kiriki; permet configurar el nombre de participants, gestionar les seves identitats i els seus temps de resposta.</para>
+<note
+><title
+>Nota:</title
+><para
+>Podeu canviar els temps de resposta només per als jugadors conduïts per la intel·ligència artificial.</para
+></note>
+<para
+><guilabel
+>Nombre de jugadors</guilabel
+>: aquest camp defineix el nombre de jugadors per al &kiriki;. El valor permès oscil·la entre dos i sis.</para>
+
+<para
+><guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> Els camps numerats són les identitats dels jugadors participants. Podeu canviar els seus noms i especificar si seran controlats per un humà o conduïts per la intel·ligència artificial. Per a definir qui controla el jugador, utilitzeu una casella de selecció situada al costat dret, just al costat del quadre d'entrada del nom.</para>
+<para
+>El primer jugador sempre haurà d'estar controlat per un humà.</para>
+
+<para
+>Els canvis en el nombre de participants i les seves identitats s'aplicaran en la propera partida.</para>
+
+<para
+><guilabel
+>Retard entre els moviments de l'ordinador (ms)</guilabel
+>: permet especificar el retard entre els torns de la intel·ligència artificial. De manera predeterminada, el valor d'aquest camp és zero, el qual significa que la intel·ligència artificial reaccionarà instantàniament.</para>
+
+<note
+><title
+>Nota:</title
+><para
+>El valor màxim per a aquest camp és de 999 mil·lisegons.</para
+></note>
+
+<para
+>Utilitzeu <guilabel
+>Mida del tipus de lletra:</guilabel
+> i <guilabel
+>Alçada de la fila:</guilabel
+> per a ajustar el marcador al vostre gust.</para>
+<para
+>Si voleu jugar immediatament a l'inici del &kiriki;, inhabiliteu l'opció predeterminada <guilabel
+>Mostra la demostració del joc en iniciar</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Crèdits i llicència</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Copyright del programa 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Copyright de la documentació 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Copyright de la documentació 2007 Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+<para
+>Traductor de la documentació: &credits.Antoni.Bella;</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

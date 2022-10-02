@@ -1,0 +1,393 @@
+# translation of kiriki.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2007.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kiriki\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-20 00:42+0000\n"
+"PO-Revision-Date: 2009-02-26 10:08+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in,"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: configPage.ui:17
+#, kde-format
+msgid "Players"
+msgstr "खिलाड़ी"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player6IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player3IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player2IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player1IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player4IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player5IsHuman)
+#: configPage.ui:36 configPage.ui:73 configPage.ui:94 configPage.ui:121
+#: configPage.ui:148 configPage.ui:169
+#, kde-format
+msgid "human?"
+msgstr "मानव?"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: configPage.ui:51
+#, kde-format
+msgid "Number of players:"
+msgstr "खिलाड़ी के संख्या:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2)
+#: configPage.ui:63
+#, kde-format
+msgid "3."
+msgstr "3."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: configPage.ui:80
+#, kde-format
+msgid "2."
+msgstr "2."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: configPage.ui:104
+#, kde-format
+msgid "1."
+msgstr "1."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: configPage.ui:134
+#, kde-format
+msgid "4."
+msgstr "4."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: configPage.ui:155
+#, kde-format
+msgid "5."
+msgstr "5."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
+#: configPage.ui:176
+#, kde-format
+msgid "6."
+msgstr "6."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: configPage.ui:201
+#, kde-format
+msgid "Delay between computers move (msec):"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
+#: configPage.ui:215
+#, kde-format
+msgid "Font Size:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: configPage.ui:236
+#, kde-format
+msgid "Row Height:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
+#: configPage.ui:255
+#, kde-format
+msgid "Show demonstration game at startup"
+msgstr ""
+
+#: kiriki.cpp:174
+#, kde-format
+msgid ""
+"Starting the demo will end the current game. Any progress will be lost. Do "
+"you want to continue?"
+msgstr ""
+
+#: kiriki.cpp:207
+#, kde-format
+msgid "Demonstration. Press \"New\" to start a new game."
+msgstr ""
+
+#: kiriki.cpp:216
+#, kde-format
+msgid ""
+"Asking for a hint will disqualify the current game from entering the high "
+"score list."
+msgstr ""
+
+#: kiriki.cpp:217
+#, kde-format
+msgid "Confirm Hint Request"
+msgstr ""
+
+#: kiriki.cpp:218
+#, kde-format
+msgid "Give Hint Anyway"
+msgstr ""
+
+#: kiriki.cpp:237
+#, kde-format
+msgid "Roll highlighted die."
+msgid_plural "Roll highlighted dice."
+msgstr[0] ""
+msgstr[1] ""
+
+#: kiriki.cpp:347
+#, kde-format
+msgid "Changes will be applied on next game."
+msgstr "अगले खेल मं ये सब्बो बदलाव लागू होही."
+
+#: kiriki.kcfg:40
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "अलबर्ट"
+
+#: kiriki.kcfg:46
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "जेनेट"
+
+#: kiriki.kcfg:52
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "जेम्स"
+
+#: kiriki.kcfg:58
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "सांद्रा"
+
+#: kiriki.kcfg:64
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "थामस"
+
+#: kiriki.kcfg:70
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "मार्ग्रेट"
+
+#: lateralwidget.cpp:30
+#, kde-format
+msgid "&Roll"
+msgstr "पांसा फेंकव (&R)"
+
+#: lateralwidget.cpp:198
+#, kde-format
+msgid "Roll %1 of 3"
+msgstr "3 मं से %1 पांसा"
+
+#: main.cpp:30 scores.cpp:77
+#, kde-format
+msgid "Kiriki"
+msgstr "किरिकि"
+
+#: main.cpp:32
+#, fuzzy, kde-format
+#| msgid "A Yahtzee dice game for KDE"
+msgid "A Yahtzee dice game by KDE"
+msgstr "केडीई बर याद्जी पांसे वाले खेल"
+
+#: main.cpp:34
+#, kde-format
+msgid "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005-2007 अल्बर्ट एस्टल्स सिड"
+
+#: main.cpp:37
+#, kde-format
+msgid "Albert Astals Cid"
+msgstr "अलबर्ट एस्टल्स सिड"
+
+#: scores.cpp:63
+#, kde-format
+msgid "1s"
+msgstr "1से."
+
+#: scores.cpp:64
+#, kde-format
+msgid "2s"
+msgstr "2से."
+
+#: scores.cpp:65
+#, kde-format
+msgid "3s"
+msgstr "3से."
+
+#: scores.cpp:66
+#, kde-format
+msgid "4s"
+msgstr "4s"
+
+#: scores.cpp:67
+#, kde-format
+msgid "5s"
+msgstr "5s"
+
+#: scores.cpp:68
+#, kde-format
+msgid "6s"
+msgstr "6s"
+
+#: scores.cpp:69
+#, kde-format
+msgid "Bonus if > 62"
+msgstr "बोनस यदि > 62"
+
+#: scores.cpp:70
+#, kde-format
+msgid "Upper total"
+msgstr "ऊपरी योग"
+
+#: scores.cpp:72
+#, kde-format
+msgid "3 of a Kind"
+msgstr "एक किसिम के 3"
+
+#: scores.cpp:73
+#, kde-format
+msgid "4 of a Kind"
+msgstr "एक किसिम के 4"
+
+#: scores.cpp:74
+#, kde-format
+msgid "Full House"
+msgstr "फुल हाउस"
+
+#: scores.cpp:75
+#, kde-format
+msgid "Small Straight"
+msgstr "छोटा सीधा"
+
+#: scores.cpp:76
+#, kde-format
+msgid "Large Straight"
+msgstr "बड़ा सीधा"
+
+#: scores.cpp:78
+#, kde-format
+msgid "Chance"
+msgstr "अवसर"
+
+#: scores.cpp:79
+#, kde-format
+msgid "Lower Total"
+msgstr "निम्न योग"
+
+#: scores.cpp:81
+#, kde-format
+msgid "Grand Total"
+msgstr "महा योग"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">Number of players:</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">खिलाड़ियों के संख्या:</p></body></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">2.</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">2.</p></body></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">1.</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">1.</p></body></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">4.</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">4.</p></body></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">5.</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">5.</p></body></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">6.</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">6.</p></body></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">Delay between computers move (msec):</p></body></html>"
+#~ msgstr ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style="
+#~ "\" white-space: pre-wrap; font-family:Sans Serif; font-weight:400; font-"
+#~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
+#~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+#~ "indent:0px;\">कम्प्यूटर के चाल के बीच अंतराल (मि. से.):</p></body></html>"

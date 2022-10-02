@@ -1,0 +1,775 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Swedish "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Handbok &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>2021-07-06</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Denna dokumentation beskriver spelet &kiriki;, version 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>spel</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>tärningar</keyword>
+	<keyword
+>spelhall</keyword>
+	<keyword
+>tärningsspel</keyword>
+	<keyword
+>tärningsspel</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>sex spelare</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Inledning</title
+> <!-- do not change this! -->
+	<note
+><title
+>Speltyp:</title
+><para
+>Tärningar, spelhall</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Antal möjliga spelare:</title
+><para
+>Sex</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Spelbrädet i &kiriki;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>&kiriki; är ett vanebildande och roligt tärningsspel av &kde;, konstruerat för att spelas av så många som sex spelare. Deltagare ska samla poäng genom att kasta fem tärningar upp till tre gånger per omgång. Varje kast skapar en specifik kombination av tal som spelaren antingen kan acceptera eller avslå. Dock kan varje specifik kombination bara accepteras en gång. Efter tretton omgångar slutar spelet, och poängen jämförs. Spelaren med flest poäng vinner spelet. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Hur man spelar</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Syfte:</title
+><para
+>Tjäna fler poäng än någon av motspelarna.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>När &kiriki; väl har startat, ges den första kombinationen till den första spelaren omedelbart. Om du är den första spelaren är det din tur, annars måste du vänta till alla andra spelare gör sina kast.</para>
+	<note
+><title
+>Observera:</title
+><para
+>Normalt, om inte spelinställningarna har ändrats, och i spelläget med en ensam spelare, styrs den första spelaren av en människa (du), medan alla andra fem spelare styrs av den artificiella intelligensen.</para
+></note>
+	<para
+>Så fort det är din tur, är det första du ska göra att betrakta det aktuella kastet. Var och en av de fem tärningarna till vänster på spelskärmen har ett specifikt värde. Kontrollera sekvensen för att se om några av dessa värden formar något av poängmönstren.</para>
+	<note
+><title
+>Observera:</title
+><para
+>Den detaljerade beskrivningen av poängmönstrens värden finns i avsnittet <link linkend="rules_and_tips"
+>Spelets regler, strategi och tips</link
+> i handboken.</para
+></note>
+	<para
+>Kom ihåg att kombinationen kan passa in på fler än ett poängmönster. I så fall måste du bestämma vilket poängmönster som ger dig flest poäng.</para>
+	<para
+>I händelse den nuvarande följden inte motsvarar något poängmönster, eller motsvarar ett poängmönster som du redan har använt, har du ytterligare två kast på dig att rätta till situationen. Markera tärningarna du inte är nöjd med genom att klicka på dem med musen, för att använda ditt andra (eller tredje) kast, och klicka på knappen <guibutton
+>Kasta</guibutton
+> som är placerad närmast under tärningarna. Det gör att tärningarna i fråga kastas igen, och på så sätt ändras deras värden.</para>
+	<para
+>När du har gjort det tredje omkastet måste du välja poängmönster som passar ihop med den befintliga tärningsföljden. Om inget av poängmönstren passar ihop med följden, kan du antingen använda poängmönstret <guilabel
+>Chans</guilabel
+>, eller bara välja vilket poängmönster som helst i din poängtabell.</para>
+   <note
+><title
+>Observera:</title
+><para
+>Om du väljer ett poängmönster som inte passar ihop med den aktuella tärningsföljden, blir poängmönstret du väljer tomt och av inget värde.</para
+></note>
+	<para
+>Så fort du har valt poängmönster uppdateras dess värde för att motsvara tärningsföljden du för närvarande har.</para>
+	<note
+><title
+>Observera:</title
+><para
+>Den detaljerade beskrivningen av poängmönstrens värden finns i avsnittet <link linkend="rules_and_tips"
+>Spelets regler, strategi och tips</link
+> i handboken.</para
+></note>
+	<para
+>Direkt därefter avslutas din tur, och nästa deltagares tur börjar. Sekvensen upprepas tretton gånger, och därefter är spelet slut, poängen beräknas och den högsta poängen ges.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Spelets regler, strategi och tips</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Spelregler</title>
+		<para
+>Poängtavlan i &kiriki; är uppdelad i fjorton olika rader. Varje rad innehåller ett enda poängmönster och spelarens poäng som erhålls för ett kast som motsvarar mönstret. Poängmönstret på varje rad beräknas på följande sätt:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>Ettor</guilabel
+>: Summan av alla tärningar med värdet ‘1’.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '14112'. Summan är: '3'='1'+'1'+'1'. Visade tärningar: '51111'. Summan är: '4'='1'+'1'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Tvåor</guilabel
+>: Summan av alla tärningar med värdet ‘2’.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '22422'. Summan är: '8'='2'+'2'+'2'+'2'. Visade tärningar: '42322'. Summan är: '6'='2'+'2'+'2'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Treor</guilabel
+>: Summan av alla tärningar med värdet ‘3’.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '34132'. Summan är: '6'='3'+'3'. Visade tärningar: '33333'. Summan är: '15'='3'+'3'+'3'+'3'+'3'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Fyror</guilabel
+>: Summan av alla tärningar med värdet ‘4’.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '14142'. Summan är: '8'='4'+'4'. Visade tärningar: '41414'. Summan är: '12'='4'+'4'+'4'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Femmor</guilabel
+>: Summan av alla tärningar med värdet ‘5’.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '15155'. Summan är: '15'='5'+'5'+'5'. Visade tärningar: '51555'. Summan är: '20'='5'+'5'+'5'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Sexor</guilabel
+>: Summan av alla tärningar med värdet ‘6’.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '66616'. Summan är: '24'='6'+'6'+'6'+'6'. Visade tärningar: '61616'. Summan är: '18'='6'+'6'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Bonus om 
+> 62</guilabel
+>: Spelaren erhåller ytterligare 35 poäng om summan av alla värden i fälten ovan är större än 62 poäng.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Övre summa</guilabel
+>: Det är inte ett spelbart fält, utan bara en summering av alla fälten ovanför.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Triss</guilabel
+>: Summerat värde av tärningarna när tre av dem har samma värde.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '14121'. Summan är: '9'='1'+'1'+'1'+'4'+'2'. Visade tärningar:  '55151'. Summan är: '17'='5'+'5'+'5'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Fyrtal</guilabel
+>: Summerat värde av tärningarna när fyra av dem har samma värde.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '41444'. Summan är: '17'='4'+'4'+'4'+'4'+'1'. Visade tärningar:  '22522'. Summan är: '13'='2'+'2'+'2'+'2'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Kåk</guilabel
+>: Spelaren får 25 poäng om omgången ger resultatet tre tärningar av en sort och ett par.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '11212'. Visade tärningar:  '53353'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Liten stege</guilabel
+>: Spelaren får 30 poäng om omgången ger fyra tärningar med värden i följd som resultat.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '14312'. Följden är: '1','2','3','4'. Visade tärningar:  '51643'. Följden är: '3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Stor stege</guilabel
+>: Spelaren får 40 poäng om omgången ger fem tärningar med värden i följd som resultat.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '34152'. Följden är: '1','2','3','4','5'. Visade tärningar:  '53264'. Följden är: '2','3','4','5','6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: Spelaren får 50 poäng om omgången ger fem tärningar med samma värde. Du kan slå hur många &kiriki; som helst, för var och en efter den första får du ytterligare ett kast i slutet av spelet.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '11111'. Visade tärningar:  '33333'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Chans</guilabel
+>: Summerat värde av alla tärningar som för närvarande visas.<note
+><title
+>Exempel:</title
+><para
+>Visade tärningar:  '51143'. Summan är: '14'='5'+'1'+'1'+'4'+'3'. Visade tärningar:  '21526'. Summan är: '16'='2'+'1'+'5'+'2'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Nedre summa</guilabel
+>: Det är inte ett spelbart fält, utan bara en summering av alla fälten med början på <quote
+>Triss</quote
+> och neråt.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Totalsumma</guilabel
+>: Det är inte ett spelbart fält, utan bara en summering av fälten <quote
+>Övre summa</quote
+> och <quote
+>Nedre summa</quote
+>.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Övriga regler och begränsningar:</para>
+			<itemizedlist>
+				<listitem
+><para
+>Hela spelet är uppdelat i 13 omgångar.</para
+></listitem>
+				<listitem
+><para
+>Varje spelare kan göra ett till tre kast med tärningarna per omgång.</para
+></listitem>
+				<listitem
+><para
+>När det första kastet har gjorts, kan en spelare utföra upp till två ytterligare kast (totalt tre kast per omgång).</para
+></listitem>
+				<listitem
+><para
+>Spelaren är inte tvungen att utföra ytterligare kast om det första kastet ger tillfredsställande resultat.</para
+></listitem>
+				<listitem
+><para
+>Varje ytterligare kast kan antingen omfatta alla tärningar, eller bara de markerade.</para
+></listitem>
+				<listitem
+><para
+>En spelare kan markera tärningarna som ska kastas om genom att klicka på dem med musen.</para
+></listitem>
+				<listitem
+><para
+>När tärningarna väl har kastats om är deras föregående värden förlorade, och bara de nya värdena är giltiga.</para
+></listitem>
+				<listitem
+><para
+>Kastets resultat anses tillfredsställande om tärningarnas visade värden kan placeras i ett av poängmönstren som beskrivs ovan.</para
+></listitem>
+				<listitem
+><para
+>Varje enskilt poängmönster kan bara användas en gång per omgång och spelare. När väl poängmönstret har använts av en spelare, kan det därför inte längre användas av samma spelare. En annan spelare kan dock fortfarande använda det, om inte han också har gjort slut på samma mönster.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Översikt av gränssnittet</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Menyalternativ</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Ny</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Startar ett nytt spel.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Visa bästa resultat</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Visar listan med bästa resultat.</action
+> När dina aktuella spelpoäng överstiger ett av de tio listade bästa resultaten, blir du tillfrågad om att lägga till ditt namn. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Skriv ut...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Skriver ut aktuell poängtavla.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Avsluta</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Avslutar</action
+> &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Tips</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Ge ett tips genom att markera en eller flera tärningar att slå med på poängtavlan. Används funktionen kommer inte resultatet betraktas som bästa resultat.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Demo</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Spela ett demonstrationsspel. Starta ett nytt spel för att stoppa demonstrationen.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Dessutom har &kiriki; de vanliga menyalternativen <guimenu
+>Inställningar</guimenu
+> och <guimenu
+>Hjälp</guimenu
+> i &kde;. För mer information, läs avsnitten  <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Menyn Inställningar</ulink
+> och <ulink url="help:/fundamentals/menus.html#menus-help"
+>Menyn Hjälp</ulink
+> i &kde;:s Grunder. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Vanliga frågor</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Jag vill ändra hur spelet ser ut. Kan man göra det? </para
+></question>
+ <answer
+><para
+>Nej. &kiriki; har för närvarande inga teman.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Jag gjorde ett misstag. Kan man ångra sig? </para
+></question>
+ <answer
+><para
+>Nej. &kiriki; har inget alternativ för att <quote
+>ångra</quote
+> sig.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Kan man använda tangentbordet för att spela?</para
+></question>
+ <answer
+><para
+>Nej. Spelet &kiriki; kan inte spelas genom att använda tangentbordet.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Jag kan inte räkna ut vad man ska göra här. Finns det några tips? </para
+></question>
+ <answer
+><para
+>Läs avsnittet <link linkend="rules_and_tips"
+>Spelets regler, strategi och tips</link
+> i handboken för att lära dig spelets regler och taktik.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Jag måste avsluta spelet nu, men jag är inte klar än. Kan man spara det man har gjort?</para
+></question>
+ <answer
+><para
+>Nej. Det finns ingen funktion för att <quote
+>spara</quote
+> i &kiriki;.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Den artificiella intelligensen är för snabb! Man kan inte se vad den gör.</para
+></question>
+ <answer
+><para
+>Använd spelets inställningsdialogruta som beskrivs i avsnittet <link linkend="configuration"
+>Spelanpassning</link
+> i handboken för att ändra den artificiella intelligensens spelhastighet.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Spelanpassning</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Spelanpassning</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Inställningsdialogrutan i &kiriki; låter dig ställa in antal deltagare, hantera deras identiteter, och deras svarstider.</para>
+<note
+><title
+>Observera:</title
+><para
+>Du kan bara ändra svarstider för spelare som styrs av artificiell intelligens.</para
+></note>
+<para
+><guilabel
+>Antal spelare:</guilabel
+> Det här fältet definierar antal spelare i &kiriki;. Värdet som tillåts går från två till sex.</para>
+
+<para
+><guilabel
+>1.</guilabel
+> till <guilabel
+>6.</guilabel
+> Numrerade fält är de deltagande spelarnas identiteter. Du kan ändra deras namn, samt ange om de ska styras av en människa, eller kontrolleras av den artificiella intelligensen. Använd kryssrutan placerad på höger sida intill inmatningsrutan för namnet för att definiera vem som styr spelaren.</para>
+<para
+>Den första spelaren måste alltid styras av en människa.</para>
+
+<para
+>Ändringar av antal deltagare och deras identiteter används vid nästa spel.</para>
+
+<para
+><guilabel
+>Fördröjning mellan datorns drag (ms):</guilabel
+> låter dig ange fördröjningen mellan den artificiella intelligensens drag. Fältets värde är normalt noll, vilket betyder att den artificiella intelligensen reagerar omedelbart.</para>
+
+<note
+><title
+>Observera:</title
+><para
+>Det maximala värdet i fältet är 999 millisekunder.</para
+></note>
+
+<para
+>Använd <guilabel
+>Teckenstorlek:</guilabel
+> och <guilabel
+>Radhöjd:</guilabel
+> för att justera poängtavlan enligt dina önskemål.</para>
+<para
+>Om du omedelbart vill börja spela när &kiriki; startas, inaktivera standardalternativet <guilabel
+>Visa demonstrationsspel vid start</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Tack till och licens</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Program copyright 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Dokumentation copyright 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Dokumentation copyright 2007 Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+<para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@bredband.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

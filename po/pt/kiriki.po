@@ -1,0 +1,300 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kiriki\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-20 00:42+0000\n"
+"PO-Revision-Date: 2017-03-14 17:31+0000\n"
+"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
+"Language-Team: pt <kde-i18n-pt@kde.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-IgnoreConsistency: &Roll\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-POFile-SpellExtra: Astals Kiriki ms Yahtzee\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "José Nuno Pires,Pedro Morais"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zepires@gmail.com,morais@kde.org"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: configPage.ui:17
+#, kde-format
+msgid "Players"
+msgstr "Jogadores"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player6IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player3IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player2IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player1IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player4IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player5IsHuman)
+#: configPage.ui:36 configPage.ui:73 configPage.ui:94 configPage.ui:121
+#: configPage.ui:148 configPage.ui:169
+#, kde-format
+msgid "human?"
+msgstr "humano?"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: configPage.ui:51
+#, kde-format
+msgid "Number of players:"
+msgstr "Número de jogadores:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2)
+#: configPage.ui:63
+#, kde-format
+msgid "3."
+msgstr "3."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: configPage.ui:80
+#, kde-format
+msgid "2."
+msgstr "2."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: configPage.ui:104
+#, kde-format
+msgid "1."
+msgstr "1."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: configPage.ui:134
+#, kde-format
+msgid "4."
+msgstr "4."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: configPage.ui:155
+#, kde-format
+msgid "5."
+msgstr "5."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
+#: configPage.ui:176
+#, kde-format
+msgid "6."
+msgstr "6."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: configPage.ui:201
+#, kde-format
+msgid "Delay between computers move (msec):"
+msgstr "Atraso entre jogadas do computador (ms):"
+
+#. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
+#: configPage.ui:215
+#, kde-format
+msgid "Font Size:"
+msgstr "Tamanho da Letra:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: configPage.ui:236
+#, kde-format
+msgid "Row Height:"
+msgstr "Altura da Linha:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
+#: configPage.ui:255
+#, kde-format
+msgid "Show demonstration game at startup"
+msgstr "Mostrar um jogo de demonstração no arranque"
+
+#: kiriki.cpp:174
+#, kde-format
+msgid ""
+"Starting the demo will end the current game. Any progress will be lost. Do "
+"you want to continue?"
+msgstr ""
+"Se iniciar a demonstração, irá terminar o jogo actual. Toda a evolução até "
+"agora perder-se-á. Deseja continuar?"
+
+#: kiriki.cpp:207
+#, kde-format
+msgid "Demonstration. Press \"New\" to start a new game."
+msgstr "Demonstração. Carregue em \"Novo\" para começar um jogo do zero."
+
+#: kiriki.cpp:216
+#, kde-format
+msgid ""
+"Asking for a hint will disqualify the current game from entering the high "
+"score list."
+msgstr ""
+"O pedido de uma dica irá desqualificar o jogo actual face à entrada na lista "
+"de recordes."
+
+#: kiriki.cpp:217
+#, kde-format
+msgid "Confirm Hint Request"
+msgstr "Confirmar o Pedido de Dica"
+
+#: kiriki.cpp:218
+#, kde-format
+msgid "Give Hint Anyway"
+msgstr "Dar a Dica à Mesma"
+
+#: kiriki.cpp:237
+#, kde-format
+msgid "Roll highlighted die."
+msgid_plural "Roll highlighted dice."
+msgstr[0] "Lance o dado realçado."
+msgstr[1] "Lance os dados realçados."
+
+#: kiriki.cpp:347
+#, kde-format
+msgid "Changes will be applied on next game."
+msgstr "As mudanças serão aplicadas no jogo seguinte."
+
+#: kiriki.kcfg:40
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Alberto"
+
+#: kiriki.kcfg:46
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Joana"
+
+#: kiriki.kcfg:52
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Jaime"
+
+#: kiriki.kcfg:58
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Sandra"
+
+#: kiriki.kcfg:64
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Tomás"
+
+#: kiriki.kcfg:70
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Margarida"
+
+#: lateralwidget.cpp:30
+#, kde-format
+msgid "&Roll"
+msgstr "Lança&r"
+
+#: lateralwidget.cpp:198
+#, kde-format
+msgid "Roll %1 of 3"
+msgstr "Lançamento %1 de 3"
+
+#: main.cpp:30 scores.cpp:77
+#, kde-format
+msgid "Kiriki"
+msgstr "Kiriki"
+
+#: main.cpp:32
+#, kde-format
+msgid "A Yahtzee dice game by KDE"
+msgstr "Um jogo de dados Yahtzee do KDE"
+
+#: main.cpp:34
+#, kde-format
+msgid "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005-2007 Albert Astals Cid"
+
+#: main.cpp:37
+#, kde-format
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: scores.cpp:63
+#, kde-format
+msgid "1s"
+msgstr "1s"
+
+#: scores.cpp:64
+#, kde-format
+msgid "2s"
+msgstr "2s"
+
+#: scores.cpp:65
+#, kde-format
+msgid "3s"
+msgstr "3s"
+
+#: scores.cpp:66
+#, kde-format
+msgid "4s"
+msgstr "4s"
+
+#: scores.cpp:67
+#, kde-format
+msgid "5s"
+msgstr "5s"
+
+#: scores.cpp:68
+#, kde-format
+msgid "6s"
+msgstr "6s"
+
+#: scores.cpp:69
+#, kde-format
+msgid "Bonus if > 62"
+msgstr "Bónus se > 62"
+
+#: scores.cpp:70
+#, kde-format
+msgid "Upper total"
+msgstr "Total superior"
+
+#: scores.cpp:72
+#, kde-format
+msgid "3 of a Kind"
+msgstr "3 de Cada"
+
+#: scores.cpp:73
+#, kde-format
+msgid "4 of a Kind"
+msgstr "4 de Cada"
+
+#: scores.cpp:74
+#, kde-format
+msgid "Full House"
+msgstr "Casa Cheia"
+
+#: scores.cpp:75
+#, kde-format
+msgid "Small Straight"
+msgstr "Sequência Pequena"
+
+#: scores.cpp:76
+#, kde-format
+msgid "Large Straight"
+msgstr "Sequência Grande"
+
+#: scores.cpp:78
+#, kde-format
+msgid "Chance"
+msgstr "Vez"
+
+#: scores.cpp:79
+#, kde-format
+msgid "Lower Total"
+msgstr "Total Inferior"
+
+#: scores.cpp:81
+#, kde-format
+msgid "Grand Total"
+msgstr "Total Completo"

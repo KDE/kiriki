@@ -1,0 +1,728 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kiriki;">
+  <!ENTITY kappversion "0.2"
+><!--Applicaion version. Use this variable everywhere it's needed.-->  
+  <!ENTITY package "kdegames"
+>  <!-- do not change this! -->
+  <!ENTITY % French "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+ 
+<book lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Manuel de &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			&traducteurStanislasZeller; &relecteurLudovicGrossard; 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice
+> 
+<date
+>01/02/2010</date
+><!-- Date of (re)writing, or update.-->
+<releaseinfo
+>&kappversion;</releaseinfo
+><!-- Application version number. Use the variable definitions within header to change this value.-->
+ 
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>Cette documentation décrit le jeu &kiriki; version &kappversion;</para>
+</abstract>
+ 
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>jeu</keyword
+> <!-- do not change this! -->
+	<keyword
+>Kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>dés</keyword>
+	<keyword
+>arcade</keyword>
+	<keyword
+>jeu de dés</keyword>
+	<keyword
+>jouer aux dés</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>six joueurs</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Introduction</title
+> <!-- do not change this! -->
+	<note
+><title
+>Type de jeu : </title
+><para
+>Dés, arcade</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Nombre possible de joueurs : </title
+><para
+>Six</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<para
+>&kiriki; est un jeu de dés captivant et sympa pour &kde;, conçu pour être joué par six joueurs maximum. Les participants doivent collecter des points en lançant cinq dés sur trois tours. Chaque lancé génère une combinaison spécifique de nombres que le joueur est libre soit d'accepter soit de décliner. Cependant, chaque combinaison spécifique de nombres peut être acceptée seulement une fois. Après treize tours, la partie prend fin et les scores sont comparés. Le joueur avec le plus grand nombre de points gagne la partie. </para>
+</chapter>
+ 
+<chapter id="howto"
+><title
+>Comment jouer</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Objectif : </title
+><para
+>Acquérir plus de points que les adversaires.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Une fois que &kiriki; démarre, la première combinaison est distribuée pour le premier joueur. Si vous êtes ce premier joueur, c'est donc à votre tour, sinon vous devez attendre jusqu'à ce que tous les autres joueurs aient terminé leur tour.</para>
+	<note
+><title
+>Remarque : </title
+><para
+>Par défaut, à moins que la configuration de jeu n'ait été modifiée, et en mode joueur simple, le premier joueur est contrôlé par un humain (vous), les cinq autres joueurs sont contrôlés par l'ordinateur.</para
+></note>
+	<para
+>Une fois votre tour arrivé, la première chose que vous devez faire est d'examiner le lancé actuel. Chacun des cinq dés sur le coté gauche de l'écran de jeu a une valeur spécifique. Vérifiez la séquence pour voir si celle ci correspond à une valeur de « score type ».</para>
+	<note
+><title
+>Remarque : </title
+><para
+>La description détaillée des « scores types » peut être trouvée dans la section <link linkend="rules_and_tips"
+>Règles du jeu, stratégies et astuces</link
+> de ce manuel.</para
+></note>
+	<para
+>Gardez à l'esprit que la combinaison peut correspondre à plusieurs « scores types ». Dans ce cas, vous déterminerez quel « score type » vous rapportera le plus de points.</para>
+	<para
+>Dans le cas où la séquence actuelle ne correspond à aucun « score type », ou correspond à un « score type » que vous avez déjà utilisé, vous avez deux lancés pour améliorer la situation. Pour utiliser le deuxième et troisième lancé, sélectionnez le ou les dés qui ne vous satisfont pas en cliquant dessus avec la souris et cliquez sur le bouton <guibutton
+>Lancer</guibutton
+> situé en dessous des dés. Les dés sélectionnés sont relancés et leurs valeurs modifiées.</para>
+	<para
+>Après que vous avez effectué vos trois lancés, vous devez choisir le score défini qui correspond à la séquence de dés affichées. Si aucun de ces « scores types » ne correspond, vous pouvez utiliser le « score type » <guilabel
+>Chance</guilabel
+>, ou simplement sélectionner un autre score sur la table de score.</para>
+   <note
+><title
+>Remarque : </title
+><para
+>Si vous sélectionnez un « score type » qui ne correspond pas à votre séquence de dés actuelle, le « score type » que vous sélectionnez deviendra nul et affichera la valeur de zéro point.</para
+></note>
+	<para
+>Dès que vous choisissez un « score type », cette valeur se met à jour pour refléter la séquence de dés que vous avez actuellement.</para>
+	<note
+><title
+>Remarque : </title
+><para
+>La description détaillée des valeurs de « scores types » peuvent être trouvées dans la section <link linkend="rules_and_tips"
+>Règles du jeu, stratégies et astuces</link
+> de ce manuel.</para
+></note>
+	<para
+>Quand votre tour prend fin, celui du prochain participant démarre. Cette séquence se répète treize fois et ensuite la partie se termine. Les scores sont calculés et les meilleurs scores sont attribués.</para>
+</chapter>
+ 
+<chapter id="rules_and_tips"
+><title
+>Règles du jeu, stratégies et astuces</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Règles du jeu</title>
+		<para
+>Le tableau de score de &kiriki; est divisé en quatorze lignes différentes. Chaque ligne a un « score type » et les joueurs un score gagné pour un lancé correspondant à un type. Le « score type » pour chaque ligne est calculé comme suit : <itemizedlist
+><listitem
+><para
+><guilabel
+>1s</guilabel
+> : addition de tous les dés valant 1.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 14112. Le score vaut : 3 = 1 + 1 + 1. Les dés affichent : 51111. Le score vaut : 4 = 1 + 1 + 1 + 1.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>2s</guilabel
+> : addition de tous les dés valant 2.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 22422. Le score vaut : 8 = 2 + 2 + 2 + 2. Les dés affichent : 42322. Le score vaut : 6 = 2 + 2 + 2.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>3s</guilabel
+> : addition de tous les dés valant 3.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 34132. Le score vaut : 6 = 3 + 3. Les dés affichent : 33333. Le score vaut : 15 = 3 + 3 + 3 + 3 + 3. </para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>4s</guilabel
+> : addition de tous les dés valant 4.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 14142. Le score vaut : 8 = 4 + 4. Les dés affichent : 41414. Le score vaut : 12 = 4 + 4 + 4. </para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>5s</guilabel
+> : addition de tous les dés valant 5.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 15155. Le score vaut : 15 = 5 + 5 + 5. Les dés affichent : 51555. Le score vaut : 20 = 5 + 5 + 5 + 5.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>6s</guilabel
+> : addition de tous les dés valant 6.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 61616. Le score vaut : 24 = 6 + 6 + 6 + 6. Les dés affichent : 61616. Le score vaut : 18 = 6 + 6 + 6.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Bonus si 
+> 62 </guilabel
+> : le joueur gagne 35 points supplémentaire si la valeur totale de tous les champs du dessus sont supérieurs à 62 points.</para
+></listitem
+> <listitem
+><para
+><guilabel
+>Total du haut</guilabel
+> : ce n'est pas un champ jouable, mais seulement un résumé de tous les champs du dessus.</para
+></listitem
+> <listitem
+><para
+><guilabel
+>3 du même type</guilabel
+> : valeur totale des dés quand trois des dés ont la même valeur<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 14121. Le score vaut : 9 = 1 + 1 + 1 + 4 + 2. Les dés affichent : 55151. Le score vaut : 17 = 5 + 5 + 5 + 1 + 1.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>4 du même type</guilabel
+> : valeur totale des dés quand quatre des dés ont la même valeur.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 41444. Le score vaut : 17 = 4 + 4 + 4 + 4 + 1. Les dés affichent : 22422. Le score vaut : 13 = 2 + 2 + 2 + 2 + 4.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Full</guilabel
+> : le joueur gagne 25 points si le résultat du tour est d'une paire et un brelan.<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 11212. Les dés affichent : 53353.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Petite suite</guilabel
+> : le joueur gagne 30 points si le résultat du tour est une suite de quatre chiffres. <note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 14312. La séquence est : 1, 2, 3, 4. Les dés affichent : 51643. La séquence est : 3, 4, 5, 6. </para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Grande suite</guilabel
+> : le joueur gagne 30 points si le résultat du tour est une suite de cinq chiffres. <note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 34152. La séquence est : 1, 2, 3, 4, 5. Les dés affichent : 53264. La séquence est : 2, 3, 4, 5, 6.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+> : le joueur gagne 50 points et un tour supplémentaire si le résultat du tour est cinq dés de même valeur. <note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 11111. Les dés affichent : 33333.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Chance</guilabel
+> : les valeurs de tous les dés sont additionnées<note
+><title
+>Exemple : </title
+><para
+>Les dés affichent : 51143. Le score vaut : 14 = 5 + 1 + 1 + 4 + 3. Les dés affichent : 21526. Le score vaut : 16 = 2 + 1 + 5 + 2 + 6.</para
+></note
+></para
+></listitem
+> <listitem
+><para
+><guilabel
+>Total du bas</guilabel
+> : ce n'est pas un champ jouable, mais seulement un résumé de tous les champs de « 3 de même type » et suivant.</para
+></listitem
+> <listitem
+><para
+><guilabel
+>Grand total</guilabel
+> : ce n'est pas un champ jouable, mais seulement un résumé des champs « Total du haut » et « Total du bas ». </para
+></listitem
+> </itemizedlist
+> Autres règles et contraintes :  <itemizedlist>
+				<listitem
+><para
+>La partie complète est divisée en treize tours.</para
+></listitem>
+				<listitem
+><para
+>Chaque joueur peut lancer trois fois les dés par tour.</para
+></listitem>
+				<listitem
+><para
+>Après que le premier lancé a été réalisé, un joueur peut relancer deux fois les dés (trois fois par tour).</para
+></listitem>
+				<listitem
+><para
+>Le joueur n'est pas obligé de relancer les dés si son premier lancé apporte des résultats satisfaisants.</para
+></listitem>
+				<listitem
+><para
+>Chaque lancé additionnel concerne tous les dés, ou seulement ceux sélectionnés.</para
+></listitem>
+				<listitem
+><para
+>Un joueur peut sélectionner le ou les dés à être relancés en cliquant dessus avec la souris.</para
+></listitem>
+				<listitem
+><para
+>Une fois que le dé a été relancé, la valeur précédente est perdue et seule la nouvelle est valable.</para
+></listitem>
+				<listitem
+><para
+>Le résultat du lancé est considéré comme satisfaisant si les valeurs du dé à l'affichage trouvent une correspondance dans les « scores types » décrits au-dessus.</para
+></listitem>
+				<listitem
+><para
+>Un « score type » ne peut être seulement utilisé qu'une fois par partie et par joueur. En conséquence, une fois que le « score type » a été utilisé par un joueur, il ne peut plus être utilisé par la même joueur. Cependant, un autre joueur peut toujours l'utiliser, à moins qu'il a déjà utilisé le même « score type ».</para
+></listitem>
+			</itemizedlist>
+		</para>
+	</sect1>
+</chapter
+> 
+ 
+<chapter id="interface"
+><title
+>Vue d'ensemble de l'interface</title
+> <!-- do not change this! -->
+<sect1 id="game-menu">
+	<title
+>Le menu Jeu</title>
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jeu</guimenu
+> <guimenuitem
+>Nouveau</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Démarre une nouvelle partie.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jeu</guimenu
+> <guimenuitem
+>Afficher les meilleurs scores</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Affiche la liste des meilleurs scores</action
+> Quand le score de la partie courante dépasse un des 10 meilleurs scores listés, vous pouvez saisir votre nom de joueur. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jeu</guimenu
+> <guimenuitem
+>Imprimer...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Imprime le tableau de score courant.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jeu</guimenu
+> <guimenuitem
+>Quitter</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Quitte</action
+> &kiriki;.</para
+></listitem>
+			</varlistentry>
+		</variablelist>
+</sect1>
+<sect1 id="settings-menu">
+	<title
+>Le menu Configuration</title>
+		<variablelist>
+			<varlistentry id="settings-menu-shortcuts">
+				<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer les raccourcis clavier...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Affiche une boîte de dialogue de configuration de raccourci standard &kde; </action
+> pour modifier les raccourcis de clavier pour &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry id="settings-menu-settings">
+				<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer &kiriki;...</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Ouvre une boîte de dialogue pour configurer &kiriki;.</action
+>Référez-vous à la section <link linkend="configuration"
+>Configuration du jeu</link
+> pour plus de détails.</para
+></listitem>
+			</varlistentry>
+		</variablelist>
+</sect1>
+<sect1 id="help"
+><!--This is a standard Help menubar entry. Only change if needed.-->
+<title
+>Le menu Aide</title>
+&help.menu.documentation; </sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Foire aux questions</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Je veux modifier la façon dont le jeux s'affiche. Est-ce possible ? </para
+></question>
+ <answer
+><para
+>Non. &kiriki; n'a pas de fonctionnalités de thèmes.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>J'ai commis une erreur. Puis-je l'annuler ? </para
+></question>
+ <answer
+><para
+>Non. &kiriki; n'a pas d'option d'annulation.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Puis-je utiliser le clavier pour jouer à ce jeu ?</para
+></question>
+ <answer
+><para
+>Non. Le jeu &kiriki; ne se joue pas en utilisant le clavier.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Je ne comprend pas ce qu'il faut faire ! Y a-t-il une astuce ? </para
+></question>
+ <answer
+><para
+>Pour comprendre les règles du jeu et les tactiques, veuillez lire la section <link linkend="rules_and_tips"
+>Règles du jeu, stratégies et astuces</link
+> dans ce manuel.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Je veux quitter le jeux maintenant, mais ma partie n'est pas terminée. Puis je l'enregistrer ?</para
+></question>
+ <answer
+><para
+>Non. &kiriki;.n'implante pas la fonctionnalité <quote
+>enregistrer</quote
+></para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>L'ordinateur est vraiment trop rapide ! Je ne peux pas voir ce qu'il fait !</para
+></question>
+ <answer
+><para
+>Pour modifier la vitesse des actions de l'ordinateur, veuillez utiliser la boîte de dialogue de configuration du jeu décrite dans la section <link linkend="configuration"
+> Configuration du jeu</link
+> de ce manuel.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Configuration du jeu</title
+> <!-- do not change this! -->
+<para
+>La boîte de dialogue de configuration de &kiriki; vous permet de configurer le nombre de participants pour gérer leurs identités, et leurs temps de réponse.</para>
+<note
+><title
+>Remarque : </title
+><para
+>Vous pouvez seulement modifier les temps de réponse pour les joueurs contrôlés par l'ordinateur.</para
+></note>
+<para
+><guilabel
+>Nombre de joueurs :</guilabel
+> ce champ définit le nombre de joueurs pour &kiriki;. Les valeurs permettent ici de rentrer deux à six joueurs.</para>
+<note
+><title
+>Remarque : </title
+><para
+>La partie ne peut se jouer avec moins de deux joueurs.</para
+></note>
+<para
+><guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> Les champs numérotés sont les identités des joueurs participants. Vous pouvez modifier leurs noms comme vous le souhaitez selon qu'ils sont contrôlés par des humains, ou par l'ordinateur. Pour définir qui contrôle le joueur, utilisez une case à cocher située sur la droite des champs des noms.</para>
+<note
+><title
+>Remarque : </title
+><para
+>Le premier joueur doit toujours être contrôlé par un humain.</para
+></note>
+<para
+><guilabel
+>Délai entre deux actions de l'ordinateur (ms) : </guilabel
+> vous permet de spécifier le délai entre les tours de l'ordinateur. La valeur de ce champ est zéro par défaut, c'est qui veut dire que l'ordinateur réagit instantanément.</para>
+<note
+><title
+>Remarque : </title
+><para
+>La valeur maximale pour ce champ est de 999 millisecondes.</para
+></note>
+</chapter>
+ 
+<chapter id="credits"
+><title
+>Remerciements et licence</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+ 
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>Copyright du programme 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>Traduction française par &StanislasZeller;. Relecture par &LudovicGrossard;</para
+>  &underFDL; &underGPL; </chapter>
+ 
+<appendix id="installation">
+<title
+>Installation</title>
+ 
+&install.intro.documentation;
+ 
+ 
+<sect1 id="Compilation">
+<title
+>Compilation et installation</title>
+&install.compile.documentation; </sect1>
+</appendix>
+ 
+&documentation.index; 
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
