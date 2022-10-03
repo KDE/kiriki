@@ -160,7 +160,7 @@ msgstr[1] "Tira els daus il·luminats."
 #: kiriki.cpp:347
 #, kde-format
 msgid "Changes will be applied on next game."
-msgstr "Els canvis s'aplicaran a la pròxima partida."
+msgstr "Els canvis s'aplicaran en la pròxima partida."
 
 #: kiriki.kcfg:40
 #, kde-format
