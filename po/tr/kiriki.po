@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kdegames-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-20 00:42+0000\n"
-"PO-Revision-Date: 2022-12-11 20:14+0300\n"
+"PO-Revision-Date: 2022-12-17 18:38+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -101,7 +101,7 @@ msgstr "Bilgisayarın hareketleri arasındaki süre (milisaniye):"
 #: configPage.ui:215
 #, kde-format
 msgid "Font Size:"
-msgstr "Yazı Tipi Boyutu:"
+msgstr "Yazıtipi Boyutu:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: configPage.ui:236
@@ -152,8 +152,8 @@ msgstr "İpucunu Yine de Göster"
 #, kde-format
 msgid "Roll highlighted die."
 msgid_plural "Roll highlighted dice."
-msgstr[0] "Vurgulanan zarı salla."
-msgstr[1] "Vurgulanan zarları salla."
+msgstr[0] "Vurgulanan zarı at."
+msgstr[1] "Vurgulanan zarları at."
 
 #: kiriki.cpp:347
 #, kde-format
@@ -164,19 +164,19 @@ msgstr "Değişiklikler sonraki oyunda uygulanacak."
 #, kde-format
 msgctxt "default name of first player"
 msgid "Albert"
-msgstr "Ali"
+msgstr "Berk"
 
 #: kiriki.kcfg:46
 #, kde-format
 msgctxt "default name of second player"
 msgid "Janet"
-msgstr "Jale"
+msgstr "Ayça"
 
 #: kiriki.kcfg:52
 #, kde-format
 msgctxt "default name of third player"
 msgid "James"
-msgstr "Cem"
+msgstr "Yamtar"
 
 #: kiriki.kcfg:58
 #, kde-format
@@ -194,12 +194,12 @@ msgstr "Teoman"
 #, kde-format
 msgctxt "default name of sixth player"
 msgid "Margaret"
-msgstr "Melike"
+msgstr "Umay"
 
 #: lateralwidget.cpp:30
 #, kde-format
 msgid "&Roll"
-msgstr "&At"
+msgstr "&Zar At"
 
 #: lateralwidget.cpp:198
 #, kde-format
