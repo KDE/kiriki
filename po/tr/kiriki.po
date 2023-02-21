@@ -127,7 +127,7 @@ msgstr ""
 #: kiriki.cpp:207
 #, kde-format
 msgid "Demonstration. Press \"New\" to start a new game."
-msgstr "Tanıtım. Yeni bir oyun başlatmak için \"Yeni\" tuşuna tıklayın."
+msgstr "Tanıtım. Yeni bir oyun başlatmak için \"Yeni\" düğmesine tıklayın."
 
 #: kiriki.cpp:216
 #, kde-format
@@ -204,7 +204,7 @@ msgstr "&Zar At"
 #: lateralwidget.cpp:198
 #, kde-format
 msgid "Roll %1 of 3"
-msgstr "%1. hak (Toplam 3)"
+msgstr "Hak %1/3"
 
 #: main.cpp:30 scores.cpp:77
 #, kde-format
@@ -229,32 +229,32 @@ msgstr "Albert Astals Cid"
 #: scores.cpp:63
 #, kde-format
 msgid "1s"
-msgstr "1s"
+msgstr "1 s"
 
 #: scores.cpp:64
 #, kde-format
 msgid "2s"
-msgstr "2s"
+msgstr "2 s"
 
 #: scores.cpp:65
 #, kde-format
 msgid "3s"
-msgstr "3s"
+msgstr "3 s"
 
 #: scores.cpp:66
 #, kde-format
 msgid "4s"
-msgstr "4s"
+msgstr "4 s"
 
 #: scores.cpp:67
 #, kde-format
 msgid "5s"
-msgstr "5s"
+msgstr "5 s"
 
 #: scores.cpp:68
 #, kde-format
 msgid "6s"
-msgstr "6s"
+msgstr "6 s"
 
 #: scores.cpp:69
 #, kde-format
@@ -269,27 +269,27 @@ msgstr "Üst toplam"
 #: scores.cpp:72
 #, kde-format
 msgid "3 of a Kind"
-msgstr "Bir türden 3 adet"
+msgstr "Üçlü"
 
 #: scores.cpp:73
 #, kde-format
 msgid "4 of a Kind"
-msgstr "Bir türden 4 adet"
+msgstr "Dörtlü"
 
 #: scores.cpp:74
 #, kde-format
 msgid "Full House"
-msgstr "Full House"
+msgstr "Dolu Ev"
 
 #: scores.cpp:75
 #, kde-format
 msgid "Small Straight"
-msgstr "Small Straight"
+msgstr "Küçük Düz"
 
 #: scores.cpp:76
 #, kde-format
 msgid "Large Straight"
-msgstr "Large Straight"
+msgstr "Büyük Düz"
 
 #: scores.cpp:78
 #, kde-format
