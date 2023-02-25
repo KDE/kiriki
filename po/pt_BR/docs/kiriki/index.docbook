@@ -57,14 +57,14 @@
 <legalnotice
 >&FDLNotice;</legalnotice>
 <date
->09/05/2016</date>
+>06/07/2021</date>
 <releaseinfo
->0.3.0 (Applications 16.04)</releaseinfo>
+>KDE Gear 21.04</releaseinfo>
 
 <!--Short description of this document. Do not change unless necessary!-->
 <abstract>
 	<para
->Esta documentação descreve o jogo &kiriki; versão 0.3.0</para>
+>Esta documentação descreve o jogo &kiriki; versão 21.04</para>
 </abstract>
 
 <!--List of relevan keywords-->
@@ -158,8 +158,8 @@
 ><title
 >Nota:</title
 ><para
->A descrição detalhada dos padrões de pontos poderá ser encontrada na seção de <link linkend="rules_and_tips"
->‘Regras, Estratégias e Dicas do Jogo'</link
+>A descrição detalhada dos valores do padrão de pontos poderá ser encontrada na seção <link linkend="rules_and_tips"
+>Regras, Estratégias e Dicas do Jogo</link
 > deste manual.</para
 ></note>
 	<para
@@ -185,7 +185,7 @@
 >Nota:</title
 ><para
 >A descrição detalhada dos valores do padrão de pontos poderá ser encontrada na seção <link linkend="rules_and_tips"
->‘Regras, Estratégias e Dicas do Jogo'</link
+>Regras, Estratégias e Dicas do Jogo</link
 > deste manual.</para
 ></note>
 	<para
@@ -376,13 +376,19 @@
 ><para
 ><guilabel
 >Total inferior</guilabel
->: Este não é um campo de jogo, mas somente a soma de todos os campos a partir de '3 de um tipo' e abaixo.</para
+>: Este não é um campo de jogo, mas somente a soma de todos os campos a partir de <quote
+>3 de um tipo</quote
+> e abaixo.</para
 ></listitem>
 				<listitem
 ><para
 ><guilabel
 >Total geral</guilabel
->: Não é um campo de jogo, mas somente a soma dos campos 'Total superior' e 'Total inferior'.</para
+>: Não é um campo de jogo, mas somente a soma dos campos <quote
+>Total superior</quote
+> e <quote
+>Total inferior</quote
+>.</para
 ></listitem>
 			</itemizedlist>
 			<para
@@ -714,9 +720,9 @@
 
 <para
 >Use o <guilabel
->Tamanho da fonte</guilabel
+>Tamanho da fonte:</guilabel
 > e a <guilabel
->Altura da linha</guilabel
+>Altura da linha:</guilabel
 > para ajustar a tabela de pontuações ao seu gosto.</para>
 <para
 >Se quiser jogar imediatamente após o início do &kiriki;, desative a opção predefinida <guilabel
