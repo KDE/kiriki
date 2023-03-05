@@ -212,7 +212,7 @@ msgstr "كاراكا"
 #: main.cpp:32
 #, kde-format
 msgid "A Yahtzee dice game by KDE"
-msgstr "لعبة النرد ياهتزي  للكدي"
+msgstr "لعبة النرد ياهتزي  للكِيدِي"
 
 #: main.cpp:34
 #, kde-format
