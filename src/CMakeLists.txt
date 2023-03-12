@@ -27,8 +27,13 @@ kconfig_add_kcfg_files(kiriki settings.kcfgc)
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*-apps-kiriki.png")
 ecm_add_app_icon(kiriki ICONS ${ICONS_SRCS})
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(kiriki KDEGames6)
+else()
+    target_link_libraries(kiriki KF5KDEGames)
+endif()
+
 target_link_libraries(kiriki
-    KF5KDEGames
     KF${KF_MAJOR_VERSION}::CoreAddons
     KF${KF_MAJOR_VERSION}::XmlGui
     KF${KF_MAJOR_VERSION}::I18n
