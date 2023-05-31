@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
@@ -147,7 +147,6 @@ msgstr ""
 msgid "Roll highlighted die."
 msgid_plural "Roll highlighted dice."
 msgstr[0] ""
-msgstr[1] ""
 
 #: kiriki.cpp:347
 #, kde-format
