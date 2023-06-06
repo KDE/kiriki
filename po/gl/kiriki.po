@@ -1,18 +1,18 @@
 # translation of kiriki.po to galician
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # mvillarino <mvillarino@users.sourceforge.net>, 2007, 2008.
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2009, 2017.
 # Xosé <xosecalvo@gmail.com>, 2012.
 # Marce Villarino <mvillarino@kde-espana.org>, 2013, 2014.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-20 00:42+0000\n"
-"PO-Revision-Date: 2017-07-29 15:32+0100\n"
+"PO-Revision-Date: 2023-06-05 14:44+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -304,4 +305,4 @@ msgstr "Total inferior"
 #: scores.cpp:81
 #, kde-format
 msgid "Grand Total"
-msgstr "Suma total"
+msgstr "Total"
