@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-20 00:42+0000\n"
-"PO-Revision-Date: 2023-01-06 12:00+0100\n"
+"PO-Revision-Date: 2023-06-09 20:56+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -118,11 +118,13 @@ msgid ""
 "Starting the demo will end the current game. Any progress will be lost. Do "
 "you want to continue?"
 msgstr ""
+"Komencante la demon finos la nunan ludon. Ajna progreso estos perdita. Ĉu vi "
+"volas daŭrigi?"
 
 #: kiriki.cpp:207
 #, kde-format
 msgid "Demonstration. Press \"New\" to start a new game."
-msgstr ""
+msgstr "Demonstro. Premu \"Nova\" por komenci novan ludon."
 
 #: kiriki.cpp:216
 #, kde-format
@@ -130,6 +132,8 @@ msgid ""
 "Asking for a hint will disqualify the current game from entering the high "
 "score list."
 msgstr ""
+"Peti sugeston malkvalifikos la nunan ludon de enirado de la altpoentara "
+"listo."
 
 #: kiriki.cpp:217
 #, kde-format
@@ -145,8 +149,8 @@ msgstr "Malkaŝi Aludon"
 #, kde-format
 msgid "Roll highlighted die."
 msgid_plural "Roll highlighted dice."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ruligi prilumitan ĵetkubon."
+msgstr[1] "Ruligi prilumitajn ĵetkubojn."
 
 #: kiriki.cpp:347
 #, kde-format
@@ -192,7 +196,7 @@ msgstr "Margareta"
 #: lateralwidget.cpp:30
 #, kde-format
 msgid "&Roll"
-msgstr "Ĵe&ti"
+msgstr "&Ruligi"
 
 #: lateralwidget.cpp:198
 #, kde-format
