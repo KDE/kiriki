@@ -11,6 +11,7 @@
   <name xml:lang="de">Kiriki</name>
   <name xml:lang="el">Kiriki</name>
   <name xml:lang="en-GB">Kiriki</name>
+  <name xml:lang="eo">Kiriki</name>
   <name xml:lang="es">Kiriki</name>
   <name xml:lang="et">Kiriki</name>
   <name xml:lang="eu">Kiriki</name>
@@ -47,6 +48,7 @@
   <summary xml:lang="de">„Kniffel“-Würfelspiel</summary>
   <summary xml:lang="el">Παιχνίδι με ζάρια όπως το Yahtzee</summary>
   <summary xml:lang="en-GB">Yahtzee-like Dice Game</summary>
+  <summary xml:lang="eo">Ĵetkuba ludo simial al Yahtzee</summary>
   <summary xml:lang="es">Juego de dados similar al Yahtzee</summary>
   <summary xml:lang="et">Yahtzee moodi täringumäng</summary>
   <summary xml:lang="eu">Yahtzee-ren antzeko dado-jokoa</summary>
