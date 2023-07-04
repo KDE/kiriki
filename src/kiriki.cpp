@@ -405,4 +405,4 @@ void kiriki::playComputer()
 	else m_lateral -> setEnabled(true);
 }
 
-
+#include "moc_kiriki.cpp"

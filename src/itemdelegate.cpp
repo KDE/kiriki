@@ -40,3 +40,5 @@ void itemDelegate::setHeight(int height)
 {
 	m_height = height;
 }
+
+#include "moc_itemdelegate.cpp"

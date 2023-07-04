@@ -199,4 +199,4 @@ void lateralWidget::updateRollLabel()
 	if (!m_demoMode) setEnabled(m_roll != 3);
 }
 
-
+#include "moc_lateralwidget.cpp"
