@@ -195,13 +195,8 @@ void dicesWidget::paintEvent(QPaintEvent *)
 void dicesWidget::mousePressEvent(QMouseEvent *e)
 {
 	if (!m_enabled) return;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-	int x = e ->x();
-	int y = e ->y();
-#else
 	int x = e ->position(). x();
 	int y = e ->position().y();
-#endif
 
 	if (x > 5 && x < 85 && y > 10)
 	{
