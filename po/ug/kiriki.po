@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-20 00:42+0000\n"
+"POT-Creation-Date: 2023-09-25 01:39+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -197,22 +197,22 @@ msgstr ""
 msgid "Roll %1 of 3"
 msgstr ""
 
-#: main.cpp:30 scores.cpp:77
+#: main.cpp:26 scores.cpp:77
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
 
-#: main.cpp:32
+#: main.cpp:28
 #, kde-format
 msgid "A Yahtzee dice game by KDE"
 msgstr ""
 
-#: main.cpp:34
+#: main.cpp:30
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
 msgstr ""
 
-#: main.cpp:37
+#: main.cpp:33
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
