@@ -1,10 +1,10 @@
 # Translation of kiriki.po to Catalan
-# Copyright (C) 2007-2021 This_file_is_part_of_KDE
+# Copyright (C) 2007-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Albert Astals Cid <aacid@kde.org>, 2007.
-# Josep M. Ferrer <txemaq@gmail.com>, 2010, 2012, 2013, 2015, 2017, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2010, 2012, 2013, 2015, 2017, 2021, 2023.
 # Manuel Tortosa <manutortosa@chakra-project.org>, 2010.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2017, 2020.
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:39+0000\n"
-"PO-Revision-Date: 2021-10-31 22:27+0100\n"
+"PO-Revision-Date: 2023-09-25 10:16+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -103,7 +103,7 @@ msgstr "Retard entre els moviments de l'ordinador (ms):"
 #: configPage.ui:215
 #, kde-format
 msgid "Font Size:"
-msgstr "Mida del tipus de lletra:"
+msgstr "Mida de la lletra:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: configPage.ui:236

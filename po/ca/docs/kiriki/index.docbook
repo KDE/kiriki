@@ -131,7 +131,7 @@
 ><!--Describe the objective of the game.-->
 <!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
 	<para
->Una vegada s'iniciï el &kiriki;, immediatament donarà la primera combinació per al jugador u. Si el sou, llavors serà el vostre torn, en cas contrari haureu d'esperar fins que tots els altres jugadors facin els seus moviments.</para>
+>Una vegada s'iniciï el &kiriki;, immediatament donarà la primera combinació per al jugador u. Si el sou, llavors és el vostre torn, en cas contrari haureu d'esperar fins que tots els altres jugadors facin els seus moviments.</para>
 	<note
 ><title
 >Nota:</title
@@ -958,7 +958,7 @@
 
 <para
 >Utilitzeu <guilabel
->Mida del tipus de lletra:</guilabel
+>Mida de la lletra:</guilabel
 > i <guilabel
 >Alçada de la fila:</guilabel
 > per a ajustar el marcador al vostre gust.</para>
