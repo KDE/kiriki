@@ -22,7 +22,7 @@ Q_OBJECT
 		void setHeight(int height);
 
 	private:
-		QVector<int> m_emptyRows;
+		QList<int> m_emptyRows;
 
 		int m_height;
 		const int m_grandTotalRow;
