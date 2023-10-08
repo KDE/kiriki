@@ -17,12 +17,6 @@
       <string>Players</string>
      </property>
      <layout class="QGridLayout">
-      <property name="margin">
-       <number>9</number>
-      </property>
-      <property name="spacing">
-       <number>6</number>
-      </property>
       <item row="3" column="1">
        <widget class="QLineEdit" name="kcfg_player3Name">
         <property name="text">
@@ -39,9 +33,6 @@
       </item>
       <item row="0" column="0" colspan="3">
        <layout class="QHBoxLayout">
-        <property name="spacing">
-         <number>6</number>
-        </property>
         <property name="margin">
          <number>0</number>
         </property>
@@ -189,9 +180,6 @@
    </item>
    <item>
     <layout class="QHBoxLayout">
-     <property name="spacing">
-      <number>6</number>
-     </property>
      <property name="margin">
       <number>0</number>
      </property>
