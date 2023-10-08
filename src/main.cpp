@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 	about.addAuthor(i18n("Albert Astals Cid"), QString(), QStringLiteral("aacid@kde.org"));
 
 	KAboutData::setApplicationData(about);
+	QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kiriki")));
 
 	KCrash::initialize();
 
@@ -44,6 +45,5 @@ int main(int argc, char *argv[])
 	KDBusService service;
 	kiriki *w = new kiriki();
 	w->show();
-	app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kiriki")));
 	return app.exec();
 }
