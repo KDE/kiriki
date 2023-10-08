@@ -32,12 +32,15 @@ int main(int argc, char *argv[])
             QStringLiteral("https://apps.kde.org/kiriki"));
 	about.addAuthor(i18n("Albert Astals Cid"), QString(), QStringLiteral("aacid@kde.org"));
 
-	QCommandLineParser parser;
 	KAboutData::setApplicationData(about);
+
 	KCrash::initialize();
+
+	QCommandLineParser parser;
 	about.setupCommandLine(&parser);
 	parser.process(app);
 	about.processCommandLine(&parser);
+
 	KDBusService service;
 	kiriki *w = new kiriki();
 	w->show();
