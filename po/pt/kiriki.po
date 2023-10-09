@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:39+0000\n"
+"POT-Creation-Date: 2023-10-09 01:44+0000\n"
 "PO-Revision-Date: 2017-03-14 17:31+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
@@ -36,74 +36,74 @@ msgstr "Jogadores"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_player1IsHuman)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_player4IsHuman)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_player5IsHuman)
-#: configPage.ui:36 configPage.ui:73 configPage.ui:94 configPage.ui:121
-#: configPage.ui:148 configPage.ui:169
+#: configPage.ui:30 configPage.ui:64 configPage.ui:85 configPage.ui:112
+#: configPage.ui:139 configPage.ui:160
 #, kde-format
 msgid "human?"
 msgstr "humano?"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: configPage.ui:51
+#: configPage.ui:42
 #, kde-format
 msgid "Number of players:"
 msgstr "Número de jogadores:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_2)
-#: configPage.ui:63
+#: configPage.ui:54
 #, kde-format
 msgid "3."
 msgstr "3."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: configPage.ui:80
+#: configPage.ui:71
 #, kde-format
 msgid "2."
 msgstr "2."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: configPage.ui:104
+#: configPage.ui:95
 #, kde-format
 msgid "1."
 msgstr "1."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
-#: configPage.ui:134
+#: configPage.ui:125
 #, kde-format
 msgid "4."
 msgstr "4."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_3)
-#: configPage.ui:155
+#: configPage.ui:146
 #, kde-format
 msgid "5."
 msgstr "5."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
-#: configPage.ui:176
+#: configPage.ui:167
 #, kde-format
 msgid "6."
 msgstr "6."
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: configPage.ui:201
+#: configPage.ui:189
 #, kde-format
 msgid "Delay between computers move (msec):"
 msgstr "Atraso entre jogadas do computador (ms):"
 
 #. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
-#: configPage.ui:215
+#: configPage.ui:203
 #, kde-format
 msgid "Font Size:"
 msgstr "Tamanho da Letra:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: configPage.ui:236
+#: configPage.ui:224
 #, kde-format
 msgid "Row Height:"
 msgstr "Altura da Linha:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
-#: configPage.ui:255
+#: configPage.ui:243
 #, kde-format
 msgid "Show demonstration game at startup"
 msgstr "Mostrar um jogo de demonstração no arranque"
