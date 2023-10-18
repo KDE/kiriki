@@ -1,20 +1,19 @@
 # Translation of kiriki to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2008, 2009, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-09 01:44+0000\n"
-"PO-Revision-Date: 2022-09-11 19:34+0200\n"
+"PO-Revision-Date: 2023-10-17 21:31+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -159,7 +158,7 @@ msgstr[1] "Trill merkte terningar."
 msgid "Changes will be applied on next game."
 msgstr "Endringane trer i kraft ved neste parti."
 
-# Må oppdaterast ved regjeringsskifte! Som ein liten spøk (eller «påskeeegg», om du vil) er spelarnamna namna på seks medlemmar i den sitjande regjeringa. Annakvart namn skal vera jentenamn og annakvart gutenamn. Det første namnet skal vera statsministeren. Elles bør namna hentast frå dei mest kjende/synlege statsråda (dei som vanlege folk kjenner til). For koalisjonsregjeringar må alle partia vera representerte. Og det er ein fordel om namna er litt uvanlege (lett gjenkjennelege).
+# Må oppdaterast ved regjeringsskifte! Som ein liten spøk (eller «påskeeegg», om du vil) er spelarnamna namna på seks medlemmar i den sitjande regjeringa. Annakvart namn skal vera jentenamn og annakvart gutenamn. Det første namnet skal vera statsministeren. Elles bør namna helst hentast frå dei mest kjende/synlege statsråda (dei som vanlege folk kjenner til). For koalisjonsregjeringar må alle partia vera representerte. Og det er ein fordel om namna er litt uvanlege (lett gjenkjennelege). Ingen namn bør begynna på same forbokstav.
 #: kiriki.kcfg:40
 #, kde-format
 msgctxt "default name of first player"
@@ -171,7 +170,7 @@ msgstr "Jonas"
 #, kde-format
 msgctxt "default name of second player"
 msgid "Janet"
-msgstr "Marte"
+msgstr "Ingvild"
 
 # Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
 #: kiriki.kcfg:52
@@ -185,7 +184,7 @@ msgstr "Trygve"
 #, kde-format
 msgctxt "default name of fourth player"
 msgid "Sandra"
-msgstr "Emilie"
+msgstr "Lubna"
 
 # Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
 #: kiriki.kcfg:64
@@ -199,7 +198,7 @@ msgstr "Bjørn Arild"
 #, kde-format
 msgctxt "default name of sixth player"
 msgid "Margaret"
-msgstr "Anniken"
+msgstr "Anne Beathe"
 
 #: lateralwidget.cpp:30
 #, kde-format
