@@ -16,7 +16,7 @@
 
 #include <QAction>
 #include <QIcon>
-#include <KStandardGameAction>
+#include <KGameStandardAction>
 #include <KLocalizedString>
 
 #include "diceswidget.h"
@@ -29,7 +29,7 @@ lateralWidget::lateralWidget(QWidget *parent) : QWidget(parent), m_demoMode(fals
 	m_buttons = new QStackedWidget(this);
 	m_rollButton = new QPushButton(QIcon::fromTheme( QStringLiteral( "roll") ), i18n("&Roll" ), this);
 	
-	QAction *dummyAction = KStandardGameAction::gameNew(nullptr, nullptr, nullptr);
+	QAction *dummyAction = KGameStandardAction::gameNew(nullptr, nullptr, nullptr);
 	m_newGameButton = new QPushButton(dummyAction->icon(), dummyAction->text(), this);
 	delete dummyAction;
 

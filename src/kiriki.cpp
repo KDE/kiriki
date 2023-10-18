@@ -29,7 +29,7 @@
 #include <KMessageBox>
 #include <highscore/kscoredialog.h>
 #include <KStandardAction>
-#include <KStandardGameAction>
+#include <KGameStandardAction>
 #include <KActionCollection>
 #include <QAction>
 #include <QStatusBar>
@@ -82,12 +82,12 @@ kiriki::kiriki() : KXmlGuiWindow(), m_hintGiven(false)
 	m_scores = nullptr;
 	
 	// Game
-	QAction *gameNewAction = KStandardGameAction::gameNew(this, &kiriki::newGame, actionCollection());
-	KStandardGameAction::highscores(this, &kiriki::showHighScores, actionCollection());
-	KStandardGameAction::print(this, &kiriki::print, actionCollection());
-	KStandardGameAction::quit(qApp, &QApplication::quit, actionCollection());
-	m_hintAction = KStandardGameAction::hint(this, &kiriki::showHint, actionCollection());
-	m_demoAction = KStandardGameAction::demo(this, &kiriki::demo, actionCollection());
+	QAction *gameNewAction = KGameStandardAction::gameNew(this, &kiriki::newGame, actionCollection());
+	KGameStandardAction::highscores(this, &kiriki::showHighScores, actionCollection());
+	KGameStandardAction::print(this, &kiriki::print, actionCollection());
+	KGameStandardAction::quit(qApp, &QApplication::quit, actionCollection());
+	m_hintAction = KGameStandardAction::hint(this, &kiriki::showHint, actionCollection());
+	m_demoAction = KGameStandardAction::demo(this, &kiriki::demo, actionCollection());
 	connect(gameNewAction, &QAction::triggered, m_demoAction, &KToggleAction::setChecked);
 	connect(gameNewAction, &QAction::triggered, m_demoAction, &KToggleAction::setDisabled);
 	connect(gameNewAction, &QAction::triggered, m_hintAction, &QAction::setDisabled);
