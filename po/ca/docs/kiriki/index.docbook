@@ -193,23 +193,11 @@
 ><para
 ><guilabel
 >1s</guilabel
->: la suma de tots els daus valorats en <quote
->1</quote
->.<note
+>: la suma de tots els daus valorats en «1».<note
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->14112</quote
->. La suma és: <quote
->3</quote
->=<quote
->1</quote
->+<quote
->1</quote
->+<quote
->1</quote
->.</para
+>Daus a la pantalla: «14112». La suma és: «3»=«1»+«1»+«1».</para
 ></note
 ></para
 ></listitem>
@@ -217,23 +205,11 @@
 ><para
 ><guilabel
 >2s</guilabel
->: la suma de tots els daus valorats en <quote
->2</quote
->.<note
+>: la suma de tots els daus valorats en «2».<note
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->22422</quote
->. La suma és: <quote
->8</quote
->=<quote
->2</quote
->+<quote
->2</quote
->+<quote
->2</quote
->.</para
+>Daus a la pantalla: «22422». La suma és: «8»=«2»+«2»+«2».</para
 ></note
 ></para
 ></listitem>
@@ -241,35 +217,11 @@
 ><para
 ><guilabel
 >3s</guilabel
->: la suma de tots els daus valorats en <quote
->3</quote
->.<note
+>: la suma de tots els daus valorats en «3».<note
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->34132</quote
->. La suma és: <quote
->6</quote
->=<quote
->3</quote
->+<quote
->3</quote
->. Daus a la pantalla: <quote
->33333</quote
->. La suma és: <quote
->15</quote
->=<quote
->3</quote
->+<quote
->3</quote
->+<quote
->3</quote
->+<quote
->3</quote
->+<quote
->3</quote
->.</para
+>Daus a la pantalla: «34132». La suma és: «6»=«3»+«3». Daus a la pantalla: «33333». La suma és: «15»=«3»+«3»+«3»+«3»+«3».</para
 ></note
 ></para
 ></listitem>
@@ -277,31 +229,11 @@
 ><para
 ><guilabel
 >4s</guilabel
->: la suma de tots els daus valorats en <quote
->4</quote
->.<note
+>: la suma de tots els daus valorats en «4».<note
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->14142</quote
->. La suma és: <quote
->8</quote
->=<quote
->4</quote
->+<quote
->4</quote
->. Daus a la pantalla: <quote
->41414</quote
->. La suma és: <quote
->12</quote
->=<quote
->4</quote
->+<quote
->4</quote
->+<quote
->4</quote
->.</para
+>Daus a la pantalla: «14142». La suma és: «8»=«4»+«4». Daus a la pantalla: «41414» La suma és: «12»=«4»+«4»+«4».</para
 ></note
 ></para
 ></listitem>
@@ -309,35 +241,11 @@
 ><para
 ><guilabel
 >5s</guilabel
->: la suma de tots els daus valorats en <quote
->5</quote
->.<note
+>: la suma de tots els daus valorats en «5».<note
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->15155</quote
->. La suma és: <quote
->15</quote
->=<quote
->5</quote
->+<quote
->5</quote
->+<quote
->5</quote
->. Daus a la pantalla: <quote
->51555</quote
->. La suma és: <quote
->20</quote
->=<quote
->5</quote
->+<quote
->5</quote
->+<quote
->5</quote
->+<quote
->5</quote
->.</para
+>Daus a la pantalla: «15155». La suma és: «15»=«5»+«5»+«5». Daus a la pantalla: «51555». La suma és: «20»=«5»+«5»+«5»+«5».</para
 ></note
 ></para
 ></listitem>
@@ -345,35 +253,11 @@
 ><para
 ><guilabel
 >6s</guilabel
->: la suma de tots els daus valorats en <quote
->6</quote
->.<note
+>: la suma de tots els daus valorats en «6».<note
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->66616</quote
->. La suma és: <quote
->24</quote
->=<quote
->6</quote
->+<quote
->6</quote
->+<quote
->6</quote
->+<quote
->6</quote
->. Daus a la pantalla: <quote
->61616</quote
->. La suma és: <quote
->18</quote
->=<quote
->6</quote
->+<quote
->6</quote
->+<quote
->6</quote
->.</para
+>Daus a la pantalla: «66616». La suma és: «24»=«6»+«6»+«6»+«6». Daus a la pantalla: «61616». La suma és: «18»=«6»+«6»+«6».</para
 ></note
 ></para
 ></listitem>
@@ -398,35 +282,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->14121</quote
->. La suma és: <quote
->9</quote
->=<quote
->1</quote
->+<quote
->1</quote
->+<quote
->1</quote
->+<quote
->4</quote
->+<quote
->2</quote
->. Daus a la pantalla: <quote
->55151</quote
->. La suma és: <quote
->17</quote
->=<quote
->5</quote
->+<quote
->5</quote
->+<quote
->5</quote
->+<quote
->1</quote
->+<quote
->1</quote
->.</para
+>Daus a la pantalla: «14121». La suma és: «9»=«1»+«1»+«1»+«4»+«2». Daus a la pantalla: «55151». La suma és: «17»=«5»+«5»+«5»+«1»+«1».</para
 ></note
 ></para
 ></listitem>
@@ -438,35 +294,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->41444</quote
->. La suma és: <quote
->17</quote
->=<quote
->4</quote
->+<quote
->4</quote
->+<quote
->4</quote
->+<quote
->4</quote
->+<quote
->1</quote
->. Daus a la pantalla: <quote
->22522</quote
->. La suma és: <quote
->13</quote
->=<quote
->2</quote
->+<quote
->2</quote
->+<quote
->2</quote
->+<quote
->2</quote
->+<quote
->5</quote
->.</para
+>Daus a la pantalla: «41444». La suma és: «17»=«4»+«4»+«4»+«4»+«1». Daus a la pantalla: «22522». La suma és: «13»=«2»+«2»+«2»+«2»+«5».</para
 ></note
 ></para
 ></listitem>
@@ -478,11 +306,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->11212</quote
->. Daus a la pantalla: <quote
->53353</quote
->.</para
+>Daus a la pantalla: «11212». Daus a la pantalla: «53353».</para
 ></note
 ></para
 ></listitem>
@@ -494,27 +318,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->14312</quote
->. La seqüència és: <quote
->1</quote
->,<quote
->2</quote
->,<quote
->3</quote
->,<quote
->4</quote
->. Daus a la pantalla: <quote
->51643</quote
->. La seqüència és: <quote
->3</quote
->,<quote
->4</quote
->,<quote
->5</quote
->,<quote
->6</quote
->.</para
+>Daus a la pantalla: «14312». La seqüència és: «1»,«2»,«3»,«4». Daus a la pantalla: «51643». La seqüència és: «3»,«4»,«5»,«6».</para
 ></note
 ></para
 ></listitem>
@@ -526,31 +330,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->34152</quote
->. La seqüència és: <quote
->1</quote
->,<quote
->2</quote
->,<quote
->3</quote
->,<quote
->4</quote
->,<quote
->5</quote
->. Daus a la pantalla: <quote
->53264</quote
->. La seqüència és: <quote
->2</quote
->,<quote
->3</quote
->,<quote
->4</quote
->,<quote
->5</quote
->,<quote
->5</quote
->.</para
+>Daus a la pantalla: «34152». La seqüència és: «1»,«2»,«3»,«4»,«5». Daus a la pantalla: «53264». La seqüència és: «2»,«3»,«4»,«5»,«5».</para
 ></note
 ></para
 ></listitem>
@@ -562,11 +342,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->11111</quote
->. Daus a la pantalla: <quote
->33333</quote
->.</para
+>Daus a la pantalla: «11111». Daus a la pantalla: «33333».</para
 ></note
 ></para
 ></listitem>
@@ -578,35 +354,7 @@
 ><title
 >Exemple:</title
 ><para
->Daus a la pantalla: <quote
->51143</quote
->. La suma és: <quote
->14</quote
->=<quote
->5</quote
->+<quote
->1</quote
->+<quote
->1</quote
->+<quote
->4</quote
->+<quote
->3</quote
->. Daus a la pantalla: <quote
->21526</quote
->. La suma és: <quote
->16</quote
->=<quote
->2</quote
->+<quote
->1</quote
->+<quote
->5</quote
->+<quote
->2</quote
->+<quote
->6</quote
->.</para
+>Daus a la pantalla: «51143». La suma és: «14»=«5»+«1»+«1»+«4»+«3». Daus a la pantalla: «21526». La suma és: «16»=«2»+«1»+«5»+«2»+«6».</para
 ></note
 ></para
 ></listitem>
@@ -614,19 +362,13 @@
 ><para
 ><guilabel
 >Total inferior</guilabel
->: no és un camp que es pugui jugar, sinó només un resum de tots els camps a partir de &nbsp;<quote
->Tres iguals</quote
-> i inferior.</para
+>: no és un camp que es pugui jugar, sinó només un resum de tots els camps a partir de &nbsp;«Tres iguals» i inferior.</para
 ></listitem>
 				<listitem
 ><para
 ><guilabel
 >Suma total</guilabel
->: no és un camp que es pugui jugar, sinó només una suma dels camps <quote
->Total superior</quote
-> i <quote
->Total inferior</quote
->.</para
+>: no és un camp que es pugui jugar, sinó només una suma dels camps «Total superior» i «Total inferior».</para
 ></listitem>
 			</itemizedlist>
 			<para
@@ -847,9 +589,7 @@
 ></question>
  <answer
 ><para
->No. El &kiriki; no té l'opció <quote
->Desfés</quote
->.</para
+>No. El &kiriki; no té l'opció «Desfés».</para
 ></answer>
 </qandaentry>
 <qandaentry>
@@ -881,9 +621,7 @@
 ></question>
  <answer
 ><para
->No. En el &kiriki; no hi ha una característica de <quote
->Desa</quote
->.</para
+>No. En el &kiriki; no hi ha una característica de «Desa».</para
 ></answer>
 </qandaentry>
 <qandaentry>
