@@ -27,7 +27,7 @@
 #include <KConfigDialog>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <highscore/kscoredialog.h>
+#include <KGameHighScoreDialog>
 #include <KStandardAction>
 #include <KGameStandardAction>
 #include <KActionCollection>
@@ -276,16 +276,16 @@ void kiriki::endGame()
 	m_hintAction -> setEnabled(false);
 	if (p.isHuman())
 	{
-		QPointer<KScoreDialog> sc = new KScoreDialog(KScoreDialog::Name | KScoreDialog::Score | KScoreDialog::Date, this);
+		QPointer<KGameHighScoreDialog> sc = new KGameHighScoreDialog(KGameHighScoreDialog::Name | KGameHighScoreDialog::Score | KGameHighScoreDialog::Date, this);
 		if (m_hintGiven) m_hintGiven = false;
 		else
 		{
-			KScoreDialog::FieldInfo scoreInfo;
-			scoreInfo[KScoreDialog::Score].setNum(p.grandTotal());
+			KGameHighScoreDialog::FieldInfo scoreInfo;
+			scoreInfo[KGameHighScoreDialog::Score].setNum(p.grandTotal());
 			const QDate date = QDate::currentDate();
                         QLocale l;
                         const QString datestring = l.toString(date, QLocale::ShortFormat);
-			scoreInfo[KScoreDialog::Date] = datestring;
+			scoreInfo[KGameHighScoreDialog::Date] = datestring;
 			
 			if (sc->addScore(scoreInfo))
 			{
@@ -299,7 +299,7 @@ void kiriki::endGame()
 
 void kiriki::showHighScores()
 {
-	KScoreDialog sc(KScoreDialog::Name | KScoreDialog::Score | KScoreDialog::Date, this);
+	KGameHighScoreDialog sc(KGameHighScoreDialog::Name | KGameHighScoreDialog::Score | KGameHighScoreDialog::Date, this);
 	sc.exec();
 }
 
