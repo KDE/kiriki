@@ -22,7 +22,8 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-	KLocalizedString::setApplicationDomain("kiriki");
+	KLocalizedString::setApplicationDomain(QByteArrayLiteral("kiriki"));
+
 	KAboutData about(QStringLiteral("kiriki"), i18n("Kiriki"),
             QStringLiteral(KIRIKI_VERSION_STRING),
             i18n("A Yahtzee dice game by KDE"),
