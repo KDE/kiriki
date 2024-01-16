@@ -120,6 +120,4 @@ GenericName[x-test]=xxYahtzee-like Dice Gamexx
 GenericName[zh_CN]=类似 Yahtzee 的骰子游戏
 GenericName[zh_TW]=類似 Yahtzee 的骰子遊戲
 StartupNotify=true
-X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Game;BoardGame;
-X-DBUS-ServiceName=org.kde.kiriki
