@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-09 01:44+0000\n"
+"POT-Creation-Date: 2024-01-17 00:36+0000\n"
 "PO-Revision-Date: 2017-09-28 17:59+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -210,23 +210,23 @@ msgstr "&Baci"
 msgid "Roll %1 of 3"
 msgstr "Bacanje %1 od 3"
 
-#: main.cpp:26 scores.cpp:77
+#: main.cpp:27 scores.cpp:77
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
 
 # well-spelled: Јамболика
-#: main.cpp:28
+#: main.cpp:29
 #, kde-format
 msgid "A Yahtzee dice game by KDE"
 msgstr "Jambolika igra iz KDE‑a"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
 msgstr "© 2005—2007, Albert Astals Sid"
 
-#: main.cpp:33
+#: main.cpp:34
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Sid"
