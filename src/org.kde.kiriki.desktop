@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Kiriki
+Name[ar]=كاراكا
 Name[ast]=Kiriki
 Name[bg]=Kiriki
 Name[bs]=Kiriki
@@ -64,6 +65,7 @@ Type=Application
 Exec=kiriki -qwindowtitle %c
 X-DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
+GenericName[ar]=لعبة النرد الشبيهة بياهتزي
 GenericName[bg]=Игра със зарове подобна на Yahtzee
 GenericName[bs]=Yahtzee-kao jamb
 GenericName[ca]=Joc de daus com el Yahtzee
