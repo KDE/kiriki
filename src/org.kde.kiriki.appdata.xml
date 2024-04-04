@@ -28,6 +28,7 @@
   <name xml:lang="it">Kiriki</name>
   <name xml:lang="ka">Kiriki</name>
   <name xml:lang="ko">Kiriki</name>
+  <name xml:lang="lv">Kiriki</name>
   <name xml:lang="nl">Kiriki</name>
   <name xml:lang="nn">Kiriki</name>
   <name xml:lang="pl">Kiriki</name>
@@ -66,6 +67,7 @@
   <summary xml:lang="it">Gioco di dadi in stile Yahtzee</summary>
   <summary xml:lang="ka">Yahtzee-ის მსგავსი კამათლის გაგორების თამაში</summary>
   <summary xml:lang="ko">야찌형 주사위 게임</summary>
+  <summary xml:lang="lv">„Yahtzee“ līdzīga kauliņu spēle</summary>
   <summary xml:lang="nl">Yahtzee-achtig dobbelsteenspel</summary>
   <summary xml:lang="nn">Yatzy-liknande terningspel</summary>
   <summary xml:lang="pl">Gra kostką typu Yahtzee</summary>
@@ -107,6 +109,7 @@
     <p xml:lang="it">Kiriki è un gioco di dadi divertente e coinvolgente, studiato per essere giocato fino a un massimo di sei giocatori. I partecipanti devono accumulare punti lanciando cinque dadi fino a tre volte per singolo turno.</p>
     <p xml:lang="ka">Kiriki მიჩვევადი თამაშია კამათლის გაგორებაზე. შეიძლება ითამაშოს ექვსამდე ადამიანმა. მონაწილეები აგროვებენ წერტილებს ერთი სვლისას მაქსიმუმ სამჯერ კამათლის გაგორებით.</p>
     <p xml:lang="ko">Kiriki는 최대 6명이 플레이할 수 있는 재미있는 주사위 게임입니다. 참가자는 주사위 다섯 개를 턴당 최대 세 번까지 던져서 점수를 얻어야 합니다.</p>
+    <p xml:lang="lv">„Kiriki“ ir aizraujoša un jautra kauliņu spēle, ko var spēlēt līdz pat sešiem spēlētājiem. Dalībniekiem ir jākrāj punkti, metot piecus kauliņus līdz trim reizēm katrā gājienā.</p>
     <p xml:lang="nl">Kiriki is een verslavend en plezierig spel met dobbelstenen, ontworpen om gespeeld te worden door zoveel als zes spelers. Deelnemers moeten punten verzamelen door vijf dobbelstenen tot drie keer per enkele beurt te gooien.</p>
     <p xml:lang="nn">Kiriki er eit vanedannande og morosamt terningspel, som kan spelast av opptil seks spelarar. Deltakarane får poeng ved å trilla fem terningar opptil tre gongar per omgang.</p>
     <p xml:lang="pl">Kirki jest uzależniającą i ciekawą grą kostką, stworzoną do gry nawet w sześć osób. Gracze zbierają punkty rzucając pięcioma kostkami do trzech razy na turę. </p>
