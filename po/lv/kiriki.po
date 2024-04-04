@@ -5,31 +5,32 @@
 # Maris Nartiss <maris.kde@gmail.com>, 2007.
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
 # Einars Sprugis <einars8@gmail.com>, 2011, 2012.
+# SPDX-FileCopyrightText: 2024 Toms Trasūns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-17 00:36+0000\n"
-"PO-Revision-Date: 2012-06-29 22:24+0300\n"
-"Last-Translator: Einars Sprugis <einars8@gmail.com>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2024-04-02 14:59+0300\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Māris Nartišs"
+msgstr "Māris Nartišs, Toms Trasūns"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "maris.kde@gmail.com"
+msgstr "maris.kde@gmail.com, toms.trasuns@posteo.net"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -107,13 +108,13 @@ msgstr "Fonta izmērs:"
 #: configPage.ui:224
 #, kde-format
 msgid "Row Height:"
-msgstr ""
+msgstr "Rindas augstums:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
 #: configPage.ui:243
 #, kde-format
 msgid "Show demonstration game at startup"
-msgstr "Palaižot rādīt paraugspēli"
+msgstr "Palaižot, rādīt demonstrāciju"
 
 #: kiriki.cpp:174
 #, kde-format
@@ -121,13 +122,13 @@ msgid ""
 "Starting the demo will end the current game. Any progress will be lost. Do "
 "you want to continue?"
 msgstr ""
-"Palaižot demo, pašreizējā spēle tiks apturēta. Jebkāds progress tiks "
+"Sākot demonstrāciju, pašreizējā partija tiks apturēta. Jebkāds progress tiks "
 "zaudēts. Vai vēlies turpināt?"
 
 #: kiriki.cpp:207
 #, kde-format
 msgid "Demonstration. Press \"New\" to start a new game."
-msgstr "Demonstrācija. Nospied \"Jauna\", lai sāktu jaunu spēli."
+msgstr "Demonstrācija. Spiediet „Jauna“, lai sāktu jaunu partiju."
 
 #: kiriki.cpp:216
 #, kde-format
@@ -135,18 +136,18 @@ msgid ""
 "Asking for a hint will disqualify the current game from entering the high "
 "score list."
 msgstr ""
-"Jautājot pēc ieteikuma, pašreizējā spēle tiks diskvalificēta no iekļūšanas "
+"Jautājot pēc ieteikuma, pašreizējā partija tiks diskvalificēta no iekļūšanas "
 "labāko rezultātu sarakstā."
 
 #: kiriki.cpp:217
 #, kde-format
 msgid "Confirm Hint Request"
-msgstr "Apstiprināt ieteikuma pieprasījumu"
+msgstr "Apstiprināt padoma lūgumu"
 
 #: kiriki.cpp:218
 #, kde-format
 msgid "Give Hint Anyway"
-msgstr "Tomēr parādīt ieteikumu"
+msgstr "Tāpat parādīt padomu"
 
 #: kiriki.cpp:237
 #, kde-format
@@ -159,7 +160,7 @@ msgstr[2] "Mest izceltos kauliņus."
 #: kiriki.cpp:347
 #, kde-format
 msgid "Changes will be applied on next game."
-msgstr "Izmaiņas būs pieejamas nākamajā spēlē."
+msgstr "Izmaiņas stāsies spēkā nākamajā partijā."
 
 #: kiriki.kcfg:40
 #, kde-format
@@ -189,7 +190,7 @@ msgstr "Skaidrīte"
 #, kde-format
 msgctxt "default name of fifth player"
 msgid "Thomas"
-msgstr "Antūns"
+msgstr "Ontūns"
 
 #: kiriki.kcfg:70
 #, kde-format
@@ -213,15 +214,14 @@ msgid "Kiriki"
 msgstr "Kiriki"
 
 #: main.cpp:29
-#, fuzzy, kde-format
-#| msgid "A Yahtzee dice game for KDE"
+#, kde-format
 msgid "A Yahtzee dice game by KDE"
-msgstr "Yahtzee kauliņu spēle KDE videi"
+msgstr "„Yahtzee“ kauliņu spēle KDE videi"
 
 #: main.cpp:31
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
-msgstr "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005—2007 Albert Astals Cid"
 
 #: main.cpp:34
 #, kde-format
@@ -231,32 +231,32 @@ msgstr "Albert Astals Cid"
 #: scores.cpp:63
 #, kde-format
 msgid "1s"
-msgstr "1sek"
+msgstr "1 sek."
 
 #: scores.cpp:64
 #, kde-format
 msgid "2s"
-msgstr "2sek"
+msgstr "2 sek."
 
 #: scores.cpp:65
 #, kde-format
 msgid "3s"
-msgstr "3sek"
+msgstr "3 sek."
 
 #: scores.cpp:66
 #, kde-format
 msgid "4s"
-msgstr "4sek"
+msgstr "4 sek."
 
 #: scores.cpp:67
 #, kde-format
 msgid "5s"
-msgstr "5sek"
+msgstr "5 sek."
 
 #: scores.cpp:68
 #, kde-format
 msgid "6s"
-msgstr "6sek"
+msgstr "6 sek."
 
 #: scores.cpp:69
 #, kde-format
@@ -266,32 +266,32 @@ msgstr "Bonuss, ja > 62"
 #: scores.cpp:70
 #, kde-format
 msgid "Upper total"
-msgstr ""
+msgstr "Augstākie kopā"
 
 #: scores.cpp:72
 #, kde-format
 msgid "3 of a Kind"
-msgstr "trīs vienādi"
+msgstr "Trīs vienādi"
 
 #: scores.cpp:73
 #, kde-format
 msgid "4 of a Kind"
-msgstr "četri vienādi"
+msgstr "Četri vienādi"
 
 #: scores.cpp:74
 #, kde-format
 msgid "Full House"
-msgstr ""
+msgstr "Full House"
 
 #: scores.cpp:75
 #, kde-format
 msgid "Small Straight"
-msgstr ""
+msgstr "Mazā trepe"
 
 #: scores.cpp:76
 #, kde-format
 msgid "Large Straight"
-msgstr ""
+msgstr "Lielā trepe"
 
 #: scores.cpp:78
 #, kde-format
@@ -301,9 +301,9 @@ msgstr "Iespēja"
 #: scores.cpp:79
 #, kde-format
 msgid "Lower Total"
-msgstr ""
+msgstr "Zemākie kopā"
 
 #: scores.cpp:81
 #, kde-format
 msgid "Grand Total"
-msgstr ""
+msgstr "Pavisam kopā"
