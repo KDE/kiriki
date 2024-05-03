@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-17 00:36+0000\n"
-"PO-Revision-Date: 2024-02-12 21:16+0400\n"
+"PO-Revision-Date: 2024-05-02 11:42+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -19,7 +19,7 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Generator: Lokalize 23.08.1\n"
 
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Mohamed SAAD محمد سعد"
@@ -93,7 +93,7 @@ msgstr "6."
 #: configPage.ui:189
 #, kde-format
 msgid "Delay between computers move (msec):"
-msgstr ""
+msgstr "التأخير بين تحركات الحاسوب (ميللي ثانية):"
 
 #. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
 #: configPage.ui:203
@@ -105,13 +105,13 @@ msgstr "حجم الخطّ:"
 #: configPage.ui:224
 #, kde-format
 msgid "Row Height:"
-msgstr ""
+msgstr "ارتفاع الصف:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
 #: configPage.ui:243
 #, kde-format
 msgid "Show demonstration game at startup"
-msgstr ""
+msgstr "عرض لعبة العرض التوضيحي عند بدء التشغيل"
 
 #: kiriki.cpp:174
 #, kde-format
@@ -119,11 +119,13 @@ msgid ""
 "Starting the demo will end the current game. Any progress will be lost. Do "
 "you want to continue?"
 msgstr ""
+"سيؤدي بدء العرض التوضيحي إلى إنهاء اللعبة الحالية. سيفقد أي تقدم. هل تريد "
+"الاستمرار؟"
 
 #: kiriki.cpp:207
 #, kde-format
 msgid "Demonstration. Press \"New\" to start a new game."
-msgstr ""
+msgstr "توضيح. اضغط على \"جديد\" لبدء لعبة جديدة."
 
 #: kiriki.cpp:216
 #, kde-format
@@ -131,6 +133,8 @@ msgid ""
 "Asking for a hint will disqualify the current game from entering the high "
 "score list."
 msgstr ""
+"سيؤدي طلب التلميح إلى استبعاد اللعبة الحالية من الدخول إلى قائمة النتائج "
+"العالية."
 
 #: kiriki.cpp:217
 #, kde-format
@@ -146,12 +150,12 @@ msgstr "أعط تلميح على كل حال"
 #, kde-format
 msgid "Roll highlighted die."
 msgid_plural "Roll highlighted dice."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
+msgstr[0] "ارم النرد المميز."
+msgstr[1] "ارم النرد المميز."
+msgstr[2] "ارم النرد المميز."
+msgstr[3] "ارم النرد المميز."
+msgstr[4] "ارم النرد المميز."
+msgstr[5] "ارم النرد المميز."
 
 #: kiriki.cpp:347
 #, kde-format
@@ -222,7 +226,7 @@ msgstr "© 2005-2007 Albert Astals Cid"
 #: main.cpp:34
 #, kde-format
 msgid "Albert Astals Cid"
-msgstr "Albert Astals Cid"
+msgstr "البرت استالس كيد"
 
 #: scores.cpp:63
 #, kde-format
