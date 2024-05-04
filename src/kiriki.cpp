@@ -214,8 +214,8 @@ void kiriki::showHint()
 	if (!m_hintGiven && KMessageBox::Cancel == KMessageBox::warningContinueCancel(
 			this,
 			i18n("Asking for a hint will disqualify the current game from entering the high score list."),
-			i18n("Confirm Hint Request"),
-			KGuiItem(i18n("Give Hint Anyway"), QStringLiteral("arrow-right"))
+			i18nc("@title:window", "Confirm Hint Request"),
+			KGuiItem(i18nc("æction:button", "Give Hint Anyway"), QStringLiteral("arrow-right"))
 			)
 		) return;
 	m_hintGiven = true;

@@ -60,25 +60,25 @@ scores::scores()
 	m_currentPlayer = 0;
 	
 	m_rows.append(Row(Row::NamesRow));
-	m_rows.append(Row(Row::ScoreRow, i18n("1s"), 0));
-	m_rows.append(Row(Row::ScoreRow, i18n("2s"), 1));
-	m_rows.append(Row(Row::ScoreRow, i18n("3s"), 2));
-	m_rows.append(Row(Row::ScoreRow, i18n("4s"), 3));
-	m_rows.append(Row(Row::ScoreRow, i18n("5s"), 4));
-	m_rows.append(Row(Row::ScoreRow, i18n("6s"), 5));
-	m_rows.append(Row(Row::BonusRow, i18n("Bonus if > 62"), -1, Row::BoldFontFlag));
-	m_rows.append(Row(Row::UpperTotalRow, i18n("Upper total"), -1, Row::BoldFontFlag));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "1s"), 0));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "2s"), 1));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "3s"), 2));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "4s"), 3));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "5s"), 4));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "6s"), 5));
+	m_rows.append(Row(Row::BonusRow, i18nc("@title:row", "Bonus if > 62"), -1, Row::BoldFontFlag));
+	m_rows.append(Row(Row::UpperTotalRow, i18nc("@title:row", "Upper total"), -1, Row::BoldFontFlag));
 	m_rows.append(Row(Row::EmptyRow));
-	m_rows.append(Row(Row::ScoreRow, i18n("3 of a Kind"), 6));
-	m_rows.append(Row(Row::ScoreRow, i18n("4 of a Kind"), 7));
-	m_rows.append(Row(Row::ScoreRow, i18n("Full House"), 8));
-	m_rows.append(Row(Row::ScoreRow, i18n("Small Straight"), 9));
-	m_rows.append(Row(Row::ScoreRow, i18n("Large Straight"), 10));
-	m_rows.append(Row(Row::ScoreRow, i18n("Kiriki"), 11));
-	m_rows.append(Row(Row::ScoreRow, i18n("Chance"), 12));
-	m_rows.append(Row(Row::LowerTotalRow, i18n("Lower Total"), -1, Row::BoldFontFlag));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "3 of a Kind"), 6));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "4 of a Kind"), 7));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "Full House"), 8));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "Small Straight"), 9));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "Large Straight"), 10));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "Kiriki"), 11));
+	m_rows.append(Row(Row::ScoreRow, i18nc("@title:row", "Chance"), 12));
+	m_rows.append(Row(Row::LowerTotalRow, i18nc("@title:row", "Lower Total"), -1, Row::BoldFontFlag));
 	m_rows.append(Row(Row::EmptyRow));
-	m_rows.append(Row(Row::GrandTotalRow, i18n("Grand Total"), -1, Row::BoldFontFlag | Row::BiggerFontFlag));
+	m_rows.append(Row(Row::GrandTotalRow, i18nc("@title:row", "Grand Total"), -1, Row::BoldFontFlag | Row::BiggerFontFlag));
 }
 
 bool scores::allScores() const
