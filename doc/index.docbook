@@ -153,7 +153,7 @@
 				<term><menuchoice>
 					<shortcut><keycombo action="simul">&Ctrl;<keycap>P</keycap></keycombo></shortcut>
 					<guimenu>Game</guimenu>
-					<guimenuitem>Print...</guimenuitem>
+					<guimenuitem>Print…</guimenuitem>
 				</menuchoice></term>
 				<listitem><para><action>Prints current score board.</action></para></listitem>
 			</varlistentry>
