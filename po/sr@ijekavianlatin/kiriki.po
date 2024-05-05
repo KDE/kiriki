@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-17 00:36+0000\n"
+"POT-Creation-Date: 2024-05-05 00:37+0000\n"
 "PO-Revision-Date: 2017-09-28 17:59+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -141,12 +141,16 @@ msgstr ""
 
 # >> @title:window
 #: kiriki.cpp:217
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Confirm Hint Request"
+msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "Potvrda zahtijeva za savjet"
 
 #: kiriki.cpp:218
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give Hint Anyway"
+msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "Daj savjet svejedno"
 
@@ -201,7 +205,9 @@ msgid "Margaret"
 msgstr "Maša"
 
 #: lateralwidget.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Roll"
+msgctxt "@action:button"
 msgid "&Roll"
 msgstr "&Baci"
 
@@ -210,7 +216,7 @@ msgstr "&Baci"
 msgid "Roll %1 of 3"
 msgstr "Bacanje %1 od 3"
 
-#: main.cpp:27 scores.cpp:77
+#: main.cpp:27
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
@@ -232,81 +238,120 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Sid"
 
 #: scores.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1s"
+msgctxt "@title:row"
 msgid "1s"
 msgstr "1s"
 
 #: scores.cpp:64
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "2s"
+msgctxt "@title:row"
 msgid "2s"
 msgstr "2s"
 
 #: scores.cpp:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3s"
+msgctxt "@title:row"
 msgid "3s"
 msgstr "3s"
 
 #: scores.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4s"
+msgctxt "@title:row"
 msgid "4s"
 msgstr "4s"
 
 #: scores.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "5s"
+msgctxt "@title:row"
 msgid "5s"
 msgstr "5s"
 
 #: scores.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "6s"
+msgctxt "@title:row"
 msgid "6s"
 msgstr "6s"
 
 #: scores.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Bonus if > 62"
+msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "bonus ako > 62"
 
 #: scores.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Upper total"
+msgctxt "@title:row"
 msgid "Upper total"
 msgstr "gornji zbir"
 
 #: scores.cpp:72
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3 of a Kind"
+msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "3 iste"
 
 #: scores.cpp:73
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4 of a Kind"
+msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "4 iste"
 
 #: scores.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Full House"
+msgctxt "@title:row"
 msgid "Full House"
 msgstr "ful"
 
 #: scores.cpp:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Small Straight"
+msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "mala kenta"
 
 #: scores.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Large Straight"
+msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "velika kenta"
 
+#: scores.cpp:77
+#, fuzzy, kde-format
+#| msgid "Kiriki"
+msgctxt "@title:row"
+msgid "Kiriki"
+msgstr "Kiriki"
+
 #: scores.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Chance"
+msgctxt "@title:row"
 msgid "Chance"
 msgstr "šansa"
 
 #: scores.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Lower Total"
+msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "donji zbir"
 
 #: scores.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Grand Total"
+msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "ukupan zbir"

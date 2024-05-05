@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-17 00:36+0000\n"
+"POT-Creation-Date: 2024-05-05 00:37+0000\n"
 "PO-Revision-Date: 2017-07-03 20:58+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
@@ -135,12 +135,16 @@ msgid ""
 msgstr "若要尋求提示，您將無法進入高分榜。"
 
 #: kiriki.cpp:217
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Confirm Hint Request"
+msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "確認要求提示"
 
 #: kiriki.cpp:218
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give Hint Anyway"
+msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "拜託給點提示吧"
 
@@ -192,7 +196,9 @@ msgid "Margaret"
 msgstr "Margaret"
 
 #: lateralwidget.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Roll"
+msgctxt "@action:button"
 msgid "&Roll"
 msgstr "擲骰子(&R)"
 
@@ -201,7 +207,7 @@ msgstr "擲骰子(&R)"
 msgid "Roll %1 of 3"
 msgstr "擲骰子（%1 / 3）"
 
-#: main.cpp:27 scores.cpp:77
+#: main.cpp:27
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
@@ -222,81 +228,120 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
 #: scores.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1s"
+msgctxt "@title:row"
 msgid "1s"
 msgstr "1秒"
 
 #: scores.cpp:64
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "2s"
+msgctxt "@title:row"
 msgid "2s"
 msgstr "2秒"
 
 #: scores.cpp:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3s"
+msgctxt "@title:row"
 msgid "3s"
 msgstr "3秒"
 
 #: scores.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4s"
+msgctxt "@title:row"
 msgid "4s"
 msgstr "4秒"
 
 #: scores.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "5s"
+msgctxt "@title:row"
 msgid "5s"
 msgstr "5秒"
 
 #: scores.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "6s"
+msgctxt "@title:row"
 msgid "6s"
 msgstr "6秒"
 
 #: scores.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Bonus if > 62"
+msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "如果大於 62 會有紅利"
 
 #: scores.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Upper total"
+msgctxt "@title:row"
 msgid "Upper total"
 msgstr "高總數"
 
 #: scores.cpp:72
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3 of a Kind"
+msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "三條"
 
 #: scores.cpp:73
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4 of a Kind"
+msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "鐵支"
 
 #: scores.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Full House"
+msgctxt "@title:row"
 msgid "Full House"
 msgstr "葫蘆"
 
 #: scores.cpp:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Small Straight"
+msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "小順"
 
 #: scores.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Large Straight"
+msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "大順"
 
+#: scores.cpp:77
+#, fuzzy, kde-format
+#| msgid "Kiriki"
+msgctxt "@title:row"
+msgid "Kiriki"
+msgstr "Kiriki"
+
 #: scores.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Chance"
+msgctxt "@title:row"
 msgid "Chance"
 msgstr "機會"
 
 #: scores.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Lower Total"
+msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "低總數"
 
 #: scores.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Grand Total"
+msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "總計"

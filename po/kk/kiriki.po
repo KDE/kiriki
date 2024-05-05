@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-17 00:36+0000\n"
+"POT-Creation-Date: 2024-05-05 00:37+0000\n"
 "PO-Revision-Date: 2013-07-11 03:07+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -133,12 +133,16 @@ msgid ""
 msgstr "Ишараны сұрау ойнап жатқанды нәтижелер тізіміне жазудан айырады."
 
 #: kiriki.cpp:217
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Confirm Hint Request"
+msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "Ишараны сұрауды құптау"
 
 #: kiriki.cpp:218
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give Hint Anyway"
+msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "Бәрібір ишара керек"
 
@@ -190,7 +194,9 @@ msgid "Margaret"
 msgstr "Мәке"
 
 #: lateralwidget.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Roll"
+msgctxt "@action:button"
 msgid "&Roll"
 msgstr "&Лақтыру"
 
@@ -199,7 +205,7 @@ msgstr "&Лақтыру"
 msgid "Roll %1 of 3"
 msgstr "Үштен %1 лақтыру"
 
-#: main.cpp:27 scores.cpp:77
+#: main.cpp:27
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
@@ -221,81 +227,120 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
 #: scores.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1s"
+msgctxt "@title:row"
 msgid "1s"
 msgstr "Бірлер"
 
 #: scores.cpp:64
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "2s"
+msgctxt "@title:row"
 msgid "2s"
 msgstr "Екілер"
 
 #: scores.cpp:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3s"
+msgctxt "@title:row"
 msgid "3s"
 msgstr "Үштер"
 
 #: scores.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4s"
+msgctxt "@title:row"
 msgid "4s"
 msgstr "Төртер"
 
 #: scores.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "5s"
+msgctxt "@title:row"
 msgid "5s"
 msgstr "Бестер"
 
 #: scores.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "6s"
+msgctxt "@title:row"
 msgid "6s"
 msgstr "Алтылар"
 
 #: scores.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Bonus if > 62"
+msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "Егер > 62 болса - сыйлық"
 
 #: scores.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Upper total"
+msgctxt "@title:row"
 msgid "Upper total"
 msgstr "Бүкілінен көбі"
 
 #: scores.cpp:72
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3 of a Kind"
+msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "Үштік"
 
 #: scores.cpp:73
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4 of a Kind"
+msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "Каре"
 
 #: scores.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Full House"
+msgctxt "@title:row"
 msgid "Full House"
 msgstr "Фул хаус"
 
 #: scores.cpp:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Small Straight"
+msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "Кіші стрит"
 
 #: scores.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Large Straight"
+msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "Үлкен стрит"
 
+#: scores.cpp:77
+#, fuzzy, kde-format
+#| msgid "Kiriki"
+msgctxt "@title:row"
+msgid "Kiriki"
+msgstr "Kiriki"
+
 #: scores.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Chance"
+msgctxt "@title:row"
 msgid "Chance"
 msgstr "Шанс"
 
 #: scores.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Lower Total"
+msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "Бүкілінен кішісі"
 
 #: scores.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Grand Total"
+msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "Ақырғы қорытынды"

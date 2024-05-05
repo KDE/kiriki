@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-17 00:36+0000\n"
+"POT-Creation-Date: 2024-05-05 00:37+0000\n"
 "PO-Revision-Date: 2024-04-06 23:20+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -132,12 +132,16 @@ msgid ""
 msgstr "בקשת רמז תשלול את זכאות המשחק להיכנס לטבלת השיאים."
 
 #: kiriki.cpp:217
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Confirm Hint Request"
+msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "אישור בקשת רמז"
 
 #: kiriki.cpp:218
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Give Hint Anyway"
+msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "להעניק רמז בכל זאת"
 
@@ -192,7 +196,9 @@ msgid "Margaret"
 msgstr "מרים"
 
 #: lateralwidget.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Roll"
+msgctxt "@action:button"
 msgid "&Roll"
 msgstr "ה&טלה"
 
@@ -201,7 +207,7 @@ msgstr "ה&טלה"
 msgid "Roll %1 of 3"
 msgstr "הטלה %1 מתוך 3"
 
-#: main.cpp:27 scores.cpp:77
+#: main.cpp:27
 #, kde-format
 msgid "Kiriki"
 msgstr "קיריקי"
@@ -222,81 +228,120 @@ msgid "Albert Astals Cid"
 msgstr "אלברט אסטלס סיד"
 
 #: scores.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1s"
+msgctxt "@title:row"
 msgid "1s"
 msgstr "יחידות"
 
 #: scores.cpp:64
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "2s"
+msgctxt "@title:row"
 msgid "2s"
 msgstr "זוגות"
 
 #: scores.cpp:65
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3s"
+msgctxt "@title:row"
 msgid "3s"
 msgstr "שלשות"
 
 #: scores.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4s"
+msgctxt "@title:row"
 msgid "4s"
 msgstr "רביעיות"
 
 #: scores.cpp:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "5s"
+msgctxt "@title:row"
 msgid "5s"
 msgstr "חמישיות"
 
 #: scores.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "6s"
+msgctxt "@title:row"
 msgid "6s"
 msgstr "שישיות"
 
 #: scores.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Bonus if > 62"
+msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "בונוס אם > 62"
 
 #: scores.cpp:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Upper total"
+msgctxt "@title:row"
 msgid "Upper total"
 msgstr "סכום עליון"
 
 #: scores.cpp:72
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "3 of a Kind"
+msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "3 מאותו סוג"
 
 #: scores.cpp:73
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "4 of a Kind"
+msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "4 מאותו סוג"
 
 #: scores.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Full House"
+msgctxt "@title:row"
 msgid "Full House"
 msgstr "פול האוס"
 
 #: scores.cpp:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Small Straight"
+msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "סטרייט קטן"
 
 #: scores.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Large Straight"
+msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "סטרייט גדול"
 
+#: scores.cpp:77
+#, fuzzy, kde-format
+#| msgid "Kiriki"
+msgctxt "@title:row"
+msgid "Kiriki"
+msgstr "קיריקי"
+
 #: scores.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Chance"
+msgctxt "@title:row"
 msgid "Chance"
 msgstr "סיכוי"
 
 #: scores.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Lower Total"
+msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "סכום תחתון"
 
 #: scores.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Grand Total"
+msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "סיכום כולל"
