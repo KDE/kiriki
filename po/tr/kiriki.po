@@ -5,13 +5,13 @@
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2010.
 # Serdar Dalgıç, 2010.
 # obsoleteman <tulliana@gmail.com>, 2008.
-# Emir SARI <emir_sari@icloud.com>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdegames-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-05 00:37+0000\n"
-"PO-Revision-Date: 2022-12-17 18:38+0300\n"
+"PO-Revision-Date: 2024-05-06 00:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -101,13 +101,13 @@ msgstr "Bilgisayarın hareketleri arasındaki süre (milisaniye):"
 #: configPage.ui:203
 #, kde-format
 msgid "Font Size:"
-msgstr "Yazıtipi Boyutu:"
+msgstr "Yazıtipi boyutu:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: configPage.ui:224
 #, kde-format
 msgid "Row Height:"
-msgstr "Satır Yüksekliği:"
+msgstr "Satır yüksekliği:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
 #: configPage.ui:243
@@ -127,7 +127,7 @@ msgstr ""
 #: kiriki.cpp:207
 #, kde-format
 msgid "Demonstration. Press \"New\" to start a new game."
-msgstr "Tanıtım. Yeni bir oyun başlatmak için \"Yeni\" düğmesine tıklayın."
+msgstr "Tanıtım. Yeni bir oyun başlatmak için ‘Yeni’ düğmesine tıklayın."
 
 #: kiriki.cpp:216
 #, kde-format
@@ -139,15 +139,13 @@ msgstr ""
 "olacaktır."
 
 #: kiriki.cpp:217
-#, fuzzy, kde-format
-#| msgid "Confirm Hint Request"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "İpucu İsteğini Onayla"
 
 #: kiriki.cpp:218
-#, fuzzy, kde-format
-#| msgid "Give Hint Anyway"
+#, kde-format
 msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "İpucunu Yine de Göster"
@@ -201,8 +199,7 @@ msgid "Margaret"
 msgstr "Umay"
 
 #: lateralwidget.cpp:30
-#, fuzzy, kde-format
-#| msgid "&Roll"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Roll"
 msgstr "&Zar At"
@@ -225,7 +222,7 @@ msgstr "KDE için bir Yahtzee zar atma oyunu"
 #: main.cpp:31
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
-msgstr "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005–2007 Albert Astals Cid"
 
 #: main.cpp:34
 #, kde-format
@@ -233,120 +230,103 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
 #: scores.cpp:63
-#, fuzzy, kde-format
-#| msgid "1s"
+#, kde-format
 msgctxt "@title:row"
 msgid "1s"
 msgstr "1 s"
 
 #: scores.cpp:64
-#, fuzzy, kde-format
-#| msgid "2s"
+#, kde-format
 msgctxt "@title:row"
 msgid "2s"
 msgstr "2 s"
 
 #: scores.cpp:65
-#, fuzzy, kde-format
-#| msgid "3s"
+#, kde-format
 msgctxt "@title:row"
 msgid "3s"
-msgstr "3 s"
+msgstr "3 s "
 
 #: scores.cpp:66
-#, fuzzy, kde-format
-#| msgid "4s"
+#, kde-format
 msgctxt "@title:row"
 msgid "4s"
 msgstr "4 s"
 
 #: scores.cpp:67
-#, fuzzy, kde-format
-#| msgid "5s"
+#, kde-format
 msgctxt "@title:row"
 msgid "5s"
 msgstr "5 s"
 
 #: scores.cpp:68
-#, fuzzy, kde-format
-#| msgid "6s"
+#, kde-format
 msgctxt "@title:row"
 msgid "6s"
 msgstr "6 s"
 
 #: scores.cpp:69
-#, fuzzy, kde-format
-#| msgid "Bonus if > 62"
+#, kde-format
 msgctxt "@title:row"
 msgid "Bonus if > 62"
-msgstr "62'den büyükse bonus"
+msgstr "62’den Büyükse Bonus"
 
 #: scores.cpp:70
-#, fuzzy, kde-format
-#| msgid "Upper total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
-msgstr "Üst toplam"
+msgstr "Üst Toplam"
 
 #: scores.cpp:72
-#, fuzzy, kde-format
-#| msgid "3 of a Kind"
+#, kde-format
 msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "Üçlü"
 
 #: scores.cpp:73
-#, fuzzy, kde-format
-#| msgid "4 of a Kind"
+#, kde-format
 msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "Dörtlü"
 
 #: scores.cpp:74
-#, fuzzy, kde-format
-#| msgid "Full House"
+#, kde-format
 msgctxt "@title:row"
 msgid "Full House"
-msgstr "Dolu Ev"
+msgstr "Tam Set"
 
 #: scores.cpp:75
-#, fuzzy, kde-format
-#| msgid "Small Straight"
+#, kde-format
 msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "Küçük Düz"
 
 #: scores.cpp:76
-#, fuzzy, kde-format
-#| msgid "Large Straight"
+#, kde-format
 msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "Büyük Düz"
 
 #: scores.cpp:77
-#, fuzzy, kde-format
-#| msgid "Kiriki"
+#, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
 msgstr "Kiriki"
 
 #: scores.cpp:78
-#, fuzzy, kde-format
-#| msgid "Chance"
+#, kde-format
 msgctxt "@title:row"
 msgid "Chance"
 msgstr "Şans"
 
 #: scores.cpp:79
-#, fuzzy, kde-format
-#| msgid "Lower Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "Ara Toplam"
 
 #: scores.cpp:81
-#, fuzzy, kde-format
-#| msgid "Grand Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "Ana Toplam"
