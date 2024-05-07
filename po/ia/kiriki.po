@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the kiriki package.
 #
-# giovanni <g.sora@tiscali.it>, 2023.
+# giovanni <g.sora@tiscali.it>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-05 00:37+0000\n"
-"PO-Revision-Date: 2023-09-25 17:57+0200\n"
+"PO-Revision-Date: 2024-05-06 14:52+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -103,7 +103,7 @@ msgstr "Dimension de Font:"
 #: configPage.ui:224
 #, kde-format
 msgid "Row Height:"
-msgstr ""
+msgstr "Altessa de Rango:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
 #: configPage.ui:243
@@ -158,53 +158,53 @@ msgstr ""
 #, kde-format
 msgctxt "default name of first player"
 msgid "Albert"
-msgstr ""
+msgstr "Albert"
 
 #: kiriki.kcfg:46
 #, kde-format
 msgctxt "default name of second player"
 msgid "Janet"
-msgstr ""
+msgstr "Janet"
 
 #: kiriki.kcfg:52
 #, kde-format
 msgctxt "default name of third player"
 msgid "James"
-msgstr ""
+msgstr "James"
 
 #: kiriki.kcfg:58
 #, kde-format
 msgctxt "default name of fourth player"
 msgid "Sandra"
-msgstr ""
+msgstr "Sandra"
 
 #: kiriki.kcfg:64
 #, kde-format
 msgctxt "default name of fifth player"
 msgid "Thomas"
-msgstr ""
+msgstr "Thomas"
 
 #: kiriki.kcfg:70
 #, kde-format
 msgctxt "default name of sixth player"
 msgid "Margaret"
-msgstr ""
+msgstr "Margaret"
 
 #: lateralwidget.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "&Roll"
-msgstr ""
+msgstr "&Rola"
 
 #: lateralwidget.cpp:198
 #, kde-format
 msgid "Roll %1 of 3"
-msgstr ""
+msgstr "Rola %1 de 3"
 
 #: main.cpp:27
 #, kde-format
 msgid "Kiriki"
-msgstr ""
+msgstr "Kiriki"
 
 #: main.cpp:29
 #, kde-format
@@ -222,43 +222,37 @@ msgid "Albert Astals Cid"
 msgstr "Albert  Astals Cid"
 
 #: scores.cpp:63
-#, fuzzy, kde-format
-#| msgid "1s"
+#, kde-format
 msgctxt "@title:row"
 msgid "1s"
 msgstr "1s"
 
 #: scores.cpp:64
-#, fuzzy, kde-format
-#| msgid "2s"
+#, kde-format
 msgctxt "@title:row"
 msgid "2s"
 msgstr "2s"
 
 #: scores.cpp:65
-#, fuzzy, kde-format
-#| msgid "3s"
+#, kde-format
 msgctxt "@title:row"
 msgid "3s"
 msgstr "3s"
 
 #: scores.cpp:66
-#, fuzzy, kde-format
-#| msgid "4s"
+#, kde-format
 msgctxt "@title:row"
 msgid "4s"
 msgstr "4s"
 
 #: scores.cpp:67
-#, fuzzy, kde-format
-#| msgid "5s"
+#, kde-format
 msgctxt "@title:row"
 msgid "5s"
 msgstr "5s"
 
 #: scores.cpp:68
-#, fuzzy, kde-format
-#| msgid "6s"
+#, kde-format
 msgctxt "@title:row"
 msgid "6s"
 msgstr "6s"
@@ -309,13 +303,13 @@ msgstr ""
 #, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
-msgstr ""
+msgstr "Kiriki"
 
 #: scores.cpp:78
 #, kde-format
 msgctxt "@title:row"
 msgid "Chance"
-msgstr ""
+msgstr "Occasion"
 
 #: scores.cpp:79
 #, kde-format
