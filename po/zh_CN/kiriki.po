@@ -131,15 +131,13 @@ msgid ""
 msgstr "如若请求提示，当前游戏成绩就将无法进入高分榜。"
 
 #: kiriki.cpp:217
-#, fuzzy, kde-format
-#| msgid "Confirm Hint Request"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "确认提示请求"
 
 #: kiriki.cpp:218
-#, fuzzy, kde-format
-#| msgid "Give Hint Anyway"
+#, kde-format
 msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "总是给予提示"
@@ -192,8 +190,7 @@ msgid "Margaret"
 msgstr "赵六"
 
 #: lateralwidget.cpp:30
-#, fuzzy, kde-format
-#| msgid "&Roll"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Roll"
 msgstr "投骰(&R)"
@@ -224,120 +221,103 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
 #: scores.cpp:63
-#, fuzzy, kde-format
-#| msgid "1s"
+#, kde-format
 msgctxt "@title:row"
 msgid "1s"
 msgstr "1 分"
 
 #: scores.cpp:64
-#, fuzzy, kde-format
-#| msgid "2s"
+#, kde-format
 msgctxt "@title:row"
 msgid "2s"
 msgstr "2 分"
 
 #: scores.cpp:65
-#, fuzzy, kde-format
-#| msgid "3s"
+#, kde-format
 msgctxt "@title:row"
 msgid "3s"
 msgstr "3 分"
 
 #: scores.cpp:66
-#, fuzzy, kde-format
-#| msgid "4s"
+#, kde-format
 msgctxt "@title:row"
 msgid "4s"
 msgstr "4 分"
 
 #: scores.cpp:67
-#, fuzzy, kde-format
-#| msgid "5s"
+#, kde-format
 msgctxt "@title:row"
 msgid "5s"
 msgstr "5 分"
 
 #: scores.cpp:68
-#, fuzzy, kde-format
-#| msgid "6s"
+#, kde-format
 msgctxt "@title:row"
 msgid "6s"
 msgstr "6 分"
 
 #: scores.cpp:69
-#, fuzzy, kde-format
-#| msgid "Bonus if > 62"
+#, kde-format
 msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "大于 62 点奖励"
 
 #: scores.cpp:70
-#, fuzzy, kde-format
-#| msgid "Upper total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
 msgstr "上半部分总分"
 
 #: scores.cpp:72
-#, fuzzy, kde-format
-#| msgid "3 of a Kind"
+#, kde-format
 msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "三颗同点数骰子"
 
 #: scores.cpp:73
-#, fuzzy, kde-format
-#| msgid "4 of a Kind"
+#, kde-format
 msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "四颗同点数骰子"
 
 #: scores.cpp:74
-#, fuzzy, kde-format
-#| msgid "Full House"
+#, kde-format
 msgctxt "@title:row"
 msgid "Full House"
 msgstr "满堂红"
 
 #: scores.cpp:75
-#, fuzzy, kde-format
-#| msgid "Small Straight"
+#, kde-format
 msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "小顺子"
 
 #: scores.cpp:76
-#, fuzzy, kde-format
-#| msgid "Large Straight"
+#, kde-format
 msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "大顺子"
 
 #: scores.cpp:77
-#, fuzzy, kde-format
-#| msgid "Kiriki"
+#, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
 msgstr "Kiriki"
 
 #: scores.cpp:78
-#, fuzzy, kde-format
-#| msgid "Chance"
+#, kde-format
 msgctxt "@title:row"
 msgid "Chance"
 msgstr "加总所有骰子总和"
 
 #: scores.cpp:79
-#, fuzzy, kde-format
-#| msgid "Lower Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "下半部分总分"
 
 #: scores.cpp:81
-#, fuzzy, kde-format
-#| msgid "Grand Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "全部总分"
