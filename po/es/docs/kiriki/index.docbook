@@ -73,6 +73,20 @@
 ><contrib
 >Traductora</contrib
 ></othercredit
+> <othercredit role="translator"
+><firstname
+>Eloy</firstname
+> <surname
+>Cuadra</surname
+> <affiliation
+><address
+><email
+>ecuadra@eloihr.net</email
+></address
+></affiliation
+> <contrib
+>Corrección de la traducción</contrib
+></othercredit
 > 
 		</authorgroup>
 
@@ -113,7 +127,7 @@
 	<keyword
 >dados</keyword>
 	<keyword
->arcade</keyword>
+>recreativo</keyword>
 	<keyword
 >juego de dados</keyword>
 	<keyword
@@ -132,7 +146,7 @@
 ><title
 >Tipo de juego:</title
 ><para
->Dados, arcade</para
+>Dados, Recreativo</para
 ></note
 ><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
 	<note
@@ -156,7 +170,7 @@
 </screenshot>
 
 <para
->&kiriki; es un adictivo y divertido juego de dados creado por &kde; y diseñado para ser jugado por un máximo de seis jugadores. Los jugadores deben sumar puntos tirando cinco dados en tres tiradas por turno. Cada tirada genera una combinación específica de números que el jugador es libre de aceptar o rechazar. Sin embargo, cada combinación específica de números solo puede aceptarse una vez. Tras trece turnos, el juego termina y se comparan las puntuaciones. El jugador con la puntuación más alta gana el juego. </para>
+>&kiriki; es un adictivo y divertido juego de dados creado por &kde; y diseñado para que puedan jugar un máximo de seis jugadores. Los jugadores deben sumar puntos tirando cinco dados en tres tiradas por turno. Cada tirada genera una combinación específica de números que el jugador es libre de aceptar o rechazar. Sin embargo, cada combinación específica de números solo puede aceptarse una vez. Tras trece turnos, el juego termina y se comparan las puntuaciones. El jugador con la puntuación más alta gana el juego. </para>
 </chapter>
 
 <chapter id="howto"
@@ -173,51 +187,51 @@
 ><!--Describe the objective of the game.-->
 <!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
 	<para
->Una vez que inicie &kiriki;, inmediatamente le dará la primera combinación para el primer jugador. Si es el primer jugador, le toca; si no, deberá esperar hasta que los demás jugadores hagan sus movimientos.</para>
+>Tras lanzar &kiriki;, se muestra la primera combinación para el primer jugador. Si eres el primer jugador, te toca; si no, tendrás que esperar hasta que los demás jugadores hagan sus movimientos.</para>
 	<note
 ><title
 >Nota:</title
 ><para
->De forma predeterminada, a menos que haya cambiado la configuración del juego, y en el modo de un solo jugador, el primer jugador lo controlará una persona (usted), mientras que los otros cinco estarán controlados por la Inteligencia Artificial.</para
+>De forma predeterminada, a menos que hayas cambiado la configuración del juego, y en el modo de un solo jugador, el primer jugador lo controlará una persona (tú), mientras que los otros cinco estarán controlados por la Inteligencia Artificial.</para
 ></note>
 	<para
->Cuando le toque, lo primero que debería hacer es examinar su tirada. Cada uno de los cinco dados de la parte izquierda de la pantalla de juego tiene un valor específico. Compruebe la secuencia para ver si estos valores forman cualquiera de los patrones de puntuación.</para>
+>Cuando te toque, lo primero que deberías hacer es examinar tu tirada. Cada uno de los cinco dados de la parte izquierda de la pantalla de juego tiene un valor específico. Comprueba la secuencia para ver si estos valores forman alguno de los patrones de puntuación.</para>
 	<note
 ><title
 >Nota:</title
 ><para
->La descripción detallada de los valores de los patrones de puntuación puede encontrarse en la sección<link linkend="rules_and_tips"
+>Puedes encontrar la descripción detallada de los valores de los patrones de puntuación en la sección<link linkend="rules_and_tips"
 >Reglas del juego, estrategias y consejos</link
 > de este manual.</para
 ></note>
 	<para
->Recuerde que la combinación puede coincidir con más de un patrón de puntuación. En este caso deberá determinar qué patrón de puntuación le dará más puntos.</para>
+>Recuerda que la combinación puede coincidir con más de un patrón de puntuación. En este caso deberás determinar el patrón de puntuación que te dará más puntos.</para>
 	<para
->En el caso de que la secuencia no coincida con ningún patrón de puntuación, o coincida con un patrón de puntuación que haya usado, tendrá dos tiradas más para corregir la situación. Para usar su segundo (tercer) dado seleccione el dado con el que no esté satisfecho pulsando sobre él con su ratón y pulse el botón <guibutton
+>En el caso de que la secuencia no coincida con ningún patrón de puntuación, o coincida con un patrón de puntuación que ya hayas usado, tendrás dos tiradas más para corregir la situación. Para usar tu segundo (o tercer) dado, selecciona el dado con el que no estés conforme haciendo clic sobre él con el ratón y pulsa el botón <guibutton
 >Tirar</guibutton
-> situado bajo el dado. Así podrá volver a tirar el dado, cambiando de esta forma su valor.</para>
+> situado bajo el dado. Así podrás volver a tirar el dado, cambiando de esta forma su valor.</para>
 	<para
->Después de que haya tirado el tercer dado debe escoger el patrón de puntuación que más se acomode a la secuencia. Si ninguno de los patrones de puntuación se ajusta a la secuencia, puede <guilabel
+>Después de tirar el tercer dado debes escoger el patrón de puntuación que más se ajuste a la secuencia. Si ninguno de los patrones de puntuación se ajusta a la secuencia, puedes <guilabel
 >Cambiar</guilabel
-> el patrón de puntuación, o bien seleccionar cualquier patrón de puntuación en su marcador de puntuaciones.</para>
+> el patrón de puntuación o bien seleccionar cualquier patrón de puntuación en tu marcador de puntuación.</para>
    <note
 ><title
 >Nota:</title
 ><para
->Si selecciona un patrón de puntuación que no coincide con la secuencia actual de los dados, el patrón de puntuación seleccionado estará vacío y tendrá valor cero.</para
+>Si seleccionas un patrón de puntuación que no coincide con la secuencia actual de los dados, el patrón de puntuación seleccionado estará vacío y tendrá valor cero.</para
 ></note>
 	<para
->Tan pronto como seleccione el patrón de puntuación su valor, se actualiza la puntuación para reflejar la secuencia que tenga.</para>
+>En cuanto selecciones el patrón de puntuación, su valor se actualiza para reflejar la secuencia que tengas en ese momento.</para>
 	<note
 ><title
 >Nota:</title
 ><para
->La descripción detallada de los valores de los patrones de puntuación puede encontrarse en la sección<link linkend="rules_and_tips"
+>Puedes encontrar la descripción detallada de los valores de los patrones de puntuación en la sección<link linkend="rules_and_tips"
 >Reglas del juego, estrategias y consejos</link
 > de este manual.</para
 ></note>
 	<para
->Una vez hecho esto finalizará su turno y comenzará el turno del siguiente participante. Esta secuencia se repetirá hasta trece veces, momento en el que finalizará el juego, se calculará la puntuación y se adjudicarán las mejores puntuaciones.</para>
+>Una vez hecho esto, finalizará tu turno y comenzará el turno del siguiente participante. Esta secuencia se repetirá hasta trece veces, momento en el que finalizará el juego, se calculará la puntuación y se adjudicarán las mejores puntuaciones.</para>
 </chapter>
 
 <chapter id="rules_and_tips"
@@ -344,7 +358,7 @@
 ><para
 ><guilabel
 >Completo</guilabel
->: el jugador gana 25 puntos al jugador sien la ronda obtiene 3 iguales y una pareja.<note
+>: el jugador gana 25 puntos al jugador si en la ronda obtiene 3 dados iguales y una pareja.<note
 ><title
 >Ejemplo:</title
 ><para
@@ -430,19 +444,19 @@
 ></listitem>
 				<listitem
 ><para
->El jugador no está obligado a realizar tiradas adicionales si el primer tiro considera los resultados satisfactorios.</para
+>El jugador no está obligado a realizar tiradas adicionales si tras el primer lanzamiento considera el resultado satisfactorio.</para
 ></listitem>
 				<listitem
 ><para
->Cada tirada adicional puede usar todos los dados, o solo aquellos que seleccione.</para
+>Cada tirada adicional puede usar todos los dados o solo aquellos que seleccione.</para
 ></listitem>
 				<listitem
 ><para
->Un jugador puede seleccionar los dados que desea volver a tirar pulsando en ellos con el ratón.</para
+>Un jugador puede seleccionar los dados que desee volver a tirar pulsando en ellos con el ratón.</para
 ></listitem>
 				<listitem
 ><para
->Una vez que haya vuelto a tirar, los dados perderán el valor anterior y solo será válido el valor nuevo.</para
+>Una vez que haya vuelto a tirar, los dados perderán el valor anterior y solo será válido el nuevo valor.</para
 ></listitem>
 				<listitem
 ><para
@@ -450,7 +464,7 @@
 ></listitem>
 				<listitem
 ><para
->Cada patrón de valor individual solo puede usarse una vez por juego y por jugador. Por tanto, una vez que el patrón de puntuación se haya usado no podrá ser usado por el mismo jugador. Sin embargo, otro jugador sí podrá usar este mismo patrón.</para
+>Cada patrón de valor individual solo se puede usar una vez por juego y por jugador. Por tanto, una vez que el patrón de puntuación se haya usado, no podrá volver a ser usado por el mismo jugador. Sin embargo, otro jugador sí podrá usar este mismo patrón.</para
 ></listitem>
 			</itemizedlist>
 	</sect1>
@@ -462,7 +476,7 @@
 > <!-- do not change this! -->
 <sect1 id="menu">
 <title
->Elementos del menú</title>
+>Opciones del menú</title>
 
 		<variablelist>
 			<varlistentry id="game-menu-new">
@@ -483,7 +497,7 @@
 				<listitem
 ><para
 ><action
->Inicia una partida nueva.</action
+>Empieza una partida nueva.</action
 ></para
 ></listitem>
 			</varlistentry>
@@ -505,8 +519,8 @@
 				<listitem
 ><para
 ><action
->Muestra la lista con las mejores puntuaciones.</action
-> Cuando su puntuación del juego sobrepase una de las mejores diez puntuaciones listadas, se le pedirá su nombre para añadirlo. </para
+>Muestra una lista con las mejores puntuaciones.</action
+> Cuando tu puntuación del juego sobrepase una de las mejores diez puntuaciones listadas, se te pedirá el nombre para añadirlo. </para
 ></listitem>
 			</varlistentry>
 			<varlistentry id="game-menu-print">
@@ -527,7 +541,7 @@
 				<listitem
 ><para
 ><action
->Imprime el marcador de puntuaciones actual.</action
+>Imprime la tabla de puntuaciones actual.</action
 ></para
 ></listitem>
 			</varlistentry>
@@ -568,7 +582,7 @@
 ></term>
 				<listitem
 ><para
->Obtenga una pista resaltando uno o más dados antes de tirarlos o una fila del cuadro de puntuaciones. Si usa esta característica no se considerará que ha obtenido una puntuación alta.</para
+>Muestra una pista resaltando uno o más dados antes de tirarlos o una fila del cuadro de puntuaciones. El uso de esta función hará que la puntuación no se tenga en cuenta en la tabla de mejores puntuaciones.</para
 ></listitem>
 			</varlistentry>
 			<varlistentry>
@@ -586,21 +600,21 @@
 ></term>
 				<listitem
 ><para
->Jugar en modo de demostración. Puede detener la demostración iniciando un nuevo juego.</para
+>Jugar en modo de demostración. Se puede detener la demostración empezando un nuevo juego.</para
 ></listitem>
 			</varlistentry>
 
 		</variablelist>
 <para
->De forma adicional, &kiriki; posee los elementos de menú comunes de &kde; <guimenu
+>De forma adicional, &kiriki; posee los elementos de los menús comunes de &kde; <guimenu
 >Preferencias</guimenu
 > y <guimenu
 >Ayuda</guimenu
->. Para más información, lea las secciones sobre el <ulink url="help:/fundamentals/menus.html#menus-settings"
+>. Para más información, consulta las secciones sobre el <ulink url="help:/fundamentals/menus.html#menus-settings"
 >menú Preferencias</ulink
 > y el <ulink url="help:/fundamentals/menus.html#menus-help"
 >menú Ayuda</ulink
-> de los principios fundamentales de &kde;. </para>
+> en los principios fundamentales de &kde;. </para>
 
 </sect1>
 </chapter>
@@ -617,17 +631,17 @@
 <qandaentry>
  <question
 ><para
->Quiero cambiar el aspecto del juego ¿puedo? </para
+>Quiero cambiar el aspecto del juego. ¿Puedo? </para
 ></question>
  <answer
 ><para
->No. &kiriki; en estos momentos no incluye temas.</para
+>No. En la actualidad, &kiriki; no incluye temas.</para
 ></answer>
 </qandaentry>
 <qandaentry>
  <question
 ><para
->He cometido una equivocación, ¿puedo deshacerla? </para
+>He cometido un error. ¿Puedo deshacerlo? </para
 ></question>
  <answer
 ><para
@@ -637,21 +651,21 @@
 <qandaentry>
  <question
 ><para
->¿Puedo usar el teclado para jugar a este juego?</para
+>¿Puedo usar el teclado para jugar?</para
 ></question>
  <answer
 ><para
->No. Las partidas de &kiriki; no pueden jugarse con el teclado.</para
+>No. El juego de &kiriki; no se puede jugar usando el teclado.</para
 ></answer>
 </qandaentry>
 <qandaentry>
  <question
 ><para
->No sé qué hacer ahora. ¿Hay consejos? </para
+>¡No sé qué puedo hacer! ¿Hay pistas? </para
 ></question>
  <answer
 ><para
->Para aprender las reglas y tácticas del juego lea la sección <link linkend="rules_and_tips"
+>Para aprender las reglas y tácticas del juego, consulta la sección <link linkend="rules_and_tips"
 >Reglas de juego, estrategias y consejos</link
 > de este manual.</para
 ></answer>
@@ -659,11 +673,11 @@
 <qandaentry>
  <question
 ><para
->Tengo que salir del juego, pero todavía no he terminado la partida ¿Puedo guardar el progreso?</para
+>Debo salir del juego, pero todavía no he terminado la partida. ¿Puedo guardar el estado actual?</para
 ></question>
  <answer
 ><para
->No. En &kiriki;, no existe la funcionalidad «Guardar».</para
+>No. En &kiriki; no existe la función de «Guardar».</para
 ></answer>
 </qandaentry>
 <qandaentry>
@@ -673,7 +687,7 @@
 ></question>
  <answer
 ><para
->Para cambiar la velocidad de la acción de la Inteligencia Artificial use el diálogo de configuración del juego del que se ha hablado en la sección <link linkend="configuration"
+>Para cambiar la velocidad de acción de la Inteligencia Artificial, usa el diálogo de configuración del juego del que se ha hablado en la sección <link linkend="configuration"
 >Configuración del juego</link
 > de este manual.</para
 ></answer>
@@ -700,24 +714,24 @@
 </screenshot>
 
 <para
->El diálogo de configuración de &kiriki; le permite configurar el número de participantes, administrar sus identidades y sus tiempos de respuesta.</para>
+>El diálogo de configuración de &kiriki; permite configurar el número de participantes, administrar sus identidades y sus tiempos de respuesta.</para>
 <note
 ><title
 >Nota:</title
 ><para
->Puede cambiar los tiempos de respuesta solo para los jugadores dirigidos por la Inteligencia Artificial.</para
+>Puedes cambiar los tiempos de respuesta solo para los jugadores dirigidos por la Inteligencia Artificial.</para
 ></note>
 <para
 ><guilabel
 >Número de jugadores:</guilabel
-> este campo define el número de jugadores para &kiriki;. Los valores permitidos están en el intervalo de entre dos y seis.</para>
+> este campo define el número de jugadores para &kiriki;. Los valores permitidos están en el intervalo de dos a seis.</para>
 
 <para
 ><guilabel
 >1.</guilabel
 >-<guilabel
 >6.</guilabel
-> Campos numerados con las identidades de los jugadores participantes. Puede cambiar sus nombres y especificar si se controlarán por una persona o por la Inteligencia Artificial. Para definir quién controla el jugador, use la casilla situada en la parte derecha, al lado del nombre del jugador.</para>
+> Campos numerados con las identidades de los jugadores participantes. Puedes cambiar sus nombres e indicar si se controlarán por una persona o por la Inteligencia Artificial. Para definir quién controla el jugador, usa la casilla situada en la parte derecha, al lado del nombre del jugador.</para>
 <para
 >El primer jugador debe ser controlado siempre por una persona.</para>
 
@@ -725,9 +739,9 @@
 >Los cambios en el número de participantes y sus identidades se aplicarán en el próximo juego.</para>
 
 <para
-><guilabel
->Retardo entre movimientos de la máquina (mseg)</guilabel
-> le permite especificar el retardo entre los turnos de la Inteligencia Artificial. El valor predeterminado de este campo es cero, lo que significa que la Inteligencia Artificial reacciona instantáneamente.</para>
+>El <guilabel
+>Retardo entre movimientos de la máquina (ms)</guilabel
+> permite indicar el retardo entre los turnos de la Inteligencia Artificial. El valor predeterminado de este campo es cero, lo que significa que la Inteligencia Artificial reacciona instantáneamente.</para>
 
 <note
 ><title
@@ -737,13 +751,13 @@
 ></note>
 
 <para
->Use <guilabel
+>Usa <guilabel
 >Tamaño del tipo de letra:</guilabel
 > y <guilabel
 >Altura de las filas:</guilabel
-> para ajustar el cuadro de puntuaciones según sus gustos.</para>
+> para ajustar el cuadro de puntuaciones según tus gustos.</para>
 <para
->Si desea jugar de forma inmediata al iniciar &kiriki;, desactive la opción por omisión <guilabel
+>Si quieres jugar de forma inmediata tras lanzar &kiriki;, desactiva la opción predeterminada <guilabel
 >Mostrar un juego de demostración tras iniciar</guilabel
 >.</para>
 </chapter>
@@ -759,7 +773,7 @@
 
 <!--List all the copyright holders here-->
 <para
->Derechos de autor del programa 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+>Copyright del programa 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
 <para
 >Copyright de la documentación 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
 <para
@@ -767,12 +781,16 @@
 >eugene.trounev@gmail.com</email
 > </para>
 <para
->Traducido por Rocío Gallego <email
+>Documentación traducida por Rocío Gallego <email
 >traducciones@rociogallego.com</email
 >, Santiago Fernández Sancho<email
 >santi@kde-es.org</email
 > y Kira J. Fernández <email
 >kirajfdez@gmail.com</email
+>.</para
+><para
+>Corregida por Eloy Cuadra <email
+>ecuadra@eloihr.net</email
 >.</para
 > &underFDL; &underGPL; </chapter>
 
