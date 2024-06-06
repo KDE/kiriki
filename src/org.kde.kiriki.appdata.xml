@@ -7,6 +7,7 @@
     <name translate="no">KDE</name>
   </developer>
   <name>Kiriki</name>
+  <name xml:lang="ar">كاراكا</name>
   <name xml:lang="ast">Kiriki</name>
   <name xml:lang="ca">Kiriki</name>
   <name xml:lang="ca-valencia">Kiriki</name>
@@ -49,6 +50,7 @@
   <name xml:lang="zh-CN">Kiriki</name>
   <name xml:lang="zh-TW">Kiriki</name>
   <summary>Yahtzee-like Dice Game</summary>
+  <summary xml:lang="ar">لعبة النرد الشبيهة بياهتزي</summary>
   <summary xml:lang="ca">Joc de daus com el Yahtzee</summary>
   <summary xml:lang="ca-valencia">Joc de daus com Yahtzee</summary>
   <summary xml:lang="cs">Hra s kostkami podobná Yahtzee</summary>
@@ -93,6 +95,7 @@
       Kiriki is an addictive and fun dice game, designed to be played by as many as six players.
       Participants have to collect points by rolling five dice for up to three times per single turn.
     </p>
+    <p xml:lang="ar">كاراكا هي لعبة نرد مسببة للإدمان وممتعة، وهي مصممة ليلعبها ما يصل إلى ستة لاعبين. يتعين على المشاركين جمع النقاط عن طريق رمي خمسة أحجار نرد لمدة تصل إلى ثلاث مرات في كل دورة.</p>
     <p xml:lang="ca">El Kiriki és un joc de daus addictiu i divertit, dissenyat per a jugar-se amb fins a sis jugadors. Els participants han de recollir punts tirant cinc daus fins a tres vegades per cada torn.</p>
     <p xml:lang="ca-valencia">Kiriki és un joc de daus addictiu i divertit, dissenyat per a jugar-se amb fins a sis jugadors. Els participants han d'arreplegar punts tirant cinc daus fins a tres vegades per cada torn.</p>
     <p xml:lang="da">Kiriki er et afhængighedsskabende og sjovt terningespil designet til at kunne spilles af op til seks spillere. Deltagerne samler point ved at slå med fem terninger op til tre gang pr. tur.</p>
