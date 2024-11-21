@@ -35,6 +35,7 @@ target_link_libraries(kiriki
     KF6::IconThemes
     KF6::DBusAddons
     KF6::Crash
+    KF6::IconThemes
     Qt6::PrintSupport
 )
 
