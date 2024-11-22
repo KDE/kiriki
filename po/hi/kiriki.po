@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-05 00:37+0000\n"
+"POT-Creation-Date: 2024-11-22 00:38+0000\n"
 "PO-Revision-Date: 2007-12-24 11:42+0530\n"
 "Last-Translator: Ravishankar Shrivastava <aviratlami@aol.in>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -211,23 +211,23 @@ msgstr "पांसा फेंकें (&R)"
 msgid "Roll %1 of 3"
 msgstr "3 में से %1 पांसा"
 
-#: main.cpp:27
+#: main.cpp:45
 #, kde-format
 msgid "Kiriki"
 msgstr "किरिकि"
 
-#: main.cpp:29
+#: main.cpp:47
 #, fuzzy, kde-format
 #| msgid "A Yahtzee dice game for KDE"
 msgid "A Yahtzee dice game by KDE"
 msgstr "केडीई के लिए याद्जी पांसे का खेल"
 
-#: main.cpp:31
+#: main.cpp:49
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
 msgstr "© 2005-2007 अल्बर्ट एस्टल्स सिड"
 
-#: main.cpp:34
+#: main.cpp:52
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "अलबर्ट एस्टल्स सिड"

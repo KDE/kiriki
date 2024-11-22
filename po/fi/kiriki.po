@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-05 00:37+0000\n"
+"POT-Creation-Date: 2024-11-22 00:38+0000\n"
 "PO-Revision-Date: 2018-01-29 13:19+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -214,22 +214,22 @@ msgstr "%1. heitto kolmesta."
 
 # pmap: =/gen=Kirikin/
 # pmap: =/elat=Kirikistä/
-#: main.cpp:27
+#: main.cpp:45
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
 
-#: main.cpp:29
+#: main.cpp:47
 #, kde-format
 msgid "A Yahtzee dice game by KDE"
 msgstr "KDE:n Yatsi-noppapeli"
 
-#: main.cpp:31
+#: main.cpp:49
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
 msgstr "© 2005–2007 Albert Astals Cid"
 
-#: main.cpp:34
+#: main.cpp:52
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"

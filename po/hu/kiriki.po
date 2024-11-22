@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-05 00:37+0000\n"
+"POT-Creation-Date: 2024-11-22 00:38+0000\n"
 "PO-Revision-Date: 2024-05-31 22:52+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -207,22 +207,22 @@ msgstr "&Dobás"
 msgid "Roll %1 of 3"
 msgstr "3/%1. dobás"
 
-#: main.cpp:27
+#: main.cpp:45
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
 
-#: main.cpp:29
+#: main.cpp:47
 #, kde-format
 msgid "A Yahtzee dice game by KDE"
 msgstr "Yahtzee kockapóker a KDE-től"
 
-#: main.cpp:31
+#: main.cpp:49
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
 msgstr "(c) Albert Astals Cid, 2005-2007."
 
-#: main.cpp:34
+#: main.cpp:52
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"

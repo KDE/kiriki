@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-05 00:37+0000\n"
+"POT-Creation-Date: 2024-11-22 00:38+0000\n"
 "PO-Revision-Date: 2009-10-24 09:17+0700\n"
 "Last-Translator: Morn Met\n"
 "Language-Team: Khmer <kde-i18n-doc@kde.org>\n"
@@ -208,23 +208,23 @@ msgstr "ក្រឡុក"
 msgid "Roll %1 of 3"
 msgstr "ក្រឡុក %1 នៃ ៣"
 
-#: main.cpp:27
+#: main.cpp:45
 #, kde-format
 msgid "Kiriki"
 msgstr "Kiriki"
 
-#: main.cpp:29
+#: main.cpp:47
 #, fuzzy, kde-format
 #| msgid "A Yahtzee dice game for KDE"
 msgid "A Yahtzee dice game by KDE"
 msgstr "ល្បែង​ឡុកឡាក់​ Yahtzee សម្រាប់ KDE"
 
-#: main.cpp:31
+#: main.cpp:49
 #, kde-format
 msgid "© 2005-2007 Albert Astals Cid"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២​០​០​៥-២​០​​០​៧ ដោយ Albert Astals Cid"
 
-#: main.cpp:34
+#: main.cpp:52
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
