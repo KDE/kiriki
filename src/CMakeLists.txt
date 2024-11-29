@@ -27,6 +27,18 @@ kconfig_add_kcfg_files(kiriki settings.kcfgc)
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*-apps-kiriki.png")
 ecm_add_app_icon(kiriki ICONS ${ICONS_SRCS})
 
+if(APPLE)
+    set_target_properties(kiriki PROPERTIES
+           MACOSX_BUNDLE_DISPLAY_NAME "Kiriki"
+        MACOSX_BUNDLE_BUNDLE_NAME "Kiriki"
+        MACOSX_BUNDLE_LONG_VERSION_STRING "Kiriki ${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_SHORT_VERSION_STRING "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}"
+        MACOSX_BUNDLE_BUNDLE_VERSION "${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_GUI_IDENTIFIER "org.kde.kiriki"
+        MACOSX_BUNDLE_COPYRIGHT "2024 The Kiriki Developers")
+endif()
+
+
 target_link_libraries(kiriki
     KDEGames6
     KF6::CoreAddons
