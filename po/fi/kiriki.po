@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2007.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2010, 2013, 2014.
-# Tommi Nieminen <translator@legisign.org>, 2011, 2018.
+# SPDX-FileCopyrightText: 2011, 2018, 2024 Tommi Nieminen <translator@legisign.org>
 #
 # KDE Finnish translation sprint participants:
 # Author: Artnay
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-22 00:38+0000\n"
-"PO-Revision-Date: 2018-01-29 13:19+0200\n"
+"PO-Revision-Date: 2024-10-29 19:46+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -20,8 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-POT-Import-Date: 2012-12-01 22:24:02+0000\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -139,15 +138,13 @@ msgid ""
 msgstr "Vihjettä pyydettyäsi peli ei voi enää päästä ennätyslistalle."
 
 #: kiriki.cpp:217
-#, fuzzy, kde-format
-#| msgid "Confirm Hint Request"
+#, kde-format
 msgctxt "@title:window"
 msgid "Confirm Hint Request"
 msgstr "Vahvista vihjepyyntö"
 
 #: kiriki.cpp:218
-#, fuzzy, kde-format
-#| msgid "Give Hint Anyway"
+#, kde-format
 msgctxt "æction:button"
 msgid "Give Hint Anyway"
 msgstr "Anna vihje joka tapauksessa"
@@ -201,8 +198,7 @@ msgid "Margaret"
 msgstr "Päivi"
 
 #: lateralwidget.cpp:30
-#, fuzzy, kde-format
-#| msgid "&Roll"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Roll"
 msgstr "&Heitä"
@@ -235,122 +231,105 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
 #: scores.cpp:63
-#, fuzzy, kde-format
-#| msgid "1s"
+#, kde-format
 msgctxt "@title:row"
 msgid "1s"
 msgstr "Ykköset"
 
 #: scores.cpp:64
-#, fuzzy, kde-format
-#| msgid "2s"
+#, kde-format
 msgctxt "@title:row"
 msgid "2s"
 msgstr "Kakkoset"
 
 #: scores.cpp:65
-#, fuzzy, kde-format
-#| msgid "3s"
+#, kde-format
 msgctxt "@title:row"
 msgid "3s"
 msgstr "Kolmoset"
 
 #: scores.cpp:66
-#, fuzzy, kde-format
-#| msgid "4s"
+#, kde-format
 msgctxt "@title:row"
 msgid "4s"
 msgstr "Neloset"
 
 #: scores.cpp:67
-#, fuzzy, kde-format
-#| msgid "5s"
+#, kde-format
 msgctxt "@title:row"
 msgid "5s"
-msgstr "Vitoset"
+msgstr "Viitoset"
 
 #: scores.cpp:68
-#, fuzzy, kde-format
-#| msgid "6s"
+#, kde-format
 msgctxt "@title:row"
 msgid "6s"
-msgstr "Kutoset"
+msgstr "Kuutoset"
 
 #: scores.cpp:69
-#, fuzzy, kde-format
-#| msgid "Bonus if > 62"
+#, kde-format
 msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "Bonus, jos > 62"
 
 #: scores.cpp:70
-#, fuzzy, kde-format
-#| msgid "Upper total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
 msgstr "Yläpisteet"
 
 #: scores.cpp:72
-#, fuzzy, kde-format
-#| msgid "3 of a Kind"
+#, kde-format
 msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "Kolme samaa"
 
 #: scores.cpp:73
-#, fuzzy, kde-format
-#| msgid "4 of a Kind"
+#, kde-format
 msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "Neljä samaa"
 
 #: scores.cpp:74
-#, fuzzy, kde-format
-#| msgid "Full House"
+#, kde-format
 msgctxt "@title:row"
 msgid "Full House"
 msgstr "Täyskäsi"
 
 #: scores.cpp:75
-#, fuzzy, kde-format
-#| msgid "Small Straight"
+#, kde-format
 msgctxt "@title:row"
 msgid "Small Straight"
-msgstr "Pikkusuora"
+msgstr "Pieni suora"
 
 #: scores.cpp:76
-#, fuzzy, kde-format
-#| msgid "Large Straight"
+#, kde-format
 msgctxt "@title:row"
 msgid "Large Straight"
-msgstr "Suora"
+msgstr "Suuri suora"
 
 # pmap: =/gen=Kirikin/
 # pmap: =/elat=Kirikistä/
 #: scores.cpp:77
-#, fuzzy, kde-format
-#| msgid "Kiriki"
+#, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
 msgstr "Kiriki"
 
 #: scores.cpp:78
-#, fuzzy, kde-format
-#| msgid "Chance"
+#, kde-format
 msgctxt "@title:row"
 msgid "Chance"
 msgstr "Sattuma"
 
 #: scores.cpp:79
-#, fuzzy, kde-format
-#| msgid "Lower Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "Alapisteet"
 
 #: scores.cpp:81
-#, fuzzy, kde-format
-#| msgid "Grand Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "Yhteispisteet"
