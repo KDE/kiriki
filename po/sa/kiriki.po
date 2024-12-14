@@ -1,0 +1,326 @@
+# Sanskrit translations for kiriki package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kiriki package.
+# Kali <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kiriki\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-11-22 00:38+0000\n"
+"PO-Revision-Date: 2024-12-13 19:10+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Sanskrit\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: configPage.ui:17
+#, kde-format
+msgid "Players"
+msgstr "क्रीडकाः"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player6IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player3IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player2IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player1IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player4IsHuman)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_player5IsHuman)
+#: configPage.ui:30 configPage.ui:64 configPage.ui:85 configPage.ui:112
+#: configPage.ui:139 configPage.ui:160
+#, kde-format
+msgid "human?"
+msgstr "मानव?"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: configPage.ui:42
+#, kde-format
+msgid "Number of players:"
+msgstr "क्रीडकानां संख्या : १."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2)
+#: configPage.ui:54
+#, kde-format
+msgid "3."
+msgstr "३."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: configPage.ui:71
+#, kde-format
+msgid "2."
+msgstr "२."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: configPage.ui:95
+#, kde-format
+msgid "1."
+msgstr "१."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: configPage.ui:125
+#, kde-format
+msgid "4."
+msgstr "४."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: configPage.ui:146
+#, kde-format
+msgid "5."
+msgstr "५."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
+#: configPage.ui:167
+#, kde-format
+msgid "6."
+msgstr "६."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: configPage.ui:189
+#, kde-format
+msgid "Delay between computers move (msec):"
+msgstr "सङ्गणकानां चालनस्य मध्ये विलम्बः (msec):"
+
+#. i18n: ectx: property (text), widget (QLabel, fontSizeLabel)
+#: configPage.ui:203
+#, kde-format
+msgid "Font Size:"
+msgstr "फ़ॉन्टस्य आकारः : १."
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: configPage.ui:224
+#, kde-format
+msgid "Row Height:"
+msgstr "पङ्क्तिः ऊर्ध्वता : १."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
+#: configPage.ui:243
+#, kde-format
+msgid "Show demonstration game at startup"
+msgstr "प्रारम्भे प्रदर्शनक्रीडां दर्शयतु"
+
+#: kiriki.cpp:174
+#, kde-format
+msgid ""
+"Starting the demo will end the current game. Any progress will be lost. Do "
+"you want to continue?"
+msgstr ""
+"प्रदर्शनं आरभ्य वर्तमानक्रीडा समाप्तं भविष्यति। यत्किमपि प्रगतिः नष्टा भविष्यति। किं त्वं "
+"निरन्तरं कर्तुम् इच्छसि ?"
+
+#: kiriki.cpp:207
+#, kde-format
+msgid "Demonstration. Press \"New\" to start a new game."
+msgstr "प्रदर्शनम् । नूतनं क्रीडां आरभ्य \"New\" नुदन्तु ।"
+
+#: kiriki.cpp:216
+#, kde-format
+msgid ""
+"Asking for a hint will disqualify the current game from entering the high "
+"score list."
+msgstr "संकेतं याचयित्वा वर्तमानक्रीडा उच्चाङ्कसूचौ प्रवेशात् अयोग्यतां प्राप्स्यति ।"
+
+#: kiriki.cpp:217
+#, kde-format
+msgctxt "@title:window"
+msgid "Confirm Hint Request"
+msgstr ""
+
+#: kiriki.cpp:218
+#, kde-format
+msgctxt "æction:button"
+msgid "Give Hint Anyway"
+msgstr ""
+
+#: kiriki.cpp:237
+#, kde-format
+msgid "Roll highlighted die."
+msgid_plural "Roll highlighted dice."
+msgstr[0] ""
+msgstr[1] ""
+
+#: kiriki.cpp:347
+#, kde-format
+msgid "Changes will be applied on next game."
+msgstr "अग्रिमे क्रीडने परिवर्तनं प्रयुक्तं भविष्यति।"
+
+#: kiriki.kcfg:40
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr ""
+
+#: kiriki.kcfg:46
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr ""
+
+#: kiriki.kcfg:52
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr ""
+
+#: kiriki.kcfg:58
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr ""
+
+#: kiriki.kcfg:64
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr ""
+
+#: kiriki.kcfg:70
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr ""
+
+#: lateralwidget.cpp:30
+#, kde-format
+msgctxt "@action:button"
+msgid "&Roll"
+msgstr ""
+
+#: lateralwidget.cpp:198
+#, kde-format
+msgid "Roll %1 of 3"
+msgstr "3 मध्ये %1 रोल कुर्वन्तु"
+
+#: main.cpp:45
+#, kde-format
+msgid "Kiriki"
+msgstr "ग्रीसदेशः"
+
+#: main.cpp:47
+#, kde-format
+msgid "A Yahtzee dice game by KDE"
+msgstr "KDE द्वारा एकः Yahtzee पासा क्रीडा"
+
+#: main.cpp:49
+#, kde-format
+msgid "© 2005-2007 Albert Astals Cid"
+msgstr "© 2005-2007 अल्बर्ट एस्टल्स सिड"
+
+#: main.cpp:52
+#, kde-format
+msgid "Albert Astals Cid"
+msgstr "अल्बर्ट एस्टल्स सिड"
+
+#: scores.cpp:63
+#, kde-format
+msgctxt "@title:row"
+msgid "1s"
+msgstr ""
+
+#: scores.cpp:64
+#, kde-format
+msgctxt "@title:row"
+msgid "2s"
+msgstr ""
+
+#: scores.cpp:65
+#, kde-format
+msgctxt "@title:row"
+msgid "3s"
+msgstr ""
+
+#: scores.cpp:66
+#, kde-format
+msgctxt "@title:row"
+msgid "4s"
+msgstr ""
+
+#: scores.cpp:67
+#, kde-format
+msgctxt "@title:row"
+msgid "5s"
+msgstr ""
+
+#: scores.cpp:68
+#, kde-format
+msgctxt "@title:row"
+msgid "6s"
+msgstr ""
+
+#: scores.cpp:69
+#, kde-format
+msgctxt "@title:row"
+msgid "Bonus if > 62"
+msgstr ""
+
+#: scores.cpp:70
+#, kde-format
+msgctxt "@title:row"
+msgid "Upper total"
+msgstr ""
+
+#: scores.cpp:72
+#, kde-format
+msgctxt "@title:row"
+msgid "3 of a Kind"
+msgstr ""
+
+#: scores.cpp:73
+#, kde-format
+msgctxt "@title:row"
+msgid "4 of a Kind"
+msgstr ""
+
+#: scores.cpp:74
+#, kde-format
+msgctxt "@title:row"
+msgid "Full House"
+msgstr ""
+
+#: scores.cpp:75
+#, kde-format
+msgctxt "@title:row"
+msgid "Small Straight"
+msgstr ""
+
+#: scores.cpp:76
+#, kde-format
+msgctxt "@title:row"
+msgid "Large Straight"
+msgstr ""
+
+#: scores.cpp:77
+#, kde-format
+msgctxt "@title:row"
+msgid "Kiriki"
+msgstr "ग्रीसदेशः"
+
+#: scores.cpp:78
+#, kde-format
+msgctxt "@title:row"
+msgid "Chance"
+msgstr ""
+
+#: scores.cpp:79
+#, kde-format
+msgctxt "@title:row"
+msgid "Lower Total"
+msgstr ""
+
+#: scores.cpp:81
+#, kde-format
+msgctxt "@title:row"
+msgid "Grand Total"
+msgstr ""
