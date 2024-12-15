@@ -20,12 +20,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -136,20 +136,20 @@ msgstr "संकेतं याचयित्वा वर्तमानक�
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm Hint Request"
-msgstr ""
+msgstr "संकेत अनुरोधस्य पुष्टिः कुर्वन्तु"
 
 #: kiriki.cpp:218
 #, kde-format
 msgctxt "æction:button"
 msgid "Give Hint Anyway"
-msgstr ""
+msgstr "तथापि संकेतं ददातु"
 
 #: kiriki.cpp:237
 #, kde-format
 msgid "Roll highlighted die."
 msgid_plural "Roll highlighted dice."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "रोल हाइलाइट् मृतः।"
+msgstr[1] "हाइलाइट् कृत्वा पासान् रोल कुर्वन्तु।"
 
 #: kiriki.cpp:347
 #, kde-format
@@ -160,43 +160,43 @@ msgstr "अग्रिमे क्रीडने परिवर्तनं 
 #, kde-format
 msgctxt "default name of first player"
 msgid "Albert"
-msgstr ""
+msgstr "अल्बर्ट"
 
 #: kiriki.kcfg:46
 #, kde-format
 msgctxt "default name of second player"
 msgid "Janet"
-msgstr ""
+msgstr "जेनेट्"
 
 #: kiriki.kcfg:52
 #, kde-format
 msgctxt "default name of third player"
 msgid "James"
-msgstr ""
+msgstr "जेम्स्"
 
 #: kiriki.kcfg:58
 #, kde-format
 msgctxt "default name of fourth player"
 msgid "Sandra"
-msgstr ""
+msgstr "सान्द्रा"
 
 #: kiriki.kcfg:64
 #, kde-format
 msgctxt "default name of fifth player"
 msgid "Thomas"
-msgstr ""
+msgstr "थोमस"
 
 #: kiriki.kcfg:70
 #, kde-format
 msgctxt "default name of sixth player"
 msgid "Margaret"
-msgstr ""
+msgstr "मार्गरेट्"
 
 #: lateralwidget.cpp:30
 #, kde-format
 msgctxt "@action:button"
 msgid "&Roll"
-msgstr ""
+msgstr "&लुण्ठन"
 
 #: lateralwidget.cpp:198
 #, kde-format
@@ -227,79 +227,79 @@ msgstr "अल्बर्ट एस्टल्स सिड"
 #, kde-format
 msgctxt "@title:row"
 msgid "1s"
-msgstr ""
+msgstr "१स"
 
 #: scores.cpp:64
 #, kde-format
 msgctxt "@title:row"
 msgid "2s"
-msgstr ""
+msgstr "२स"
 
 #: scores.cpp:65
 #, kde-format
 msgctxt "@title:row"
 msgid "3s"
-msgstr ""
+msgstr "३ स"
 
 #: scores.cpp:66
 #, kde-format
 msgctxt "@title:row"
 msgid "4s"
-msgstr ""
+msgstr "४स"
 
 #: scores.cpp:67
 #, kde-format
 msgctxt "@title:row"
 msgid "5s"
-msgstr ""
+msgstr "५स"
 
 #: scores.cpp:68
 #, kde-format
 msgctxt "@title:row"
 msgid "6s"
-msgstr ""
+msgstr "६स"
 
 #: scores.cpp:69
 #, kde-format
 msgctxt "@title:row"
 msgid "Bonus if > 62"
-msgstr ""
+msgstr "बोनस यदि > 62"
 
 #: scores.cpp:70
 #, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
-msgstr ""
+msgstr "उच्च कुल"
 
 #: scores.cpp:72
 #, kde-format
 msgctxt "@title:row"
 msgid "3 of a Kind"
-msgstr ""
+msgstr "३ एकप्रकारस्य"
 
 #: scores.cpp:73
 #, kde-format
 msgctxt "@title:row"
 msgid "4 of a Kind"
-msgstr ""
+msgstr "४ एकप्रकारस्य"
 
 #: scores.cpp:74
 #, kde-format
 msgctxt "@title:row"
 msgid "Full House"
-msgstr ""
+msgstr "पूर्ण सदन"
 
 #: scores.cpp:75
 #, kde-format
 msgctxt "@title:row"
 msgid "Small Straight"
-msgstr ""
+msgstr "लघु सीधा"
 
 #: scores.cpp:76
 #, kde-format
 msgctxt "@title:row"
 msgid "Large Straight"
-msgstr ""
+msgstr "बृहत् सीधा"
 
 #: scores.cpp:77
 #, kde-format
@@ -311,16 +311,16 @@ msgstr "ग्रीसदेशः"
 #, kde-format
 msgctxt "@title:row"
 msgid "Chance"
-msgstr ""
+msgstr "अवसर"
 
 #: scores.cpp:79
 #, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
-msgstr ""
+msgstr "निम्न कुल"
 
 #: scores.cpp:81
 #, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"
-msgstr ""
+msgstr "भव्य कुल"
