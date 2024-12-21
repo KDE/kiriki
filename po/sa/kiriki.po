@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the kiriki package.
 # Kali <EMAIL@ADDRESS>, 2024.
 #
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-22 00:38+0000\n"
-"PO-Revision-Date: 2024-12-13 19:10+0530\n"
-"Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
+"PO-Revision-Date: 2024-12-20 21:52+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,7 +51,7 @@ msgstr "मानव?"
 #: configPage.ui:42
 #, kde-format
 msgid "Number of players:"
-msgstr "क्रीडकानां संख्या : १."
+msgstr "क्रीडकानां संख्या :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_2)
 #: configPage.ui:54
@@ -97,13 +99,13 @@ msgstr "सङ्गणकानां चालनस्य मध्ये व
 #: configPage.ui:203
 #, kde-format
 msgid "Font Size:"
-msgstr "फ़ॉन्टस्य आकारः : १."
+msgstr "फ़ॉन्टस्य आकारः :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: configPage.ui:224
 #, kde-format
 msgid "Row Height:"
-msgstr "पङ्क्तिः ऊर्ध्वता : १."
+msgstr "पङ्क्तिः ऊर्ध्वता :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_startupDemoEnabled)
 #: configPage.ui:243
