@@ -10,8 +10,10 @@
 #include "scores.h"
 
 #include <QFont>
+#include <QGuiApplication>
 #include <QPainter>
 #include <QPalette>
+#include <QStyleHints>
 
 #include <KIconLoader>
 #include <KLocalizedString>
@@ -145,6 +147,7 @@ QVariant scores::data(const QModelIndex &index, int role) const
 	
 	int column = index.column();
 	const Row row = m_rows.at(index.row());
+	const bool isDarkTheme = QGuiApplication::styleHints()->colorScheme() == Qt::ColorScheme::Dark;
 	
 	if (row.type() == Row::NamesRow)
 	{
@@ -207,15 +210,12 @@ QVariant scores::data(const QModelIndex &index, int role) const
 			else c = p.alternateBase().color();
 		}
 		
-		if (row.type() == Row::GrandTotalRow) c = p.highlight().color().lighter();
+		if (row.type() == Row::GrandTotalRow)
+			c = isDarkTheme ? p.highlight().color().darker() : p.highlight().color().lighter();
 		
 		if (column - 1 == m_currentPlayer) c = c.darker(110);
 		
 		return c;
-	}
-	else if (role == Qt::ForegroundRole)
-	{
-		if (row.type() == Row::GrandTotalRow) return QColor(Qt::black);
 	}
 	else if (role == Qt::TextAlignmentRole)
 	{
