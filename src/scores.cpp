@@ -213,6 +213,10 @@ QVariant scores::data(const QModelIndex &index, int role) const
 		
 		return c;
 	}
+	else if (role == Qt::ForegroundRole)
+	{
+		if (row.type() == Row::GrandTotalRow) return QColor(Qt::black);
+	}
 	else if (role == Qt::TextAlignmentRole)
 	{
 		if (column != 0) return Qt::AlignCenter;
