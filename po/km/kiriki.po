@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-22 00:38+0000\n"
+"POT-Creation-Date: 2025-03-02 00:38+0000\n"
 "PO-Revision-Date: 2009-10-24 09:17+0700\n"
 "Last-Translator: Morn Met\n"
 "Language-Team: Khmer <kde-i18n-doc@kde.org>\n"
@@ -229,119 +229,119 @@ msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២​០​០​�
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
-#: scores.cpp:63
+#: scores.cpp:65
 #, fuzzy, kde-format
 #| msgid "1s"
 msgctxt "@title:row"
 msgid "1s"
 msgstr "១ វិ."
 
-#: scores.cpp:64
+#: scores.cpp:66
 #, fuzzy, kde-format
 #| msgid "2s"
 msgctxt "@title:row"
 msgid "2s"
 msgstr "២ វិ."
 
-#: scores.cpp:65
+#: scores.cpp:67
 #, fuzzy, kde-format
 #| msgid "3s"
 msgctxt "@title:row"
 msgid "3s"
 msgstr "៣ វិ."
 
-#: scores.cpp:66
+#: scores.cpp:68
 #, fuzzy, kde-format
 #| msgid "4s"
 msgctxt "@title:row"
 msgid "4s"
 msgstr "៤ វិ."
 
-#: scores.cpp:67
+#: scores.cpp:69
 #, fuzzy, kde-format
 #| msgid "5s"
 msgctxt "@title:row"
 msgid "5s"
 msgstr "៥ វិ."
 
-#: scores.cpp:68
+#: scores.cpp:70
 #, fuzzy, kde-format
 #| msgid "6s"
 msgctxt "@title:row"
 msgid "6s"
 msgstr "៦ វិ."
 
-#: scores.cpp:69
+#: scores.cpp:71
 #, fuzzy, kde-format
 #| msgid "Bonus if > 62"
 msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "ពិន្ទុ​បន្ថែម ប្រសិន​បើ > ៦​២"
 
-#: scores.cpp:70
+#: scores.cpp:72
 #, fuzzy, kde-format
 #| msgid "Upper total"
 msgctxt "@title:row"
 msgid "Upper total"
 msgstr "សរុប​ទាំង​មូល"
 
-#: scores.cpp:72
+#: scores.cpp:74
 #, fuzzy, kde-format
 #| msgid "3 of a Kind"
 msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "៣​ ដូចគ្នា"
 
-#: scores.cpp:73
+#: scores.cpp:75
 #, fuzzy, kde-format
 #| msgid "4 of a Kind"
 msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "៤ ដូច​គ្នា"
 
-#: scores.cpp:74
+#: scores.cpp:76
 #, fuzzy, kde-format
 #| msgid "Full House"
 msgctxt "@title:row"
 msgid "Full House"
 msgstr "ផ្ទះ​ពេញ"
 
-#: scores.cpp:75
+#: scores.cpp:77
 #, fuzzy, kde-format
 #| msgid "Small Straight"
 msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "តូច​ត្រង់"
 
-#: scores.cpp:76
+#: scores.cpp:78
 #, fuzzy, kde-format
 #| msgid "Large Straight"
 msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "ធំ​ត្រង់"
 
-#: scores.cpp:77
+#: scores.cpp:79
 #, fuzzy, kde-format
 #| msgid "Kiriki"
 msgctxt "@title:row"
 msgid "Kiriki"
 msgstr "Kiriki"
 
-#: scores.cpp:78
+#: scores.cpp:80
 #, fuzzy, kde-format
 #| msgid "Chance"
 msgctxt "@title:row"
 msgid "Chance"
 msgstr "ឱកាស"
 
-#: scores.cpp:79
+#: scores.cpp:81
 #, fuzzy, kde-format
 #| msgid "Lower Total"
 msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "សរុប​រង"
 
-#: scores.cpp:81
+#: scores.cpp:83
 #, fuzzy, kde-format
 #| msgid "Grand Total"
 msgctxt "@title:row"

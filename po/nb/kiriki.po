@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-22 00:38+0000\n"
+"POT-Creation-Date: 2025-03-02 00:38+0000\n"
 "PO-Revision-Date: 2025-02-09 13:51+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -232,103 +232,103 @@ msgstr "© 2005–2007 Albert Astals Cid"
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
-#: scores.cpp:63
+#: scores.cpp:65
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "1s"
 msgstr "1s"
 
-#: scores.cpp:64
+#: scores.cpp:66
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "2s"
 msgstr "2s"
 
-#: scores.cpp:65
+#: scores.cpp:67
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "3s"
 msgstr "3s"
 
-#: scores.cpp:66
+#: scores.cpp:68
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "4s"
 msgstr "4s"
 
-#: scores.cpp:67
+#: scores.cpp:69
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "5s"
 msgstr "5s"
 
-#: scores.cpp:68
+#: scores.cpp:70
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "6s"
 msgstr "6s"
 
-#: scores.cpp:69
+#: scores.cpp:71
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "Bonus hvis > 62"
 
-#: scores.cpp:70
+#: scores.cpp:72
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
 msgstr "Øvre sum"
 
-#: scores.cpp:72
+#: scores.cpp:74
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "3 like"
 
-#: scores.cpp:73
+#: scores.cpp:75
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "4 like"
 
-#: scores.cpp:74
+#: scores.cpp:76
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Full House"
 msgstr "Hus"
 
-#: scores.cpp:75
+#: scores.cpp:77
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "Liten straight"
 
-#: scores.cpp:76
+#: scores.cpp:78
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "Stor straight"
 
-#: scores.cpp:77
+#: scores.cpp:79
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
 msgstr "Kiriki"
 
-#: scores.cpp:78
+#: scores.cpp:80
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Chance"
 msgstr "Sjanse"
 
-#: scores.cpp:79
+#: scores.cpp:81
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "Nedre sum"
 
-#: scores.cpp:81
+#: scores.cpp:83
 #, fuzzy, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"

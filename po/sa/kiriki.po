@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-22 00:38+0000\n"
+"POT-Creation-Date: 2025-03-02 00:38+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -225,103 +225,103 @@ msgstr "© 2005-2007 अल्बर्ट एस्टल्स सिड"
 msgid "Albert Astals Cid"
 msgstr "अल्बर्ट एस्टल्स सिड"
 
-#: scores.cpp:63
+#: scores.cpp:65
 #, kde-format
 msgctxt "@title:row"
 msgid "1s"
 msgstr "१स"
 
-#: scores.cpp:64
+#: scores.cpp:66
 #, kde-format
 msgctxt "@title:row"
 msgid "2s"
 msgstr "२स"
 
-#: scores.cpp:65
+#: scores.cpp:67
 #, kde-format
 msgctxt "@title:row"
 msgid "3s"
 msgstr "३ स"
 
-#: scores.cpp:66
+#: scores.cpp:68
 #, kde-format
 msgctxt "@title:row"
 msgid "4s"
 msgstr "४स"
 
-#: scores.cpp:67
+#: scores.cpp:69
 #, kde-format
 msgctxt "@title:row"
 msgid "5s"
 msgstr "५स"
 
-#: scores.cpp:68
+#: scores.cpp:70
 #, kde-format
 msgctxt "@title:row"
 msgid "6s"
 msgstr "६स"
 
-#: scores.cpp:69
+#: scores.cpp:71
 #, kde-format
 msgctxt "@title:row"
 msgid "Bonus if > 62"
 msgstr "बोनस यदि > 62"
 
-#: scores.cpp:70
+#: scores.cpp:72
 #, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
 msgstr "उच्च कुल"
 
-#: scores.cpp:72
+#: scores.cpp:74
 #, kde-format
 msgctxt "@title:row"
 msgid "3 of a Kind"
 msgstr "३ एकप्रकारस्य"
 
-#: scores.cpp:73
+#: scores.cpp:75
 #, kde-format
 msgctxt "@title:row"
 msgid "4 of a Kind"
 msgstr "४ एकप्रकारस्य"
 
-#: scores.cpp:74
+#: scores.cpp:76
 #, kde-format
 msgctxt "@title:row"
 msgid "Full House"
 msgstr "पूर्ण सदन"
 
-#: scores.cpp:75
+#: scores.cpp:77
 #, kde-format
 msgctxt "@title:row"
 msgid "Small Straight"
 msgstr "लघु सीधा"
 
-#: scores.cpp:76
+#: scores.cpp:78
 #, kde-format
 msgctxt "@title:row"
 msgid "Large Straight"
 msgstr "बृहत् सीधा"
 
-#: scores.cpp:77
+#: scores.cpp:79
 #, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
 msgstr "ग्रीसदेशः"
 
-#: scores.cpp:78
+#: scores.cpp:80
 #, kde-format
 msgctxt "@title:row"
 msgid "Chance"
 msgstr "अवसर"
 
-#: scores.cpp:79
+#: scores.cpp:81
 #, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
 msgstr "निम्न कुल"
 
-#: scores.cpp:81
+#: scores.cpp:83
 #, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"
