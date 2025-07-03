@@ -93,8 +93,11 @@ bool scores::allScores() const
 
 void scores::nextPlayer()
 {
+	const int previousPlayer = m_currentPlayer;
 	m_currentPlayer++;
 	m_currentPlayer = m_currentPlayer % m_players.count();
+	Q_EMIT dataChanged(index(0, previousPlayer + 1), index(m_rows.count() - 1, previousPlayer + 1), {Qt::BackgroundRole});
+	Q_EMIT dataChanged(index(0, m_currentPlayer + 1), index(m_rows.count() - 1, m_currentPlayer + 1), {Qt::BackgroundRole});
 }
 
 const player &scores::currentPlayer() const
@@ -248,6 +251,10 @@ void scores::askForRedraw()
 
 bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 {
+	// The design is a bit strange and we pass column as 0 and
+	// let m_currentPlayer be the one that really controls the column
+	Q_ASSERT(mi.column() == 0);
+
 	if (role != Qt::EditRole) return false;
 	
 	const Row row = m_rows.at(mi.row());
@@ -271,14 +278,18 @@ bool scores::setData(const QModelIndex &mi, const QVariant &value, int role)
 		if (m_players[m_currentPlayer].score(row.scoreRow()) >= 0) return false;
 		m_players[m_currentPlayer].setScore(row.scoreRow(), value.toInt());
 	}
+
+	const QModelIndex realIndexChanged = mi.siblingAtColumn(m_currentPlayer + 1);
 	
-	Q_EMIT dataChanged(mi, mi);
-	
+	Q_EMIT dataChanged(realIndexChanged, realIndexChanged);
+
 	for (int i = 0; i < m_rows.count(); ++i)
 	{
 		const Row::Type t = m_rows.at(i).type();
-		if (t == Row::BonusRow || t == Row::UpperTotalRow || t == Row::LowerTotalRow || t == Row::GrandTotalRow)
-			Q_EMIT dataChanged(index(m_currentPlayer + 1, i), index(m_currentPlayer + 1, i));
+		if (t == Row::BonusRow || t == Row::UpperTotalRow || t == Row::LowerTotalRow || t == Row::GrandTotalRow) {
+			const QModelIndex sumRow = realIndexChanged.siblingAtRow(i);
+			Q_EMIT dataChanged(sumRow, sumRow);
+		}
 	}
 	
 	return true;
