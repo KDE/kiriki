@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: kdegames-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-02 00:38+0000\n"
-"PO-Revision-Date: 2025-01-09 16:14+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"PO-Revision-Date: 2025-09-04 14:59+0300\n"
+"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -101,7 +101,7 @@ msgstr "Bilgisayarın hareketleri arasındaki süre (milisaniye):"
 #: configPage.ui:203
 #, kde-format
 msgid "Font Size:"
-msgstr "Yazıtipi boyutu:"
+msgstr "Yazıtipi puntosu:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: configPage.ui:224
