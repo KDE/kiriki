@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2024-10-04 12:17+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -36,6 +36,36 @@ msgstr "Артём Середа, Олеся Герасименко"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "overmind88@gmail.com, translation-team@basealt.ru"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Альберт"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Жанет"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Джеймс"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Сандра"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Томас"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Маргарет"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -169,42 +199,6 @@ msgstr[3] "Бросьте выделенную кость."
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "Изменения вступят в силу в следующей игре."
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Альберт"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "Жанет"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Джеймс"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Сандра"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Томас"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Маргарет"
 
 #: lateralwidget.cpp:30
 #, kde-format

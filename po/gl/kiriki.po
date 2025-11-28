@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2024-05-07 08:18+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -31,6 +31,36 @@ msgstr "mvillarino, Adrián Chaves (Gallaecio)"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mvillarino@users.sourceforge.net, adrian@chaves.gal"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Alberte"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "María"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Iago"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Sandra"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Tomé"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Fiz"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -162,42 +192,6 @@ msgstr[1] "Tirar os dados realzados."
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "Os cambios aplicaranse na seguinte partida."
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Alberte"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "María"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Iago"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Sandra"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Tomé"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Fiz"
 
 #: lateralwidget.cpp:30
 #, kde-format

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -28,6 +28,36 @@ msgstr "श्रीकान्त् कलवार्"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "skkalwar999@gmail.com"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "अल्बर्ट"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "जेनेट्"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "जेम्स्"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "सान्द्रा"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "थोमस"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "मार्गरेट्"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -157,42 +187,6 @@ msgstr[1] "हाइलाइट् कृत्वा पासान् रो
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "अग्रिमे क्रीडने परिवर्तनं प्रयुक्तं भविष्यति।"
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "अल्बर्ट"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "जेनेट्"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "जेम्स्"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "सान्द्रा"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "थोमस"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "मार्गरेट्"
 
 #: lateralwidget.cpp:30
 #, kde-format

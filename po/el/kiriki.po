@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2020-09-12 18:43+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -29,6 +29,36 @@ msgstr "Σπύρος Γεωργαράς, Τούσης Μανώλης"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Αλβέρτος"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Ιωάννα"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Ιάκωβος"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Σωτηρία"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Θωμάς"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Μαργαρίτα"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -160,42 +190,6 @@ msgstr[1] "Ρίψη επιλεγμένων ζαριών"
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "Οι αλλαγές θα εφαρμοστούν στο επόμενο παιχνίδι."
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Αλβέρτος"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "Ιωάννα"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Ιάκωβος"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Σωτηρία"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Θωμάς"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Μαργαρίτα"
 
 #: lateralwidget.cpp:30
 #, kde-format

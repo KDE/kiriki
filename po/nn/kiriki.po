@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2025-02-09 13:50+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -28,6 +28,42 @@ msgstr "Karl Ove Hufthammer"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "karl@huftis.org"
+
+# Må oppdaterast ved regjeringsskifte! Som ein liten spøk (eller «påskeeegg», om du vil) er spelarnamna namna på seks medlemmar i den sitjande regjeringa. Annakvart namn skal vera jentenamn og annakvart gutenamn. Det første namnet skal vera statsministeren. Elles bør namna helst hentast frå dei mest kjende/synlege statsråda (dei som vanlege folk kjenner til). For koalisjonsregjeringar må alle partia vera representerte. Og det er ein fordel om namna er litt uvanlege (lett gjenkjennelege). Ingen namn bør begynna på same forbokstav.
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Jonas"
+
+# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Tonje"
+
+# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Espen"
+
+# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Lubna"
+
+# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Åsmund"
+
+# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Kjersti"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -159,48 +195,6 @@ msgstr[1] "Trill merkte terningar."
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "Endringane trer i kraft ved neste parti."
-
-# Må oppdaterast ved regjeringsskifte! Som ein liten spøk (eller «påskeeegg», om du vil) er spelarnamna namna på seks medlemmar i den sitjande regjeringa. Annakvart namn skal vera jentenamn og annakvart gutenamn. Det første namnet skal vera statsministeren. Elles bør namna helst hentast frå dei mest kjende/synlege statsråda (dei som vanlege folk kjenner til). For koalisjonsregjeringar må alle partia vera representerte. Og det er ein fordel om namna er litt uvanlege (lett gjenkjennelege). Ingen namn bør begynna på same forbokstav.
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Jonas"
-
-# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "Tonje"
-
-# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Espen"
-
-# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Lubna"
-
-# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Åsmund"
-
-# Må oppdaterast ved regjeringsskifte! Sjå utvida kommentar for «Albert».
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Kjersti"
 
 #: lateralwidget.cpp:30
 #, kde-format

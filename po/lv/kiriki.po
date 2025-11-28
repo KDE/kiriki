@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2024-10-02 11:22+0300\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -31,6 +31,36 @@ msgstr "Māris Nartišs, Toms Trasūns"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "maris.kde@gmail.com, toms.trasuns@posteo.net"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Lāčplēsis"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Spīdala"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Kangars"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Laimdota"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Koknesis"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Staburadze"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -163,42 +193,6 @@ msgstr[2] "Mest izceltos kauliņus."
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "Izmaiņas stāsies spēkā nākamajā partijā."
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Lāčplēsis"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "Spīdala"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Kangars"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Laimdota"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Koknesis"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Staburadze"
 
 #: lateralwidget.cpp:30
 #, kde-format

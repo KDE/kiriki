@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2024-10-29 19:46+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -31,6 +31,36 @@ msgstr "Niklas Laxström, Tommi Nieminen"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "niklas.laxstrom+kdetrans@gmail.com, translator@legisign.org"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Kim"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Minna"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Joonas"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Terhi"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Niklas"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Päivi"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -160,42 +190,6 @@ msgstr[1] "Heitä korostettuja noppia."
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "Asetukset tulevat käyttöön seuraavassa pelissä."
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Kim"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "Minna"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Joonas"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Terhi"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Niklas"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Päivi"
 
 #: lateralwidget.cpp:30
 #, kde-format

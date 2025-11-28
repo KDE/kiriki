@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:49+0000\n"
+"POT-Creation-Date: 2025-11-28 00:39+0000\n"
 "PO-Revision-Date: 2024-05-05 20:46+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -28,6 +28,36 @@ msgstr "Marcello Anni"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "marcello.anni@alice.it"
+
+#, kde-format
+msgctxt "default name of first player"
+msgid "Albert"
+msgstr "Marcello"
+
+#, kde-format
+msgctxt "default name of second player"
+msgid "Janet"
+msgstr "Laura"
+
+#, kde-format
+msgctxt "default name of third player"
+msgid "James"
+msgstr "Marco"
+
+#, kde-format
+msgctxt "default name of fourth player"
+msgid "Sandra"
+msgstr "Alessandra"
+
+#, kde-format
+msgctxt "default name of fifth player"
+msgid "Thomas"
+msgstr "Mattia"
+
+#, kde-format
+msgctxt "default name of sixth player"
+msgid "Margaret"
+msgstr "Nicola"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configPage.ui:17
@@ -159,42 +189,6 @@ msgstr[1] "Lancia dadi evidenziati."
 #, kde-format
 msgid "Changes will be applied on next game."
 msgstr "I cambiamenti verranno applicati dalla prossima partita."
-
-#: kiriki.kcfg:40
-#, kde-format
-msgctxt "default name of first player"
-msgid "Albert"
-msgstr "Marcello"
-
-#: kiriki.kcfg:46
-#, kde-format
-msgctxt "default name of second player"
-msgid "Janet"
-msgstr "Laura"
-
-#: kiriki.kcfg:52
-#, kde-format
-msgctxt "default name of third player"
-msgid "James"
-msgstr "Marco"
-
-#: kiriki.kcfg:58
-#, kde-format
-msgctxt "default name of fourth player"
-msgid "Sandra"
-msgstr "Alessandra"
-
-#: kiriki.kcfg:64
-#, kde-format
-msgctxt "default name of fifth player"
-msgid "Thomas"
-msgstr "Mattia"
-
-#: kiriki.kcfg:70
-#, kde-format
-msgctxt "default name of sixth player"
-msgid "Margaret"
-msgstr "Nicola"
 
 #: lateralwidget.cpp:30
 #, kde-format
