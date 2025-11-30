@@ -491,7 +491,7 @@
 				<term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >P</keycap
 ></keycombo
@@ -499,7 +499,7 @@
 > <guimenu
 >Jogo</guimenu
 > <guimenuitem
->Imprimir...</guimenuitem
+>Imprimir…</guimenuitem
 > </menuchoice
 ></term>
 				<listitem
