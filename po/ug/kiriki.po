@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: kiriki\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-28 00:39+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-31 18:51-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #, kde-format
 msgctxt "default name of first player"
@@ -50,7 +51,7 @@ msgstr ""
 #, kde-format
 msgctxt "default name of fifth player"
 msgid "Thomas"
-msgstr "Thomas"
+msgstr ""
 
 #, kde-format
 msgctxt "default name of sixth player"
@@ -85,31 +86,31 @@ msgstr "ئوينىغۇچى سانى:"
 #: configPage.ui:54
 #, kde-format
 msgid "3."
-msgstr "3."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: configPage.ui:71
 #, kde-format
 msgid "2."
-msgstr "2."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: configPage.ui:95
 #, kde-format
 msgid "1."
-msgstr "1."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
 #: configPage.ui:125
 #, kde-format
 msgid "4."
-msgstr "4."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_3)
 #: configPage.ui:146
 #, kde-format
 msgid "5."
-msgstr "5."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2_3_2)
 #: configPage.ui:167
@@ -181,7 +182,7 @@ msgstr[0] ""
 #: kiriki.cpp:347
 #, kde-format
 msgid "Changes will be applied on next game."
-msgstr "C"
+msgstr ""
 
 #: lateralwidget.cpp:30
 #, kde-format
@@ -197,7 +198,7 @@ msgstr ""
 #: main.cpp:45
 #, kde-format
 msgid "Kiriki"
-msgstr "Kiriki"
+msgstr ""
 
 #: main.cpp:47
 #, kde-format
@@ -215,18 +216,16 @@ msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
 #: scores.cpp:65
-#, fuzzy, kde-format
-#| msgid "1s"
+#, kde-format
 msgctxt "@title:row"
 msgid "1s"
-msgstr "1s"
+msgstr ""
 
 #: scores.cpp:66
-#, fuzzy, kde-format
-#| msgid "2s"
+#, kde-format
 msgctxt "@title:row"
 msgid "2s"
-msgstr "2s"
+msgstr ""
 
 #: scores.cpp:67
 #, kde-format
@@ -241,11 +240,10 @@ msgid "4s"
 msgstr ""
 
 #: scores.cpp:69
-#, fuzzy, kde-format
-#| msgid "5s"
+#, kde-format
 msgctxt "@title:row"
 msgid "5s"
-msgstr "5s"
+msgstr ""
 
 #: scores.cpp:70
 #, kde-format
@@ -260,11 +258,10 @@ msgid "Bonus if > 62"
 msgstr ""
 
 #: scores.cpp:72
-#, fuzzy, kde-format
-#| msgid "Upper total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Upper total"
-msgstr "ئۇستىنىڭ جەمئىيسى"
+msgstr ""
 
 #: scores.cpp:74
 #, kde-format
@@ -297,11 +294,10 @@ msgid "Large Straight"
 msgstr ""
 
 #: scores.cpp:79
-#, fuzzy, kde-format
-#| msgid "Kiriki"
+#, kde-format
 msgctxt "@title:row"
 msgid "Kiriki"
-msgstr "Kiriki"
+msgstr ""
 
 #: scores.cpp:80
 #, kde-format
@@ -310,15 +306,13 @@ msgid "Chance"
 msgstr ""
 
 #: scores.cpp:81
-#, fuzzy, kde-format
-#| msgid "Lower Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Lower Total"
-msgstr "ئاستىنىڭ جەمئىيسى"
+msgstr ""
 
 #: scores.cpp:83
-#, fuzzy, kde-format
-#| msgid "Grand Total"
+#, kde-format
 msgctxt "@title:row"
 msgid "Grand Total"
 msgstr "ئومۇمىي نەتىجە"
