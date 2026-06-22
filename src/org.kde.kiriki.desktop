@@ -2,7 +2,6 @@
 Name=Kiriki
 Name[ar]=كيريكي
 Name[ast]=Kiriki
-Name[bg]=Kiriki
 Name[bs]=Kiriki
 Name[ca]=Kiriki
 Name[ca@valencia]=Kiriki
@@ -65,7 +64,6 @@ Exec=kiriki -qwindowtitle %c
 X-DocPath=kiriki/index.html
 GenericName=Yahtzee-like Dice Game
 GenericName[ar]=لعبة النرد الشبيهة بياهتزي
-GenericName[bg]=Игра със зарове подобна на Yahtzee
 GenericName[bs]=Yahtzee-kao jamb
 GenericName[ca]=Joc de daus com el Yahtzee
 GenericName[ca@valencia]=Joc de daus com Yahtzee
