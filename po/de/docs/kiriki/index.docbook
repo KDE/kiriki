@@ -548,7 +548,7 @@
 ></term>
 				<listitem
 ><para
->Gibt einen Tipp, indem ein oder mehrere Würfel für den nächsten Zug oder eine Zeile auf der Punktetafel hervorgehoben werden. Benutzen Sie diese Funktion, wird das Spielergebnis nicht in die Bestenliste eingetragen.</para
+>Gibt einen Tipp, indem ein oder mehrere Würfel für den nächsten Zug oder eine Zeile auf der Punktetafel hervorgehoben werden. Verwenden Sie diese Funktion, wird das Spielergebnis nicht in die Bestenliste eingetragen.</para
 ></listitem>
 			</varlistentry>
 			<varlistentry>
@@ -653,7 +653,7 @@
 ></question>
  <answer
 ><para
->Um die Geschwindigkeit der KI des Spiels zu ändern, benutzen Sie den Einrichtungsdialog, der im Abschnitt <link linkend="configuration"
+>Um die Geschwindigkeit der KI des Spiels zu ändern, verwenden Sie den Einrichtungsdialog, der im Abschnitt <link linkend="configuration"
 >Einstellungen für das Spiel</link
 > in diesem Handbuch beschrieben wird.</para
 ></answer>
@@ -697,7 +697,7 @@
 >1.</guilabel
 >-<guilabel
 >6.</guilabel
-> bezeichneten Felder sind die Identitäten der Spieler. Sie können hier die Namen einstellen und auch, ob sie von menschlichen Gegnern oder von der KI des Spiels gesteuert werden. Um einzustellen, wie die Spieler gesteuert werden, benutzen Sie das Ankreuzfeld rechts neben dem Namen.</para>
+> bezeichneten Felder sind die Identitäten der Spieler. Sie können hier die Namen einstellen und auch, ob sie von menschlichen Gegnern oder von der KI des Spiels gesteuert werden. Um einzustellen, wie die Spieler gesteuert werden, verwenden Sie das Ankreuzfeld rechts neben dem Namen.</para>
 <para
 >Der erste Spieler muss immer ein menschlicher Spieler sein.</para>
 
