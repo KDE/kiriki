@@ -1,5 +1,6 @@
 # Translation of kiriki to Norwegian Bokmål
 #
+# Karl Ove Hufthammer <karl@huftis.org>, 2008, 2020, 2023, 2025.
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2010, 2012, 2013.
 msgid ""
 msgstr ""
