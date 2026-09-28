@@ -1,0 +1,771 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Russian "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>Руководство пользователя &kiriki;</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Евгений</firstname
+> <surname
+>Трунев</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+><firstname
+>Александр</firstname
+><surname
+>Яворский</surname
+><affiliation
+><address
+><email
+>kekcuha@gmail.com</email
+></address
+></affiliation
+><contrib
+>Перевод на русский</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>6 июля 2021 г.</date>
+<releaseinfo
+>KDE Gear 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>В этом руководстве описывается игра &kiriki; версии 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>KDE</keyword
+> <!-- do not change this! -->
+	<keyword
+>kdegames</keyword
+> <!-- do not change this! -->
+	<keyword
+>игра</keyword
+> <!-- do not change this! -->
+	<keyword
+>kiriki</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>кости</keyword>
+	<keyword
+>аркада</keyword>
+	<keyword
+>игра в кости</keyword>
+	<keyword
+>игра в кости</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>шесть игроков</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>Введение</title
+> <!-- do not change this! -->
+	<note
+><title
+>Тип игры:</title
+><para
+>Кости, аркада</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>Количество игроков:</title
+><para
+>Шесть</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Игровое поле &kiriki;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>&kiriki; — увлекательная, затягивающая игра в кости от &kde;, в которую могут играть до шести человек. Игроки набирают очки, бросая пять костей до трёх раз за ход. Каждый бросок даёт определённую комбинацию, которую игрок может записать или нет, но каждую комбинацию можно записать только один раз. Через тринадцать ходов игра заканчивается и очки сравниваются. Побеждает набравший больше всех очков. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>Как играть</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>Цель:</title
+><para
+>Набрать больше очков, чем любой из соперников.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>Сразу после запуска &kiriki; выбрасывает кости для первого игрока. Если первый игрок — вы, сейчас ваш ход; иначе придётся подождать, пока походят остальные.</para>
+	<note
+><title
+>Примечание:</title
+><para
+>По умолчанию, если параметры игры не менялись, первым игроком управляет человек (вы), а остальными пятью — компьютер.</para
+></note>
+	<para
+>Когда наступает ваш ход, прежде всего посмотрите на выпавшие кости. У каждой из пяти костей в левой части окна своё значение. Проверьте, не складываются ли они в какую-нибудь комбинацию.</para>
+	<note
+><title
+>Примечание:</title
+><para
+>Все комбинации подробно описаны в разделе <link linkend="rules_and_tips"
+>Правила игры, стратегия и советы</link
+> этого руководства.</para
+></note>
+	<para
+>Учтите, что кости могут подходить сразу под несколько комбинаций. Тогда придётся решить, какая из них принесёт больше очков.</para>
+	<para
+>Если выпавшие кости не складываются ни в одну комбинацию или складываются только в уже использованную, у вас есть ещё два броска, чтобы исправить положение. Для второго (третьего) броска щёлкните мышью по костям, которые вас не устраивают, и нажмите кнопку <guibutton
+>Бросить</guibutton
+> под костями. Выбранные кости будут переброшены, и их значения изменятся.</para>
+	<para
+>После третьего броска нужно выбрать комбинацию для выпавших костей. Если ни одна не подходит, можно записать их в строку <guilabel
+>Шанс</guilabel
+> или выбрать любую строку на табло.</para>
+   <note
+><title
+>Примечание:</title
+><para
+>Если выбрать комбинацию, которой кости не соответствуют, она будет вычеркнута с нулём очков.</para
+></note>
+	<para
+>Как только вы выбираете комбинацию, в неё записываются очки за текущие кости.</para>
+	<note
+><title
+>Примечание:</title
+><para
+>Все комбинации подробно описаны в разделе <link linkend="rules_and_tips"
+>Правила игры, стратегия и советы</link
+> этого руководства.</para
+></note>
+	<para
+>Сразу после этого ваш ход заканчивается и начинается ход следующего игрока. Так повторяется тринадцать раз, после чего игра заканчивается: очки подсчитываются, лучшие результаты попадают в таблицу.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>Правила игры, стратегия и советы</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>Правила игры</title>
+		<para
+>Табло очков &kiriki; разбито на четырнадцать строк. В каждой строке — одна комбинация и очки, полученные игроками за соответствующий бросок. Очки за каждую строку считаются так:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>Единицы</guilabel
+>: сумма всех костей со значением «1».<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «14112». Сумма: «3»=«1»+«1»+«1». Выпавшие кости: «51111». Сумма: «4»=«1»+«1»+«1»+«1».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Двойки</guilabel
+>: сумма всех костей со значением «2».<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «22422». Сумма: «8»=«2»+«2»+«2»+«2». Выпавшие кости: «42322». Сумма: «6»=«2»+«2»+«2».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Тройки</guilabel
+>: сумма всех костей со значением «3».<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «34132». Сумма: «6»=«3»+«3». Выпавшие кости: «33333». Сумма: «15»=«3»+«3»+«3»+«3»+«3».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Четвёрки</guilabel
+>: сумма всех костей со значением «4».<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «14142». Сумма: «8»=«4»+«4». Выпавшие кости: «41414». Сумма: «12»=«4»+«4»+«4».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Пятёрки</guilabel
+>: сумма всех костей со значением «5».<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «15155». Сумма: «15»=«5»+«5»+«5». Выпавшие кости: «51555». Сумма: «20»=«5»+«5»+«5»+«5».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Шестёрки</guilabel
+>: сумма всех костей со значением «6».<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «66616». Сумма: «24»=«6»+«6»+«6»+«6». Выпавшие кости: «61616». Сумма: «18»=«6»+«6»+«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Премия, если 
+> 62</guilabel
+>: игрок получает ещё 35 очков, если сумма всех строк выше больше 62.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Верхняя сумма</guilabel
+>: не игровая строка, а сумма всех строк выше.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Тройка</guilabel
+>: сумма всех костей, если три из них одинаковые.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «14121». Сумма: «9»=«1»+«1»+«1»+«4»+«2». Выпавшие кости: «55151». Сумма: «17»=«5»+«5»+«5»+«1»+«1».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Каре</guilabel
+>: сумма всех костей, если четыре из них одинаковые.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «41444». Сумма: «17»=«4»+«4»+«4»+«4»+«1». Выпавшие кости: «22522». Сумма: «13»=«2»+«2»+«2»+«2»+«5».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Фул-хаус</guilabel
+>: 25 очков, если выпали три одинаковые кости и пара.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «11212». Выпавшие кости: «53353».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Малый стрит</guilabel
+>: 30 очков, если выпали четыре кости подряд по значению.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «14312». Последовательность: «1»,«2»,«3»,«4». Выпавшие кости: «51643». Последовательность: «3»,«4»,«5»,«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Большой стрит</guilabel
+>: 40 очков, если выпали пять костей подряд по значению.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «34152». Последовательность: «1»,«2»,«3»,«4»,«5». Выпавшие кости: «53264». Последовательность: «2»,«3»,«4»,«5»,«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>&kiriki;</guilabel
+>: 50 очков, если все пять костей одинаковые. &kiriki; можно выбросить сколько угодно раз; за каждое, начиная со второго, в конце игры даётся дополнительный ход.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «11111». Выпавшие кости: «33333».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Шанс</guilabel
+>: сумма всех выпавших костей.<note
+><title
+>Пример:</title
+><para
+>Выпавшие кости: «51143». Сумма: «14»=«5»+«1»+«1»+«4»+«3». Выпавшие кости: «21526». Сумма: «16»=«2»+«1»+«5»+«2»+«6».</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Нижняя сумма</guilabel
+>: не игровая строка, а сумма всех строк от <quote
+>Тройки</quote
+> и ниже.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>Общий итог</guilabel
+>: не игровая строка, а сумма строк <quote
+>Верхняя сумма</quote
+> и <quote
+>Нижняя сумма</quote
+>.</para
+></listitem>
+			</itemizedlist>
+			<para
+>Прочие правила и ограничения:</para>
+			<itemizedlist>
+				<listitem
+><para
+>Партия состоит из 13 ходов.</para
+></listitem>
+				<listitem
+><para
+>За ход каждый игрок бросает кости от одного до трёх раз.</para
+></listitem>
+				<listitem
+><para
+>После первого броска можно бросить кости ещё не более двух раз (всего три броска за ход).</para
+></listitem>
+				<listitem
+><para
+>Если первый бросок удачный, бросать ещё раз не обязательно.</para
+></listitem>
+				<listitem
+><para
+>При каждом следующем броске можно перебрасывать все кости или только выбранные.</para
+></listitem>
+				<listitem
+><para
+>Кости для переброса выбираются щелчком мыши.</para
+></listitem>
+				<listitem
+><para
+>После переброса прежнее значение кости теряется, засчитывается только новое.</para
+></listitem>
+				<listitem
+><para
+>Бросок удачный, если выпавшие кости складываются в одну из описанных выше комбинаций.</para
+></listitem>
+				<listitem
+><para
+>Каждую комбинацию каждый игрок может записать только один раз за игру. Записанная игроком комбинация больше ему недоступна, но другие игроки могут её использовать, если сами ещё не записали.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>Обзор интерфейса</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>Пункты меню</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Начать игру</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Начать новую игру.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Показать лучшие результаты</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Показать таблицу лучших результатов.</action
+> Если ваш результат входит в десятку лучших, программа предложит ввести имя. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Печать…</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Напечатать текущее табло очков.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Выход</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>Выйти</action
+> из &kiriki;.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>H</keycap
+></shortcut
+> <guimenu
+>Ход</guimenu
+> <guimenuitem
+>Подсказка</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Подсказать ход, выделив кости для переброса или строку на табло. Если воспользоваться подсказкой, результат не попадёт в таблицу лучших.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>Ход</guimenu
+> <guimenuitem
+>Демонстрация</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>Сыграть демонстрационную игру. Чтобы выйти из демонстрационного режима, начните новую игру.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>Кроме того, в &kiriki; есть стандартные для &kde; меню <guimenu
+>Настройка</guimenu
+> и <guimenu
+>Справка</guimenu
+>, описанные в разделах <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Меню «Настройка»</ulink
+> и <ulink url="help:/fundamentals/menus.html#menus-help"
+>Меню «Справка»</ulink
+> руководства «Основы &kde;». </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>Вопросы и ответы</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>Можно ли изменить внешний вид игры? </para
+></question>
+ <answer
+><para
+>Нет. Тем оформления в &kiriki; пока нет.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Я ошибся. Можно ли отменить ход? </para
+></question>
+ <answer
+><para
+>Нет. Отмены хода в &kiriki; нет.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Можно ли играть с помощью клавиатуры?</para
+></question>
+ <answer
+><para
+>Нет. В &kiriki; нельзя играть с клавиатуры.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Не понимаю, что тут делать! Есть ли подсказки? </para
+></question>
+ <answer
+><para
+>Правила и тактика игры описаны в разделе <link linkend="rules_and_tips"
+>Правила игры, стратегия и советы</link
+> этого руководства.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Мне нужно выйти из игры, но я ещё не закончил. Можно ли сохранить игру?</para
+></question>
+ <answer
+><para
+>Нет. Сохранения в &kiriki; нет.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>Компьютер играет слишком быстро! Не видно, что он делает!</para
+></question>
+ <answer
+><para
+>Скорость компьютерных игроков настраивается в диалоге параметров, описанном в разделе <link linkend="configuration"
+>Параметры игры</link
+> этого руководства.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>Параметры игры</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Параметры игры</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>В диалоге настройки &kiriki; задаются число игроков, их имена и время ответа.</para>
+<note
+><title
+>Примечание:</title
+><para
+>Время ответа меняется только для компьютерных игроков.</para
+></note>
+<para
+><guilabel
+>Количество игроков:</guilabel
+> число игроков в &kiriki;, от двух до шести.</para>
+
+<para
+><guilabel
+>1.</guilabel
+>-<guilabel
+>6.</guilabel
+> Пронумерованные поля — это игроки. Можно изменить их имена и указать, кем управляет игрок — человеком или компьютером: для этого есть флажок справа от поля имени.</para>
+<para
+>Первым игроком всегда управляет человек.</para>
+
+<para
+>Изменения числа игроков и их имён вступят в силу в следующей игре.</para>
+
+<para
+><guilabel
+>Задержка между ходами компьютера (мс):</guilabel
+> задержка между ходами компьютерных игроков. По умолчанию ноль, то есть компьютер отвечает мгновенно.</para>
+
+<note
+><title
+>Примечание:</title
+><para
+>Наибольшее значение — 999 миллисекунд.</para
+></note>
+
+<para
+>Чтобы настроить табло по своему вкусу, измените <guilabel
+>Размер шрифта:</guilabel
+> и <guilabel
+>Высота строки:</guilabel
+>.</para>
+<para
+>Чтобы сразу начинать игру при запуске &kiriki;, отключите включённый по умолчанию параметр <guilabel
+>Демонстрационная игра при запуске</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>Авторские права и лицензия</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>&kiriki;</para>
+
+<!--List all the copyright holders here-->
+<para
+>© &Albert.Astals.Cid; &Albert.Astals.Cid.mail;, 2005–2007 (программа) </para>
+<para
+>© &Albert.Astals.Cid; &Albert.Astals.Cid.mail;, 2005 (документация) </para>
+<para
+>© Евгений Трунев (Eugene Trounev) <email
+>eugene.trounev@gmail.com</email
+>, 2007 (документация) </para>
+<para
+>Перевод на русский — Александр Яворский<email
+>kekcuha@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
