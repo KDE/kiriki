@@ -1,0 +1,775 @@
+<?xml version="1.0" ?>
+<!--IMPORTANT: please note that'do not change this!' notice does not apply to translators -->
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % Arabic "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE"
+> <!-- do not change this! -->
+]>
+
+<book id="kiriki" lang="&language;"
+> <!-- do not change this! -->
+<bookinfo>
+	<title
+>دليل كيريكي</title>
+<authorgroup>
+			<author
+><firstname
+>Albert</firstname
+> <surname
+>Astals Cid</surname
+> </author>
+<author
+><firstname
+>Eugene</firstname
+><surname
+>Trounev</surname
+> <affiliation
+><address
+><email
+>eugene.trounev@gmail.com</email
+></address
+></affiliation>
+</author>
+			<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+		</authorgroup>
+
+		<copyright>
+			<year
+>2007</year>
+			<holder
+>&Albert.Astals.Cid;</holder>
+		</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>2021-07-06</date>
+<releaseinfo
+>ترس كيدي 21.04</releaseinfo>
+
+<!--Short description of this document. Do not change unless necessary!-->
+<abstract>
+	<para
+>يصف هذا الدليل لعبة كيريكي الإصدارة 21.04</para>
+</abstract>
+
+<!--List of relevan keywords-->
+<keywordset>
+	<keyword
+>كيدي</keyword
+> <!-- do not change this! -->
+	<keyword
+>ألعاب كيدي</keyword
+> <!-- do not change this! -->
+	<keyword
+>لعبة</keyword
+> <!-- do not change this! -->
+	<keyword
+>كيريكي</keyword
+><!--Application name goes here-->
+<!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<keyword
+>نرد</keyword>
+	<keyword
+>أركيد</keyword>
+	<keyword
+>لعبة نرد</keyword>
+	<keyword
+>لعب النرد</keyword>
+<!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+	<keyword
+>ستة لاعبين</keyword>
+</keywordset>
+</bookinfo>
+<!--Content begins here: -->
+<chapter id="introduction"
+><title
+>مقدمة</title
+> <!-- do not change this! -->
+	<note
+><title
+>نوع اللعبة:</title
+><para
+>نرد، أركيد</para
+></note
+><!-- Game genre. Use as many as necessary. Available game types are: Arcade, Board, Card, Dice, Toys, Logic, Strategy.-->
+	<note
+><title
+>عدد اللاعبين الممكنين:</title
+><para
+>ستة</para
+></note
+><!--Number of possible players. It can be: One, Two,..., Multiplayer-->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>لوحة لعبة كيريكي</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>كيريكي هي لعبة نرد ممتعة ومسببة للإدمان من كيدي، صُممت ليلعبها ما يصل إلى ستة لاعبين. على المشاركين جمع النقاط عبر رمي خمسة أحجار نرد لثلاث مرات كحد أقصى في الدور الواحد. تُنتج كل رمية تسلسلًا محددًا من الأرقام يكون للاعب الحرية في قبوله أو رفضه. ومع ذلك، لا يمكن قبول كل تسلسل محدد من الأرقام إلا مرة واحدة فقط. تنتهي اللعبة بعد ثلاثة عشر دورًا وتُقارن النتائج. يفوز باللعبة اللاعب الذي حصد أكبر قدر من النقاط. </para>
+</chapter>
+
+<chapter id="howto"
+><title
+>كيف تلعب</title
+> <!-- do not change this! -->
+<!--IMPORTANT: If the game has no defined objective, please remove the below line.-->
+	<note
+><title
+>الهدف:</title
+><para
+>كسب نقاط أكثر من أي من الخصوم.</para
+></note
+><!--Describe the objective of the game.-->
+<!--How to play description. Don't be to specific on rules as they have a separate section in this document-->
+	<para
+>عندما تبدأ كاركا، فإنه على الفور يعطي التركيبة الأولى للاعب الأول. إن كنت اللاعب الأول، فعندئذ حان دورك، وإلا فعليك الانتظار حتى يقوم كل اللاعبين الآخرين بحركاتهم.</para>
+	<note
+><title
+>الملاحظة:</title
+><para
+>مبدئيًا، ما لم تُغير إعدادات اللعبة، وفي وضع اللاعب المنفرد، يتحكم البشر (أنت) في اللاعب الأول، بينما يتحكم الذكاء الاصطناعي في اللاعبين الخمسة الآخرين.</para
+></note>
+	<para
+>عندما يحين دورك، أول شيء يجب عليك فعله هو فحص الرمية الحالية. كل من الأحجار الخمسة على الجانب الأيسر من شاشة اللعب لديه قيمة محددة. افحص التسلسل لترى إن كانت هذه القيم تشكل أيًا من أنماط النقاط.</para>
+	<note
+><title
+>الملاحظة:</title
+><para
+>يمكن العثور على وصف مفصل لقيم أنماط النقاط في قسم <link linkend="rules_and_tips"
+>قواعد اللعبة واستراتيجياتها وتلميحاتها</link
+> في هذا الدليل.</para
+></note>
+	<para
+>ضع في اعتبارك أن التركيبة يمكن أن تتطابق مع أكثر من نمط نقاط واحد. في هذه الحالة سيكون عليك تحديد أي نمط نقاط سيؤدي إلى نقاط أكبر لك.</para>
+	<para
+>في حال لم يطابق التسلسل الحالي أي نمط نقاط، أو طابق نمطًا استُخدم سابقًا، فلديك رميتان إضافيتان لتصحيح الوضع. لاستخدام الرمية الثانية (الثالثة)، اختر النرد الذي لا ترضى عنه بالنقر عليه بالفأرة ثم انقر زر <guibutton
+>ارمِ</guibutton
+> الموجود أسفل النرد مباشرة. سيؤدي هذا إلى إعادة رمي النرد المختار، وبالتالي تغيير قيمه.</para>
+	<para
+>بعد الانتهاء من الرمية الثالثة، يجب عليك اختيار نمط النقاط الذي يناسب تسلسل النرد المتاح. إذا لم يناسب أي نمط هذا التسلسل، يمكنك إما استخدام نمط <guilabel
+>فرصة</guilabel
+>، أو ببساطة اختر أي نمط نقاط في لوحة النتائج.</para>
+   <note
+><title
+>الملاحظة:</title
+><para
+>إذا اخترت نمط نقاط لا يناسب تسلسل النرد الحالي، فسيصبح النمط الذي اخترته ملغى وقيمته صفرًا.</para
+></note>
+	<para
+>بمجرد أن تختار نمط النقاط فإن قيمته تحدث لتعكس تسلسل الأحجار الذي لديك حاليًا.</para>
+	<note
+><title
+>الملاحظة:</title
+><para
+>يمكن العثور على وصف مفصل لقيم أنماط النقاط في قسم <link linkend="rules_and_tips"
+>قواعد اللعبة واستراتيجياتها وتلميحاتها</link
+> في هذا الدليل.</para
+></note>
+	<para
+>مباشرة بعد ذلك ينتهي دورك ويبدأ دور المشارك التالي. يتكرر هذا التسلسل لثلاث عشرة مرة ثم تنتهي اللعبة، وتحسب النقاط وتمنح الدرجات العالية.</para>
+</chapter>
+
+<chapter id="rules_and_tips"
+><title
+>قواعد اللعبة واستراتيجياتها وتلميحاتها</title
+> <!-- do not change this! -->
+	<!--This section has to do with game rules. Please give a detailed description of those using lists or paragraphs.-->
+	<sect1
+><title
+>قواعد اللعبة</title>
+		<para
+>تُقسم لوحة نتائج كيريكي إلى أربعة عشر سطرًا مختلفًا. يحمل كل سطر نمط نقاط واحدًا ونقاط اللاعب المكتسبة لرمية تطابق هذا النمط. يُحسب نمط نقاط كل سطر كالتالي:</para>
+			<itemizedlist>
+				<listitem
+><para
+><guilabel
+>الآحاد</guilabel
+>: مجموع كل النرد الذي قيمته '1'.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '14112'. المجموع هو: '3'='1'+'1'+'1'. النرد الظاهر: '51111'. المجموع هو: '4'='1'+'1'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>الاثنينات</guilabel
+>: مجموع كل النرد الذي قيمته '2'.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '22422'. المجموع هو: '8'='2'+'2'+'2'+'2'. النرد الظاهر: '42322'. المجموع هو: '6'='2'+'2'+'2'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>الثلاثات</guilabel
+>: مجموع كل النرد الذي قيمته '3'.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '34132'. المجموع هو: '6'='3'+'3'. النرد الظاهر: '33333'. المجموع هو: '15'='3'+'3'+'3'+'3'+'3'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>الأربعات</guilabel
+>: مجموع كل النرد الذي قيمته '4'.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '14142'. المجموع هو: '8'='4'+'4'. النرد الظاهر: '41414'. المجموع هو: '12'='4'+'4'+'4'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>الخمسات</guilabel
+>: مجموع كل النرد الذي قيمته '5'.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '15155'. المجموع هو: '15'='5'+'5'+'5'. النرد الظاهر: '51555'. المجموع هو: '20'='5'+'5'+'5'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>الستات</guilabel
+>: مجموع كل النرد الذي قيمته '6'.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '66616'. المجموع هو: '24'='6'+'6'+'6'+'6'. النرد الظاهر: '61616'. المجموع هو: '18'='6'+'6'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>علاوة إذا 
+> 62</guilabel
+>: يُمنح اللاعب 35 نقطة إضافية إذا كانت القيمة الإجمالية لجميع الحقول أعلاه أكبر من 62 نقطة.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>المجموع العلوي</guilabel
+>: ليس حلًا قابلًا للعب، بل هو مجرد ملخص لجميع الحقول أعلاه.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>3 من نوع واحد</guilabel
+>: القيمة الإجمالية للنرد عندما تحمل ثلاثة منها القيمة نفسها.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '14121'. المجموع هو: '9'='1'+'1'+'1'+'4'+'2'. النرد الظاهر: '55151'. المجموع هو: '17'='5'+'5'+'5'+'1'+'1'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>4 من نوع واحد</guilabel
+>: القيمة الإجمالية للنرد عندما تحمل أربعة منها القيمة نفسها.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '41444'. المجموع هو: '17'='4'+'4'+'4'+'4'+'1'. النرد الظاهر: '22522'. المجموع هو: '13'='2'+'2'+'2'+'2'+'5'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>فول هاوس</guilabel
+>: تُمنح 25 نقطة للاعب إذا نتج عن الجولة ثلاثة نرد من نوع واحد وزوج.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '11212'. النرد الظاهر: '53353'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>متتالية صغيرة</guilabel
+>: تُمنح 30 نقطة للاعب إذا نتج عن الجولة أربعة نرد بقيم متسلسلة.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '14312'. التسلسل هو: '1' ،'2' ،'3' ،'4'. النرد الظاهر: '51643'. التسلسل هو: '3' ،'4' ،'5' ،'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>متتالية كبيرة</guilabel
+>: تُمنح 40 نقطة للاعب إذا نتج عن الجولة خمسة نرد بقيم متسلسلة.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '34152'. التسلسل هو: '1' ،'2' ،'3' ،'4' ،'5'. النرد الظاهر: '53264'. التسلسل هو: '2' ،'3' ،'4' ،'5' ،'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>كيريكي</guilabel
+>: تُمنح 50 نقطة للاعب إذا نتج عن الجولة خمسة نرد بالقيمة نفسها. يمكنك تسجيل عدد كيريكي بقدر ما تحصل عليه، وعن كل واحدة بعد الأولى تحصل على دور إضافي في نهاية اللعبة.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '11111'. النرد الظاهر: '33333'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>فرصة</guilabel
+>: القيمة الإجمالية لجميع النرد الظاهر حاليًا.<note
+><title
+>مثال:</title
+><para
+>النرد الظاهر: '51143'. المجموع هو: '14'='5'+'1'+'1'+'4'+'3'. النرد الظاهر: '21526'. المجموع هو: '16'='2'+'1'+'5'+'2'+'6'.</para
+></note
+></para
+></listitem>
+				<listitem
+><para
+><guilabel
+>المجموع السفلي</guilabel
+>: ليس حلًا قابلًا للعب، بل هو مجرد ملخص لجميع الحقول بدءًا من <quote
+>3 من نوع واحد</quote
+> فما دون.</para
+></listitem>
+				<listitem
+><para
+><guilabel
+>المجموع الكلي</guilabel
+>: ليس حلًا قابلًا للعب، بل هو مجرد مجموع حقلي <quote
+>المجموع العلوي</quote
+> و <quote
+>المجموع السفلي</quote
+>.</para
+></listitem>
+			</itemizedlist>
+			<para
+>قواعد وقيود أخرى:</para>
+			<itemizedlist>
+				<listitem
+><para
+>تُقسم جولة اللعبة الكاملة إلى 13 دورًا.</para
+></listitem>
+				<listitem
+><para
+>يمكن لكل لاعب القيام بـ رمية واحدة إلى ثلاث رميات نرد في الدور الواحد.</para
+></listitem>
+				<listitem
+><para
+>بعد الرمية الأولى، يمكن للاعب القيام برميات إضافية لمرتين كحد أقصى (ثلاث رميات إجمالًا في الدور).</para
+></listitem>
+				<listitem
+><para
+>اللاعب غير ملزم بالقيام برميات إضافية إذا كانت الرمية الأولى قد أتت بنتائج مرضية.</para
+></listitem>
+				<listitem
+><para
+>قد تشمل كل رمية إضافية جميع النرد، أو النرد المختار فقط.</para
+></listitem>
+				<listitem
+><para
+>يمكن للاعب اختيار النرد المراد إعادة رميه بالنقر عليه بالفأرة.</para
+></listitem>
+				<listitem
+><para
+>بمجرد إعادة رمي النرد، تُفقد قيمتها السابقة وتُعتبر القيمة الجديدة فقط هي الصالحة.</para
+></listitem>
+				<listitem
+><para
+>تُعتبر نتيجة الرمية مرضية إذا أمكن وضع قيم النرد الظاهر في أحد أنماط النقاط المذكورة أعلاه.</para
+></listitem>
+				<listitem
+><para
+>لا يمكن استخدام كل نمط نقاط فردي إلا مرة واحدة في كل لعبة لكل لاعب. لذلك، بمجرد استخدام نمط نقاط من قبل لاعب، لا يمكن لهذا اللاعب نفسه استخدامه مرة أخرى. ومع ذلك، يمكن للاعب آخر استخدامه، ما لم يكن قد استخدم النمط نفسه مسبقًا.</para
+></listitem>
+			</itemizedlist>
+	</sect1>
+</chapter>
+
+<chapter id="interface"
+><title
+>نظرة عامة على الواجهة</title
+> <!-- do not change this! -->
+<sect1 id="menu">
+<title
+>عناصر القائمة</title>
+
+		<variablelist>
+			<varlistentry id="game-menu-new">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>جديد</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>يبدأ لعبة جديدة.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-highscores">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>أظهر أعلى النتائج</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>يُظهر قائمة أعلى النتائج.</action
+> عندما تتجاوز نتيجة لعبتك الحالية واحدة من أفضل عشر نتائج مسجلة، سيُطلب منك إضافة اسمك. </para
+></listitem>
+			</varlistentry>
+			<varlistentry id="game-menu-print">
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>اطبع…</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>يطبع لوحة النتائج الحالية.</action
+></para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>أنهِ</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+><action
+>ينهي</action
+> كيريكي.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+> <keycap
+>H</keycap
+> </shortcut
+> <guimenu
+>نقلة</guimenu
+> <guimenuitem
+>تلميحة</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>يقدم تلميحة عبر تمييز واحد أو أكثر من النرد لرميه أو سطر في لوحة النتائج. عند استخدام هذه الميزة لن تُعتبر النتيجة من أعلى النتائج.</para
+></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term
+><menuchoice
+><shortcut
+><keycap
+>D</keycap
+></shortcut
+> <guimenu
+>تحرك</guimenu
+><guimenuitem
+>عرض توضيحي</guimenuitem
+> </menuchoice
+></term>
+				<listitem
+><para
+>يشغل لعبة عرض توضيحي. لإيقاف وضع العرض التوضيحي ابدأ لعبة جديدة.</para
+></listitem>
+			</varlistentry>
+
+		</variablelist>
+<para
+>بالإضافة إلى ذلك، يمتلك كيريكي عناصر قائمتي <guimenu
+>إعدادات</guimenu
+> و <guimenu
+>مساعدة</guimenu
+> المعتادة في كيدي، لمزيد من المعلومات اقرأ الأقسام حول <ulink url="help:/fundamentals/menus.html#menus-settings"
+>قائمة الإعدادات</ulink
+> و <ulink url="help:/fundamentals/menus.html#menus-help"
+>قائمة المساعدة</ulink
+> في أساسيات كيدي. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="faq"
+><title
+>الأسئلة الشائعة</title
+> <!-- do not change this! -->
+<!--This chapter is for frequently asked questions. Please use <qandaset
+> <qandaentry
+> only!-->
+<qandaset>
+<!--Following is a standard list of FAQ questions.-->
+<qandaentry>
+ <question
+><para
+>أريد تغيير شكل اللعبة. هل يمكنني ذلك؟ </para
+></question>
+ <answer
+><para
+>لا. لا يدعم كيريكي حاليًا أي سمات.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>لقد ارتكبت خطأ. هل يمكنني التراجع؟ </para
+></question>
+ <answer
+><para
+>لا. لا يوجد في كيريكي خيار <quote
+>تراجع</quote
+>.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>هل يمكنني استخدام لوحة المفاتيح للعب؟</para
+></question>
+ <answer
+><para
+>لا. لا يمكن لعب كيريكي باستخدام لوحة المفاتيح.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>لا أعرف ماذا أفعل هنا! هل هناك تلميحات؟ </para
+></question>
+ <answer
+><para
+>لتعلم قواعد اللعب وتكتيكاته يرجى قراءة قسم <link linkend="rules_and_tips"
+>قواعد اللعبة واستراتيجياتها وتلميحاتها</link
+> في هذا الدليل.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>يجب أن أخرج من اللعبة الآن، لكنني لم أنتهِ بعد. هل يمكنني حفظ تقدمي؟</para
+></question>
+ <answer
+><para
+>لا. لا توجد ميزة <quote
+>حفظ</quote
+> في كيريكي.</para
+></answer>
+</qandaentry>
+<qandaentry>
+ <question
+><para
+>الذكاء الاصطناعي سريع جدًا! لا أستطيع رؤية ما يفعله!</para
+></question>
+ <answer
+><para
+>لتغيير سرعة حركة الذكاء الاصطناعي يرجى استخدام حوار ضبط اللعبة المذكور في قسم <link linkend="configuration"
+>ضبط اللعبة</link
+> في هذا الدليل.</para
+></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="configuration"
+><title
+>ضبط اللعبة</title
+> <!-- do not change this! -->
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="configuration.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>ضبط اللعبة</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>يتيح لك حوار ضبط كيريكي ضبط عدد المشاركين، وإدارة هوياتهم، وأوقات استجابتهم.</para>
+<note
+><title
+>الملاحظة:</title
+><para
+>يمكنك تغيير أوقات الاستجابة للاعبين الذين يقودهم الذكاء الاصطناعي فقط.</para
+></note>
+<para
+><guilabel
+>عدد اللاعبين:</guilabel
+> يحدد هذا الحقل عدد لاعبي كيريكي. تتراوح القيم المسموح بها هنا بين اثنين وستة.</para>
+
+<para
+>الحقول المرقمة <guilabel
+>1.</guilabel
+> إلى <guilabel
+>6.</guilabel
+> هي هويات اللاعبين المشاركين. يمكنك تغيير أسمائهم بالإضافة إلى تحديد ما إذا كان سيتحكم بهم بشر، أو يقودهم الذكاء الاصطناعي. لتحديد من يتحكم في اللاعب استخدم خانة الاختيار الموجودة على الجانب الأيمن، بجوار صندوق إدخال الاسم.</para>
+<para
+>يجب أن يكون اللاعب الأول محكومًا من البشر دائمًا.</para>
+
+<para
+>ستُطبق التغييرات في عدد المشاركين وهوياتهم في اللعبة التالية.</para>
+
+<para
+><guilabel
+>التأخير بين حركات الحاسوب (ملي ثانية):</guilabel
+> يتيح لك تحديد التأخير بين أدوار الذكاء الاصطناعي. قيمة هذا الحقل هي صفر مبدئيًا، مما يعني أن الذكاء الاصطناعي يتفاعل فوريًا.</para>
+
+<note
+><title
+>الملاحظة:</title
+><para
+>القيمة القصوى لهذا الحقل هي 999 ملي ثانية.</para
+></note>
+
+<para
+>استخدم <guilabel
+>حجم الخط:</guilabel
+> و <guilabel
+>ارتفاع السطر:</guilabel
+> لضبط لوحة النتائج حسب رغبتك.</para>
+<para
+>إذا أردت اللعب فورًا عند تشغيل كيريكي، فعطّل الخيار المبدئي <guilabel
+>أظهر لعبة عرض توضيحي عند البدء</guilabel
+>.</para>
+</chapter>
+
+<chapter id="credits"
+><title
+>الحقوق والترخيص</title
+> <!-- do not change this! -->
+<!--This chapter is for credits and licenses.-->
+
+<para
+>كيريكي</para>
+
+<!--List all the copyright holders here-->
+<para
+>حقوق نشر البرنامج 2005-2007 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>حقوق نشر التوثيق 2005 &Albert.Astals.Cid; &Albert.Astals.Cid.mail; </para>
+<para
+>حقوق نشر التوثيق 2007 Eugene Trounev <email
+>eugene.trounev@gmail.com</email
+> </para>
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-omittag:t
+sgml-shorttag:t
+sgml-namecase-general:t
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
